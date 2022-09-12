@@ -1,0 +1,20 @@
+{
+  "overview": {
+    "title": "Overview"
+  },
+  "bbpress": {
+    "title": "bbPress"
+  },
+  "social-login": {
+    "title": "Social Login"
+  },
+  "verified-users": {
+    "title": "Verified Users"
+  },
+  "real-time-notification": {
+    "title": "Real-time Notifications"
+  },
+  "notices": {
+    "title": "Notices"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "getting-started": {
+    "title": "Getting Started",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "--1": {
+    "type": "separator"
+  },
+  "modules": {
+    "title": "Modules"
+  },
+  "--2": {
+    "type": "separator"
+  },
+  "hooks": {
+    "title": "Hooks Reference"
+  },
+  "--3": {
+    "type": "separator"
+  },
+  "rest-api": {
+    "title": "REST API "
+  }
+}

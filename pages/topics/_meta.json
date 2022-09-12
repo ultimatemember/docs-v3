@@ -1,0 +1,11 @@
+{
+  "topics": {
+    "title": "Topics",
+    "hidden": true,
+    "theme": {
+      "navigation": false,
+      "pagination": false,
+      "breadcrumb": true
+    }
+  }
+}

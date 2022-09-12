@@ -1,0 +1,188 @@
+import Link from 'next/link'
+import { DocSearch } from '@docsearch/react'
+import { IconContext } from 'react-icons'
+import { ImWordpress } from 'react-icons/im' 
+import { BsStarFill } from 'react-icons/bs' 
+import { MdOutlineWeb } from 'react-icons/md' 
+
+<div className="p-10 sm:p-3 lg:p-10 md:p-10 pt-25 sm:pt-2 lg:pt-25 md:pt-25 pb-0 md:pb-0 sm:pb-10">
+
+    <div className="grid md:grid-cols-1 lg:grid-cols-3 mt-10" >
+        <div className="col-span-2">
+            <div className="text-2xl">
+            # Ultimate Member Documentation
+            </div>
+            <div className="text-lg pt-5">
+            Learn how to set up, customize, and expand the functionality of the Ultimate Member with our library of documentation and tutorials.
+            </div>
+
+
+            <div className="relative mt-5 ">
+                <form>   
+                        <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="docsearch">
+                        <DocSearch
+                            appId="TLV08NQE8S"
+                            apiKey="1e651f1c423582bce73e5d6295e23158"
+                            indexName="ultimatememberpro"
+                        />
+                        </div>
+                </form>
+
+            
+           </div>
+        </div>
+        <div className="col-span-1 text-center hidden md:block lg: block md:mt-20 lg:mt-0">
+            <center className="m-auto">  <img src="https://ultimatemember.com/wp-content/uploads/2022/05/cropped-favicon.png" width="130"  /></center>
+                <div className="text-sm w-300 m-auto text-center mt-5">
+                        <div class="bg-um-secondary text-xs px-2 rounded w-34 text-white  inline-block mr-2 mb-2">
+                        
+                            <IconContext.Provider
+                                    value={{ className: 'um-icons-inline text-xs' }}
+                                >
+                                <ImWordpress/>  6.3M Downloads
+                            </IconContext.Provider>
+
+                    
+                        </div>
+                        <div class="bg-um-secondary text-xs px-2 rounded w-34 text-white inline-block mr-2  mb-2">   
+                            <IconContext.Provider
+                                    value={{ className: 'um-icons-inline text-xs' }}
+                                >
+                                <MdOutlineWeb/>   200K Installs
+                            </IconContext.Provider>
+                        </div>
+                        <div class="bg-um-secondary text-xs px-2 rounded w-34 text-white inline-block  mb-2">   
+                            <IconContext.Provider
+                                    value={{ className: 'um-icons-inline text-xs' }}
+                                >
+                                <BsStarFill/>   1,333 Ratings
+                            </IconContext.Provider>
+                        </div>
+                        
+                </div>
+           
+        </div>
+    </div>
+
+</div>
+
+<div className="p-10 pt-10 md:pt-0 lg:pt-0 sm:pt-30 ">
+
+    <div className="text-2xl pl-1 pb-5 sm:mt-30 md:pt-10 lg:pt-10">Get started with Ultimate Member</div>
+
+    <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-5" >
+        <div className="rounded-lg shadow-lg">
+            <div className="bg-gradient-to-r from-indigo-400 to-indigo-500 text-white pb-30  p-2 rounded-t-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 mt-5 m-auto ">
+                <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                </svg>
+                <center className="font-bold text-lg mt-5"> Core Plugin </center>
+                <div className="text-center">
+                Installation and updating the plugin, and how to setup forms and directory.
+                </div>
+            </div>
+            <div className=" mt-3">
+                        
+                    <div className="p-2">
+                    <span className="font-bold text-sm text-gray-500">IN THIS SECTION</span>
+                            <ul className="list-style-none">
+                                <li className="pb-1"><a href="#">Installation & Guide</a></li>
+                                <li className="pb-1"><a href="#">Migration Guide</a></li>
+                                <li className="pb-1"><a href="#">Updating the plugin</a></li>                        
+                            </ul>
+                            <Link href="/getting-started/">
+                                <button  className="button font-bold py-2 px-4 rounded w-full border-2 mt-3">See all topics</button>
+                            </Link>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div className="rounded-lg  shadow-lg">
+            <div className="bg-gradient-to-r from-indigo-400 to-indigo-500 text-white p-2  rounded-t-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 mt-5 m-auto">
+                <path fillRule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clipRule="evenodd" />
+                </svg>
+
+                <center className="font-bold text-lg mt-5"> Modules </center>
+                    <div className="text-center">
+                    Install and Enable modules and their feature settings.
+                    </div>
+            </div>
+            <div className=" mt-3">
+                    
+                <div className="p-2">
+                <span className="font-bold text-sm text-gray-500">IN THIS SECTION</span>
+                        <ul className="list-style-none">
+                            <li className="pb-1"><a href="#">Installation & Guide</a></li>
+                            <li className="pb-1"><a href="#">Migration Guide</a></li>
+                            <li className="pb-1"><a href="#">Updating the plugin</a></li>                        
+                        </ul>
+                        <Link href="/modules/overview">
+                            <button  className="button font-bold py-2 px-4 rounded w-full border-2 mt-3">See all topics</button>
+                        </Link>
+                </div>
+            </div>
+        </div>
+
+        <div className="rounded-lg  shadow-lg">
+            <div className="bg-gradient-to-r from-indigo-400 to-indigo-500 text-white p-2  rounded-t-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 mt-5 m-auto">
+                <path fillRule="evenodd" d="M20.599 1.5c-.376 0-.743.111-1.055.32l-5.08 3.385a18.747 18.747 0 00-3.471 2.987 10.04 10.04 0 014.815 4.815 18.748 18.748 0 002.987-3.472l3.386-5.079A1.902 1.902 0 0020.599 1.5zm-8.3 14.025a18.76 18.76 0 001.896-1.207 8.026 8.026 0 00-4.513-4.513A18.75 18.75 0 008.475 11.7l-.278.5a5.26 5.26 0 013.601 3.602l.502-.278zM6.75 13.5A3.75 3.75 0 003 17.25a1.5 1.5 0 01-1.601 1.497.75.75 0 00-.7 1.123 5.25 5.25 0 009.8-2.62 3.75 3.75 0 00-3.75-3.75z" clipRule="evenodd" />
+                </svg>
+
+                <center className="font-bold text-lg mt-5"> Themes </center>
+                <div className="text-center">
+                    Learn about the UM Themes setup, settings and options.
+                </div>
+            </div>
+              <div className=" mt-3">
+                        
+                    <div className="p-2">
+                    <span className="font-bold text-sm text-gray-500">IN THIS SECTION</span>
+                            <ul className="list-style-none">
+                                <li className="pb-1"><a href="#">Installation & Guide</a></li>
+                                <li className="pb-1"><a href="#">Migration Guide</a></li>
+                                <li className="pb-1"><a href="#">Updating the plugin</a></li>                        
+                            </ul>
+                            <Link href="/themes/getting-started">
+                                <button  className="button font-bold py-2 px-4 rounded w-full border-2 mt-3">See all topics</button>
+                            </Link>
+                    </div>
+            </div>
+        </div>
+
+         <div className="rounded-lg  shadow-lg">
+            <div className="bg-gradient-to-r from-indigo-400 to-indigo-500 text-white p-2  rounded-t-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mt-5 m-auto">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                </svg>
+                <center className="font-bold text-lg mt-5"> Developer </center>
+                <div className="text-center">
+                        Hooks, REST API and tutorials to help you extending features/functionalities.
+                </div>
+            </div>
+               <div className=" mt-3">
+                        
+                    <div className="p-2">
+                    <span className="font-bold text-sm text-gray-500">IN THIS SECTION</span>
+                            <ul className="list-style-none">
+                                <li className="pb-1"><a href="#">Installation & Guide</a></li>
+                                <li className="pb-1"><a href="#">Migration Guide</a></li>
+                                <li className="pb-1"><a href="#">Updating the plugin</a></li>                        
+                            </ul>
+                            <Link href="/developer">
+                                <button  className="button font-bold py-2 px-4 rounded w-full border-2 mt-3">See all topics</button>
+                            </Link>
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
