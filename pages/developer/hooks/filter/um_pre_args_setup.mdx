@@ -1,0 +1,57 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_pre_args_setup', $args );
+```
+
+#### Description
+    <div class="description">
+        Change arguments on load shortcode
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$post_data`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">$_POST data</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-shortcodes#source-view.612">ultimatemember/includes/core/class-shortcodes.php</Link> <Link href="/developer/files/includes-core-class-shortcodes#source-view.612">line 612</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_pre_args_setup', 'my_pre_args_setup', 10, 1 );
+ function my_pre_args_setup( $post_data ) {
+     // your code here
+     return $post_data;
+ }
+    ```
+    </Tab>
+</Tabs>

@@ -1,0 +1,62 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( "um_{$key}_form_show_field", $output, $this->set_mode );
+```
+
+#### Description
+    <div class="description">
+        Change field HTML by field $key
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$output`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Field HTML</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$mode`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Form Mode</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-fields#source-view.4440">ultimatemember/includes/core/class-fields.php</Link> <Link href="/developer/files/includes-core-class-fields#source-view.4440">line 4440</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_{$key}_form_show_field', 'my_form_show_field', 10, 2 );
+ function my_form_show_field( $output, $mode ) {
+     // your code here
+     return $output;
+ }
+    ```
+    </Tab>
+</Tabs>

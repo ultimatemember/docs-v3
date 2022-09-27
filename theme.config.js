@@ -1,7 +1,6 @@
 import UMFooter from '/components/footer'
 import UM_Footer_Extras from '/components/UMFooterExtras'
 import UM_Algolia_Search from '/components/AlgoliaSearch'
-import { IconContext } from 'react-icons'
 import { VscGithub } from 'react-icons/vsc'
 
 export default {

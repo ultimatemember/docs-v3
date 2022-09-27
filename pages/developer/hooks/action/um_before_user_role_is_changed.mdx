@@ -1,0 +1,39 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( 'um_before_user_role_is_changed' );
+```
+
+#### Description
+    <div class="description">
+        Action before user role changed
+ 
+    </div>
+
+
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-roles-capabilities#source-view.231">ultimatemember/includes/core/class-roles-capabilities.php</Link> <Link href="/developer/files/includes-core-class-roles-capabilities#source-view.231">line 231</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_before_user_role_is_changed', 'my_before_user_role_is_changed', 10 );
+ function my_before_user_role_is_changed() {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

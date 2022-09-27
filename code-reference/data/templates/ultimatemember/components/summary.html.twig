@@ -1,0 +1,5 @@
+{% if node.summary %}
+<div class="phpdocumentor-summary">
+{{ node.summary|replace({'{': '&#123;','}': '&#125;'}) }}
+</div>
+{% endif %}

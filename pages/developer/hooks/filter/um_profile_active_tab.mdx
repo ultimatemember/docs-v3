@@ -1,0 +1,57 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_profile_active_tab', $this->active_tab );
+```
+
+#### Description
+    <div class="description">
+        Change active profile tab
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$tab`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Active Profile tab</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-profile#source-view.380">ultimatemember/includes/core/class-profile.php</Link> <Link href="/developer/files/includes-core-class-profile#source-view.380">line 380</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_profile_active_tab', 'my_profile_active_tab', 10, 1 );
+ function my_profile_active_tab( $tab ) {
+     // your code here
+     return $tab;
+ }
+    ```
+    </Tab>
+</Tabs>

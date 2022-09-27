@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% set filesWithMarkers = project.files|filter(file => file.markers is not empty) %}
+
+{% block title %}
+    {{ project.name }} &raquo; Markers
+{% endblock %}
+
+{% block content %}
+    <div class="phpdocumentor-row">
+        # Markers
+
+        {% if filesWithMarkers is not empty %}
+          
+        {% else %}
+            <div class="phpdocumentor-admonition phpdocumentor-admonition--success">
+                No markers have been found in this project.
+            </div>
+        {% endif %}
+
+        {% for file in filesWithMarkers %}
+            <a id="{{ file.path }}"></a>
+            ## {{ file.name }}
+        
+ {% for marker in file.markers %}{% if loop.first %}
+| Type          | Line        |  Description|
+| :------------ | :---------: | ----------: |
+{% endif %}| {{ marker.type}} | {{ marker.line }} | {{marker.message }} |{% endfor %}
+
+
+        {% endfor %}
+    </div>
+{% endblock %}

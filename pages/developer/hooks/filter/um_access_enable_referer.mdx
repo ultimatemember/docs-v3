@@ -1,0 +1,57 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_access_enable_referer', false );
+```
+
+#### Description
+    <div class="description">
+        Access Referrer Enable/Disable
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$referrer`</td>
+               <td className="px-3 py-2">bool</td>
+               <td className="px-3 py-2 text-sm">Access referrer</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-access#source-view.1752">ultimatemember/includes/core/class-access.php</Link> <Link href="/developer/files/includes-core-class-access#source-view.1752">line 1752</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_access_enable_referer', 'my_access_enable_referer', 10, 1 );
+ function my_access_enable_referer( $referrer ) {
+     // your code here
+     return $referrer;
+ }
+    ```
+    </Tab>
+</Tabs>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% set filesWithErrors = project.files|filter(file => file.allErrors is not empty) %}
+
+{% block title %}
+    {{ project.name }} &raquo; Compilation errors
+{% endblock %}
+
+{% block content %}
+
+<div class="phpdocumentor-row">
+    # Errors
+    
+    {% for file in filesWithErrors %}
+        <a id="{{ file.path }}"></a>
+        ## {{ file.name }}
+
+{% for error in file.allerrors %}{% if loop.first %}
+| Type          | Line        |  Description|
+| :------------ | :---------: | ----------: |
+{% endif %}| {{ error.severity}} | {{ error.line }} | {{ error.code|trans(error.context) }} |{% endfor %}
+ {% endfor %}
+ 
+</div>
+{% endblock %}

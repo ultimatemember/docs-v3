@@ -1,0 +1,344 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -class">
+
+    # Admin_Theme_Updater
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs 2">
+                                   
+                                   
+                                   
+                            </ul>
+        </div>
+    
+    
+    
+
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.17">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">17</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Class Admin_Theme_Updater
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="phpdocumentor-properties">
+### Properties
+    
+    <div class="phpdocumentor-element -property -private">
+<h4 class="phpdocumentor-element__name" id="property_restored">
+    `restored`
+    <a href="#property_restored" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.24">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">24</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Restored themes
+</div>
+
+<span class="phpdocumentor-signature__visibility">private</span>
+<span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+<span class="phpdocumentor-signature__name">`$restored`</span>
+ = <span class="phpdocumentor-signature__default-value">array()</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -private">
+<h4 class="phpdocumentor-element__name" id="property_saved">
+    `saved`
+    <a href="#property_saved" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.31">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">31</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Saved themes
+</div>
+
+<span class="phpdocumentor-signature__visibility">private</span>
+<span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+<span class="phpdocumentor-signature__name">`$saved`</span>
+ = <span class="phpdocumentor-signature__default-value">array()</span>
+
+
+
+
+
+</div>
+</section>
+
+    <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method___construct">
+    `__construct()`
+    <a href="#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.37">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">37</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Constructor.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public-static ">
+<h4 class="phpdocumentor-element__name" id="method_recurse_copy">
+    `recurse_copy()`
+    <a href="#method_recurse_copy" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.48">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">48</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Copy directory
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">recurse_copy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$src`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$dest`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$src`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$dest`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_restore_templates">
+    `restore_templates()`
+    <a href="#method_restore_templates" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.74">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">74</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Restore UM templates to theme directory
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">restore_templates</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$name`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$name`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">void</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_save_templates">
+    `save_templates()`
+    <a href="#method_save_templates" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.122">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">122</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Save UM templates to temp directory
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">save_templates</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$name`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$name`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">void</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_upgrader_package_options">
+    `upgrader_package_options()`
+    <a href="#method_upgrader_package_options" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.163">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">163</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Filter: upgrader_package_options
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">upgrader_package_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$options`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$options`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_upgrader_process_complete">
+    `upgrader_process_complete()`
+    <a href="#method_upgrader_process_complete" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-class-admin-theme-updater.html#source-view.177">includes/admin/core/class-admin-theme-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">177</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Action: upgrader_process_complete
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">upgrader_process_complete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">\WP_Upgrader&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$WP_Upgrader`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$options`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$WP_Upgrader`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">\WP_Upgrader</span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$options`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+            </section>
+
+</div>

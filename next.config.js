@@ -21,3 +21,5 @@ module.exports = withNextra({
     ]
   },
 })
+
+module.exports.swcMinify = false

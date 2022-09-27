@@ -1,0 +1,62 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_custom_homepage_redirect_url', $redirect_homepage, um_user( 'ID' ) );
+```
+
+#### Description
+    <div class="description">
+        Change custom homepage redirect
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$url`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Redirect URL</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$id`</td>
+               <td className="px-3 py-2">int</td>
+               <td className="px-3 py-2 text-sm">User ID</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-access#source-view.1617">ultimatemember/includes/core/class-access.php</Link> <Link href="/developer/files/includes-core-class-access#source-view.1617">line 1617</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_custom_homepage_redirect_url', 'my_custom_homepage_redirect_url', 10, 2 );
+ function my_custom_homepage_redirect_url( $url, $id ) {
+     // your code here
+     return $url;
+ }
+    ```
+    </Tab>
+</Tabs>

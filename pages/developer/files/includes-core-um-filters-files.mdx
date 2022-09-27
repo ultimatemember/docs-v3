@@ -1,0 +1,122 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -file">
+    ## um-filters-files.php
+
+        
+
+    <section class="phpdocumentor-functions">
+### Functions
+<div class="phpdocumentor-element -function - ">
+ #### um_multisite_urls_support()
+       
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-um-filters-files.html#source-view.11">includes/core/um-filters-files.php</Link> : <span class="phpdocumentor-element-found-in__line">11</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Support multisite
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">um_multisite_urls_support</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$dir`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$dir`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="py-4"></div>
+
+</div>
+</section>
+
+       ```php showLineNumbers=true copy
+       <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+
+/**
+ * Support multisite
+ *
+ * @param $dir
+ *
+ * @return string
+ */
+function um_multisite_urls_support( $dir ) {
+
+	if ( is_multisite() ) { // Need to the work
+
+		if ( get_current_blog_id() == '1' ) {
+			return $dir;
+		}
+
+		/**
+		 * UM hook
+		 *
+		 * @type filter
+		 * @title um_multisite_upload_sites_directory
+		 * @description Change multisite uploads directory
+		 * @input_vars
+		 * [{"var":"$sites_dir","type":"string","desc":"Upload sites directory"}]
+		 * @change_log
+		 * ["Since: 2.0"]
+		 * @usage
+		 * <?php add_filter( 'um_multisite_upload_sites_directory', 'function_name', 10, 1 ); ?>
+		 * @example
+		 * <?php
+		 * add_filter( 'um_multisite_upload_sites_directory', 'my_multisite_upload_sites_directory', 10, 1 );
+		 * function my_multisite_upload_sites_directory( $sites_dir ) {
+		 *     // your code here
+		 *     return $sites_dir;
+		 * }
+		 * ?>
+		 */
+		$sites_dir = apply_filters('um_multisite_upload_sites_directory', 'sites/' );
+		$split = explode( $sites_dir, $dir );
+		/**
+		 * UM hook
+		 *
+		 * @type filter
+		 * @title um_multisite_upload_directory
+		 * @description Change multisite UM uploads directory
+		 * @input_vars
+		 * [{"var":"$um_dir","type":"string","desc":"Upload UM directory"}]
+		 * @change_log
+		 * ["Since: 2.0"]
+		 * @usage
+		 * <?php add_filter( 'um_multisite_upload_directory', 'function_name', 10, 1 ); ?>
+		 * @example
+		 * <?php
+		 * add_filter( 'um_multisite_upload_directory', 'my_multisite_upload_directory', 10, 1 );
+		 * function my_multisite_upload_directory( $um_dir ) {
+		 *     // your code here
+		 *     return $um_dir;
+		 * }
+		 * ?>
+		 */
+		$um_dir = apply_filters('um_multisite_upload_directory','ultimatemember/');
+		$dir = $split[0] . $um_dir;
+
+	}
+
+	return $dir;
+}
+add_filter( 'um_upload_basedir_filter', 'um_multisite_urls_support', 99 );
+add_filter( 'um_upload_baseurl_filter', 'um_multisite_urls_support', 99 );
+       ```
+</div>

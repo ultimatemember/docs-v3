@@ -1,0 +1,56 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( "um_after_account_{$tab_id}", $args );
+```
+
+#### Description
+    <div class="description">
+        Make some action after show account tab
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$args`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Account Page Arguments</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-account#source-view.862">ultimatemember/includes/core/class-account.php</Link> <Link href="/developer/files/includes-core-class-account#source-view.862">line 862</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_after_account_{$tab_id}', 'my_after_account_tab', 10, 1 );
+ function my_after_account_tab( $args ) {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

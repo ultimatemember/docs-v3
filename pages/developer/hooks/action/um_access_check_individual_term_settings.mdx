@@ -1,0 +1,39 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( 'um_access_check_individual_term_settings' );
+```
+
+#### Description
+    <div class="description">
+        Check terms individual restrict options
+ 
+    </div>
+
+
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-access#source-view.1479">ultimatemember/includes/core/class-access.php</Link> <Link href="/developer/files/includes-core-class-access#source-view.1479">line 1479</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_access_check_individual_term_settings', 'my_access_check_individual_term_settings', 10 );
+ function my_access_check_individual_term_settings() {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

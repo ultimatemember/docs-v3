@@ -1,0 +1,104 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -file">
+    ## um-filters-commenting.php
+
+        
+
+    <section class="phpdocumentor-functions">
+### Functions
+<div class="phpdocumentor-element -function - ">
+ #### um_comment_link_to_profile()
+       
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-um-filters-commenting.html#source-view.13">includes/core/um-filters-commenting.php</Link> : <span class="phpdocumentor-element-found-in__line">13</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Control comment author display
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">um_comment_link_to_profile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$return`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$author`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$comment_ID`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$return`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$author`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$comment_ID`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="py-4"></div>
+
+</div>
+</section>
+
+       ```php showLineNumbers=true copy
+       <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+
+/**
+ * Control comment author display
+ *
+ * @param $return
+ * @param $author
+ * @param $comment_ID
+ *
+ * @return string
+ */
+function um_comment_link_to_profile( $return, $author, $comment_ID ) {
+
+	$comment = get_comment( $comment_ID );
+
+	if( isset( $comment->user_id ) && ! empty(  $comment->user_id ) ){
+		if ( isset( UM()->user()->cached_user[ $comment->user_id ] ) && UM()->user()->cached_user[ $comment->user_id ] ) {
+
+			$return = '<a href="'. UM()->user()->cached_user[$comment->user_id]['url'] . '">' . UM()->user()->cached_user[$comment->user_id]['name'] . '</a>';
+
+		} else {
+
+			um_fetch_user( $comment->user_id );
+
+			UM()->user()->cached_user[ $comment->user_id ] = array('url' => um_user_profile_url(), 'name' => um_user('display_name') );
+			$return = '<a href="'. UM()->user()->cached_user[$comment->user_id]['url'] . '">' . UM()->user()->cached_user[$comment->user_id]['name'] . '</a>';
+
+			um_reset_user();
+
+		}
+	}
+
+	return $return;
+}
+
+add_filter('get_comment_author_link', 'um_comment_link_to_profile', 10000, 3 );
+       ```
+</div>

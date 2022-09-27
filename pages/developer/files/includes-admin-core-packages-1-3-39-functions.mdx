@@ -1,0 +1,46 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -file">
+    ## functions.php
+
+        
+
+    <section class="phpdocumentor-functions">
+### Functions
+<div class="phpdocumentor-element -function - ">
+ #### um_upgrade_usermetaquery1339()
+       
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-admin-core-packages-1-3-39-functions.html#source-view.2">includes/admin/core/packages/1.3.39/functions.php</Link> : <span class="phpdocumentor-element-found-in__line">2</span>
+</div>
+
+
+
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">um_upgrade_usermetaquery1339</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+<div className="py-4"></div>
+
+</div>
+</section>
+
+       ```php showLineNumbers=true copy
+       <?php
+function um_upgrade_usermetaquery1339() {
+	UM()->admin()->check_ajax_nonce();
+
+	include 'usermeta_query.php';
+
+	update_option( 'um_last_version_upgrade', '1.3.39' );
+
+	wp_send_json_success( array( 'message' => 'Usermeta was upgraded successfully' ) );
+}
+       ```
+</div>

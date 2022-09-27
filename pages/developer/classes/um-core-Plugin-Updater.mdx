@@ -1,0 +1,602 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -class">
+
+    # Plugin_Updater
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs 2">
+                                   
+                                   
+                            </ul>
+        </div>
+    
+    
+    
+
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.15">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">15</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Class Plugin_Updater
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method___construct">
+    `__construct()`
+    <a href="#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.21">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">21</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Plugin_Updater constructor.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_check_update">
+    `check_update()`
+    <a href="#method_check_update" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.366">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">366</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Check for Updates by request to the marketplace
+and modify the update array.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">check_update</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_transient_data`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">\stdClass</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_transient_data`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            
+           
+                 plugin update array build by WordPress.
+
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">\stdClass</span> &mdash; <span class="phpdocumentor-return-value__description">modified plugin update array.</span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_clean_update_plugins_cache">
+    `clean_update_plugins_cache()`
+    <a href="#method_clean_update_plugins_cache" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.69">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">69</span>
+</div>
+
+<div class="phpdocumentor-summary">
+This action is documented in wp-admin/includes/class-wp-upgrader.php
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">clean_update_plugins_cache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">\Plugin_Upgrader&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$updater`</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$action`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$updater`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">\Plugin_Upgrader</span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$action`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            
+           
+                 
+
+           
+            </dl>
+
+
+    ##### Tags
+     
+    <div class="phpdocumentor-tag-list">
+                                   
+                                               
+                        </div>
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_extend_download_url">
+    `extend_download_url()`
+    <a href="#method_extend_download_url" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.563">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">563</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Download extension URL
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">extend_download_url</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$download_url`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$slug`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$data`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$download_url`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$slug`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$data`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">string</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_active_plugins">
+    `get_active_plugins()`
+    <a href="#method_get_active_plugins" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.81">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">81</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Get all paid UM extensions
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_active_plugins</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_cache_key">
+    `get_cache_key()`
+    <a href="#method_get_cache_key" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.591">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">591</span>
+</div>
+
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_cache_key</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$slug`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$slug`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">bool|string</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_cached_version_info">
+    `get_cached_version_info()`
+    <a href="#method_get_cached_version_info" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.607">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">607</span>
+</div>
+
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_cached_version_info</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$slug`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool|mixed|object</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$slug`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool|mixed|object</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_http_request_args">
+    `http_request_args()`
+    <a href="#method_http_request_args" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.545">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">545</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Disable SSL verification in order to prevent download update failures
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">http_request_args</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$url`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$url`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description">$array</span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_plugin_information">
+    `plugin_information()`
+    <a href="#method_plugin_information" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.503">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">503</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Updates information on the &quot;View version x.x details&quot; popup with custom data.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">plugin_information</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_data`</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_action`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_args`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_data`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_action`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">object</span> &mdash; <span class="phpdocumentor-return-value__description">$_data</span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_prevent_dangerous_auto_updates">
+    `prevent_dangerous_auto_updates()`
+    <a href="#method_prevent_dangerous_auto_updates" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.47">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">47</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Prevent auto-updating the WooCommerce plugin on major releases if there are untested extensions active.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">prevent_dangerous_auto_updates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$should_update`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$plugin`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$should_update`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            
+           
+                 If should update.
+
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$plugin`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            
+           
+                 Plugin data.
+
+
+           
+            </dl>
+
+
+    ##### Tags
+     
+    <div class="phpdocumentor-tag-list">
+                                   
+                        </div>
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">bool</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_set_version_info_cache">
+    `set_version_info_cache()`
+    <a href="#method_set_version_info_cache" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.638">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">638</span>
+</div>
+
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">set_version_info_cache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$slug`</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$value`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$slug`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$value`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_um_checklicenses">
+    `um_checklicenses()`
+    <a href="#method_um_checklicenses" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.247">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">247</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Check license function
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">um_checklicenses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -private ">
+<h4 class="phpdocumentor-element__name" id="method_single_request">
+    `single_request()`
+    <a href="#method_single_request" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-class-plugin-updater.html#source-view.439">includes/core/class-plugin-updater.php</Link> : <span class="phpdocumentor-element-found-in__line">439</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Calls the API and, if successfull, returns the object delivered by the API.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">single_request</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_action`</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$_data`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|object</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_action`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            
+           
+                 The requested action.
+
+
+           
+                    
+                <span class="phpdocumentor-signature__argument__name">`$_data`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            
+           
+                 Parameters for the API action.
+
+
+           
+            </dl>
+
+
+    ##### Tags
+     
+    <div class="phpdocumentor-tag-list">
+                                   
+                           
+                           
+                        </div>
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">false|object</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+            </section>
+
+</div>

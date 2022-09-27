@@ -1,0 +1,67 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_email_template_html_formatting', '<html>', $slug, $args );
+```
+
+#### Description
+    <div class="description">
+        Change email notification template header
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$header`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Email notification header. '&lt;html&gt;' by default</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$slug`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Template Key</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$args`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Template settings</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-mail#source-view.283">ultimatemember/includes/core/class-mail.php</Link> <Link href="/developer/files/includes-core-class-mail#source-view.283">line 283</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_email_template_html_formatting', 'my_email_template_html_formatting', 10, 3 );
+ function my_email_template_html_formatting( $header, $slug, $args ) {
+     // your code here
+     return $header;
+ }
+    ```
+    </Tab>
+</Tabs>

@@ -82,3 +82,12 @@ border: 1px solid #d8c0ec;
     content: " docs..."
   }
 }
+
+/**
+ * Rehype
+ */
+ code[data-line-numbers]>.line:before{
+    width: 2rem !important;
+    margin-right: .5rem !important;
+ }
+

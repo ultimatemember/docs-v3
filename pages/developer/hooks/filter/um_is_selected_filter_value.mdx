@@ -1,0 +1,67 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_is_selected_filter_value', $field_value, $key, $value );
+```
+
+#### Description
+    <div class="description">
+        Change is selected filter value
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$value`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Selected filter value</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$key`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Selected filter key</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$value`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Selected filter value</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-fields#source-view.1114">ultimatemember/includes/core/class-fields.php</Link> <Link href="/developer/files/includes-core-class-fields#source-view.1114">line 1114</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_is_selected_filter_value', 'my_selected_filter_value', 10, 2 );
+ function my_selected_filter_value( $value, $key ) {
+     // your code here
+     return $field_value;
+ }
+    ```
+    </Tab>
+</Tabs>

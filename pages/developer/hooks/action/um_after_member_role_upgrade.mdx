@@ -1,0 +1,62 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( 'um_after_member_role_upgrade', $new_roles, $old_roles, $user_id );
+```
+
+#### Description
+    <div class="description">
+        Action on user registration
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$new_roles`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">User new roles</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$old_roles`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Old roles</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-user#source-view.836">ultimatemember/includes/core/class-user.php</Link> <Link href="/developer/files/includes-core-class-user#source-view.836">line 836</Link>
+  - <Link href="/developer/files/includes-core-rest-class-api-v1#source-view.297">ultimatemember/includes/core/rest/class-api-v1.php</Link> <Link href="/developer/files/includes-core-rest-class-api-v1#source-view.297">line 297</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_after_member_role_upgrade', 'my_after_member_role_upgrade', 10, 2 );
+ function my_after_member_role_upgrade( $new_roles, $old_roles ) {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

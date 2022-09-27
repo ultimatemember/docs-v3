@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title>Ultimate Member Code Reference</title>
+  <files>
+    <directory>ultimatemember/</directory>
+    <directory>ultimatemember/.node_modules/</directory>
+     <ignore>ultimatemember/includes/lib/browser.php</ignore>
+     <ignore>ultimatemember/includes/lib/array2xml.php</ignore>
+  </files>
+</phpdoc>

@@ -1,0 +1,15 @@
+{% if node.arguments|length > 0 %}
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+        {% for argument in node.arguments %}
+            
+                <span class="phpdocumentor-signature__argument__name">`${{ argument.name }}`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">{{ argument.type|route('url')|join('|')|raw }}</span>
+                {% if argument.default %} = <span class="phpdocumentor-signature__argument__default-value">{{ argument.default }}</span>{% endif %}
+            
+           
+                 {{ include('components/description.html.twig', {'node': argument}) }}
+           
+        {% endfor %}
+    </dl>
+{% endif %}

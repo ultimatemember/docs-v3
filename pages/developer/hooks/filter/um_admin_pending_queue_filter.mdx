@@ -1,0 +1,57 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_admin_pending_queue_filter', $args );
+```
+
+#### Description
+    <div class="description">
+        Change user query arguments when get pending users
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$args`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">WP_Users query arguments</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-query#source-view.315">ultimatemember/includes/core/class-query.php</Link> <Link href="/developer/files/includes-core-class-query#source-view.315">line 315</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_admin_pending_queue_filter', 'my_admin_pending_queue', 10, 1 );
+ function my_admin_pending_queue( $args ) {
+     // your code here
+     return $args;
+ }
+    ```
+    </Tab>
+</Tabs>

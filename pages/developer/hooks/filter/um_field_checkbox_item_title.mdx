@@ -1,0 +1,72 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_field_checkbox_item_title', $um_field_checkbox_item_title, $key, $v, $data );
+```
+
+#### Description
+    <div class="description">
+        Change Checkbox item title
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$checkbox_item_title`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Item Title</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$key`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Field Key</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$value`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">Field Value</td>
+               </tr>
+               <tr >
+               <td className="px-3 py-2">`$data`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Field Data</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-fields#source-view.3766">ultimatemember/includes/core/class-fields.php</Link> <Link href="/developer/files/includes-core-class-fields#source-view.3766">line 3766</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_field_checkbox_item_title', 'my_checkbox_item_title', 10, 4 );
+ function my_checkbox_item_title( $checkbox_item_title, $key, $value, $data ) {
+     // your code here
+     return $checkbox_item_title;
+ }
+    ```
+    </Tab>
+</Tabs>

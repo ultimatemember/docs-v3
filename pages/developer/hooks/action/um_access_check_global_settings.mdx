@@ -1,0 +1,39 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( 'um_access_check_global_settings' );
+```
+
+#### Description
+    <div class="description">
+        Check global restrict content options
+ 
+    </div>
+
+
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-access#source-view.1502">ultimatemember/includes/core/class-access.php</Link> <Link href="/developer/files/includes-core-class-access#source-view.1502">line 1502</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_access_check_global_settings', 'my_access_check_global_settings', 10 );
+ function my_access_check_global_settings() {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

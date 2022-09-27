@@ -13,7 +13,7 @@ export default function getGitEditUrl() {
   if (!repo) throw new Error('Invalid `docsRepositoryBase` URL!')
 
   const subdir = 'pages'
-  const path = `/blob/${'master' || '/main'}${subdir}${filePath}`
+  const path = `blob/${'master/' || '/main'}${subdir}${filePath}`
 
   switch (repo.type) {
     case 'github':

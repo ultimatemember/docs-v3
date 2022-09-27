@@ -1,0 +1,39 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Action Hook    
+    
+```
+do_action( 'um_delete_user_hook' );
+```
+
+#### Description
+    <div class="description">
+        On delete user
+ 
+    </div>
+
+
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-user#source-view.491">ultimatemember/includes/core/class-user.php</Link> <Link href="/developer/files/includes-core-class-user#source-view.491">line 491</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_delete_user_hook', 'my_delete_user', 10 );
+ function my_delete_user() {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

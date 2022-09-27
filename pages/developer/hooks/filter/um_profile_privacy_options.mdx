@@ -1,0 +1,60 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_profile_privacy_options', array(
+				'Everyone'  => __( 'Everyone', 'ultimate-member' ),
+				'Only me'   => __( 'Only me', 'ultimate-member' )
+			) );
+```
+
+#### Description
+    <div class="description">
+        Profile Privacy Options
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$privacy_options`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Privacy Options</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-builtin#source-view.711">ultimatemember/includes/core/class-builtin.php</Link> <Link href="/developer/files/includes-core-class-builtin#source-view.711">line 711</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_profile_privacy_options', 'my_profile_privacy_options', 10, 1 );
+ function my_profile_privacy_options( $privacy_options ) {
+     // your code here
+     return $privacy_options;
+ }
+    ```
+    </Tab>
+</Tabs>

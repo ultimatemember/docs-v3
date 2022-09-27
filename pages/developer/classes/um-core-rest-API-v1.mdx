@@ -1,0 +1,960 @@
+import Link from 'next/link'
+import { Tabs, Tab, Callout } from 'nextra-theme-docs'
+
+
+<div class="phpdocumentor-element -class">
+
+    # API_v1
+
+        <span class="phpdocumentor-element__extends">
+        extends classes/um-core-rest-API.html
+    </span>
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs 2">
+                                   
+                                   
+                            </ul>
+        </div>
+    
+    
+    
+
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.15">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">15</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Class REST_API
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="phpdocumentor-constants">
+        ### Constants
+                    <div class="phpdocumentor-element -constant -public ">
+#### VERSION
+
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.20">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">20</span>
+</div>
+
+
+<code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    `mixed`
+    <span class="phpdocumentor-signature__name">VERSION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;1.0&#039;</span>
+</code>
+
+
+
+
+
+
+</div>
+            </section>
+
+
+<section class="phpdocumentor-properties">
+### Properties
+    
+    <div class="phpdocumentor-element -property -public">
+<h4 class="phpdocumentor-element__name" id="property_log_requests">
+    `log_requests`
+    <a href="#property_log_requests" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.28">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">28</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">public</span>
+<span class="phpdocumentor-signature__type">bool|mixed|void</span>
+<span class="phpdocumentor-signature__name">`$log_requests`</span>
+ = <span class="phpdocumentor-signature__default-value">true</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_data">
+    `data`
+    <a href="#property_data" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.52">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">52</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+<span class="phpdocumentor-signature__name">`$data`</span>
+ = <span class="phpdocumentor-signature__default-value">array()</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_is_valid_request">
+    `is_valid_request`
+    <a href="#property_is_valid_request" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.34">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">34</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">bool</span>
+<span class="phpdocumentor-signature__name">`$is_valid_request`</span>
+ = <span class="phpdocumentor-signature__default-value">false</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_override">
+    `override`
+    <a href="#property_override" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.58">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">58</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">bool</span>
+<span class="phpdocumentor-signature__name">`$override`</span>
+ = <span class="phpdocumentor-signature__default-value">true</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_pretty_print">
+    `pretty_print`
+    <a href="#property_pretty_print" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.22">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">22</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">bool|int|null</span>
+<span class="phpdocumentor-signature__name">`$pretty_print`</span>
+ = <span class="phpdocumentor-signature__default-value">false</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_stats">
+    `stats`
+    <a href="#property_stats" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.46">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">46</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">mixed</span>
+<span class="phpdocumentor-signature__name">`$stats`</span>
+
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_user_id">
+    `user_id`
+    <a href="#property_user_id" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.40">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">40</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">int</span>
+<span class="phpdocumentor-signature__name">`$user_id`</span>
+ = <span class="phpdocumentor-signature__default-value">0</span>
+
+
+
+
+
+</div>
+    <div class="phpdocumentor-element -property -protected">
+<h4 class="phpdocumentor-element__name" id="property_vars">
+    `vars`
+    <a href="#property_vars" class="headerlink"><i class="fas fa-link"></i></a>
+    <span class="phpdocumentor-element__modifiers">
+                    </span>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.64">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">64</span>
+</div>
+
+
+<span class="phpdocumentor-signature__visibility">protected</span>
+<span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+<span class="phpdocumentor-signature__name">`$vars`</span>
+ = <span class="phpdocumentor-signature__default-value">array()</span>
+
+
+
+
+
+</div>
+</section>
+
+    <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method___construct">
+    `__construct()`
+    <a href="#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.26">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">26</span>
+</div>
+
+<div class="phpdocumentor-summary">
+REST_API constructor.
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_add_endpoint">
+    `add_endpoint()`
+    <a href="#method_add_endpoint" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.108">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">108</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Registers a new rewrite endpoint for accessing the API
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">add_endpoint</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$rewrite_rules`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$rewrite_rules`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_delete_user">
+    `delete_user()`
+    <a href="#method_delete_user" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.318">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">318</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Process delete user via API
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">delete_user</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_auser">
+    `get_auser()`
+    <a href="#method_get_auser" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.354">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">354</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Process Get user API Request
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_auser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_output">
+    `get_output()`
+    <a href="#method_get_output" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.498">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">498</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Retrieve the output data
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_output</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_output_format">
+    `get_output_format()`
+    <a href="#method_get_output_format" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.512">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">512</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Retrieve the output format
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_output_format</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_paged">
+    `get_paged()`
+    <a href="#method_get_paged" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.447">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">447</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Get page number
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_paged</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_query_mode">
+    `get_query_mode()`
+    <a href="#method_get_query_mode" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.396">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">396</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Determines the kind of query requested and also ensure it is a valid query
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_query_mode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">null</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_stats">
+    `get_stats()`
+    <a href="#method_get_stats" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.291">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">291</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Get some stats
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_stats</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_user">
+    `get_user()`
+    <a href="#method_get_user" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.104">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">104</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Retrieve the user ID based on the public key provided
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_user</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$key`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|mixed|null|string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$key`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">bool|mixed|null|string</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_get_users">
+    `get_users()`
+    <a href="#method_get_users" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.145">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">145</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Process Get users API Request
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_users</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_getsrc">
+    `getsrc()`
+    <a href="#method_getsrc" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.501">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">501</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Get source
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getsrc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$image`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$image`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">string</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_output">
+    `output()`
+    <a href="#method_output" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.509">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">509</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Output Query in either JSON/XML. The query data is outputted as JSON
+by default
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">output</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$status_code`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">200</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$status_code`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">200</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_process_query">
+    `process_query()`
+    <a href="#method_process_query" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.116">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">116</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Listens for the API and then processes the API requests
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">process_query</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_query_vars">
+    `query_vars()`
+    <a href="#method_query_vars" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.40">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">40</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Registers query vars for API access
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">query_vars</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$vars`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$vars`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -public ">
+<h4 class="phpdocumentor-element__name" id="method_update_user">
+    `update_user()`
+    <a href="#method_update_user" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.244">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">244</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Update user API query
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">update_user</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$args`</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$args`</span>
+                : <span class="phpdocumentor-signature__argument__return-type"></span>
+                            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -protected ">
+<h4 class="phpdocumentor-element__name" id="method_invalid_auth">
+    `invalid_auth()`
+    <a href="#method_invalid_auth" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.263">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">263</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Displays an authentication failed error if the user failed to provide valid credentials
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">invalid_auth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -protected ">
+<h4 class="phpdocumentor-element__name" id="method_invalid_key">
+    `invalid_key()`
+    <a href="#method_invalid_key" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.275">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">275</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Displays an invalid API key error if the API key provided couldn&#039;t be validated
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">invalid_key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -protected ">
+<h4 class="phpdocumentor-element__name" id="method_log_request">
+    `log_request()`
+    <a href="#method_log_request" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.488">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">488</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Log each API request, if enabled
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">log_request</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">`$data`</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+    ##### Parameters
+    <dl class="phpdocumentor-argument-list">
+                    
+                <span class="phpdocumentor-signature__argument__name">`$data`</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            
+           
+                 
+
+           
+            </dl>
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -protected ">
+<h4 class="phpdocumentor-element__name" id="method_missing_auth">
+    `missing_auth()`
+    <a href="#method_missing_auth" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api.html#source-view.251">includes/core/rest/class-api.php</Link> : <span class="phpdocumentor-element-found-in__line">251</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Displays a missing authentication error if all the parameters aren&#039;t
+provided
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">missing_auth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+                    <div className="phpdocumentor-element -method -protected ">
+<h4 class="phpdocumentor-element__name" id="method_validate_request">
+    `validate_request()`
+    <a href="#method_validate_request" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+
+<div class="phpdocumentor-element-found-in">
+    <Link href="../files/includes-core-rest-class-api-v1.html#source-view.66">includes/core/rest/class-api-v1.php</Link> : <span class="phpdocumentor-element-found-in__line">66</span>
+</div>
+
+<div class="phpdocumentor-summary">
+Validate the API request
+</div>
+
+
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">validate_request</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span>
+
+
+
+
+
+
+<div className="text-bold">Return values</div>
+<span class="phpdocumentor-signature__response_type">mixed</span> &mdash; <span class="phpdocumentor-return-value__description"></span><div className="py-4"></div>
+
+</div>
+            </section>
+
+</div>

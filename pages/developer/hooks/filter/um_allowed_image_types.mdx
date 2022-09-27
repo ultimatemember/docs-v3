@@ -1,0 +1,62 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_allowed_image_types', array(
+				'png'   => 'PNG',
+				'jpeg'  => 'JPEG',
+				'jpg'   => 'JPG',
+				'gif'   => 'GIF'
+			) );
+```
+
+#### Description
+    <div class="description">
+        Extend allowed image types
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$types`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Image ext types</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="/developer/files/includes-core-class-files#source-view.543">ultimatemember/includes/core/class-files.php</Link> <Link href="/developer/files/includes-core-class-files#source-view.543">line 543</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_allowed_image_types', 'my_allowed_image_types', 10, 1 );
+ function my_allowed_image_types( $types ) {
+     // your code here
+     return $types;
+ }
+    ```
+    </Tab>
+</Tabs>

@@ -1,0 +1,38 @@
+
+    # {{ node.name }}
+
+    {% if node.parent %}
+    <span class="phpdocumentor-element__extends">
+        extends {{ node.parent|route('url') }}
+    </span>
+    {% endif %}
+
+    {% if usesPackages %}
+        <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs 2">
+                {% for breadcrumb in packages(node) %}
+                   
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if node.interfaces is not empty %}
+        <span class="phpdocumentor-element__implements">
+            implements
+            {% for interface in node.interfaces %}
+                <Link href="{{ interface.source }}">{{interface.source}}</Link>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+    {% endif %}
+
+    {% if node.usedTraits is not empty %}
+        <span class="phpdocumentor-element__extends">
+            Uses
+            {% for trait in node.usedTraits %}
+                  <Link href="{{ trait.source }}">{{trait.source}}</Link>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+    {% endif %}
+
