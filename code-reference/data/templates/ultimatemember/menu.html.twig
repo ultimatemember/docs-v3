@@ -1,5 +1,5 @@
 {% if isChild|default(false) == false %}
-<h2 class="phpdocumentor-sidebar__root-package">
+<h2 className="phpdocumentor-sidebar__root-package">
 {% endif %}
     <a href="{{ path(menuItem.path) }}">{{ menuItem.label }}</a>
 {% if isChild|default(false) == false %}
@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if menuItem.items is not empty %}
-<ul class="phpdocumentor-list">
+<ul className="phpdocumentor-list">
     {% for child in menuItem.items|default([]) %}
         <li>
             {{ include('menu.html.twig', {menuItem: child, isChild: true}, with_context = false) }}

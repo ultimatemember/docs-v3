@@ -30,12 +30,6 @@
       }
     }
   },
-  "topics": {
-    "theme": {
-      "pagination": false,
-      "breadcrumb": true
-    }
-  },
   "developer": {
     "title": "Developers"
   },

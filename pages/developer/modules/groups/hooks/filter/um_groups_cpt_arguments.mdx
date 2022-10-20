@@ -1,0 +1,57 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="filter"/>
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_groups_cpt_arguments', [
+			'labels' => [
+				'name'                  => __( 'Groups', 'um-groups' ),
+				'singular_name'         => __( 'Group', 'um-groups' ),
+				'menu_name'             => _x( 'Groups', 'Admin menu name', 'um-groups' ),
+				'add_new'               => __( 'Add New Group', 'um-groups' ),
+				'add_new_item'          => __( 'Add New Group', 'um-groups' ),
+				'edit'                  => __( 'Edit', 'um-groups' ),
+				'edit_item'             => __( 'Edit Group', 'um-groups' ),
+				'new_item'              => __( 'New Group', 'um-groups' ),
+				'view'                  => __( 'View Group', 'um-groups' ),
+				'view_item'             => __( 'View Group', 'um-groups' ),
+				'search_items'          => __( 'Search Groups', 'um-groups' ),
+				'not_found'             => __( 'No Groups found', 'um-groups' ),
+				'not_found_in_trash'    => __( 'No Groups found in trash', 'um-groups' ),
+				'parent'                => __( 'Parent Group', 'um-groups' ),
+				'featured_image'        => __( 'Group Image', 'um-groups' ),
+				'set_featured_image'    => __( 'Set group image', 'um-groups' ),
+				'remove_featured_image' => __( 'Remove group image', 'um-groups' ),
+				'use_featured_image'    => __( 'Use as group image', 'um-groups' ),
+			],
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'public'                => true,
+			'publicly_queryable'    => true,
+			'hierarchical'          => false,
+			'menu_position'         => null,
+			'menu_icon'             => 'dashicons-groups',
+			'supports'              => [ 'title', 'editor', 'thumbnail' ],
+			'taxonomies'            => [ 'um_group_categories', 'um_group_tags' ],
+			'rewrite'               => [ 'slug' => UM()->options()->get( 'groups_slug' ) ],
+			'capability_type'       => 'page',
+		] );
+```
+
+#### Description
+    <div class="description">
+     Nothing to display.
+    </div>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/groups/tree/2.3.0/includes/core/class--taxonomies.php#L46">groups/includes/core/class-groups-taxonomies.php</Link> <Link href="https://github.com/ultimatemember/groups/tree/2.3.0/includes/core/class--taxonomies.php#L46">line 46</Link>
+

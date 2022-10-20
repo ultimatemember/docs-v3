@@ -1,7 +1,7 @@
 <div className="phpdocumentor-element -method -{{ method.visibility }}{% if method.deprecated %}-deprecated{% endif %}{% if method.abstract %}-abstract{% endif %}{% if method.static %}-static{% endif %}{% if method.final %}-final{% endif %} ">
-<h4 class="phpdocumentor-element__name" id="method_{{ method.name }}">
+<h4 className="phpdocumentor-element__name" id="method_{{ method.name }}">
     `{{ method.name }}()`
-    <a href="#method_{{ method.name }}" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="#method_{{ method.name }}" className="headerlink"><i className="fas fa-link"></i></a>
 </h4>
 {{ include('components/element-found-in.html.twig', {'node': method}) }}
 {{ include('components/summary.html.twig', {'node': method}) }}

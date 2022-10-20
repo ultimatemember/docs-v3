@@ -2,19 +2,111 @@
   "overview": {
     "title": "Overview"
   },
+
+  "activity": {
+    "title": "Activity"
+  },
+
   "bbpress": {
     "title": "bbPress"
   },
+
+  "followers": {
+    "title": "Followers"
+  },
+
+  "forumwp": {
+    "title": "ForumpWP"
+  },
+
+  "friends": {
+    "title": "Friends"
+  },
+
+  "groups": {
+    "title": "Groups"
+  },
+  "jobboardwp": {
+    "title": "JobBoard WP"
+  },
+
+  "mailchimp": {
+    "title": "MailChimp"
+  },
+
+  "mycred": {
+    "title": "myCred"
+  },
+
+  "notices": {
+    "title": "Notices"
+  },
+
+  "private-content": {
+    "title": "Private Content"
+  },
+
+  "private-messages": {
+    "title": "Private Messages"
+  },
+
+  "profile-completeness": {
+    "title": "Profile Completeness"
+  },
+
+  "profile-tabs": {
+    "title": "Profile Tabs"
+  },
+
+  "real-time-notifications": {
+    "title": "Real-time Notifications"
+  },
+
   "social-login": {
     "title": "Social Login"
   },
+
+  "stripe": {
+    "title": "Stripe"
+  },
+
+  "unsplash": {
+    "title": "Unsplash"
+  },
+
+  "user-bookmarks": {
+    "title": "User Bookmarks"
+  },
+
+  "user-locations": {
+    "title": "User Locations"
+  },
+
+  "user-notes": {
+    "title": "User Notes"
+  },
+
+  "user-photos": {
+    "title": "User Photos"
+  },
+
+  "user-reviews": {
+    "title": "User Reviews"
+  },
+
+  "user-tags": {
+    "title": "User Tags"
+  },
+
   "verified-users": {
     "title": "Verified Users"
   },
-  "real-time-notification": {
-    "title": "Real-time Notifications"
+
+  "woocommerce": {
+    "title": "Woocommerce"
   },
-  "notices": {
-    "title": "Notices"
+
+  "zapier": {
+    "title": "Zapier"
   }
 }

@@ -1,0 +1,31 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="filter"/>
+
+### Filter Hook    
+    
+```
+apply_filters(
+			'um_notifications_ajax_get_new_count',
+			array(
+				'new_notifications_formatted' => esc_html( $new_notifications_formatted ),
+				'new_notifications'           => $new_notifications,
+			)
+		);
+```
+
+#### Description
+    <div class="description">
+     Nothing to display.
+    </div>
+
+#### Since
+<div class="description">
+1.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/notifications/tree/2.3.1/includes/core/class--main-api.php#L847">notifications/includes/core/class-notifications-main-api.php</Link> <Link href="https://github.com/ultimatemember/notifications/tree/2.3.1/includes/core/class--main-api.php#L847">line 847</Link>
+

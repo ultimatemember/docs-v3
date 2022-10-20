@@ -1,0 +1,42 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="action"/>
+
+### Action Hook    
+    
+```
+do_action( "um_after_account_{$tab_id}_button" );
+```
+
+#### Description
+    <div class="description">
+        Make some action after show account tab button
+ 
+    </div>
+
+
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/includes/core/class-account.php#L891">ultimatemember/includes/core/class-account.php</Link> <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/includes/core/class-account.php#L891">line 891</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_after_account_{$tab_id}_button', 'my_after_account_tab_button', 10 );
+ function my_after_account_tab_button() {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

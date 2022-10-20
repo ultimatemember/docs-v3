@@ -81,7 +81,7 @@ class HookDocsGenerator
         $url = str_replace('.php', '#source-view.' . $file['line'], $file['path']);
         $url = str_replace(['_', '/'], '-', $url);
         $url = str_replace('ultimatemember-', '/developer/files/', $url);
-
+        $url = str_replace("//","/", $url );
         return $url;
     }
 
@@ -93,7 +93,7 @@ class HookDocsGenerator
      */
     protected static function getFileLink(array $file): string
     {
-        return '<Link href="' . self::getFileURL($file) . '">' . basename($file['path']) . '</Link>';
+        return str_replace("/"," &#8250; ",$file['path'] );
     }
 
     /**
@@ -143,7 +143,7 @@ class HookDocsGenerator
      * @param array $files_to_scan Files to scan.
      * @return array
      */
-    protected static function getHooks(array $files_to_scan): array
+    public static function getHooks(array $files_to_scan): array
     {
         $scanned = [];
         $results = [];
@@ -195,7 +195,7 @@ class HookDocsGenerator
                                     $hook = str_replace('_FUNCTION_', strtoupper($current_function), $hook);
                                     $hook = str_replace('_CLASS_', strtoupper($current_class), $hook);
                                     $hook = str_replace('$this', strtoupper($current_class), $hook);
-                                    $hook = str_replace(array( '.', '{', '}', '"', "'", ' ', ')', '(' ), '', $hook);
+                                    $hook = str_replace(array( '.', ' ', ' ', '"', "'", ' ', ')', '(' ), '', $hook);
                                     $hook = preg_replace('/\/\/phpcs:(.*)(\n)/', '', $hook);
                                     $loop = 0;
 
@@ -205,7 +205,7 @@ class HookDocsGenerator
                                         $prev_hook = is_string($tokens[ $index + $loop - 1 ]) ? $tokens[ $index + $loop - 1 ] : $tokens[ $index + $loop - 1 ][1];
                                         $next_hook = is_string($tokens[ $index + $loop ]) ? $tokens[ $index + $loop ] : $tokens[ $index + $loop ][1];
 
-                                        if (in_array($next_hook, array( '.', '{', '}', '"', "'", ' ', ')', '(' ))) {
+                                        if (in_array($next_hook, array( '.', ' ', ' ', '"', "'", ' ', ')', '(' ))) {
                                             continue;
                                         }
 
@@ -220,31 +220,49 @@ class HookDocsGenerator
                                             $next_hook = strtoupper($next_hook);
                                         }
 
-                                       $next_hook = str_replace(array( '.', '{', '}', '"', "'", ' ', ')', '(' ), '', $next_hook);
+                                       $next_hook = str_replace(array( '.', ' ', ' ', '"', "'", ' ', ')', '(' ), '', $next_hook);
 
                                         $hook .= $next_hook;
                                     }
 
-                                    $hook = trim($hook);
+                                    $raw_hook_name = trim($hook);
+                                    $hook = md5( strtolower( $raw_hook_name ) );
 
                                     if (isset($hooks_found[ $hook ])) {
+
+                                        $raw_hook_name2 = $raw_hook_name;
+
                                         $hooks_found[ $hook ]['files'][] = ['path' => $current_file, 'line' => $token[2]];
                                        
                                         if ('action' === $token_type && isset( self::$found_action_hooks[ $hook ]  ) ) {
                                             self::$found_action_hooks[ $hook ]['files'][] = ['path' => $current_file, 'line' => $token[2]];
+                                            self::$found_action_hooks[ $hook ]['raw_hook_name2'] = $raw_hook_name2;
                                         }
 
                                         if ('filter' === $token_type && isset( self::$found_filter_hooks[ $hook ]  ) ) {
                                             self::$found_filter_hooks[ $hook ]['files'][] = ['path' => $current_file, 'line' => $token[2]];
+                                            self::$found_filter_hooks[ $hook ]['raw_hook_name2'] = $raw_hook_name2;
                                         }
 
                                     } else {
+
+                                        if( strpos( $raw_hook_name, "um_" ) <= -1 && strpos( $raw_hook_name, "the_" ) <= -1 ){
+                                            continue 2;
+                                        }
+                                        $raw_hook_name2 = $raw_hook_name;
+                                        $raw_hook_name = str_replace("$", "&dollar;", $raw_hook_name );
+                                        $raw_hook_name = str_replace("{", "&lcub;", $raw_hook_name );
+                                        $raw_hook_name = str_replace("}", "&rcub;", $raw_hook_name );
+
                                         $hooks_found[ $hook ] = [
-                                            'files'    => [['path' => $current_file, 'line' => $token[2],'url' => self::getFileURL(['path' => $current_file, 'line' => $token[2] ] ) ]],
+                                            'files'    => [['path' => $current_file, 'line' => $token[2] ]],
                                             'class'    => $current_class,
                                             'function' => $current_function,
                                             'type'     => $token_type,
-                                            'raw'      => $tokens,
+                                          //  'raw'      => implode(" ",$tokens),
+                                            'raw_hook_name' => $raw_hook_name,
+                                            'raw_hook_name2' => $raw_hook_name2,
+                                            'hash_name' =>  $hook,
                                         ];
 
                                         
@@ -264,19 +282,28 @@ class HookDocsGenerator
                 }
             }
 
-            foreach ($hooks_found as $hook => $details) {
-                if (!strstr($hook, 'um_') ) {
-                    // unset( $hooks_found[ $hook ] );
+            ksort($hooks_found);
+          
+            foreach( $hooks_found as $h => $d ) {
+                if( strpos( $d['raw_hook_name'], "um_" ) <= -1 ) {
+                    unset( $hooks_found[ $h ] );
+                    unset( self::$found_action_hooks[ $h ] );
+                    unset( self::$found_filter_hooks[ $h ] );
+                 
                 }
             }
-
-            ksort($hooks_found);
+      
+           
 
             if (!empty($hooks_found)) {
                 $results[ $heading ] = $hooks_found;
+               
             }
+           
         }
 
+     
+     
         return $results;
     }
 
@@ -296,57 +323,80 @@ class HookDocsGenerator
         
         ';
 
-        $output .= '<div class="hooks-reference">
+        $output .= '<div className="hooks-reference">
         
         # Filter Hooks
+        <div className="py-2 pt-0">
+        **Ultimate Member Hook** is a feature that allows you to manipulate a procedure without modifying the file on Ultimate Member core. A hook can be applied both to <Link href="/developer/hooks/actions">action (action hook)</Link> and <Link href="/developer/hooks/filters">filter (filter hook)</Link>.
+        </div>
         ';
         foreach ($hook_list as $heading => $hooks) {
-            $output .= '## ' . $heading .' ' ;
+
+            $arf = current( $hooks );
+
+            $output .= '<div className="um-single-page rounded-md border-solid border-um-100/10 p-2 mt-2 mb-4 border-2 contrast-more:border-neutral-400"> ';
+            $output .= '  
+             
+            ';
+            $output .= '## ' . strtolower( $arf ['raw_hook_name']  ) .' ' ;
 
             $output .= '  
-            
+              
             ';
-            $output .= '<div class="phpdocumentor-table-of-contents   ">
+            $output .= '<div className="phpdocumentor-table-of-contents   ">
             
             ';
             foreach ($hooks as $hook => $details) {
+
                 if( empty( $details['files'] ) ) continue;
 
               
-                $output .= ' <div className="py-5">
+                $output .= ' <div className="py-5 pt-0">
                
                 ';
                 $link_list = [];
                 $github_file_url = '';
                 if( isset( $details['files'] ) ){
-                    foreach ($details['files'] as $file) {
-                        $link_list[] = self::getFileLink($file);
+                    foreach ($details['files'] as $fl => $file) {
+                   
+                    $path = str_replace( "ultimatemember", "", $file['path'] );
+                    $the_path = str_replace("/"," &#8250; ", $file['path'] );
+                    $the_URI = str_replace("//","/", $path . '#L' . $file['line'] );
+                    global $argv;
+                    $version = $argv[1];
+                    $github_file_url = "https://github.com/ultimatemember/ultimatemember/tree/{$version}/"  . $the_URI;
+                    $github_file_url = str_replace( "{$version}//", "{$version}/", $github_file_url );
+
+                    $um_hooks_comment = new UM_Hooks_Comment( $file['path'], 'filter', $details, false, false, $arf['raw_hook_name2'] );
+                    $uri = $um_hooks_comment->getSlug(  $arf['raw_hook_name2'] );
+                    $d = $um_hooks_comment->get_hook_data( $arf['hash_name'] );
+                    $d['uri'] = $uri;
+                        
+                    if( isset( $d['since'] )){
+                        $since = $d['since'];
                     }
 
-                    $file = current( $details['files'] );
-                    $path = str_replace( "ultimatemember", "", $file['path'] );
-                    $github_file_url = "https://github.com/ultimatemember/ultimatemember/blob/master" . $path . '#L' . $file['line'];
-    
-                }
-
-               
-                if (! empty( $link_list ) ){
-
-                    $file = current( $details['files'] );
-                    $um_hooks_comment = new UM_Hooks_Comment( $file['path'], 'filter', $details['files']  );
-                    $d = $um_hooks_comment->get_hook_data( $heading );
-             
-                    $since = '';//$d[$heading]['since'];
-                    $desc  = '';//$d[$heading]['desc'];
+                    if( isset( $d['desc'] ) ){
+                        $desc  = $d['desc'];
+                    }
 
                     $output .= '
-                <div> `' . $heading  . '`</div>
-                <span class="text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">since ' .$since .'</span><span class=" text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">in:&nbsp;' . implode(', ', $link_list) . '</span>
-                <span className="float-right text-sm text-gray-500"><Link href="' . $github_file_url . '">View on Github</Link></span>
-                ';
-                }
+                    
+                <span className="text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">since ' . $since . '</span><span className=" text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">in:&nbsp;' . $the_path . '</span>
+                <Link href="' . $github_file_url . '" ><a  className="py-1 px-2 border rounded text-xs float-right mt-2">View on Github</a></Link>
+                <Link href="/developer/hooks/filter/' . $d['uri'] . '"><a class="py-1 px-2 border rounded text-xs float-right mt-2 mr-3">View Details</a></Link>
+                <div className="mt-1">
+                ' . $desc  . '
+                </div>
+               
+               ';                   
+                }// Endforeach
+    
+                } // end if
+
                 $output .= ' 
-                
+                    </div>
+
                 </div>
 
                 ';
@@ -359,7 +409,8 @@ class HookDocsGenerator
         }
 
         $output .= '
-        
+          
+
         </div>';
 
         return $output;
@@ -373,8 +424,10 @@ class HookDocsGenerator
      * @param array $files_to_scan List of files to scan.
      * @param string
      */
-    protected static function getDelimitedListOutputActionHooks(array $hook_list, array $files_to_scan): string
+    public static function getDelimitedListOutputActionHooks(array $hook_list, array $files_to_scan): string
     {
+
+       
         $output = '';
 
         // Import nextJS link component
@@ -382,53 +435,81 @@ class HookDocsGenerator
         
         ';
 
-        $output .= '<div class="hooks-reference">
+        $output .= '<div className="hooks-reference">
         
         # Action Hooks
+        <div className="py-2 pt-0">
+        **Ultimate Member Hook** is a feature that allows you to manipulate a procedure without modifying the file on Ultimate Member core. A hook can be applied both to <Link href="/developer/hooks/actions">action (action hook)</Link> and <Link href="/developer/hooks/filters">filter (filter hook)</Link>.
+        </div>
         ';
         foreach ($hook_list as $heading => $hooks) {
-            $output .= '## ' . $heading .' ' ;
+
+            $output .= '<div className="um-single-page rounded-md border-solid border-um-100/10 p-2 mt-2 mb-4 border-2 contrast-more:border-neutral-400"> ';
             $output .= '  
-            
+             
             ';
-            $output .= '<div class="phpdocumentor-table-of-contents  ">
+
+            $arf = current( $hooks );
+
+            $output .= '## ' . strtolower( $arf['raw_hook_name']  ) .' ' ;
+
+            $output .= '  
+             
+            ';
+            $output .= '<div className="phpdocumentor-table-of-contents  ">
             
             ';
             foreach ($hooks as $hook => $details) {
 
                 if( empty( $details['files'] ) ) continue;
                
-                $output .= ' <div className="py-5">
+                $output .= ' <div className="py-5 pt-0">
                 
                 ';
+
                 $link_list = [];
                 $github_file_url = '';
                 if( isset( $details['files'] ) ){
-                    foreach ($details['files'] as $file) {
-                        $link_list[] = self::getFileLink($file);
+                    foreach ($details['files'] as $fl => $file) {
+                   
+                    $path = str_replace( "ultimatemember", "", $file['path'] );
+                    $the_path = str_replace("/"," &#8250; ", $file['path'] );
+                    $the_URI = str_replace("//","/", $path . '#L' . $file['line'] );
+                    global $argv;
+                    $version = $argv[1];
+                    $github_file_url = "https://github.com/ultimatemember/ultimatemember/tree/{$version}/"  . $the_URI;
+                    $github_file_url = str_replace( "{$version}//", "{$version}/", $github_file_url );
+
+                    $um_hooks_comment = new UM_Hooks_Comment( $file['path'], 'action', $details, false, false,  $arf['raw_hook_name2'], $hooks );
+                    $d = $um_hooks_comment->get_hook_data( $arf['hash_name'] );
+                    $uri = $um_hooks_comment->getSlug(  $arf['raw_hook_name2'] );
+                    $d['uri'] = $uri;
+
+                    if( isset( $d['since'] )){
+                        $since = $d['since'];
                     }
 
-                    $file = current( $details['files'] );
-                    $path = str_replace( "ultimatemember", "", $file['path'] );
-                    $github_file_url = "https://github.com/ultimatemember/ultimatemember/blob/master" . $path . '#L' . $file['line'];
-    
-                }
+                    if( isset( $d['desc'] ) ){
+                        $desc  = $d['desc'];
+                    }
 
-               
-                if (! empty( $link_list ) ){
-
-                    $file = current( $details['files'] );
-                    $um_hooks_comment = new UM_Hooks_Comment( $file['path'], 'action', $details['files'] );
-                    $d = $um_hooks_comment->get_hooks();
-             
                     $output .= '
-                
-                <span class="text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">since 2.0</span><span class=" text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">in:&nbsp;' . implode(', ', $link_list) . '</span>
-                <span className="float-right text-sm text-gray-500"><Link href="' . $github_file_url . '">View on Github</Link></span>
-                ';
-                }
+                    
+                <span className="text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">since ' . $since . '</span><span className=" text-xs font-medium inline-flex items-center px-2.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">in:&nbsp;' . $the_path . '</span>
+                <Link href="' . $github_file_url . '" ><a  className="py-1 px-2 border rounded text-xs float-right mt-2">View on Github</a></Link>
+                <Link href="/developer/hooks/action/' . $d['uri'] . '"><a class="py-1 px-2 border rounded text-xs float-right mt-2 mr-3">View Details</a></Link>
+               <div className="mt-1">
+                ' . $desc  . '
+                </div>
+               
+               ';                   
+                    }// Endforeach
+        
+                } // end if
+
                 $output .= ' 
-                
+                    </div>
+
                 </div>
 
                 ';
@@ -441,8 +522,10 @@ class HookDocsGenerator
         }
 
         $output .= '
-        
+           
+
         </div>';
+
 
         return $output;
     }
@@ -522,8 +605,10 @@ class HookDocsGenerator
             file_put_contents(self::SEARCH_INDEX_PATH, $template);
         }
 
-        echo "Hook docs generated :)\n";
+        echo "Ultimate Member Docs were generated succesfully :)\n";
     }
 }
 
-HookDocsGenerator::applyChanges();
+if( ! defined("UM_DOC_GENERATOR_DEBUG") ){
+    HookDocsGenerator::applyChanges();
+}

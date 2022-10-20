@@ -1,10 +1,10 @@
-<div class="phpdocumentor-element -property -{{ property.visibility }}{% if property.static %}-static{% endif %}{% if property.deprecated %}-deprecated{% endif %}{% if property.writeOnly %}-write-only{% endif %}{% if property.readOnly %}-read-only{% endif %}">
-<h4 class="phpdocumentor-element__name" id="property_{{ property.name }}">
+<div className="phpdocumentor-element -property -{{ property.visibility }}{% if property.static %}-static{% endif %}{% if property.deprecated %}-deprecated{% endif %}{% if property.writeOnly %}-write-only{% endif %}{% if property.readOnly %}-read-only{% endif %}">
+<h4 className="phpdocumentor-element__name" id="property_{{ property.name }}">
     `{{property.name }}`
-    <a href="#property_{{ property.name }}" class="headerlink"><i class="fas fa-link"></i></a>
-    <span class="phpdocumentor-element__modifiers">
-        {% if property.writeOnly %}<small class="phpdocumentor-element__modifier">write-only</small>{% endif %}
-        {% if property.readOnly %}<small class="phpdocumentor-element__modifier">read-only</small>{% endif %}
+    <a href="#property_{{ property.name }}" className="headerlink"><i className="fas fa-link"></i></a>
+    <span className="phpdocumentor-element__modifiers">
+        {% if property.writeOnly %}<small className="phpdocumentor-element__modifier">write-only</small>{% endif %}
+        {% if property.readOnly %}<small className="phpdocumentor-element__modifier">read-only</small>{% endif %}
     </span>
 </h4>
 {{ include('components/element-found-in.html.twig', {'node': property}) }}

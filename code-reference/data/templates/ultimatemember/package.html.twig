@@ -3,7 +3,7 @@
 {% block content %}
     {% include 'components/breadcrumbs.html.twig' %}
 
-    <div class="phpdocumentor-element -package">
+    <div className="phpdocumentor-element -package">
         {{ include('components/namespace-title.html.twig') }}
         {{ include('components/table-of-contents.html.twig', {'packages': node.children}) }}
         {{ include('components/constants.html.twig') }}

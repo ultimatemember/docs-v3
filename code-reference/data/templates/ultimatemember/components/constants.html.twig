@@ -1,7 +1,7 @@
 {% set constants = constants(node)|sortByVisibility %}
 
 {% if constants is not empty %}
-    <section class="phpdocumentor-constants">
+    <section className="phpdocumentor-constants">
         ### Constants
         {% for constant in constants %}
             {% include 'components/constant.html.twig' %}

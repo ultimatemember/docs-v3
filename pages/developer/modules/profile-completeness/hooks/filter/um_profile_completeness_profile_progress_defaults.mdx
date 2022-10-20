@@ -1,0 +1,37 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="filter"/>
+
+### Filter Hook    
+    
+```
+apply_filters( 'um_profile_completeness_profile_progress_defaults', [
+			'progress'                      => 0,
+			'req_progress'                  => 100,
+			'steps'                         => [],
+			'completed'                     => [],
+			'prevent_browse'                => 0,
+			'prevent_browse_exclude_pages'  => '',
+			'prevent_browse_redirect'       => 0,
+			'prevent_browse_redirect_url'   => '',
+			'prevent_profileview'           => 0,
+			'prevent_comment'               => 0,
+			'bar'                           => $bar,
+		], $user_id );
+```
+
+#### Description
+    <div class="description">
+     Nothing to display.
+    </div>
+
+#### Since
+<div class="description">
+1.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/profile-completeness/tree/2.2.3/includes/core/class--shortcode.php#L264">profile-completeness/includes/core/class-profile-completeness-shortcode.php</Link> <Link href="https://github.com/ultimatemember/profile-completeness/tree/2.2.3/includes/core/class--shortcode.php#L264">line 264</Link>
+

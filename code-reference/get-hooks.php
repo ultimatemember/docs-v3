@@ -8,14 +8,18 @@ class UM_Hooks_Comment{
 
     protected static $arr_files  = [];
 
+    protected static $total_hooks = 0;
+
+    public $filename = '';
+
     /**
      * Build Path
      */
     protected const BUILD_HOOKS_TEMPLATE_PATH = 'build/hooks/';
 
-    function __construct( $file, $token_type = null, $files = [], $debug = false ){
-
-        if( ! file_exists( $file ) ) echo "file not found"; 
+    function __construct( $file, $token_type = 'unknown', $files = [], $debug = false, $override_hook_name = false, $raw_hook_name2 = '', $arr_hooks_scanned = array() ){
+        
+        if( ! file_exists( $file ) ) { echo "file not found"; return; }
 
         $tokens             = token_get_all(file_get_contents( $file ));
         $count              = count( $tokens );
@@ -25,7 +29,19 @@ class UM_Hooks_Comment{
         $found_hooks        = array();
         $total_actions      = 0;
         $total_filters      = 0;
-      
+        
+         
+        $hname_raw = md5( $raw_hook_name2 );
+
+        self::$hooks[ $hname_raw ] = array(
+            'title' => $raw_hook_name2,
+            'type' => $token_type,
+            'hash_name' => $hname_raw,
+            'hook'  => $raw_hook_name2,
+            'raw_hook_name' => $raw_hook_name2,
+        );
+        self::$arr_files[ $hname_raw ] = $files['files'];
+        $this->populate( $hname_raw );
 
         foreach ($tokens as $index => $token) {
 
@@ -33,8 +49,9 @@ class UM_Hooks_Comment{
                 if ('do_action' === $token[1]) {
                     $next = 0;
                     $hooker = [];
-                
+
                     $chain = true;
+                    $final_index = 0;
                     while( $chain ){
                         $next++;
                         if( isset( $tokens[ $index + $next ] ) ){
@@ -55,51 +72,107 @@ class UM_Hooks_Comment{
                             }
 
                             if( ! is_array( $h ) && strpos( $h, ";" ) > -1 ){
+                               
+                                $final_index = $index;
                                 $hname = implode("", $hooker );
+                               
                                 $hname = str_replace(['(',')',';'], '', $hname );
                                 $hname = explode( ",", $hname )[0];
                                 $hname = str_replace(['"','\''], '', $hname );
                                 $hname = trim( $hname );
-                              
-                                self::$hooks[ $hname ] = array();
-                                self::$hooks[ $hname ]['hook'] = "do_action" . implode("", $hooker );
-                                self::$hooks[ $hname ]['type'] = 'action';
-                                self::$arr_files[ $hname ][ $file . '.' . $line ] = array( 'line' => $line, 'path' => $file, 'url' => self::getFileURL( [ 'line' => $line, 'path' => $file ] ) );
+                                
+                                $hname_raw = md5( $hname );
+
+                                //self::$hooks[ $hname_raw ] = array();
+                                self::$hooks[ $hname_raw ]['raw_hook_name'] = $hname;
+                                self::$hooks[ $hname_raw ]['hook'] = "do_action" . implode("", $hooker );
+                                self::$hooks[ $hname_raw ]['type'] = 'action';
+                                self::$arr_files[ $hname_raw ][ $file . '.' . $line ] = array( 'line' => $line, 'path' => $file );
                                 $chain = false;
+
+                                
                             }
+
+                           
                         }
                     }
                     $total_actions++;
 
                     // Get Comment Doc
                     $doloop = true;
+                    $halt_once = false;
                     $prev = 0;
                     while( $doloop ){
                         $prev++;
-                        if( isset( $tokens[ $index - $prev ] ) ){
-                            $h = $tokens[ $index - $prev ];
-                            
+                        if( isset( $tokens[ $final_index - $prev ] ) ){
+                            $h = $tokens[ $final_index - $prev ];
+                            $h0 = '';
                             if( is_array( $h ) ){
                                 $h = $h[1];
+                                $h0 = $h[0];
                             }
 
-                            if( strpos( $h, "UM hook" ) > -1 ){
+                            if( strpos( $h, "UM hook" ) > -1 || strpos( $h0, "UM hook" ) > -1 ){
                                 $doloop = false;
-                                $current_line = $index - $prev;
-                                preg_match("/\* @title.*\n/is", $h, $matches);
-                                self::$hooks[ $hname ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                                 preg_match("/\* @title.*\n/is", $h, $matches);
+                               
+                                self::$hooks[ $hname_raw ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                               
+                              
                             }
 
-                            if( $prev >=20 ) $doloop = false;
+                           if( $prev > 20 ) {
+                               $doloop = false;
+                           }
                             
 
                         }
                     } // while loop
-                
+
+                    // Retry looking for Code Comments
+                    $doloop = true;
+                    $prev = 0;
+                    $halt_once = false;
+                    if( empty( self::$hooks[ $hname_raw ]['comment'] ) ){
+                        while( $doloop ){
+                        
+                            if( isset( $tokens[ $final_index - $prev ] ) ){
+                                $h = $tokens[ $final_index - $prev ];
+                                $h0 = '';
+                                if( is_array( $h ) ){
+                                    $h = $h[1];
+                                    $h0 = $h[0];
+                                }
+                            
+                                if( ! $halt_once && ( strpos( $h, "*/" ) <= -1 || strpos( $h0, "*/" ) <= -1 || strpos( $h, ";" ) > -1 ||  strpos( $h, "}" ) > -1 ) ){
+                                    $halt_once = true;
+                                    $doloop = false;
+                                }
+
+                                if( strpos( $h, "UM hook" ) > -1 || strpos( $h0, "UM hook" ) > -1 ){
+                                    $doloop = false;
+                                    preg_match("/\* @title.*\n/is", $h, $matches);
+                                
+                                    self::$hooks[ $hname_raw ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                                
+                                }
+
+                            }
+                            $prev++;
+                        } // while loop
+
+                    }
+
+                    $this->populate( $hname_raw );
+                    
+                   
                 } elseif ('apply_filters' === $token[1]) {
                     $next_filter = 0;
                     $hooker = [];
                     $chain = true;
+                    $final_index = 0;
+
+                
                     while( $chain ){
                         $next_filter++;
                         if( isset( $tokens[ $index + $next_filter ] ) ){
@@ -121,16 +194,23 @@ class UM_Hooks_Comment{
                             
                           
                             if( ! is_array( $h ) && strpos( $h, ";" ) > -1 ){
+
+                                $final_index = $index;
+                                
                                 $hname = implode("", $hooker );
+                               
                                 $hname = str_replace(['(',')',';'], '', $hname );
                                 $hname = explode( ",", $hname )[0];
                                 $hname = str_replace(['"','\''], '', $hname );
                                 $hname = trim( $hname );
-                               
-                                self::$hooks[ $hname ] = array();
-                                self::$hooks[ $hname ]['hook'] = "apply_filters" . implode("", $hooker );
-                                self::$hooks[ $hname ]['type'] = 'filter';
-                                self::$arr_files[ $hname ][ $file . '.' . $line ] = array( 'line' => $line, 'path' => $file, 'url' => self::getFileURL( [ 'line' => $line, 'path' => $file ] ) );
+
+                                $hname_raw = md5( $hname );
+
+                                //self::$hooks[ $hname_raw ] = array();
+                                self::$hooks[ $hname_raw ]['raw_hook_name'] = $hname;
+                                self::$hooks[ $hname_raw ]['hook'] = "apply_filters" . implode("", $hooker );
+                                self::$hooks[ $hname_raw ]['type'] = 'filter';
+                                self::$arr_files[ $hname_raw ][ $file . '.' . $line ] = array( 'line' => $line, 'path' => $file );
                                 $chain = false;
                                
 
@@ -144,89 +224,154 @@ class UM_Hooks_Comment{
                     // Get Comment Doc
                     $doloop = true;
                     $prev = 0;
+                    $halt_once = false;
                     while( $doloop ){
-                        $prev++;
-                        if( isset( $tokens[ $index - $prev ] ) ){
-                            $h = $tokens[ $index - $prev ];
-                            
+                       
+                        if( isset( $tokens[ $final_index - $prev ] ) ){
+                            $h = $tokens[ $final_index - $prev ];
+                            $h0 = '';
                             if( is_array( $h ) ){
                                 $h = $h[1];
+                                $h0 = $h[0];
                             }
-
-                            if( strpos( $h, "UM hook" ) > -1 ){
+                           
+                            if( strpos( $h, "UM hook" ) > -1 || strpos( $h0, "UM hook" ) > -1 ){
                                 $doloop = false;
-                                $current_line = $index - $prev;
-                                preg_match("/\* @title.*\n/is", $h, $matches);
+                                 preg_match("/\* @title.*\n/is", $h, $matches);
                                
-                                self::$hooks[ $hname ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                                self::$hooks[ $hname_raw ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                              
                             }
 
-                            if( $prev >=20 ) $doloop = false;
-                            
+                            if( $prev > 20 ) $doloop = false;
 
                         }
+                        $prev++;
                     } // while loop
+
+                    // Retry looking for Code Comments
+                    $doloop = true;
+                    $prev = 0;
+                    $halt_once = false;
+                    if( empty( self::$hooks[ $hname_raw ]['comment'] ) ){
+                        while( $doloop ){
+                        
+                            if( isset( $tokens[ $final_index - $prev ] ) ){
+                                $h = $tokens[ $final_index - $prev ];
+                                $h0 = '';
+                                if( is_array( $h ) ){
+                                    $h = $h[1];
+                                    $h0 = $h[0];
+                                }
+                            
+                                if( ! $halt_once && ( strpos( $h, "*/" ) <= -1 || strpos( $h0, "*/" ) <= -1 || strpos( $h, ";" ) > -1 ||  strpos( $h, "}" ) > -1 ) ){
+                                    $halt_once = true;
+                                    $doloop = false;
+                                }
+
+                                if( strpos( $h, "UM hook" ) > -1 || strpos( $h0, "UM hook" ) > -1 ){
+                                    $doloop = false;
+                                    preg_match("/\* @title.*\n/is", $h, $matches);
+                                
+                                    self::$hooks[ $hname_raw ]['comment'] = preg_replace('/\t+/', '', $matches[0]);
+                                
+                                }
+
+                            }
+                            $prev++;
+                        } // while loop
+                    }
+
+                    $this->populate( $hname_raw );
+                      
+                   
                  
                 }//
             }
         }
-
-       
-       
-        foreach( self::$hooks as $hook => $h_data ){
-
-
-                $type = 'unknown';
-                if( isset( self::$hooks[ $hook ]['type'] ) ){
-                    $type = self::$hooks[ $hook ]['type'];
-                } 
-
-                $hook_name = 'unknown';
-                if( isset( self::$hooks[ $hook ]['hook'] )  ){
-                    $hook_name = self::$hooks[ $hook ]['hook'];
-                }
-
-                $comment = '';
-                if( isset( self::$hooks[ $hook ]['comment'] )  ){
-                    $comment = self::$hooks[ $hook ]['comment'];
-                    self::$comment = $comment;
-                }
-
-                $line = '';
-                if( isset( self::$hooks[ $hook ]['line'] )  ){
-                    $line = self::$hooks[ $hook ]['line'];
-                }
-
-                self::$hooks[ $hook ] = array(
-                    'title' => $hook,
-                    'vars'  => $this->get_vars(),
-                    'since' => $this->get_since(),
-                    'usage' => $this->get_usage(),
-                    'desc'  => $this->get_desc(),
-                    'php_examples' => $this->get_php_example(),
-                    'js_examples' => $this->get_js_example(),
-                    'files'  => self::$arr_files[ $hook ],
-                    'type'   => $type,
-                    'hook'   => $hook_name,
-                    'has_comment' => (bool)$comment,
-                    'comment' => $comment,
-                
-                );
-              
-            if( $debug === false ){
-                if( self::$hooks[ $hook ]['has_comment'] == true ){
-                    $this->mdx( self::$hooks[ $hook ] );
-                }else{
-                   $this->mdx_blank( self::$hooks[ $hook ] );
+        self::$total_hooks++;
+     
+        if( self::$total_hooks >= count( $arr_hooks_scanned ) ){
+           
+            foreach( self::$hooks as $hook => $h_data ){
+             
+                if( $debug === false && in_array( $h_data['type'], ['filter','action'] )  ){
+                    if( $h_data ['has_comment'] == true && !empty( $h_data ['comment'] ) ){
+                        $this->mdx( $h_data  );
+                        
+                    }else{
+                       
+                        $this->mdx_blank( $h_data );
+                    
+                    }
                 }
             }
         }
-        
+
+            
        
 
         return self::$hooks;
         
 
+    }
+
+    public function populate( $hname_raw ){
+
+        $type = 'unknown';
+        if( isset( self::$hooks[ $hname_raw ]['type'] ) ){
+            $type = self::$hooks[ $hname_raw ]['type'];
+        } 
+
+        $hook_name = 'unknown';
+        if( isset( self::$hooks[ $hname_raw ]['hook'] )  ){
+            $hook_name = self::$hooks[ $hname_raw ]['hook'];
+        }
+
+        $comment = '';
+        if( isset( self::$hooks[ $hname_raw ]['comment'] )  && ! empty( self::$hooks[ $hname_raw ]['comment'] ) ){
+            $comment = self::$hooks[ $hname_raw ]['comment'];
+            self::$comment = $comment;
+        }
+
+        $line = '';
+        if( isset( self::$hooks[ $hname_raw ]['line'] )  ){
+            $line = self::$hooks[ $hname_raw ]['line'];
+        }
+
+        $title = '';
+
+        if( $this->get_title() ){
+            $title = $this->get_title();
+        }
+
+        if( empty( $title ) && isset( self::$hooks[ $hname_raw ]['raw_hook_name'] )  ){
+            $title = self::$hooks[ $hname_raw ]['raw_hook_name'];
+        }
+
+        if( empty( $title ) ){
+            $title = self::$hooks[ $hname_raw ]['hash_name'];
+        }
+
+
+        self::$hooks[ $hname_raw ] = array(
+            'title' => $title,
+            'vars'  => $this->get_vars(),
+            'since' => $this->get_since(),
+            'usage' => $this->get_usage(),
+            'desc'  => $this->get_desc(),
+            'php_examples' => $this->get_php_example(),
+            'js_examples' => $this->get_js_example(),
+            'files'  => self::$arr_files[ $hname_raw ],
+            'type'   => $type,
+            'hook'   => $hook_name,
+            'has_comment' => (bool)$comment,
+            'comment' => $comment,
+            'hash_name' => $hname_raw,
+            'raw_hook_name' => self::$hooks[ $hname_raw ]['raw_hook_name'],
+        
+        );
+   
     }
 
     public function get_hooks(){
@@ -234,8 +379,17 @@ class UM_Hooks_Comment{
     }
 
     public function get_hook_data( $hook ){
+        if( ! isset( self::$hooks[ $hook ] ) || (isset( self::$hooks[ $hook ]['has_comment'] ) && self::$hooks[ $hook ]['has_comment'] == false ) ){ 
+            return array(
+                'since' => '1.0',
+                'desc' => 'No descriptions available',
+                'filename' => $this->filename,
+            );
+        }
+        
+        self::$hooks[ $hook ]['filename'] = $this->filename;
 
-        return '';//self::$hooks[ $hook ];
+        return self::$hooks[ $hook ];
     }
 
     public function get_title(){
@@ -401,11 +555,24 @@ class UM_Hooks_Comment{
         }
     
         $the_files = array();
-        if( isset( $hook_data['files'] ) ){
+        if( isset( $hook_data['files'] )  ){
+            $arr_files_added = array();
             foreach(  $hook_data['files'] as $kf => $ff ){
-                $file_source = '<Link href="' . $ff['url'] . '">' . $ff['path'] . '</Link>';
-                $hook_file_line = '<Link href="' . $ff['url'] . '">line ' . $ff['line'] . '</Link>';
-                $the_files[ ] = '  - '.$file_source .' '. $hook_file_line;
+
+                if( in_array( $ff['path'], $arr_files_added ) ) continue;
+
+                $arr_files_added[ ] = $ff['path'];
+                $path = str_replace( "ultimatemember", "", $ff['path'] );
+                $the_path = str_replace("//","/", $path . '#L' . $ff['line'] );
+                
+                global $argv;
+                $version = $argv[1];
+                $github_file_url = "https://github.com/ultimatemember/ultimatemember/tree/{$version}{$the_path}";
+                $github_file_url = str_replace( "{$version}//", "{$version}/", $github_file_url );
+                   
+                $file_source = '<Link href="' . $github_file_url . '">' . $ff['path'] . '</Link>';
+                $hook_file_line = '<Link href="' . $github_file_url . '">line ' . $ff['line'] . '</Link>';
+                $the_files[ ] = '  - ' . $file_source . ' ' . $hook_file_line;
             }
         }
 
@@ -461,6 +628,9 @@ $code_snippets = '
 
 $output = 'import { Tabs, Tab, Callout } from \'nextra-theme-docs\' 
 import Link from \'next/link\'
+import UMBreadCrumb from \'../../../../components/UMBreadCrumb\'
+
+<UMBreadCrumb type="'.$hook_data['type'].'"/>
 
 ### ' . ucfirst($hook_data['type'] ) . ' Hook    
     
@@ -490,30 +660,42 @@ import Link from \'next/link\'
     if( ! file_exists( self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'] ) ){
         mkdir( self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'], 0777, true);
     }
-    $filename = trim( strtolower( $hook_data['title'] ) );
-    $filename = str_replace("{\$", "-var-", $filename);
-    $filename = str_replace("\$", "-var-", $filename);
-    $filename = str_replace(["[","]"], "-", $filename);
-    $filename = str_replace("}", "-", $filename);
-    $filename = str_replace(" ", "-", $filename);
-    $filename = str_replace(">", "", $filename);
-    $filename = rtrim( $filename, "-" );
-        
+   
+    $filename = $this->getSlug( $hook_data['raw_hook_name'] );
+    
+    if( empty( $filename ) ) return;
+
     $file = fopen(self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'] ."/" . $filename .".html", "w") or die("Unable to open file!");
     fwrite($file, $output );
     fclose($file);
 
+    return $filename;
+
     }
 
 
-    public function mdx_blank( $hook_data ){
+    public function mdx_blank( $hook_data, $raw_hook_name2 = '' ){
         $file_source = '';
-        $the_files =   array();
+        $the_files = array();
         if( isset( $hook_data['files'] ) ){
+            $arr_files_added = array();
             foreach(  $hook_data['files'] as $kf => $ff ){
-                $file_source = '<Link href="' . $ff['url'] . '">' . $ff['path'] . '</Link>';
-                $hook_file_line = '<Link href="' . $ff['url'] . '">line ' . $ff['line'] . '</Link>';
-                $the_files[ ] = '  - '.$file_source .' '. $hook_file_line;
+                
+                if( in_array( $ff['path'], $arr_files_added ) ) continue;
+
+                $arr_files_added[ ] = $ff['path'];
+
+                $path = str_replace( "ultimatemember", "", $ff['path'] );
+                $the_path = str_replace("//","/", $path . '#L' . $ff['line'] );
+                
+                global $argv;
+                $version = $argv[1];
+                $github_file_url = "https://github.com/ultimatemember/ultimatemember/tree/{$version}{$the_path}";
+                $github_file_url = str_replace( "{$version}//", "{$version}/", $github_file_url );
+                   
+                $file_source = '<Link href="' . $github_file_url . '">' . $ff['path'] . '</Link>';
+                $hook_file_line = '<Link href="' . $github_file_url . '">line ' . $ff['line'] . '</Link>';
+                $the_files[ ] = '  - ' .  $file_source . ' ' . $hook_file_line;
             }
         }
 $since = '1.0';
@@ -523,6 +705,9 @@ if( !empty( $hook_data['since'] ) ){
 
 $output = 'import { Tabs, Tab, Callout } from \'nextra-theme-docs\' 
 import Link from \'next/link\'
+import UMBreadCrumb from \'../../../../components/UMBreadCrumb\'
+
+<UMBreadCrumb type="'.$hook_data['type'].'"/>
 
 ### ' . ucfirst($hook_data['type'] ) . ' Hook    
     
@@ -532,7 +717,7 @@ import Link from \'next/link\'
 
 #### Description
     <div class="description">
-     Not available.
+     Nothing to display.
     </div>
 
 #### Since
@@ -550,18 +735,19 @@ import Link from \'next/link\'
     if( ! file_exists( self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'] ) ){
         mkdir( self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'], 0777, true);
     }
-    $filename = trim( strtolower( $hook_data['title'] ) );
-    $filename = str_replace("{\$", "-var-", $filename);
-    $filename = str_replace("\$", "-var-", $filename);
-    $filename = str_replace(["[","]"], "-", $filename);
-    $filename = str_replace("}", "-", $filename);
-    $filename = str_replace(" ", "-", $filename);
-    $filename = str_replace(">", "", $filename);
-    $filename = rtrim( $filename, "-" );
-        
+
+    $filename = $this->getSlug( $hook_data['raw_hook_name'] );
+   
+    if( file_exists( self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'] ."/" . $filename .".html" ) ) return;
+   
+    if( empty( $filename ) ) return;
+
     $file = fopen(self::BUILD_HOOKS_TEMPLATE_PATH . $hook_data['type'] ."/" . $filename .".html", "w") or die("Unable to open file!");
     fwrite($file, $output );
     fclose($file);
+    
+    
+    return $filename;
 
     }
 
@@ -577,8 +763,32 @@ import Link from \'next/link\'
         $url = str_replace('.php', '#source-view.' . $file['line'], $file['path']);
         $url = str_replace(['_', '/'], '-', $url);
         $url = str_replace('ultimatemember-', '/developer/files/', $url);
+        $url = str_replace('//', '/', $url);
 
         return $url;
+    }
+
+    /**
+     * Get the Slug 
+     */
+    public function getSlug( $title ){
+        
+        $filename = trim( strtolower( $title ) );
+        $filename = str_replace("]}", "__", $filename);
+        $filename = str_replace("[\$", "__", $filename);
+        $filename = str_replace("{\$", "", $filename);
+        $filename = str_replace("\$", "", $filename);
+        $filename = str_replace(["[","]"], "_", $filename);
+        $filename = str_replace("}", "", $filename);
+        $filename = str_replace(" ", "_", $filename);
+        $filename = str_replace(">", "", $filename);
+        $filename = str_replace("__.", "", $filename);
+        $filename = str_replace("___", "__", $filename);
+        $filename = rtrim( $filename, "-" );
+
+        $this->filename = $filename;
+
+        return $filename;
     }
 
 } // EndClass

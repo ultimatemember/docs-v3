@@ -23,12 +23,12 @@ export default function getGitEditUrl() {
             'https://github.com/' + repo.owner + '/docs-v3/' + path + '.mdx'
           }
         >
-          <button class="bg-transparent font-semibold  py-2 px-4 border hover:border-um rounded my-3">
+          <a className="bg-transparent font-semibold  py-2 px-4 border hover:border-um rounded my-3 mt-25 inline-block">
             <IconContext.Provider value={{ className: 'um-icons-inline' }}>
               <AiOutlinePullRequest />
             </IconContext.Provider>
             Make a contribution
-          </button>
+          </a>
         </Link>
       )
   }

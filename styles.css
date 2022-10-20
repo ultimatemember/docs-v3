@@ -91,3 +91,20 @@ border: 1px solid #d8c0ec;
     margin-right: .5rem !important;
  }
 
+/**
+ * Single page
+ */
+ .um-single-page h2{
+    margin-top: 0px !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 5px !important;
+ }
+ .um-single-page {
+   border: 1px solid #2b2a2b !important
+ }
+
+ .um-single-page .dark .dark\:text-gray-300 {
+ 
+  color: rgba(203, 203, 203, 1) !important;
+  }

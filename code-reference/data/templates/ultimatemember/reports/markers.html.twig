@@ -7,13 +7,13 @@
 {% endblock %}
 
 {% block content %}
-    <div class="phpdocumentor-row">
+    <div className="phpdocumentor-row">
         # Markers
 
         {% if filesWithMarkers is not empty %}
           
         {% else %}
-            <div class="phpdocumentor-admonition phpdocumentor-admonition--success">
+            <div className="phpdocumentor-admonition phpdocumentor-admonition--success">
                 No markers have been found in this project.
             </div>
         {% endif %}

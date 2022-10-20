@@ -14,7 +14,7 @@
 {% block content %}
  
 
-    <div class="phpdocumentor-row">
+    <div className="phpdocumentor-row">
         # Deprecated
 
         {% for file in filesWithDeprecatedElements %}
@@ -31,7 +31,7 @@
 {% endfor %}
 
         {% else %}
-            <div class="phpdocumentor-admonition phpdocumentor-admonition--success">
+            <div className="phpdocumentor-admonition phpdocumentor-admonition--success">
                 No deprecated elements have been found in this project.
             </div>
         {% endfor %}

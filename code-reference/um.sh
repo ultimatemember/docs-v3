@@ -178,23 +178,24 @@ run_build() {
     output 2 "Generating API docs..."
     echo
     cd "./ultimatemember/"
-    phpDocumentor -d "." -t "../build" --template="../data/templates/ultimatemember"  --ignore="ultimatemember/includes/lib/*.php" --sourcecode
+    phpDocumentor -d "." -t "../build" --template="../data/templates/ultimatemember"  --ignore="includes/lib/*.php" --sourcecode
     cd "../"
     echo "Generating Ultimate Member Docs..."
-    php generate-hook-docs.php
+    php generate-hook-docs.php "${source_version}"
+    
   
-    for file in $(find ./build/ -name '*.html')
+    for file in $(find ./build/hooks/ -name '*.html')
     do
     
     orig=$file;
-    DIR_NAME=`echo "../pages/developer"$orig | sed 's|./build/||g' | sed -e 's_/[^/]*$__'`
+    DIR_NAME=`echo "../pages/developer/hooks"$orig | sed 's|./build/hooks/||g' | sed -e 's_/[^/]*$__'`
 
     # Move to the directory, making the directory if necessary
     mkdir -p  "$DIR_NAME" 
 
-    mv $file $(echo "../pages/developer${file%.html}.mdx" | sed 's|./build/||g')
+    mv $file $(echo "../pages/developer/hooks${file%.html}.mdx" | sed 's|./build/hooks/||g')
     
-    echo $(echo "../pages/developer$file" | sed 's|./build/||g' | sed -r 's|.html|.mdx|g')
+    echo $(echo "../pages/developer/hooks$file" | sed 's|./build/hooks/||g' | sed -r 's|.html|.mdx|g')
 
     done
 

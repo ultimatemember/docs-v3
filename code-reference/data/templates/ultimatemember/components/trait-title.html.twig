@@ -1,7 +1,7 @@
-<h2 class="phpdocumentor-content__title">
+<h2 className="phpdocumentor-content__title">
     {{ node.name }}
     {% if node.usedTraits is not empty %}
-        <span class="phpdocumentor-trait__extends">
+        <span className="phpdocumentor-trait__extends">
             Uses
             {% for trait in node.usedTraits %}
                 {{ trait|route('url') }}{% if not loop.last %}, {% endif %}

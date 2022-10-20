@@ -15,8 +15,9 @@
     "type": "separator"
   },
   "hooks": {
-    "title": "Hooks Reference"
+    "title": "Core Hooks Reference"
   },
+
   "--3": {
     "type": "separator"
   },

@@ -1,5 +1,5 @@
 import UMFooter from '/components/footer'
-import UM_Footer_Extras from '/components/UMFooterExtras'
+import UM_Footer_Surveys from '/components/UMFooterExtras'
 import UM_Algolia_Search from '/components/AlgoliaSearch'
 import { VscGithub } from 'react-icons/vsc'
 
@@ -112,7 +112,10 @@ export default {
   nextThemes: {
     defaultTheme: 'dark',
   },
-  bodyExtraContent: <UM_Footer_Extras />,
+  bodyExtraContent: <UM_Footer_Surveys />,
+  main: {
+    extraContent: <UM_Footer_Surveys />,
+  },
   sidebar: {
     defaultMenuCollapsed: true,
   },

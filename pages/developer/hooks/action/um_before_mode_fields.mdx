@@ -1,0 +1,59 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="action"/>
+
+### Action Hook    
+    
+```
+do_action( "um_before_{$mode}_fields", $args );
+```
+
+#### Description
+    <div class="description">
+        Some actions before login form fields
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$args`</td>
+               <td className="px-3 py-2">array</td>
+               <td className="px-3 py-2 text-sm">Login form shortcode arguments</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/templates/login.php#L50">ultimatemember/templates/login.php</Link> <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/templates/login.php#L50">line 50</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_action( 'um_before_{$mode}_fields', 'my_before_fields', 10, 1 );
+ function my_before_form( $args ) {
+     // your code here
+ }
+    ```
+    </Tab>
+</Tabs>

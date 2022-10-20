@@ -1,0 +1,7 @@
+{
+  "*": {
+    "hidden": true,
+    "pagination": false,
+    "footer": true
+  }
+}

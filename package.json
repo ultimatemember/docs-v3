@@ -10,16 +10,13 @@
     "start": "next start",
     "clean": "rimraf .next .turbo"
   },
-  "author": "Shu Ding",
+  "author": "Ultimate Member Group Ltd.",
   "license": "MIT",
   "dependencies": {
     "@docsearch/js": "3",
-    "@heroicons/react": "v1",
     "@reach/skip-nav": "^0.16.0",
-    "@react-icons/all-files": "^4.1.0",
     "focus-visible": "^5.1.0",
     "intersection-observer": "^0.10.0",
-    "markdown-to-jsx": "^6.11.4",
     "next": ">=12",
     "nextra": "^2.0.0-beta.20",
     "nextra-theme-docs": "^2.0.0-beta.20",

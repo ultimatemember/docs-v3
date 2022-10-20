@@ -1,0 +1,60 @@
+import { Tabs, Tab, Callout } from 'nextra-theme-docs' 
+import Link from 'next/link'
+import UMBreadCrumb from '../../../../components/UMBreadCrumb'
+
+<UMBreadCrumb type="filter"/>
+
+### Filter Hook    
+    
+```
+apply_filters( "um_user_{$data}_case", $name );
+```
+
+#### Description
+    <div class="description">
+        Change user name on um_user function
+ 
+    </div>
+
+#### Parameters
+            
+<table className="table-auto mt-2 border dark:border-gray-500 p-5 text-sm text-left">
+<thead>
+<tr>
+<th  className="px-3">Name</th>
+<th  className="px-3">Type</th>
+<th  className="px-3">Description</th>
+</tr>
+</thead>
+<tbody>
+               <tr >
+               <td className="px-3 py-2">`$name`</td>
+               <td className="px-3 py-2">string</td>
+               <td className="px-3 py-2 text-sm">User Name</td>
+               </tr>
+</tbody>
+</table>
+
+#### Since
+<div class="description">
+2.0
+</div>
+
+#### Source
+  - <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/includes/um-short-functions.php#L2333">ultimatemember/includes/um-short-functions.php</Link> <Link href="https://github.com/ultimatemember/ultimatemember/tree/2.5.0/includes/um-short-functions.php#L2333">line 2333</Link>
+
+
+
+#### Usage Example
+
+<Tabs items={['PHP']}>
+    <Tab>
+    ```php
+    add_filter( 'um_user_{$data}_case', 'my_user_case', 10, 1 );
+ function my_user_case( $name ) {
+     // your code here
+     return $name;
+ }
+    ```
+    </Tab>
+</Tabs>

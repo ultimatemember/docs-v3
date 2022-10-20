@@ -2,9 +2,9 @@
 
 ### Namespaces
     
-<dl class="phpdocumentor-table-of-contents">
+<dl className="phpdocumentor-table-of-contents">
     {% for namespace in namespaces %}
-        <dt class="phpdocumentor-table-of-contents__entry -namespace">{{ namespace|route('url') }}</dt>
+        <dt className="phpdocumentor-table-of-contents__entry -namespace">{{ namespace|route('url') }}</dt>
     {% endfor %}
 </dl>
 {% endif %}
@@ -13,9 +13,9 @@
 ### Packages
   
 
-<dl class="phpdocumentor-table-of-contents">
+<dl className="phpdocumentor-table-of-contents">
     {% for package in packages %}
-        <dt class="phpdocumentor-table-of-contents__entry -package">{{ package|route('url') }}</dt>
+        <dt className="phpdocumentor-table-of-contents__entry -package">{{ package|route('url') }}</dt>
     {% endfor %}
 </dl>
 {% endif %}
@@ -24,19 +24,19 @@
 ### Interfaces, Classes and Traits
    
 
-<dl class="phpdocumentor-table-of-contents">
+<dl className="phpdocumentor-table-of-contents">
     {% for interface in node.interfaces %}
-        <dt class="phpdocumentor-table-of-contents__entry -interface">{{ interface|route('url') }}</dt>
+        <dt className="phpdocumentor-table-of-contents__entry -interface">{{ interface|route('url') }}</dt>
         <dd>{{ interface.summary }}</dd>
     {% endfor %}
 
     {% for class in node.classes %}
-        <dt class="phpdocumentor-table-of-contents__entry -class">{{ class|route('url') }}</dt>
+        <dt className="phpdocumentor-table-of-contents__entry -class">{{ class|route('url') }}</dt>
         <dd>{{ class.summary }}</dd>
     {% endfor %}
 
     {% for trait in node.traits %}
-        <dt class="phpdocumentor-table-of-contents__entry -trait">{{ trait|route('url') }}</dt>
+        <dt className="phpdocumentor-table-of-contents__entry -trait">{{ trait|route('url') }}</dt>
         <dd>{{ trait.summary }}</dd>
     {% endfor %}
 </dl>
