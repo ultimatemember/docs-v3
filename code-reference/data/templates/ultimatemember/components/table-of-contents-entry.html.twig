@@ -1,5 +1,0 @@
-<div className="phpdocumentor-table-of-contents__entry 123 -{{ type }}">
-        {% if type == 'constant' %}&nbsp;= {{ node.value | replace({'{': '&#123;','}': '&#125;'}) }}{% endif %}{% if type == 'property' %}&nbsp;: {{ node.type ? node.type|route('url')|join('|')|replace({'{': '&#123;','}': '&#125;'})|raw : 'mixed' }}{% endif %}{% if type == 'method' or type == 'function' %}&nbsp;: {{ node.response.type|route('url')|join('|')|replace({'{': '&#123;','}': '&#125;'})|raw }}{% endif %}
-
-</div>
-<div>{{ node.summary| replace({'{': '&#123;','}': '&#125;','\n':''}) }}</div>
