@@ -16,5 +16,5 @@ jobs:
         BUILD_SCRIPT: |
           cd um-stripe
           mkdir v1
-          yarn && yarn vuepress build um-stripe
+          yarn && yarn build
         BUILD_DIR: v1/
