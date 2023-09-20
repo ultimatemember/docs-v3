@@ -3,7 +3,7 @@ module.exports = {
     dest: 'um-stripe/v1/',
 
     // Base URL. Useful for GitHub pages.
-    base: 'https://ultimatemember.github.io/docs-v3/um-stripe',
+    base: 'https://ultimatemember.github.io/docs-v3/',
   
     // Title of your project
     title: 'Stripe - Ultimate Member Docs',
