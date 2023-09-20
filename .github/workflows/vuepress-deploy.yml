@@ -16,5 +16,5 @@ jobs:
         BUILD_SCRIPT: |
           cd um-stripe
           mkdir v1
-          yarn && yarn build
+          yarn && yarn docs:build
         BUILD_DIR: v1/
