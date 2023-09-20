@@ -15,5 +15,5 @@ jobs:
         TARGET_BRANCH: master
         BUILD_SCRIPT: |
           cd um-stripe
-          yarn && yarn docs:build
+          yarn && yarn vuepress build v1
         BUILD_DIR: um-stripe/dist
