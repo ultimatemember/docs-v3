@@ -1,0 +1,19 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.DOCS_V3_ACTION_SECRET }}
+        TARGET_REPO: ultimatemember/docs-v3
+        TARGET_BRANCH: master
+        BUILD_SCRIPT: |
+          cd um-stripe
+          yarn && yarn docs:build
+        BUILD_DIR: um-stripe/dist
