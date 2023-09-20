@@ -41,7 +41,7 @@ function um_09202023_stripe_webhook_payload_event_init( $event ){
 
 ### Related Snippets
 
-- [ Attach function to Stripe webhook payload](./developer/hooks/snippets/4099d848f325bd33ca9257e24669926f)
-- [ Send email notification when Stripe sends a webhook payload](./developer/hooks/snippets/f5a3f57fd0295a79763683f875b9320f)
+- [ Attach function to Stripe webhook payload](./4099d848f325bd33ca9257e24669926f)
+- [ Send email notification when Stripe sends a webhook payload](./f5a3f57fd0295a79763683f875b9320f)
 
 
