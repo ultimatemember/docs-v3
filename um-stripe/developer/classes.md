@@ -1,0 +1,5423 @@
+---
+editLink: false
+pageClass: phpdoc-api-generated-page
+
+
+---
+
+# Classes
+        
+##  `UM_Stripe_API`   <Badge text="final"/>  
+
+Class  UM_Stripe_API
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\UM_Stripe_API</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\UM_Stripe_API</span> Methods
+  
+:::tip <a id="UM_Stripe_API::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::admin" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> admin ( )   
+-----
+
+Admin Init class
+
+```php
+public function admin(  ) : \includes\admin\Init()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::ajax" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> ajax ( )   
+-----
+
+Ajax class
+
+```php
+public function ajax(  ) : \includes\ajax\Init()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::common" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> common ( )   
+-----
+
+Common class
+
+```php
+public function common(  ) : \includes\common\Init()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::frontend" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> frontend ( )   
+-----
+
+Frontend class
+
+```php
+public function frontend(  ) : \includes\frontend\Init()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::instance" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> instance ( )  <Badge text="static" type="warn"/>  
+-----
+
+Instance function
+
+```php
+public static function instance(  ) : \Init
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\UM_Stripe_API</span> Inherited methods
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_public_key">get_public_key()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_secret_key">get_secret_key()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_webhook_key">get_webhook_key()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::is_delete_roles">is_delete_roles()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_webhook_url">get_webhook_url()</a>  <Badge text="static" type="warn"/>  
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_stripe_prices">get_stripe_prices()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_plans">get_plans()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_price_by_post_id">get_price_by_post_id()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_price_mode_by_post_id">get_price_mode_by_post_id()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_billing_plan_title">get_billing_plan_title()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_billing_plan_formatted_title">get_billing_plan_formatted_title()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_price_data_by_post_id">get_price_data_by_post_id()</a>   
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_subscription_mode_title">get_subscription_mode_title()</a>   
+
+### <span style="display: none;">\UM_Stripe_API</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\UM_Stripe_API</span> Inherited properties
+
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::$price_option">$price_option</a>  <Badge text="static" type="warn"/>  
+        
+##  `UM_Stripe_Plugin`    
+
+Class Plugin
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\UM_Stripe_Plugin</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\UM_Stripe_Plugin</span> Methods
+  
+:::tip <a id="UM_Stripe_Plugin::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init hooks
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v0.1.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_Plugin::admin_notice" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> admin_notice ( )   
+-----
+
+Admin Notice on Activation.
+
+```php
+public function admin_notice(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v0.1.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_Plugin::admin_notice_activation_hook" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> admin_notice_activation_hook ( )   
+-----
+
+Runs only when the plugin is activated.
+
+```php
+public function admin_notice_activation_hook(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v0.1.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_Plugin::plugin_action_links" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> plugin_action_links ( )   
+-----
+
+Function to add links to the plugin action links
+
+```php
+public function plugin_action_links( array $links ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$links` | **`array`** | Array of links to be shown in plugin action links. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\UM_Stripe_Plugin</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\UM_Stripe_Plugin</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\UM_Stripe_Plugin</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Content_Restriction`    
+
+Class Enqueue
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Content_Restriction</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Content_Restriction</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Content_Restriction::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Content_Restriction::get_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_fields ( )   
+-----
+
+Get Fields settings
+
+```php
+public function get_fields( array $data ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$data` | **`array`** | individual field settings. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Content_Restriction::post_settings_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> post_settings_fields ( )   
+-----
+
+Posts/Pages Settings
+
+```php
+public function post_settings_fields( array $fields, array $data, object $object, object $post_type_object ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$fields` | **`array`** | all field settings. |
+| `$data` | **`array`** | individual field settings. |
+| `$object` | **`object`** | class objects. |
+| `$post_type_object` | **`object`** | individual post object. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Content_Restriction::taxonomy_settings_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> taxonomy_settings_fields ( )   
+-----
+
+Taxonomy Settings
+
+```php
+public function taxonomy_settings_fields( array $fields, array $data, string $action ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$fields` | **`array`** | all field settings. |
+| `$data` | **`array`** | individual field settings. |
+| `$action` | **`string`** | action name. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Content_Restriction</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Content_Restriction</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Content_Restriction</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Enqueue`    
+
+Class Enqueue
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Enqueue</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Enqueue</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Construct
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::block_editor" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> block_editor ( )   
+-----
+
+Enqueue Block scripts
+
+```php
+public function block_editor(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::init" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> init ( )   
+-----
+
+Init
+
+```php
+public function init(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::um_form_screen" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> um_form_screen ( )   
+-----
+
+Include admin scripts for um_form post type screen
+
+```php
+public function um_form_screen( string $hook ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$hook` | **`string`** | page hook. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::wp_enqueue_scripts" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> wp_enqueue_scripts ( )   
+-----
+
+Enqueue scripts
+
+```php
+public function wp_enqueue_scripts( string $hook ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$hook` | **`string`** | page hook. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::wp_enqueue_stripe_script" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> wp_enqueue_stripe_script ( )   
+-----
+
+Enqueue Stripe script
+
+```php
+public function wp_enqueue_stripe_script( string $hook ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$hook` | **`string`** | page hook. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Enqueue::wp_enqueue_stripe_script_users" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> wp_enqueue_stripe_script_users ( )   
+-----
+
+Enqueue Scripts to the users.php screen.
+
+```php
+public function wp_enqueue_stripe_script_users( string $hook ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$hook` | **`string`** | page hook. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Enqueue</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Enqueue</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Enqueue</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::content_restriction" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> content_restriction ( )   
+-----
+
+Class Content_Restriction
+
+```php
+public function content_restriction(  ) : \um_ext\um_stripe\admin\Content_Restriction()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::enqueue" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> enqueue ( )   
+-----
+
+Class Enqueue
+
+```php
+public function enqueue(  ) : \um_ext\um_stripe\admin\Enqueue()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::includes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> includes ( )   
+-----
+
+Load includes.
+
+```php
+public function includes(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::menu" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> menu ( )   
+-----
+
+Class Menu
+
+```php
+public function menu(  ) : \um_ext\um_stripe\admin\Menu()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::metabox" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> metabox ( )   
+-----
+
+Class Metabox
+
+```php
+public function metabox(  ) : \um_ext\um_stripe\admin\Metabox()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::profile" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> profile ( )   
+-----
+
+Class Profile
+
+```php
+public function profile(  ) : \um_ext\um_stripe\admin\Profile()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> settings ( )   
+-----
+
+Class Settings
+
+```php
+public function settings(  ) : \um_ext\um_stripe\admin\Settings()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::site_health" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> site_health ( )   
+-----
+
+Class Site_Health
+
+```php
+public function site_health(  ) : \um_ext\um_stripe\admin\Site_Health()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Init::user_columns" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> user_columns ( )   
+-----
+
+Class User_Columns
+
+```php
+public function user_columns(  ) : \um_ext\um_stripe\admin\User_Columns()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Menu`    
+
+Class Menu
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Menu</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Menu</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Menu::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Menu constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Menu::extend_admin_menu" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> extend_admin_menu ( )   
+-----
+
+Add settings page for group's members
+
+```php
+public function extend_admin_menu(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Menu</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Menu</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Menu</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Metabox`    
+
+Class Metabox
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Metabox</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Metabox</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Metabox::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Metabox constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Metabox::add_metabox" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_metabox ( )   
+-----
+
+Add metaboxes with options to Add/Edit Profile Tab screen
+
+```php
+public function add_metabox(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Metabox::add_metabox_form" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_metabox_form ( )   
+-----
+
+Add metabox forms
+
+```php
+public function add_metabox_form(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Metabox::extra_user_profile_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> extra_user_profile_fields ( )   
+-----
+
+Add extra user profile fields.
+
+```php
+public function extra_user_profile_fields( object $user ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user` | **`object`** | Current editing user. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Metabox::save_metabox_form" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> save_metabox_form ( )   
+-----
+
+Save form metabox
+
+```php
+public function save_metabox_form( integer $post_id, object $post ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | Post ID. |
+| `$post` | **`object`** | Post Object. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Metabox</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Metabox</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Metabox</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Profile`    
+
+Class Profile
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Profile</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Profile</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Profile::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Profile constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Profile::save_extra_user_profile_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> save_extra_user_profile_fields ( )   
+-----
+
+Save field values
+
+```php
+public function save_extra_user_profile_fields( integer $user_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | the current user's ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Profile</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Profile</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Profile</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Settings`    
+
+Class Settings
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Settings</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Settings</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Settings constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::add_localize_data" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_localize_data ( )   
+-----
+
+Add Localize Scripts
+
+```php
+public function add_localize_data( array $data ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$data` | **`array`** | Initial Localize data. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$data Updated Localize data.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::add_settings_sanitize" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_settings_sanitize ( )   
+-----
+
+Apply sanitazations for all stripe settings
+
+```php
+public function add_settings_sanitize( array $settings_map ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$settings_map` | **`array`** | Map settings. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::custom_info_text_sanitizer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> custom_info_text_sanitizer ( )   
+-----
+
+Sanitize info text
+
+```php
+public function custom_info_text_sanitizer( mixed $content ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$content` | **`mixed`** | raw content. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$content Sanitized content.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::extend_settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> extend_settings ( )   
+-----
+
+Extend settings
+
+```php
+public function extend_settings( array $settings ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$settings` | **`array`** | core and extension settings. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Settings::is_stripe_connected" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_stripe_connected ( )   
+-----
+
+Check if Stripe API is connected
+
+```php
+public function is_stripe_connected(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+transient value.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Settings</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Settings</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Settings</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\Site_Health`    
+
+Class Site_Health
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Site_Health</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Site_Health</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-Site_Health::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Site_Health constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Site_Health::debug_information" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> debug_information ( )   
+-----
+
+Add our data to Site Health information.
+
+```php
+public function debug_information( array $info ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$info` | **`array`** | The Site Health information. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0`<br />|
+
+
+
+***Returns:***
+
+The updated Site Health information.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-Site_Health::um_debug_information_pages" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> um_debug_information_pages ( )   
+-----
+
+Extend predefined pages.
+
+```php
+public function um_debug_information_pages( array $pages ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$pages` | **`array`** | predefined pages. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Site_Health</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\Site_Health</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\Site_Health</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\admin\User_Columns`    
+
+Class User_Columns
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\admin\User_Columns</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\User_Columns</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-admin-User_Columns::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init hooks
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-User_Columns::show_user_subscriptions_column" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_user_subscriptions_column ( )   
+-----
+
+Add new columns
+
+```php
+public function show_user_subscriptions_column( array $columns ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$columns` | **`array`** | User columns. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$column
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-admin-User_Columns::show_user_subscriptions_row" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_user_subscriptions_row ( )   
+-----
+
+Add new columns
+
+```php
+public function show_user_subscriptions_row( string $val, string $column_name, integer $user_id ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$val` | **`string`** | default value. |
+| `$column_name` | **`string`** | Column name. |
+| `$user_id` | **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$val
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\User_Columns</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\admin\User_Columns</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-admin-User_Columns::$is_sandbox_mode" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $is_sandbox_mode   
+-----
+
+Sandbox Mode
+
+
+```php
+public $is_sandbox_mode = null;
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\admin\User_Columns</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\ajax\Checkout`    
+
+Class Checkout
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Checkout</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Checkout</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-ajax-Checkout::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Checkout::create_checkout_session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_checkout_session ( )   
+-----
+
+Create checkout session
+
+```php
+public function create_checkout_session(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Checkout</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Checkout</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Checkout</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\ajax\Customer`    
+
+Class Customer
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Customer</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Customer</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-ajax-Customer::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Customer::search_customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> search_customer ( )   
+-----
+
+Search Stripe Customer
+
+```php
+public function search_customer(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Customer</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Customer</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Customer</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\ajax\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-ajax-Init::checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout ( )   
+-----
+
+Checkout Ajax class
+
+```php
+public function checkout(  ) : \um_ext\um_stripe\ajax\Checkout()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Init::customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> customer ( )   
+-----
+
+Customer Ajax class
+
+```php
+public function customer(  ) : \um_ext\um_stripe\ajax\Customer()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Init::includes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> includes ( )   
+-----
+
+Include dependencies
+
+```php
+public function includes(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Init::metabox" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> metabox ( )   
+-----
+
+Metabox Ajax class
+
+```php
+public function metabox(  ) : \um_ext\um_stripe\ajax\Metabox()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Init::settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> settings ( )   
+-----
+
+Settings Ajax class
+
+```php
+public function settings(  ) : \um_ext\um_stripe\ajax\Metabox()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\ajax\Metabox`    
+
+Class Metabox
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Metabox</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Metabox</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-ajax-Metabox::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Metabox constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Metabox::add_stripe_plans_field" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_stripe_plans_field ( )   
+-----
+
+Stripe Plans field
+
+```php
+public function add_stripe_plans_field(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Metabox::add_stripe_plans_type_field" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_stripe_plans_type_field ( )   
+-----
+
+Stripe Plans Type
+
+```php
+public function add_stripe_plans_type_field(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Metabox</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Metabox</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Metabox</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\ajax\Settings`    
+
+Class Settings
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Settings</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Settings</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init hooks
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::create_webhook" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_webhook ( )   
+-----
+
+Create a Webhook
+
+```php
+public function create_webhook( boolean $testmode = true ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$testmode` <Badge text="optional" type="warn"/>| **`boolean`** | Whether to create a webhook for Test mode or Live mode. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+returns the webhook secret on success, otherwise return fals.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::get_stripe_prices" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_stripe_prices ( )   
+-----
+
+Get Stripe Products
+
+```php
+public function get_stripe_prices( string $secret_key, string $start_after = null, string $type = 'recurring' ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$secret_key` | **`string`** | Stripe Account's secret key. |
+| `$start_after` <Badge text="optional" type="warn"/>| **`string`** | Last Stripe Price ID in the result. |
+| `$type` <Badge text="optional" type="warn"/>| **`string`** | Stripe Product Type. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$plans       Stripe Products.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::import_products" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> import_products ( )   
+-----
+
+Import products
+
+```php
+public function import_products(  ) : \um_ext\um_stripe\ajax\json
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$data products data.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::import_stripe_products" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> import_stripe_products ( )   
+-----
+
+Import Stripe Products
+
+```php
+public function import_stripe_products( string $start_after = '' ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$start_after` <Badge text="optional" type="warn"/>| **`string`** | Last Stripe Product ID. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::is_webhook_exists" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_webhook_exists ( )   
+-----
+
+Check if Webhook exists
+
+```php
+public function is_webhook_exists(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+True if exists, otherwise false.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::test_api_connection" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> test_api_connection ( )   
+-----
+
+Test Stripe connection
+
+```php
+public function test_api_connection(  ) : array
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$data Stripe products.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Settings::test_api_disconnection" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> test_api_disconnection ( )   
+-----
+
+Test Stripe Disconnection
+
+```php
+public function test_api_disconnection(  ) : array
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$data Stripe products.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Settings</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\ajax\Settings</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\ajax\Settings</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\CPT`    
+
+Class CPT
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\CPT</span> Constants
+    
+:::tip POST_TYPE   
+-----
+
+Post Type
+
+```php
+POST_TYPE = 'umm_stripe';
+```
+
+**Type:** **`mixed`**
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\CPT</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Initialize the class and set its properties.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::add_um_cpt" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_um_cpt ( )   
+-----
+
+Add Stripe custom post type
+
+```php
+public function add_um_cpt( array $cpt ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$cpt` | **`array`** | custom post types. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::create_post_types" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_post_types ( )   
+-----
+
+Create UM's CPT
+
+```php
+public function create_post_types(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::create_subscription_plan" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_subscription_plan ( )   
+-----
+
+Create a Subscription Plan
+
+```php
+public function create_subscription_plan( integer $price_id, string $label, string $mode = 'recurring', boolean $livemode = false, array $data = array() ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_id` | **`integer`** | The Stripe Price ID. |
+| `$label` | **`string`** | Plan Label/Title. |
+| `$mode` <Badge text="optional" type="warn"/>| **`string`** | The Stripe price mode. |
+| `$livemode` <Badge text="optional" type="warn"/>| **`boolean`** | Determines the Plan's livemode. |
+| `$data` <Badge text="optional" type="warn"/>| **`array`** | Stripe Price raw data. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$data  returns array for status.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::custom_row" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> custom_row ( )   
+-----
+
+Apply custom column rows
+
+```php
+public function custom_row( string $column, integer $post_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$column` | **`string`** | Column slug. |
+| `$post_id` | **`integer`** | Current post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::get_subscription_modes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_subscription_modes ( )   
+-----
+
+Get Subscription Modes
+
+```php
+public function get_subscription_modes(  ) : array
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Subscription Modes.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::is_plan_exists" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_plan_exists ( )   
+-----
+
+Checks the Stripe Plan existence.
+
+```php
+public function is_plan_exists( integer $price_id ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_id` | **`integer`** | The Stripe Price ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Post ID or boolean false.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::set_custom_columns" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_custom_columns ( )   
+-----
+
+Set Post Type Table Columns
+
+```php
+public function set_custom_columns( array $columns ) : \um_ext\um_stripe\common\$columns
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$columns` | **`array`** | default columns data. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+modified columns data.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\CPT</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\CPT</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::$arr_subscription_modes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $arr_subscription_modes  <Badge text="static" type="warn"/>  
+-----
+
+Subscription Modes
+
+
+```php
+public static $arr_subscription_modes = array();
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::$recurring_meta_keys" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $recurring_meta_keys   
+-----
+
+Recurring Meta Keys
+
+
+```php
+public $recurring_meta_keys = array('_um_subscription_status_active', '_um_subscription_status_unpaid', '_um_subscription_status_pause', '_um_subscription_status_past_due', '_um_subscription_status_canceled', '_um_subscription_status_trialing', '_um_subscription_trial_period_days');
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::$onetime_meta_keys" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $onetime_meta_keys   
+-----
+
+One-time Meta Keys
+
+
+```php
+public $onetime_meta_keys = array('_um_subscription_assign_role', '_um_subscription_assign_role_refunded');
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\CPT</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Fields`    
+
+Class Fields
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Fields</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Fields</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Fields::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Fields::add_stripe_core_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_stripe_core_fields ( )   
+-----
+
+Add field attributes
+
+```php
+public function add_stripe_core_fields( array $fields ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$fields` | **`array`** | The array of core fields. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Fields::add_stripe_predefined_field" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_stripe_predefined_field ( )   
+-----
+
+Add predefined fields.
+
+```php
+public function add_stripe_predefined_field( array $fields ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$fields` | **`array`** | The array of core fields. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Fields</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Fields</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Fields</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Init::cpt" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> cpt ( )   
+-----
+
+Custom Post Type class
+
+```php
+public function cpt(  ) : \um_ext\um_stripe\common\CPT()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> fields ( )   
+-----
+
+Fields class
+
+```php
+public function fields(  ) : \um_ext\um_stripe\common\Fields()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::includes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> includes ( )   
+-----
+
+Includes
+
+```php
+public function includes(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::pages" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> pages ( )   
+-----
+
+Pages class
+
+```php
+public function pages(  ) : \um_ext\um_stripe\common\Pages()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> registration ( )   
+-----
+
+Registration class
+
+```php
+public function registration(  ) : \um_ext\um_stripe\common\Registration()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::request_handler" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> request_handler ( )   
+-----
+
+Request Handler  class
+
+```php
+public function request_handler(  ) : \um_ext\um_stripe\common\Request_Handler()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::subscription" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> subscription ( )   
+-----
+
+Subscription class
+
+```php
+public function subscription(  ) : \um_ext\um_stripe\common\Subscription()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::user" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> user ( )   
+-----
+
+User class
+
+```php
+public function user(  ) : \um_ext\um_stripe\common\User()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Inherited methods
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::__construct">__construct()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_all_products">get_all_products()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_product">get_product()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::cache_price">cache_price()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::update_cache_price_product">update_cache_price_product()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::update_product_cache">update_product_cache()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_price">get_price()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_cpt_price_id">get_cpt_price_id()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_cpt_price_mode">get_cpt_price_mode()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::is_billing_email_exists">is_billing_email_exists()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_status_title">get_status_title()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::check_api_key">check_api_key()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::assign_stripe_account">assign_stripe_account()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_order_details">get_order_details()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_tax_meta">get_tax_meta()</a>   
+
+### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Inherited properties
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_products">$stripe_products</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_prices">$stripe_prices</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_stauses">$stripe_stauses</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_payment_method_types">$stripe_payment_method_types</a>   
+        
+##  `um_ext\um_stripe\common\Pages`    
+
+Class Pages
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Pages::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Initialize the class and set its properties.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Pages::add_predefined_pages" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_predefined_pages ( )   
+-----
+
+Create default pages.
+
+```php
+public function add_predefined_pages( array $pages ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$pages` | **`array`** | page settings. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Pages::predefined_pages_content" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> predefined_pages_content ( )   
+-----
+
+Predefined pages content.
+
+```php
+public function predefined_pages_content( string $content, string $slug ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$content` | **`string`** | Predefined page content. |
+| `$slug` | **`string`** | Predefined page slug (key). |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Predefined page content.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Registration`    
+
+Class Registration
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Initialize the class and set its properties.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::set_stripe_customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_stripe_customer ( )   
+-----
+
+Assign Role on Trialing subscription
+
+```php
+public function set_stripe_customer( integer $user_id, array $args, boolean $auto_login = true ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$args` | **`array`** | Form array arguments. |
+| `$auto_login` <Badge text="optional" type="warn"/>| **`boolean`** | Auto login the user when true. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::validate_billing_email" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> validate_billing_email ( )   
+-----
+
+Validate billing email address
+
+```php
+public function validate_billing_email( array $args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Form submitted fields. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Request_Handler`    
+
+Class Request_Handler
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init hooks
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout ( )   
+-----
+
+Subscription via Direct URL
+Redirect User to Stripe checkout with selected Stripe Price ID.
+
+```php
+public function checkout(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::customer_portal_session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> customer_portal_session ( )   
+-----
+
+Create Customer portal session
+
+```php
+public function customer_portal_session(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::flush_roles" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> flush_roles ( )   
+-----
+
+Deletes all user roles
+
+```php
+public function flush_roles( integer $user_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::stripe_redirect_hosts" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> stripe_redirect_hosts ( )   
+-----
+
+Add Stripe hosts for safe redirection.
+
+```php
+public function stripe_redirect_hosts( array $hosts ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$hosts` | **`array`** | WP allowed hosts. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+modified allowed hosts.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::swap_role" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> swap_role ( )   
+-----
+
+Switch old role with the a new role
+
+```php
+public function swap_role( integer $user_id, string $new_role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | User ID. |
+| `$new_role` | **`string`** | Current User Role. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_active" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_active ( )   
+-----
+
+Assign Role on Active subscription
+
+```php
+public function umm_stripe_status_active( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_canceled" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_canceled ( )   
+-----
+
+Assign Role on Canceled subscription
+
+```php
+public function umm_stripe_status_canceled( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_incomplete" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_incomplete ( )   
+-----
+
+Assign Role on Incomplete subscription
+
+```php
+public function umm_stripe_status_incomplete( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_incomplete_expired" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_incomplete_expired ( )   
+-----
+
+Assign Role on Incomplete-Expired subscription
+
+```php
+public function umm_stripe_status_incomplete_expired( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_onetime_refunded" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_onetime_refunded ( )   
+-----
+
+Set role on one-time refund
+
+```php
+public function umm_stripe_status_onetime_refunded( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_past_due" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_past_due ( )   
+-----
+
+Assign Role on Past Due subscription
+
+```php
+public function umm_stripe_status_past_due( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_pause" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_pause ( )   
+-----
+
+Assign Role on Pause subscription
+
+```php
+public function umm_stripe_status_pause( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_trialing" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_trialing ( )   
+-----
+
+Assign Role on Trialing subscription
+
+```php
+public function umm_stripe_status_trialing( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_status_unpaid" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_unpaid ( )   
+-----
+
+Assign Role on Unpaid subscription
+
+```php
+public function umm_stripe_status_unpaid( integer $user_id, integer $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$role` | **`integer`** | The assigning role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::umm_stripe_user_status_delete" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_user_status_delete ( )   
+-----
+
+Delete Subscription Status.
+
+```php
+public function umm_stripe_user_status_delete( integer $user_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::webhook_response" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> webhook_response ( )   
+-----
+
+Handles webhook responses
+
+```php
+public function webhook_response(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Stripe`    
+
+Class Stripe
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Stripe</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Stripe</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::assign_stripe_account" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> assign_stripe_account ( )   
+-----
+
+Assign Stripe account to a another WP account
+
+```php
+public function assign_stripe_account( integer $old_user_id, integer $new_user_id, string $stripe_customer_id ) : boolean
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$old_user_id` | **`integer`** | Previous WP account's user ID. |
+| `$new_user_id` | **`integer`** | New WP account's user ID. |
+| `$stripe_customer_id` | **`string`** | Stripe customer ID. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::cache_price" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> cache_price ( )   
+-----
+
+Cache Stripe Prices
+
+```php
+public function cache_price( string $id, string $label, array $data, string $type, string $livemode, string $price_label, object $obj_product ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$id` | **`string`** | The Stripe Price ID. |
+| `$label` | **`string`** | The Stripe Product Name. |
+| `$data` | **`array`** | The raw Stripe Price data. |
+| `$type` | **`string`** | The Stripe Price type. |
+| `$livemode` | **`string`** | The Stripe Price mode. |
+| `$price_label` | **`string`** | Formatted Price Label. |
+| `$obj_product` | **`object`** | Stripe Product. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::check_api_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> check_api_key ( )   
+-----
+
+Checks API keys validation
+
+```php
+public function check_api_key(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_all_products" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_all_products ( )   
+-----
+
+Get all products from cache
+
+```php
+public function get_all_products(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_cpt_price_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_cpt_price_id ( )   
+-----
+
+Get Price ID from Custom Post Type
+
+```php
+public function get_cpt_price_id( integer $post_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | CPT post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_cpt_price_mode" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_cpt_price_mode ( )   
+-----
+
+Get Price Mode from Custom Post Type
+
+```php
+public function get_cpt_price_mode( integer $post_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | CPT post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_order_details" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_order_details ( )   
+-----
+
+Get Order Details with Checkout Session
+
+```php
+public function get_order_details( string $checkout_session, boolean $once = false ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$checkout_session` | **`string`** | Checkout Session ID. |
+| `$once` <Badge text="optional" type="warn"/>| **`boolean`** | Cache checkout session data once. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_price" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_price ( )   
+-----
+
+Get Stripe Price
+
+```php
+public function get_price( string $price_id, boolean $with_product = false ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_id` | **`string`** | Stripe Price ID. |
+| `$with_product` <Badge text="optional" type="warn"/>| **`boolean`** | Include Product data. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_product" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_product ( )   
+-----
+
+Get product from cache
+
+```php
+public function get_product( string $product_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$product_id` | **`string`** | Stripe Product ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_status_title" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_status_title ( )   
+-----
+
+Get status title
+
+```php
+public function get_status_title( string $status_slug ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$status_slug` | **`string`** | Stripe status key. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_tax_meta" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_tax_meta ( )   
+-----
+
+Get Tax Meta
+
+```php
+public function get_tax_meta( string $code ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$code` | **`string`** | Tax Code. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::is_billing_email_exists" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_billing_email_exists ( )   
+-----
+
+Check if a billing email already in use on Stripe.com
+
+```php
+public function is_billing_email_exists( string $email ) : boolean
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$email` | **`string`** | Email address. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::update_cache_price_product" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> update_cache_price_product ( )   
+-----
+
+Cache Price's Product.
+
+```php
+public function update_cache_price_product( string $price_id, object $obj_product ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_id` | **`string`** | Stripe Price ID. |
+| `$obj_product` | **`object`** | Stripe Product. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::update_product_cache" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> update_product_cache ( )   
+-----
+
+Update a product cache.
+
+```php
+public function update_product_cache( string $product_id, object $obj_product ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$product_id` | **`string`** | Stripe Product ID. |
+| `$obj_product` | **`object`** | Stripe Product. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Stripe</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Stripe</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::$stripe_products" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $stripe_products   
+-----
+
+Stripe Products
+
+
+```php
+public $stripe_products = array();
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::$stripe_prices" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $stripe_prices   
+-----
+
+Stripe Prices
+
+
+```php
+public $stripe_prices = array();
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::$stripe_stauses" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $stripe_stauses   
+-----
+
+Stripe Statuses
+
+
+```php
+public $stripe_stauses = array();
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Stripe::$stripe_payment_method_types" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $stripe_payment_method_types   
+-----
+
+Stripe Statuses
+
+
+```php
+public $stripe_payment_method_types = array('acss_debit', 'affirm', 'afterpay_clearpay', 'alipay', 'au_becs_debit', 'bacs_debit', 'bancontact', 'blik', 'boleto', 'card', 'cashapp', 'customer_balance', 'eps', 'fpx', 'giropay', 'grabpay', 'ideal', 'klarna', 'konbini', 'link', 'oxxo', 'p24', 'paynow', 'paypal', 'pix', 'promptpay', 'sepa_debit', 'sofort', 'us_bank_account', 'wechat_pay', 'zip');
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Stripe</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\Subscription`    
+
+Class Subscription
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Subscription::get_amount_decimal_formatted" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_amount_decimal_formatted ( )   
+-----
+
+Format into 2 decimal place.
+
+```php
+public function get_amount_decimal_formatted( float $number, string $currency = '' ) : float
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$number` | **`float`** | Number. |
+| `$currency` <Badge text="optional" type="warn"/>| **`string`** | Currency Code. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+***Returns:***
+
+formatted number.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Subscription::get_onetime_role" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_onetime_role ( )   
+-----
+
+Gets one-time subscription's role
+
+```php
+public function get_onetime_role( integer $customer_id = null, string $status = '', integer $user_id = null ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$customer_id` <Badge text="optional" type="warn"/>| **`integer`** | The stripe customer ID. |
+| `$status` <Badge text="optional" type="warn"/>| **`string`** | The stripe event status. |
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$role The role slug.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Subscription::get_role" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_role ( )   
+-----
+
+Gets subscription's role
+
+```php
+public function get_role( integer $customer_id = null, string $status = '', integer $user_id = null ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$customer_id` <Badge text="optional" type="warn"/>| **`integer`** | The stripe customer ID. |
+| `$status` <Badge text="optional" type="warn"/>| **`string`** | The stripe event status. |
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$role The role slug.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Subscription::get_user_id_by_customer_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_user_id_by_customer_id ( )   
+-----
+
+Get WP User ID by Stripe customer id
+
+```php
+public function get_user_id_by_customer_id( string $customer_id ) : integer
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$customer_id` | **`string`** | Stripe customer ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$user_id WP User ID.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\common\User`    
+
+Class User
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\User</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\User</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-User::create_stripe_customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_stripe_customer ( )   
+-----
+
+Creates a Stripe Customer
+
+```php
+public function create_stripe_customer( integer|null $user_id = null, null|string $billing_email = null ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** <br /> **`null`** | User ID. |
+| `$billing_email` <Badge text="optional" type="warn"/>| **`null`** <br /> **`string`** | Optiona billing email. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$customer_id customer's ID or null.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-User::delete_user" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> delete_user ( )   
+-----
+
+Delete Stripe customer on UM Account deletion
+
+```php
+public function delete_user( integer $user_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-User::get_subscription_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_subscription_id ( )   
+-----
+
+Gets user's subscription ID
+
+```php
+public function get_subscription_id( integer $user_id = null ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-User::hooks" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> hooks ( )   
+-----
+
+Hooks
+
+```php
+public function hooks(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-User::is_subscribed" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_subscribed ( )   
+-----
+
+Checks if a user is already subscribed
+
+```php
+public function is_subscribed( integer $user_id = null, boolean $return_status = false ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | The User ID. |
+| `$return_status` <Badge text="optional" type="warn"/>| **`boolean`** | Return the status name. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$status The status name.
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\User</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\User</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\User</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Content_Restriction`    
+
+Class Enqueue
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::apply_post_restrictions" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> apply_post_restrictions ( )   
+-----
+
+Apply Post/Page restrictions based on Stripe Plans
+
+```php
+public function apply_post_restrictions( boolean $restricted, integer $object_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$restricted` | **`boolean`** | Is restricted?. |
+| `$object_id` | **`integer`** | Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::apply_taxonomy_restrictions" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> apply_taxonomy_restrictions ( )   
+-----
+
+Apply Taxonomy restrictions based on Stripe Plans
+
+```php
+public function apply_taxonomy_restrictions( boolean $restricted, integer $object_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$restricted` | **`boolean`** | Is restricted?. |
+| `$object_id` | **`integer`** | Taxonomy/Tag ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::get_post_restriction_settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_post_restriction_settings ( )   
+-----
+
+Get Post/Page Restriction settings
+
+```php
+public function get_post_restriction_settings( integer $object_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$object_id` | **`integer`** | Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::get_taxonomy_restriction_settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_taxonomy_restriction_settings ( )   
+-----
+
+Get Taxonomy Restriction settings
+
+```php
+public function get_taxonomy_restriction_settings( integer $object_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$object_id` | **`integer`** | Taxonomy/Tag ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::init" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> init ( )   
+-----
+
+Init
+
+```php
+public function init(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Enqueue`    
+
+Class Enqueue
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Enqueue</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Enqueue</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Enqueue::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Enqueue constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Enqueue::wp_enqueue_scripts" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> wp_enqueue_scripts ( )   
+-----
+
+Enqueue front-end scripts
+
+```php
+public function wp_enqueue_scripts(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Enqueue</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Enqueue</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Enqueue</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::content_restriction" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> content_restriction ( )   
+-----
+
+Class Content_Restriction
+
+```php
+public function content_restriction(  ) : \um_ext\um_stripe\frontend\Content_Restriction()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::enqueue" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> enqueue ( )   
+-----
+
+Enqueue class
+
+```php
+public function enqueue(  ) : \um_ext\um_stripe\frontend\Enqueue()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::includes" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> includes ( )   
+-----
+
+Include dependencies
+
+```php
+public function includes(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> registration ( )   
+-----
+
+Registration class
+
+```php
+public function registration(  ) : \um_ext\um_stripe\frontend\Registration()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::shortcode" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> shortcode ( )   
+-----
+
+Shortcode class
+
+```php
+public function shortcode(  ) : \um_ext\um_stripe\frontend\Shortcode()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Registration`    
+
+Class Registration
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Registration</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Registration</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Registration::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Initialize the class and set its properties.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Registration::builder_input_map" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> builder_input_map ( )   
+-----
+
+Allow HTML tags for Stripe Plans labels
+
+```php
+public function builder_input_map( array $args ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | field options. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$args updated field options.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Registration::um_stripe_field_register" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> um_stripe_field_register ( )   
+-----
+
+Register fields
+
+```php
+public function um_stripe_field_register( string $output, array $data ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$output` | **`string`** | HTML output. |
+| `$data` | **`array`** | field settings. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Registration</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Registration</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Registration</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Shortcode`    
+
+Class Shortcode
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Shortcode constructor.
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::ultimatemember_stripe" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> ultimatemember_stripe ( )   
+-----
+
+Stripe Button shortcode.
+
+```php
+public function ultimatemember_stripe( array $atts = array() ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$atts` <Badge text="optional" type="warn"/>| **`array`** | shortcode attributes. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::ultimatemember_stripe_customer_portal" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> ultimatemember_stripe_customer_portal ( )   
+-----
+
+Stripe Customer Portal
+
+```php
+public function ultimatemember_stripe_customer_portal( array $atts = array() ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$atts` <Badge text="optional" type="warn"/>| **`array`** | Shortcode attributes. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::ultimatemember_stripe_order_details" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> ultimatemember_stripe_order_details ( )   
+-----
+
+Displays Order Details
+
+```php
+public function ultimatemember_stripe_order_details( array $args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Shortcode attributes. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::$already_subscribed" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $already_subscribed   
+-----
+
+Already Subscribed
+
+
+```php
+public $already_subscribed = 0;
+```
+
+***Types:***
+- `integer`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\Functions`    
+
+Class Functions
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\Functions</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\Functions</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_billing_plan_formatted_title" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_billing_plan_formatted_title ( )   
+-----
+
+Get formatted Billing Plan Title
+
+```php
+public function get_billing_plan_formatted_title( object $price_data, string $interval, integer $interval_count, boolean $bill_next_line = false, boolean $onetime = false ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_data` | **`object`** | Stripe Price. |
+| `$interval` | **`string`** | Stripe Price Interval. |
+| `$interval_count` | **`integer`** | Stripe Interval Count. |
+| `$bill_next_line` <Badge text="optional" type="warn"/>| **`boolean`** | Add breakline before "every". |
+| `$onetime` <Badge text="optional" type="warn"/>| **`boolean`** | Render title for one-time payment plan. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Formatted Billing Plan Title.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_billing_plan_title" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_billing_plan_title ( )   
+-----
+
+Get Billing Plan Title
+
+```php
+public function get_billing_plan_title( float $price, string $interval, integer $interval_count, boolean $bill_next_line = false ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price` | **`float`** | Stripe Price. |
+| `$interval` | **`string`** | Stripe Price Interval. |
+| `$interval_count` | **`integer`** | Stripe Interval Count. |
+| `$bill_next_line` <Badge text="optional" type="warn"/>| **`boolean`** | Add breakline before "every". |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Formatted Billing Plan Title.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_plans" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_plans ( )   
+-----
+
+Get Stripe Plans
+
+```php
+public function get_plans( boolean $include_id_in_labels = false ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$include_id_in_labels` <Badge text="optional" type="warn"/>| **`boolean`** | Whether to include ID in the labels. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Posts.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_price_by_post_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_price_by_post_id ( )   
+-----
+
+Get Price by Post ID
+
+```php
+public function get_price_by_post_id( integer $post_id ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Formatted Price.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_price_data_by_post_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_price_data_by_post_id ( )   
+-----
+
+Get Price Data from Cache
+
+```php
+public function get_price_data_by_post_id( integer $post_id ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | The Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Price data array, false when nothing found in the cache.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_price_mode_by_post_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_price_mode_by_post_id ( )   
+-----
+
+Get Price Mode by Post ID
+
+```php
+public function get_price_mode_by_post_id( integer $post_id ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | The Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$mode Mode in HTML format.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_public_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_public_key ( )   
+-----
+
+Get Stripe Public key
+
+```php
+public function get_public_key(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_secret_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_secret_key ( )   
+-----
+
+Get Stripe Secret key
+
+```php
+public function get_secret_key(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_stripe_prices" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_stripe_prices ( )   
+-----
+
+Get Stripe Prices
+
+```php
+public function get_stripe_prices(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_subscription_mode_title" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_subscription_mode_title ( )   
+-----
+
+Get Subscription Mode label
+
+```php
+public function get_subscription_mode_title( string $mode_slug ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$mode_slug` | **`string`** | Subscription Mode slug. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Subscription Label
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_webhook_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_webhook_key ( )   
+-----
+
+Get Stripe Webhook key
+
+```php
+public function get_webhook_key(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_webhook_url" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_webhook_url ( )  <Badge text="static" type="warn"/>  
+-----
+
+Gets the webhook URL for Stripe triggers. Used mainly for
+asyncronous redirect payment methods in which statuses are
+not immediately chargeable.
+
+```php
+public static function get_webhook_url(  ) : string
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::is_delete_roles" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> is_delete_roles ( )   
+-----
+
+Get Delete Roles option
+
+```php
+public function is_delete_roles(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\Functions</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\Functions</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-Functions::$price_option" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $price_option  <Badge text="static" type="warn"/>  
+-----
+
+Price Options
+
+
+```php
+public static $price_option = array();
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\Functions</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\Install`    
+
+Class Install
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\Install</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\Install</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-Install::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Install::start" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> start ( )   
+-----
+
+Start installation process.
+
+```php
+public function start(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\Install</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\Install</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-Install::$settings_defaults" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $settings_defaults   
+-----
+
+Default settings
+
+
+```php
+public $settings_defaults;
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\Install</span> Inherited properties
+> This class has not inherited properties.
+
+--------
+
+<div class="page-edit">
+    <div class="last-updated">
+        <span class="prefix">Auto-generated at: </span>
+        <span class="time">2023-09-20, 2:36 PM</span>
+    </div>
+</div>
+
+
+<style src="./.assets/normalization.css" scoped/>
