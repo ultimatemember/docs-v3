@@ -12,7 +12,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.DOCS_V3_ACTION_SECRET }}
         TARGET_REPO: ultimatemember/docs-v3
-        TARGET_BRANCH: master
+        TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: |
           cd um-stripe
           mkdir v1
