@@ -6,15 +6,23 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.DOCS_V3_ACTION_SECRET }}
-        TARGET_REPO: ultimatemember/docs-v3
-        TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: |
-          cd um-stripe
-          mkdir v1
-          yarn && yarn docs:build
-        BUILD_DIR: v1/
+    - name: Build VuePress
+      run: |
+        cd um-stripe
+        npm run docs:build
+    - name: Commit files
+      run: |
+        cd /um-stripe/dist/
+        mv ./* ./um-stripe
+        git init
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -a -m "Deploy Stripe Docs"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.DOCS_V3_ACTION_SECRET }}
+        repository: ultimatemember/docs-v3
+        branch: gh-pages
+        

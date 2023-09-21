@@ -1,9 +1,9 @@
 module.exports = {
     // Directory where will be generated the HTML files by VuePress
-    dest: 'um-stripe/v1/',
+    dest: 'um-stripe/dist/',
 
     // Base URL. Useful for GitHub pages.
-    base: '/docs-v3/',
+    base: '/docs-v3/um-stripe/',
   
     // Title of your project
     title: 'Stripe - Ultimate Member Docs',
