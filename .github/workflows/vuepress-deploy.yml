@@ -15,7 +15,7 @@ jobs:
       run: |
         cd um-stripe/dist/
         mkdir um-stripe
-        mv um-stripe/dist/* um-stripe/dist/um-stripe
+        mv !(um-stripe) um-stripe
         git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
