@@ -8,11 +8,10 @@ jobs:
       uses: actions/checkout@master
     - name: Build VuePress
       run: |
-        cd um-stripe
-        yarn & yarn vuepress build .
+        yarn & yarn vuepress build um-stripe
     - name: Commit files
       run: |
-        cd /um-stripe/dist/
+        cd um-stripe/dist/
         mv ./* ./um-stripe
         git init
         git config --local user.email "action@github.com"
