@@ -9,7 +9,7 @@ jobs:
     - name: Build VuePress
       run: |
         cd um-stripe
-        yarn & yarn vuepress docs:build .
+        yarn & yarn vuepress build .
     - name: Commit files
       run: |
         cd /um-stripe/dist/
