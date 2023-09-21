@@ -27,4 +27,4 @@ jobs:
         github_token: ${{ secrets.DOCS_V3_ACTION_SECRET }}
         repository: ultimatemember/docs-v3
         branch: gh-pages
-        force_with_lease: true
+        
