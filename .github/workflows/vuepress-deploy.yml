@@ -13,9 +13,10 @@ jobs:
         yarn && yarn vuepress build um-stripe
     - name: Commit files
       run: |
-        cd um-stripe/dist/
-        mv * deploy/um-stripe | mkdir deploy && mkdir deploy/um-stripe
-        cd deploy
+        mkdir /deploy/
+        mkdir /deploy/um-stripe/
+        mv /um-stripe/dist/ /deploy/um-stripe/
+        cd /deploy/
         git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
