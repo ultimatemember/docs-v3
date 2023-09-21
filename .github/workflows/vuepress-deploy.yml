@@ -14,8 +14,8 @@ jobs:
     - name: Commit files
       run: |
         mkdir deploy/um-stripe/
-        mv um-stripe/dist/* /deploy/um-stripe/
-        cd /deploy/
+        mv um-stripe/dist/* deploy/um-stripe/
+        cd deploy/
         git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
