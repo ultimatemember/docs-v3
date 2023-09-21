@@ -9,8 +9,7 @@ jobs:
     - name: Build VuePress
       run: |
         cd um-stripe
-        npm install
-        npm run docs:build
+        yarn & yarn vuepress docs:build
     - name: Commit files
       run: |
         cd /um-stripe/dist/
