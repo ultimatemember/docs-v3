@@ -21,10 +21,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .
         git commit -a -m "Deploy Stripe Docs"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.DOCS_V3_ACTION_SECRET }}
-        repository: ultimatemember/docs-v3
-        branch: gh-pages
+        git push --force https://username:${{ secrets.DOCS_V3_ACTION_SECRET }}@github.com/ultimatemember/docs-v3.git master:gh-pages
+        rm -fr .git
+ 
         
