@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
     - name: Build VuePress
       run: |
-        yarn & yarn vuepress build um-stripe
+        yarn && yarn vuepress build um-stripe
     - name: Commit files
       run: |
         cd um-stripe/dist/
