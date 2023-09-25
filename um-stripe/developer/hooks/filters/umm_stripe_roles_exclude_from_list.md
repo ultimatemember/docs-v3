@@ -21,8 +21,8 @@ apply_filters( 'umm_stripe_roles_exclude_from_list',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_roles_exclude_from_list', 'um_09202023_stripe_roles_exclude_from_list ', 10, 0 )
-function um_09202023_stripe_roles_exclude_from_list(  ){
+add_filter( 'umm_stripe_roles_exclude_from_list', 'um_09252023_stripe_roles_exclude_from_list ', 10, 0 )
+function um_09252023_stripe_roles_exclude_from_list(  ){
   return ;
 }
 ```

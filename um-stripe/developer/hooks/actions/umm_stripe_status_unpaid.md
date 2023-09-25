@@ -29,8 +29,8 @@ do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_unpaid', 'um_09202023_stripe_status_unpaid ', 10, 2 )
-function um_09202023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
+add_action( 'umm_stripe_status_unpaid', 'um_09252023_stripe_status_unpaid ', 10, 2 )
+function um_09252023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
  // do something
 }
 ```

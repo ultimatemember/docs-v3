@@ -25,8 +25,8 @@ apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_already_subscribed_text', 'um_09202023_stripe_already_subscribed_text ', 10, 1 )
-function um_09202023_stripe_already_subscribed_text( $subscribed_text ){
+add_filter( 'umm_stripe_already_subscribed_text', 'um_09252023_stripe_already_subscribed_text ', 10, 1 )
+function um_09252023_stripe_already_subscribed_text( $subscribed_text ){
   return $subscribed_text;
 }
 ```

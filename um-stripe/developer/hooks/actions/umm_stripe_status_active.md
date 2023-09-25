@@ -29,8 +29,8 @@ do_action( 'umm_stripe_status_active', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_active', 'um_09202023_stripe_status_active ', 10, 2 )
-function um_09202023_stripe_status_active( $um_user_id, $role_active ){
+add_action( 'umm_stripe_status_active', 'um_09252023_stripe_status_active ', 10, 2 )
+function um_09252023_stripe_status_active( $um_user_id, $role_active ){
  // do something
 }
 ```

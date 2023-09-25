@@ -67,7 +67,7 @@ UM_STRIPE_PLUGIN = plugin_basename(__FILE__);
 
 
 ```php
-UM_STRIPE_REQUIRES = '2.6.9';
+UM_STRIPE_REQUIRES = '2.6.12';
 ```
 
 **Type:** **`mixed`**
@@ -140,7 +140,7 @@ UM_STRIPE_VERSION = $plugin_data['Version'];
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-20, 2:36 PM</span>
+        <span class="time">2023-09-25, 1:23 AM</span>
     </div>
 </div>
 

@@ -29,8 +29,8 @@ do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_incomplete', 'um_09202023_stripe_status_incomplete ', 10, 2 )
-function um_09202023_stripe_status_incomplete( $um_user_id, $role_incomplete ){
+add_action( 'umm_stripe_status_incomplete', 'um_09252023_stripe_status_incomplete ', 10, 2 )
+function um_09252023_stripe_status_incomplete( $um_user_id, $role_incomplete ){
  // do something
 }
 ```

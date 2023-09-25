@@ -25,8 +25,8 @@ apply_filters( 'um_stripe_checkout_direct_url', $site_url )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_checkout_direct_url', 'um_09202023_stripe_checkout_direct_url ', 10, 1 )
-function um_09202023_stripe_checkout_direct_url( $site_url ){
+add_filter( 'um_stripe_checkout_direct_url', 'um_09252023_stripe_checkout_direct_url ', 10, 1 )
+function um_09252023_stripe_checkout_direct_url( $site_url ){
   return $site_url;
 }
 ```

@@ -20,7 +20,7 @@ function um_stripe_activation_hook(  ) : void
 
 ### Description
 
-> No description.
+Handles the processes on plugin activation.
 
 | | |
 |:--------:| ----------- |
@@ -40,7 +40,7 @@ function um_stripe_check_dependencies(  ) : void
 
 ### Description
 
-> No description.
+This handles the Ultimate Member core dependencies and validation of plugin requirements.
 
 | | |
 |:--------:| ----------- |
@@ -60,7 +60,7 @@ function um_stripe_dependencies(  ) : void
 
 ### Description
 
-> No description.
+Displays the required PHP version in the admin screen.
 
 | | |
 |:--------:| ----------- |
@@ -80,7 +80,7 @@ function um_stripe_init(  ) : void
 
 ### Description
 
-> No description.
+Inits the Stripe API class.
 
 | | |
 |:--------:| ----------- |
@@ -100,7 +100,7 @@ function um_stripe_plugins_loaded(  ) : void
 
 ### Description
 
-> No description.
+Loads the language files.
 
 | | |
 |:--------:| ----------- |
@@ -113,7 +113,7 @@ function um_stripe_plugins_loaded(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-20, 2:36 PM</span>
+        <span class="time">2023-09-25, 1:23 AM</span>
     </div>
 </div>
 

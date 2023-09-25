@@ -29,8 +29,8 @@ do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_onetime_refunded', 'um_09202023_stripe_status_onetime_refunded ', 10, 2 )
-function um_09202023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
+add_action( 'umm_stripe_status_onetime_refunded', 'um_09252023_stripe_status_onetime_refunded ', 10, 2 )
+function um_09252023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
  // do something
 }
 ```
