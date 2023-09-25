@@ -6,9 +6,9 @@ actionText: Get Started →
 actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
 ---
 
-<div style="text-align:center;">
-<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12+-7856ff"/>
-<img src="https://img.shields.io/badge/uses-@stripe/stripe--php_v10.5.10-7856ff"/>
+<div style="text-align:center;text-indent: 20px">
+<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-7856ff?style=social&logo=wordpress"/>&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-7856ff?style=social&logo=github"/>
 </div>
 <div class="features">
   <div class="feature">
