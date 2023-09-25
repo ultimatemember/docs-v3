@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_billing_configuration | Hooks
 tags: 
   - umm_stripe_billing_configuration
   - filters
+  - Filter billing configuration before creating the Stripe billing portal.
   - hooks
 ---
+# umm\_stripe\_billing\_configuration
 Filter billing configuration before creating the Stripe billing portal.
 ``` php
 apply_filters( 'umm_stripe_billing_configuration', $args )

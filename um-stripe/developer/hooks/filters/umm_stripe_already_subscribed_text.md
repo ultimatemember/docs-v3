@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_already_subscribed_text | Hooks
 tags: 
   - umm_stripe_already_subscribed_text
   - filters
+  - Modify text that's displayed when a user is already subscribed.
   - hooks
 ---
+# umm\_stripe\_already\_subscribed\_text
 Modify text that's displayed when a user is already subscribed.
 ``` php
 apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )

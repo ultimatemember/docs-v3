@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_past_due | Hooks
 tags: 
   - umm_stripe_status_past_due
   - actions
+  - Triggers when the subscription is `pass due`
   - hooks
 ---
+# umm\_stripe\_status\_past\_due
 Triggers when the subscription is `pass due`
 ``` php
 do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )

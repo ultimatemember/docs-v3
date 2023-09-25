@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_onetime_refunded | Hooks
 tags: 
   - umm_stripe_status_onetime_refunded
   - actions
+  - Triggers when the charge is refunded.
   - hooks
 ---
+# umm\_stripe\_status\_onetime\_refunded
 Triggers when the charge is refunded.
 ``` php
 do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )

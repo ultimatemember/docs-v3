@@ -80,7 +80,7 @@ function um_stripe_init(  ) : void
 
 ### Description
 
-Inits the Stripe API class.
+Initialize the Stripe API class.
 
 | | |
 |:--------:| ----------- |
@@ -104,6 +104,7 @@ Loads the language files.
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -113,7 +114,7 @@ Loads the language files.
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-25, 1:23 AM</span>
+        <span class="time">2023-09-25, 1:25 AM</span>
     </div>
 </div>
 

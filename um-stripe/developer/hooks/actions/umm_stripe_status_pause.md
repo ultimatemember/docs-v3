@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_pause | Hooks
 tags: 
   - umm_stripe_status_pause
   - actions
+  - Triggers when the subscriptions has been pause
   - hooks
 ---
+# umm\_stripe\_status\_pause
 Triggers when the subscriptions has been pause
 ``` php
 do_action( 'umm_stripe_status_pause', $um_user_id, $role_pause )

@@ -48,7 +48,7 @@ module.exports = {
             title: 'Getting Started',
             collapsable: false,
             children: [
-              ['articles/introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
+              ['article/1606-introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
             ],
           },
           {
@@ -77,8 +77,9 @@ module.exports = {
       lastUpdated: true,
 
       evergreen: false,
-  
-  
+      
+      searchPlaceholder: 'Search Documentation',
+
       // Repository configurations
       docsDir: 'docs',
       editLinks: true,

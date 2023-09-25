@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_active | Hooks
 tags: 
   - umm_stripe_status_active
   - actions
+  - Triggers when the charge has active.
   - hooks
 ---
+# umm\_stripe\_status\_active
 Triggers when the charge has active.
 ``` php
 do_action( 'umm_stripe_status_active', $um_user_id, $role_active )

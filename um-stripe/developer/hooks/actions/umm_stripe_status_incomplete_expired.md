@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_incomplete_expired | Hooks
 tags: 
   - umm_stripe_status_incomplete_expired
   - actions
+  - Triggers when the charge has expired
   - hooks
 ---
+# umm\_stripe\_status\_incomplete\_expired
 Triggers when the charge has expired
 ``` php
 do_action( 'umm_stripe_status_incomplete_expired', $um_user_id, $role_expired )

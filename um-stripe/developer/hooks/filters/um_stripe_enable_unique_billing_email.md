@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_stripe_enable_unique_billing_email | Hooks
 tags: 
   - um_stripe_enable_unique_billing_email
   - filters
+  - Allow unique billing email
   - hooks
 ---
+# um\_stripe\_enable\_unique\_billing\_email
 Allow unique billing email
 ``` php
 apply_filters( 'um_stripe_enable_unique_billing_email',  )

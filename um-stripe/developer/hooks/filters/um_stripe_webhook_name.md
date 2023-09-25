@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_stripe_webhook_name | Hooks
 tags: 
   - um_stripe_webhook_name
   - filters
+  - Modify Stripe Webhook name
   - hooks
 ---
+# um\_stripe\_webhook\_name
 Modify Stripe Webhook name
 ``` php
 apply_filters( 'um_stripe_webhook_name',  )

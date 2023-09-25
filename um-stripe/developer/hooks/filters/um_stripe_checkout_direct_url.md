@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_stripe_checkout_direct_url | Hooks
 tags: 
   - um_stripe_checkout_direct_url
   - filters
+  - Modify Checkout Direct URL
   - hooks
 ---
+# um\_stripe\_checkout\_direct\_url
 Modify Checkout Direct URL
 ``` php
 apply_filters( 'um_stripe_checkout_direct_url', $site_url )

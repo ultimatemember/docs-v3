@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_predefined_pages_restricted | Hooks
 tags: 
   - umm_stripe_predefined_pages_restricted
   - filters
+  - Restrict predefined pages.
   - hooks
 ---
+# umm\_stripe\_predefined\_pages\_restricted
 Restrict predefined pages.
 ``` php
 apply_filters( 'umm_stripe_predefined_pages_restricted', $is_restricted_page )

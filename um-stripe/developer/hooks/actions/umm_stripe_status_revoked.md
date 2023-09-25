@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_revoked | Hooks
 tags: 
   - umm_stripe_status_revoked
   - actions
+  - Fires once a subscription & account status has been revoked from a WP account.
   - hooks
 ---
+# umm\_stripe\_status\_revoked
 Fires once a subscription & account status has been revoked from a WP account.
 ``` php
 do_action( 'umm_stripe_status_revoked', $old_user_id, $role_inactive )

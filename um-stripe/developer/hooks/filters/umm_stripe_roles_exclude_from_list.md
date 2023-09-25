@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_roles_exclude_from_list | Hooks
 tags: 
   - umm_stripe_roles_exclude_from_list
   - filters
+  - Exclude protected roles from the List
   - hooks
 ---
+# umm\_stripe\_roles\_exclude\_from\_list
 Exclude protected roles from the List
 ``` php
 apply_filters( 'umm_stripe_roles_exclude_from_list',  )

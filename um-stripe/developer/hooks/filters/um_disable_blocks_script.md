@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_disable_blocks_script | Hooks
 tags: 
   - um_disable_blocks_script
   - filters
+  - Disable Gutenberg scripts to avoid the conflicts.
   - hooks
 ---
+# um\_disable\_blocks\_script
 Disable Gutenberg scripts to avoid the conflicts.
 ``` php
 apply_filters( 'um_disable_blocks_script', $disabled )

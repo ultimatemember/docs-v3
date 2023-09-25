@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_stripe_checkout_sessions_create_args | Hooks
 tags: 
   - um_stripe_checkout_sessions_create_args
   - filters
+  - Filter array before checkout sessions creation
   - hooks
 ---
+# um\_stripe\_checkout\_sessions\_create\_args
 Filter array before checkout sessions creation
 ``` php
 apply_filters( 'um_stripe_checkout_sessions_create_args',  )

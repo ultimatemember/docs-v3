@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_canceled | Hooks
 tags: 
   - umm_stripe_status_canceled
   - actions
+  - Triggers when the subscriptions has been cancelled.
   - hooks
 ---
+# umm\_stripe\_status\_canceled
 Triggers when the subscriptions has been cancelled.
 ``` php
 do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )

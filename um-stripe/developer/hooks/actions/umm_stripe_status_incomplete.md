@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_incomplete | Hooks
 tags: 
   - umm_stripe_status_incomplete
   - actions
+  - Triggers when the charge has incomplete.
   - hooks
 ---
+# umm\_stripe\_status\_incomplete
 Triggers when the charge has incomplete.
 ``` php
 do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )

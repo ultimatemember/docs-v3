@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: umm_stripe_status_unpaid | Hooks
 tags: 
   - umm_stripe_status_unpaid
   - actions
+  - Triggers when the subscription is `unpaid`
   - hooks
 ---
+# umm\_stripe\_status\_unpaid
 Triggers when the subscription is `unpaid`
 ``` php
 do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )

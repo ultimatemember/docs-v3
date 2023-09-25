@@ -3,7 +3,7 @@ home: true
 heroText: Ultimate Member + Stripe
 heroImage: /stripe.png
 actionText: Get Started →
-actionLink: articles/introduction-to-ultimate-members-stripe-extension
+actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
 ---
 
 <div class="features">

@@ -1,11 +1,12 @@
 ---
 layout: UMLayout
-title: um_stripe_webhook_payload_event_init | Hooks
 tags: 
   - um_stripe_webhook_payload_event_init
   - actions
+  - Catch Stripe's Webhook Payload Events
   - hooks
 ---
+# um\_stripe\_webhook\_payload\_event\_init
 Catch Stripe's Webhook Payload Events
 ``` php
 do_action( 'um_stripe_webhook_payload_event_init', $event )
