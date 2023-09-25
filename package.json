@@ -20,5 +20,8 @@
   "dependencies": {
     "vuepress": "^1.9.10",
     "@vuepress/plugin-register-components": "^1.9.10"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.9.10"
   }
 }

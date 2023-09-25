@@ -1,10 +1,14 @@
 # Setting up Webhook and Test/Public Keys
 <h3>Test/Publish Keys</h3>
-
->
->You can retrieve the Test/Publishable Key and Secret Key from the 
-><a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> &gt; Developers &gt; API Keys. Copy the keys and add them within the Stripe plugin settings&nbsp;( Ultimate Member &gt; Settings &gt; Extensions &gt; Stripe ).
-
+<h2>
+<p>
+	You can retrieve the Test/Publishable Key and Secret Key from the 
+	<a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> &gt; Developers &gt; API Keys. Copy the keys and add them within the Stripe plugin settings&nbsp;( Ultimate Member &gt; Settings &gt; Extensions &gt; Stripe ).
+</p>
+</h2>
+<p>
+	<a href="https://stripe.com/docs/keys#limit-access"></a>
+</p>
 <p>
 	Note: We recommend that you use a&nbsp;
 	<strong>Restricted Key </strong>for live sites and a&nbsp;<strong>Secret Key</strong> for local or staging sites for testing purposes.&nbsp;More details can be found in this <a href="https://stripe.com/docs/keys#limit-access" target="_blank">article</a>.
@@ -15,10 +19,10 @@
 	<li><strong>Live Publishable Key</strong> for live mode</li>
 </ul>
 <h2>Restricted Key Settings</h2>
-<p>
+<div>
 	We are now using the restricted key instead of the standard secret key. To set your Restricted Key, navigate to 
 	<strong>Stripe Dashboard&gt;Developers&gt;Api Key&gt;Restricted Key</strong> and Click <strong>+Edit</strong> or <strong>+Create Restricted Key</strong> button.
-</p>
+</div>
 <div>
 	Enter a key name and look for the resource types listed below in the API Keys and configure the necessary API permissions:
 </div>
@@ -167,4 +171,4 @@
 	</p>
 	</li>
 </ul>
-<h3>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></h3>
+<h3>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe-setting-up-stripe-success-and-failed-payment-pages">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></h3>
