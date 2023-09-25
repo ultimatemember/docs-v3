@@ -1,2 +1,2 @@
 # FAQ - How to Connect a Customer account to a WordPress Account?
-<p>To connect the Stripe Customer to a WordPress account, go to <a href="https://dashboard.stripe.com/test/customers">https://dashboard.stripe.com/test/customers</a></p><p>When you create a Stripe Customer, the email address should match the email address of a user created in the WordPress site. If janedoe@ultimatemember.com is registered on your WordPress site, you should add her email address in the Customers &gt; &nbsp;Add Customer.</p><p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6103db5cb37d837a3d0df126/file-wE83s39ubC.png" style="width: 372px;"></p>
+

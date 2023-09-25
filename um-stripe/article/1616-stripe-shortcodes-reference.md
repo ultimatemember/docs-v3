@@ -2,14 +2,19 @@
 <h2>Stripe Customer Portal Shortcode</h2><p>
 	 Customers need to have the ability to manage their subscription plans. This shortcode creates&nbsp;a button that redirects customers to the external page of the Stripe Customer Portal to manage subscriptions. A user must be logged in for the redirection to work.</p>
 <pre>[ultimatemember_stripe_customer_portal]
-</pre><h2>Stripe Checkout Shortcode</h2>
+</pre><p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650ac3de15e8de2d9d3257d5/file-pIY84HGI1R.png"></p><h2>
+Stripe Order Details Shortcode</h2><p>
+	This shortcode displays the order details, billing information, and subscription status for the customer. It allows them&nbsp;to review the information they've provided.&nbsp;The order details will be displayed only when the user has completed the Stripe checkout process from the Stripe checkout page.</p>
+<pre>[ultimatemember_stripe_checkout_order_details]
+</pre><h2><p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650ad229e249755d2f85c36a/file-HKaDIgydPe.png"></p></h2><h2>
+Stripe Checkout Shortcode</h2>
 <div>
 	Customers need a way to subscribe to your site and access restricted pages and content based on the role assigned to them. With the Stripe module's shortcode, you can create Subscribe buttons so that customers can select them and proceed to the Stripe Checkout page for payment, and then assign roles based on the Subscription events.
 </div><div>
 	The following example shortcode generates a button for customers to check out and subscribe. A user must be logged in for the redirection to work.
 </div><pre>[ultimatemember_stripe_checkout label="$2 CAD/month" id="123"]
-</pre><h2>Stripe Order Details Shortcode</h2><p>This shortcode displays the order details, billing information, and subscription status for the customer. It allows them&nbsp;to review the information they've provided.</p>
-<pre>[ultimatemember_stripe_checkout_order_details]
 </pre><h4> Here is the list of shortcode attributes:</h4><hr><h3> <strong>label</strong>&nbsp;</h3><p>
 	 This attribute is required and is displayed on a page. e.g. 
 	<strong>label = "CAD 3.00 / month"<br>
@@ -24,11 +29,11 @@
 		<li>url - Shows a URL string</li>
 	</ul>
 	<div>
-		Note: When a user is already subscribe to a plan, this shortcode will show
+		Note: When a user is already subscribed to a plan, this shortcode will show
 	</div></div>
 <div>
 	<pre>You're already subscribed
-	</pre></div><h1></h1>
+	</pre></div>
 <div>
 	To modify the text, you can use this filter hook:
 </div><div>
@@ -37,10 +42,59 @@ add_filter("umm_stripe_already_subscribed_text", function( $text ) {
 return esc_attr( "You're subscribed to a plan!" );
 });  
 ?&gt;
-	</pre></div><h1>Stripe Subscription Events</h1><p>
+	</pre></div><h3>class&nbsp;</h3><p>
+	Add custom classes to the button or anchor element.</p>
+<pre>[ultimatemember_stripe_checkout label="$2 CAD/month" class="my-class-button"]
+</pre><h3>payment_method_types</h3><p>
+	This attribute overrides the payment method type on the Stripe checkout page.&nbsp;</p><ul>
+	
+<li>Default value( when the attribute is not added to the shortcode): <code>card</code></li></ul><p>
+	This can have multiple attribute values separated by a comma. e.g. 
+	<code>card,alipay,grab</code></p><h4>A list of valid payment method types includes:</h4>
+<table>
+<tbody>
+<tr>
+	<td>
+		<li>acss_debit&nbsp;</li>
+		<li>affirm</li>
+		<li>afterpay_clearpay</li>
+		<li>alipay</li>
+		<li>au_becs_debit</li>
+		<li>bacs_debit</li>
+		<li>bancontact</li>
+		<li>blik</li>
+		<li>boleto</li>
+		<li>card</li>
+		<li>card_present</li>
+		<li>cashapp</li>
+		<li>eps</li>
+		<li>fpx</li>
+		<li>giropay</li>
+	</td>
+	<td>
+		<li>grabpay</li>
+		<li>ideal</li>
+		<li>klarna</li>
+		<li>konbini</li>
+		<li>link</li>
+		<li>oxxo</li>
+		<li>p24</li>
+		<li>paynow</li>
+		<li>pix</li>
+		<li>promptpay</li>
+		<li>sepa_debit</li>
+		<li>sofort</li>
+		<li>us_bank_account</li>
+		<li>wechat_pay</li>
+		<li>zip</li>
+	</td>
+</tr>
+</tbody>
+</table><blockquote class="callout-blue">
+	<strong>Note:</strong> Each payment method type has to be enabled and configured in the Stripe <a href="https://dashboard.stripe.com/settings/payment_methods"><strong>payment method settings.</strong></a>
+</blockquote><hr><h4>Stripe Subscription Events</h4><p>
 	Stripe Events enables your site to automatically change or merge a user's role. You can&nbsp;create a Stripe Plan and assign a role to each Stripe Event in WP-Admin &gt; Ultimate Member &gt; Stripe Plans. For more details, please see this 
-	<a href="https://stripe.com/docs/billing/subscriptions/overview#subscription-statuses">doc article</a> on stripe.com</p><h4>
-Here's a list of Stripe Events:</h4><hr><h3></h3><h3> <strong>active</strong>&nbsp;</h3><p>
+	<a href="https://stripe.com/docs/billing/subscriptions/overview#subscription-statuses">doc article</a> on stripe.com</p><h4>Here's a list of Stripe Events:</h4><hr><h3> <strong>active</strong>&nbsp;</h3><p>
 	 This attribute holds a role that will be assigned to customers when their subscription is active. A subscription moves into&nbsp; 
 	<code>past due</code>&nbsp;if the initial payment attempt fails. Once the first invoice is paid, the subscription moves into an&nbsp;<code>active</code>&nbsp;state. If the first invoice is not paid within 23 hours, the subscription transitions to&nbsp;<code>incomplete_expired</code>.&nbsp;</p><p>
 	 A subscription that is currently in a trial period is&nbsp; 
