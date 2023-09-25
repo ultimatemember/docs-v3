@@ -2,19 +2,24 @@
 layout: UMLayout
 ---
 # Setting up Webhook and Test/Public Keys
-<h3>Test/Publish Keys</h3><p>
-You can retrieve the Test/Publishable Key and Secret Key from the 
-> <a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> > Developers > API Keys. Copy the keys and add them within the Stripe plugin settings ( Ultimate Member > Settings > Extensions > Stripe ).</p>
-<blockquote>	
+
+
+### Test/Publish Keys
+<p>
+	You can retrieve the Test/Publishable Key and Secret Key from the 
+> 
+	<a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> > Developers > API Keys. Copy the keys and add them within the Stripe plugin settings ( Ultimate Member > Settings > Extensions > Stripe ).</p><blockquote>
 	<strong>Note:</strong> We recommend that you use a 
 	<strong>Restricted Key </strong>for live sites and a <strong>Secret Key</strong> for local or staging sites for testing purposes. More details can be found in this <a href="https://stripe.com/docs/keys#limit-access" target="_blank">article</a>.
-
+	
 <ul>
-<li><strong>Restricted Key </strong>for live sites </li>	
-<li><strong>Test Publishable Key</strong>  for the sandbox mode</li>	
-<li><strong>Live Publishable Key</strong> for live mode</li></ul>
-</blockquote>	
-<h2>Restricted Key Settings</h2><p>
+		
+<li><strong>Restricted Key </strong>for live sites </li>		
+<li><strong>Test Publishable Key</strong>  for the sandbox mode</li>		
+<li><strong>Live Publishable Key</strong> for live mode</li>	</ul></blockquote>
+
+## Restricted Key Settings
+<p>
 	We are now using the restricted key instead of the standard secret key. To set your Restricted Key, navigate to 
 	<strong>Stripe Dashboard>Developers>Api Key>Restricted Key</strong> and Click <strong>+Edit</strong> or <strong>+Create Restricted Key</strong> button.</p>
 <div>
@@ -86,7 +91,10 @@ You can retrieve the Test/Publishable Key and Secret Key from the
 	<p>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650a97d99446233b93527fbb/file-CTgXmhPKdu.png" style="width: 613.6px; display: block; margin: auto;" alt="">
 	</p>
-</div><h2> Webhook</h2><p>
+</div>
+
+##  Webhook
+<p>
 	Stripe uses webhooks to communicate with your site. It provides information such as the status of the payment or subscription and is used to update the user's role based on subscription events from Stripe's side of things. This also updates the price and product details on your site when you change them on your stripe.com account.</p><p>
 	When you check/uncheck the 
 	<strong>"Sandbox/Test Mode"</strong>, you will notice the fields' labels are changing. When checked, the fields will be in test mode, if it is unchecked it means that it is in live mode.</p><p>
@@ -151,4 +159,4 @@ You can retrieve the Test/Publishable Key and Secret Key from the
 	
 <p>
 		Depending on which you set up first, you can repeat this process for your live Webhook Secret or vice versa.
-	</p></li></ul><h3>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment Pages</a></h3>
+	</p></li></ul><p><strong>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment Pages</a><strong></strong></strong></p>

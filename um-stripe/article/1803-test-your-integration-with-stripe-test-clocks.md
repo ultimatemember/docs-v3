@@ -26,7 +26,10 @@ layout: UMLayout
 	<a href="https://stripe.com/docs/billing/testing/test-clocks" target="_blank">https://stripe.com/docs/billing/testing/test-clocks</a></p><p>
 	To see if the integration is working we suggest you create roles in 
 	<strong>wp-admin> Ultimate Member> User Roles</strong> so you can set in <strong>wp-admin>Ultimate Member> Stripe Plans> Edit a plan</strong> and see what happens when a subscription is active, unpaid, paused, past due, canceled or trialing.</p><p>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649be2c58bdb973f12e46186/file-DgYe5G7ZYE.png" alt=""></p><h3>Testing Integration with Stripe Test Clocks</h3><p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649be2c58bdb973f12e46186/file-DgYe5G7ZYE.png" alt=""></p>
+
+### Testing Integration with Stripe Test Clocks
+<p>
 	Go to your 
 	<a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe Dashboard</a> and set it to test mode.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649be3e01c43322e9690e38f/file-YNcAe1bx4l.png" alt=""></p><p>
@@ -69,14 +72,19 @@ layout: UMLayout
 			Under the 
 				<strong>Clock Objects</strong>, you'll find here the customer you've created in wp-admin>Users.  Ensure that the customer email is the same as the one registered on your site.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649bf997e832b96f633ab3c4/file-hrden3ifVm.png" alt=""><class "callout-blue"="" ""=""><strong> Note: The customer created in wp-admin>Users will only appear in test clocks if the Test Clocks option is enabled and the test clock ID is entered in wp-admin>Ultimate Member>Settings>Extensions>Stripe. Make sure to enable these settings first before creating a user.</strong>
 				</class>
-			</div></li>		</ul></ol></li></ol><h3><b style="background-color: initial;">Test Cases<br>
-</b></h3><p>
+			</div></li>		</ul></ol></li></ol>
+
+### Test Cases
+<p>
 	Before you proceed with this test, please ensure you have read 
 	<a href="https://stripe.com/docs/billing/testing/test-clocks#how-to-use-test-clocks" target="_blank">How to use test clocks</a>. </p><ul>
 	
 <li>
 	
-<h3><strong>Trial & Subscription</strong></h3><ul>
+
+
+### Trial & Subscription
+<ul>
 		
 <li>Follow the steps above on how to create a customer then login to your site in another browser using the customer you've created.
 		
@@ -118,7 +126,10 @@ layout: UMLayout
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afc388a815002c99863c0/file-q1XjBC6usa.png"></li>	</ul></li>	
 <li>
 	
-<h3>Cancel</h3><ul>
+
+
+### Cancel
+<ul>
 		
 <li>To test the cancel integration, log in to your site in another browser using the customer's account with an <strong>active subscription,</strong> then go to the <strong>Customer Billing Portal </strong>and click on the <strong>Manage billing</strong> button.<br>
 		<strong></strong><strong><img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d1f23b71911316e4000cd/file-mmtna4ypbv.png" style="width: 657.778px;" alt=""></strong></li>		
@@ -133,7 +144,10 @@ layout: UMLayout
 		</div></li>	</ul></li>	
 <li>
 	
-<h3><strong>Past Due </strong></h3><ul>
+
+
+### Past Due 
+<ul>
 		
 <li>Log in to your site in another browser using the customer's account you've created in wp-admin>Users. Then go to the <strong>Checkout page</strong> and subscribe to a plan with a free trial using these payment details: Credit Card Number <strong>4000 0000 0000 3220</strong>, expiring <strong>3/24</strong>, and CCV <strong>232</strong>. <br>
 		<strong></strong><img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d2c08cfd7fe604a7fe368/file-sKO4ZyvNkU.png" style="width: 863px;" alt=""><img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d7e94f39eb10e8e84b90a/file-j3K1180MxN.png" style="width: 895px;" alt=""></li>		
@@ -147,7 +161,10 @@ layout: UMLayout
 		</li>	</ul></li>	
 <li>
 	
-<h3><strong>Unpaid</strong></h3><ul>
+
+
+### Unpaid
+<ul>
 		
 <li>If all retries scheduled for the customer's subscription payment have failed instead of <strong>canceled subscription status</strong>, you can change the settings and turn it into an <strong>unpaid subscription status</strong>.</li>		
 <li>Go to:  <a href="https://dashboard.stripe.com/settings/billing/automatic">https://dashboard.stripe.com/settings/billing/automatic</a>. In the settings, scroll to <strong>Manage failed payments> Subscription status > If all retries for a payment fail > Mark the subscription unpaid.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/640889579c8683055bad3991/file-zvelcOD6o5.png" alt=""></strong></li>		

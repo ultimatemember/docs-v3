@@ -99,6 +99,16 @@ module.exports = {
       '@vuepress/plugin-medium-zoom':{
         selector: 'img'
       },
-      '@vuepress/back-to-top': {}
+      '@vuepress/back-to-top': {},
+      'vuepress-plugin-right-anchor': {
+        ignore: [
+          '/developer/hooks/actions.html',
+          '/developer/hooks/filters.html'
+          // more...
+        ],
+        
+        customClass: 'your-customClass',
+        disableGlobalUI: false,
+      }
     }
   };

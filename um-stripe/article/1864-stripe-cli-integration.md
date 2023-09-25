@@ -2,13 +2,23 @@
 layout: UMLayout
 ---
 # CLI Integration
-<h3>Overview</h3><p>
-	This article provides instructions on how to integrate the Stripe CLI to test our Ultimate Member Stripe extension on your local computer. The integration will help ensure that your webhook endpoint is working properly before going live. </p><h3>Setup</h3><h3></h3><ul>
+
+
+### Overview
+<p>
+	This article provides instructions on how to integrate the Stripe CLI to test our Ultimate Member Stripe extension on your local computer. The integration will help ensure that your webhook endpoint is working properly before going live. </p>
+
+### Setup
+
+
+### 
+<ul>
 	
 <li><strong><a href="https://stripe.com/docs/stripe-cli" target="_blank">Install Stripe CLI</a>  </strong>and log in to authenticate your account.
 	</li>	
 <li>	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fc42885de842a5d8c9e1/file-TuXnARK8wV.png" alt="" style="display: block; margin: auto;">Check if the pairing code matches the Stripe CLI login command. 
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fd06885de842a5d8c9e3/file-giMVkHREeh.png" style="width: 453.778px; display: block; margin: auto;" alt=""></li><li>When the verification is successful, the account ID will appear in the command.
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fd06885de842a5d8c9e3/file-giMVkHREeh.png" style="width: 453.778px; display: block; margin: auto;" alt=""></li>	
+<li>When the verification is successful, the account ID will appear in the command.
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649432b11c43322e9690de73/file-pMzTADIQTF.png" alt="" style="display: block; margin: auto;">
 	</li></ul><h4>1. Forward events to a local webhook endpoint</h4><ul>
 	

@@ -36,7 +36,8 @@ layout: UMLayout
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6470d26667106052aab4cb04/file-IzKdmD9Zyq.png" alt="" style="display: block; margin: auto;"></p><p>
 	Pick the mode you wish to display. In this example, we picked 
 	<strong>Recurring</strong>, and you will see the product price you created with Stripe under the Subscription Price.</p><p>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6470d3e001fe745c0ae98261/file-aP8jvVeyuE.png" alt="" style="display: block; margin: auto;"></p><figure><figcaption><br>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6470d3e001fe745c0ae98261/file-aP8jvVeyuE.png" alt="" style="display: block; margin: auto;"></p><figure>
+<figcaption><br>
 </figcaption></figure><p>
 	If you have selected 
-	<strong>One-time </strong>from type, the one-time price you have created in Stripe will be displayed in Subscription Price.</p><h3></h3><h3>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference" target="_blank">SHORTCODE REFERENCE</a></h3>
+	<strong>One-time </strong>from type, the one-time price you have created in Stripe will be displayed in Subscription Price.</p><p><strong>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference" target="_blank">SHORTCODE REFERENCE</a></strong></p>

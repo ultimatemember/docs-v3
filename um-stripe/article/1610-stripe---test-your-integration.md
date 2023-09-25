@@ -21,7 +21,10 @@ layout: UMLayout
 	</p></blockquote><blockquote>
 	<strong>Recommendation:</strong> Stripe has a Test Clock feature where you can simulate the Stripe events by advancing time. Please see this article: <u></u><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1803-test-your-integration-with-stripe-test-clocks"> https://ultimatemember.github.io/docs-v3/um-stripe/article/1803-test-your-integration-with-stripe-test-clocks</a>
 </blockquote><p class="callout-yellow">
-	<strong>Warning: When testing, please use a<u> subscriber account </u>instead of an <u>administrator account</u>. When you use an administrator account, it won't remove the roles assigned to it, and this is to prevent you from being locked out as admin.</strong></p><h3>Testing the Subscription Statuses and Assigning Roles </h3><ol>
+	<strong>Warning: When testing, please use a<u> subscriber account </u>instead of an <u>administrator account</u>. When you use an administrator account, it won't remove the roles assigned to it, and this is to prevent you from being locked out as admin.</strong></p>
+
+### Testing the Subscription Statuses and Assigning Roles 
+<ol>
 	
 <li>
 	Using your Admin account, add a new user with a subscriber role.
