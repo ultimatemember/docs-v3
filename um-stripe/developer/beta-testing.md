@@ -24,4 +24,4 @@ layout: UMLayout
 	</li>
 </ol>
 
-To report an issue, please use our [support ticket page](http://ultimatemember.com/support/ticket/).
+To report an issue or submit a feedback, please use our [support ticket page](http://ultimatemember.com/support/ticket/).
