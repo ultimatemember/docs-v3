@@ -33,4 +33,4 @@
 <br>
 </figcaption></figure><p>
 	If you have selected 
-	<strong>One-time </strong>from type, the one-time price you have created in Stripe will be displayed in Subscription Price.</p><h3></h3><h3>T: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference">SHORTCODE REFERENCE</a></h3>
+	<strong>One-time </strong>from type, the one-time price you have created in Stripe will be displayed in Subscription Price.</p><h3></h3><h3>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference">SHORTCODE REFERENCE</a></h3>

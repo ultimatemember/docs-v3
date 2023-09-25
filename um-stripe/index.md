@@ -2,11 +2,14 @@
 home: true
 heroText: Ultimate Member + Stripe
 heroImage: /stripe.png
-actionText: Get Started →
+actionText: Get Started  →
 actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
 ---
 
-<div style="text-align:center;text-indent: 20px">
+<div  style="text-align:center;">
+*currently open to <a href="./developer/beta-testing">beta testing</a>
+</div>
+<div style="text-align:center;text-indent: 20px;padding-top:30px">
 <img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-7856ff?style=social&logo=wordpress"/>&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-7856ff?style=social&logo=github"/>
 </div>
