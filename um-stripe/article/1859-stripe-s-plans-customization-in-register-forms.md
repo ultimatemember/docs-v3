@@ -1,3 +1,6 @@
+---
+layout: UMLayout
+---
 # Stripe’s Plans Customization in Register Forms
 <p>
 	Customize the Stripe Plans displayed in Registration Forms by using the CSS selectors provided below. Add the code to the current theme's styles.css file or use Customize Settings if the theme supports it. We recommend that you use the UM theme for the best results.</p><h3>

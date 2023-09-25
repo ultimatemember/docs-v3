@@ -1,17 +1,22 @@
+---
+layout: UMLayout
+---
 # Setting up Webhook and Test/Public Keys
 <h3>Test/Publish Keys</h3><p>
-	&gt;
-&gt;You can retrieve the Test/Publishable Key and Secret Key from the 
-&gt;
-	<a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> &gt; Developers &gt; API Keys. Copy the keys and add them within the Stripe plugin settings&nbsp;( Ultimate Member &gt; Settings &gt; Extensions &gt; Stripe ).</p><p>
-	Note: We recommend that you use a&nbsp;
-	<strong>Restricted Key </strong>for live sites and a&nbsp;<strong>Secret Key</strong> for local or staging sites for testing purposes.&nbsp;More details can be found in this <a href="https://stripe.com/docs/keys#limit-access" target="_blank">article</a>.</p><ul>
-	
-<li><strong>Restricted Key&nbsp;</strong>for live sites&nbsp;</li>	
-<li><strong>Test Publishable Key</strong>&nbsp; for the sandbox mode</li>	
-<li><strong>Live Publishable Key</strong> for live mode</li></ul><h2>Restricted Key Settings</h2><p>
+You can retrieve the Test/Publishable Key and Secret Key from the 
+> <a href="https://dashboard.stripe.com/" target="_blank">Stripe Dashboard</a> > Developers > API Keys. Copy the keys and add them within the Stripe plugin settings ( Ultimate Member > Settings > Extensions > Stripe ).</p>
+<blockquote>	
+	<strong>Note:</strong> We recommend that you use a 
+	<strong>Restricted Key </strong>for live sites and a <strong>Secret Key</strong> for local or staging sites for testing purposes. More details can be found in this <a href="https://stripe.com/docs/keys#limit-access" target="_blank">article</a>.
+
+<ul>
+<li><strong>Restricted Key </strong>for live sites </li>	
+<li><strong>Test Publishable Key</strong>  for the sandbox mode</li>	
+<li><strong>Live Publishable Key</strong> for live mode</li></ul>
+</blockquote>	
+<h2>Restricted Key Settings</h2><p>
 	We are now using the restricted key instead of the standard secret key. To set your Restricted Key, navigate to 
-	<strong>Stripe Dashboard&gt;Developers&gt;Api Key&gt;Restricted Key</strong> and Click <strong>+Edit</strong> or <strong>+Create Restricted Key</strong> button.</p>
+	<strong>Stripe Dashboard>Developers>Api Key>Restricted Key</strong> and Click <strong>+Edit</strong> or <strong>+Create Restricted Key</strong> button.</p>
 <div>
 	Enter a key name and look for the resource types listed below in the API Keys and configure the necessary API permissions:
 </div><table>
@@ -29,7 +34,7 @@
 		Customers
 	</td>
 	<td>
-		Write&nbsp;
+		Write 
 	</td>
 </tr>
 <tr>
@@ -37,7 +42,7 @@
 		Checkout Sessions
 	</td>
 	<td>
-		Write&nbsp;
+		Write 
 	</td>
 </tr>
 <tr>
@@ -88,13 +93,13 @@
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649e7c9dcfd7fe604a7fe4a7/file-BeAy5kC8DH.png" style="width: 517.6px;" alt=""></p><p>
 	 In the Stripe settings, you'll find a webhook endpoint ready for you to copy and paste into your Stripe.com account.</p><ul>
 	
-<li>Head to&nbsp;<strong>U</strong><strong>ltimate Member &gt; Settings &gt; Extensions&gt; Stripe</strong>. Beside the&nbsp;Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the&nbsp;<strong>"Connect with stripe" </strong>button, and your Webhook endpoint will be added instantly to your Stripe account settings.
+<li>Head to <strong>U</strong><strong>ltimate Member > Settings > Extensions> Stripe</strong>. Beside the Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the <strong>"Connect with stripe" </strong>button, and your Webhook endpoint will be added instantly to your Stripe account settings.
 	
 <p>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa281b57bfa3b524b136f/file-M8377saI19.png">
 	</p></li>	
 <li>When you try to click on 
-	<strong style="background-color: initial;">"Connect with Stripe"</strong>, it should validate the Publishable key and Secret key. It will show an error message when they are invalid.&nbsp;</li>
+	<strong style="background-color: initial;">"Connect with Stripe"</strong>, it should validate the Publishable key and Secret key. It will show an error message when they are invalid. </li>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa146b57bfa3b524b136e/file-kGDfiY7hDa.png">
 	
 <li>
@@ -107,7 +112,7 @@
 	<div>
 		<div>
 			When you attempt to connect with Stripe, the error shown in the image below will appear if the Stripe extension is installed on localhost or your own computer and is utilizing a local domain. For a site to receive the payload or events from the Stripe.com events transactions, the Webhook URL for Stripe must be publicly accessible.
-			<em>&nbsp;</em><em>Even if this webhook creation error occurs, you can still import pricing locally.</em><br>
+			<em> </em><em>Even if this webhook creation error occurs, you can still import pricing locally.</em><br>
 			<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/646b612637f16f5e28f5e72c/file-bPQiO1aMtK.png" alt="">
 		</div></div></li>	
 <li>Next, in your Stripe Dashboard, go to <a href="https://dashboard.stripe.com/webhooks" target="_blank">Webhook Setting</a> and check if the webhook URL has been added to the webhook endpoint. There may be a delay before it appears, so please wait a few seconds or try to reload the Stripe page.
@@ -146,4 +151,4 @@
 	
 <p>
 		Depending on which you set up first, you can repeat this process for your live Webhook Secret or vice versa.
-	</p></li></ul><h3>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></h3>
+	</p></li></ul><h3>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment Pages</a></h3>

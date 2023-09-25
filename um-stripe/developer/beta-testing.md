@@ -1,5 +1,7 @@
+---
+layout: UMLayout
+---
 # Beta Testing Program
-
 <p>
 	To begin Stripe beta testing, follow the steps below:
 </p>
@@ -22,4 +24,4 @@
 	</li>
 </ol>
 
-To report an issue, please use our [support ticket page](http://ultimatemember.com/).
+To report an issue, please use our [support ticket page](http://ultimatemember.com/support/ticket/).

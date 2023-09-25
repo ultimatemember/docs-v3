@@ -1,9 +1,12 @@
+---
+layout: UMLayout
+---
 # Beta Test
 <p>
 	To begin Stripe beta testing, follow the steps below:
 </p>
 <ol>
-	<li>Go to <a href="http://ultimatemember.com/">ultimatemember.com</a> and sign in&nbsp;to your account.<br>
+	<li>Go to <a href="http://ultimatemember.com/">ultimatemember.com</a> and sign in to your account.<br>
 	<p>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65111ea0638c3422caf9cc65/file-1zRRYgXppW.png">
 	</p>
@@ -11,7 +14,7 @@
 	<li>
 	<p>
 		Head to 
-		<strong>File Downloads &gt; Stripe Extension</strong>
+		<strong>File Downloads > Stripe Extension</strong>
 	</p>
 	</li>
 	<li>

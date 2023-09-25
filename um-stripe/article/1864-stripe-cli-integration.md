@@ -1,11 +1,14 @@
+---
+layout: UMLayout
+---
 # CLI Integration
 <h3>Overview</h3><p>
-	This article provides instructions on how to integrate the Stripe CLI to test our Ultimate Member Stripe extension on your local computer. The integration will help&nbsp;ensure that your webhook endpoint is working properly before going live.&nbsp;</p><h3>Setup</h3><h3></h3><ul>
+	This article provides instructions on how to integrate the Stripe CLI to test our Ultimate Member Stripe extension on your local computer. The integration will help ensure that your webhook endpoint is working properly before going live. </p><h3>Setup</h3><h3></h3><ul>
 	
-<li><strong><a href="https://stripe.com/docs/stripe-cli" target="_blank">Install Stripe CLI</a> &nbsp;</strong>and log in&nbsp;to authenticate your account.
+<li><strong><a href="https://stripe.com/docs/stripe-cli" target="_blank">Install Stripe CLI</a>  </strong>and log in to authenticate your account.
 	</li>	
-<li>	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fc42885de842a5d8c9e1/file-TuXnARK8wV.png" alt="" style="display: block; margin: auto;">Check if the pairing code matches the Stripe CLI login command.&nbsp;
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fd06885de842a5d8c9e3/file-giMVkHREeh.png" style="width: 453.778px; display: block; margin: auto;" alt=""></li><li>When&nbsp;the verification is successful, the account ID will appear in the command.
+<li>	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fc42885de842a5d8c9e1/file-TuXnARK8wV.png" alt="" style="display: block; margin: auto;">Check if the pairing code matches the Stripe CLI login command. 
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6493fd06885de842a5d8c9e3/file-giMVkHREeh.png" style="width: 453.778px; display: block; margin: auto;" alt=""></li><li>When the verification is successful, the account ID will appear in the command.
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649432b11c43322e9690de73/file-pMzTADIQTF.png" alt="" style="display: block; margin: auto;">
 	</li></ul><h4>1. Forward events to a local webhook endpoint</h4><ul>
 	
@@ -13,7 +16,7 @@
 	
 <ul>
 		
-<li><strong>Command Line: &nbsp;</strong><strong>stripe listen --forward-to "localhost:8000/?umm-stripe-webhook=true"</strong></li>		
+<li><strong>Command Line:  </strong><strong>stripe listen --forward-to "localhost:8000/?umm-stripe-webhook=true"</strong></li>		
 <li>
 		
 <p>
@@ -25,7 +28,7 @@
 			<strong>
 			<strong>Example:<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649434c9c5d2b53344e729ae/file-rBgBPcK9Lo.png" style="width: 1078.78px; display: block; margin: auto;" alt=""></strong></strong>
 		</p></li>	</ul></li>	
-<li>Copy the Webhook secret and add it in the /wp-config.php file before the "That's all" code comment:&nbsp;&nbsp;</li>
+<li>Copy the Webhook secret and add it in the /wp-config.php file before the "That's all" code comment:  </li>
 	<pre>define( 'UM_STRIPE_DEV_LOCAL', 'whsec_5741b47f3f9faabd935713136e08a47e3f6e7d3b78e501787e9891838d2' );
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
@@ -33,8 +36,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', __DIR__ . '/' );
 }
 	</pre><p>
-		&nbsp;When the aforementioned constant is defined or added to that file, the following message appears in&nbsp; 
-		<strong>wp-admin&gt;Ultimate Member&gt;Settings&gt;Extensions&gt;Stripe</strong>:<br>
+		 When the aforementioned constant is defined or added to that file, the following message appears in  
+		<strong>wp-admin>Ultimate Member>Settings>Extensions>Stripe</strong>:<br>
 	</p><p>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649454351c43322e9690deab/file-8qLOCDnCB4.png" style="width: 906.778px; display: block; margin: auto;" alt="">
 	</p><ul>
@@ -42,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <li>
 		
 <p style="">
-			<strong style="font-weight: bold;">Optional:&nbsp;</strong>To forward specific events in a comma-separated list, use the <code style="">--events</code> flag
+			<strong style="font-weight: bold;">Optional: </strong>To forward specific events in a comma-separated list, use the <code style="">--events</code> flag
 		</p><p style="font-weight: bold;">
 		</p><ul>
 			
@@ -56,10 +59,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</p><li>
 		
 <p style="">
-			<strong>Optional:&nbsp;</strong>Use the <code style="">--load-from-webhooks-api</code> and&nbsp;<code style="">--forward-to</code> flags if you've already registered your endpoint on Stripe.
+			<strong>Optional: </strong>Use the <code style="">--load-from-webhooks-api</code> and <code style="">--forward-to</code> flags if you've already registered your endpoint on Stripe.
 		</p><ul>
 			
-<li><strong>Command Line:</strong>&nbsp;<be name="be">
+<li><strong>Command Line:</strong> <be name="be">
 			<code>stripe listen --load-from-webhooks-api --forward-to localhost:5000</code></be></li>		</ul></li>	</ul><p>
 		<strong>
 		<strong>	</strong>
@@ -67,10 +70,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</p><p>
 		<strong>	</strong>
 	</p></ul><p>
-	With this command, events are&nbsp;sent to your public&nbsp;webhook endpoint on Stripe-registered and&nbsp;will be forwarded to your local webhook endpoint. The path is appended to your local webhook endpoint in the 
-	<code style="">--forward-to</code>&nbsp;the path once the path has been loaded, parsed and its registered events have been taken into account. Use the 
-	<code style="">WEBHOOK_SIGNING_SECRET</code> from the initial output of the <code style="">listen</code> commands when&nbsp;validating webhook signatures.</p><p>
-	2.&nbsp;Trigger events to test your webhooks integration</p><ul>
+	With this command, events are sent to your public webhook endpoint on Stripe-registered and will be forwarded to your local webhook endpoint. The path is appended to your local webhook endpoint in the 
+	<code style="">--forward-to</code> the path once the path has been loaded, parsed and its registered events have been taken into account. Use the 
+	<code style="">WEBHOOK_SIGNING_SECRET</code> from the initial output of the <code style="">listen</code> commands when validating webhook signatures.</p><p>
+	2. Trigger events to test your webhooks integration</p><ul>
 	
 <li><span style="background-color: initial;">To simulate the event that happens after a client payment is successful for the <a href="https://stripe.com/docs/api/checkout/sessions/create" target="_blank">Create a session API</a> in the <a href="https://stripe.com/docs/checkout/quickstart" target="_blank">Prebuilt Checkout page</a>, run the <code>stripe trigger checkout.session.completed</code> command.</span>
 	
@@ -78,6 +81,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 <li><span style="background-color: initial;">
 		<div style="">
-			Command Line:&nbsp;
+			Command Line: 
 			<code style="font-weight: normal;">stripe trigger checkout.session.completed</code>
 		</div></span></li>	</ul></li></ul>
