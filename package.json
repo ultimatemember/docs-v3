@@ -22,6 +22,7 @@
     "@vuepress/plugin-register-components": "^1.9.10"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.10",
     "@vuepress/plugin-medium-zoom": "^1.9.10"
   }
 }

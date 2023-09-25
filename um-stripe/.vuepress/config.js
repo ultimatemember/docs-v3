@@ -94,9 +94,11 @@ module.exports = {
         },
       },
     },
-    plugins: [
-        [
-          'register-components',
-        ]
-      ]
+    plugins: {
+      'register-components': {},
+      '@vuepress/plugin-medium-zoom':{
+        selector: 'img'
+      },
+      '@vuepress/back-to-top': {}
+    }
   };
