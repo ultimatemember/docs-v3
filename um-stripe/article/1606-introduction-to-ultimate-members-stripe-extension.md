@@ -7,10 +7,10 @@
 	 The following guides aim to&nbsp;teach you how to get started, explaining the available features and options.&nbsp;</p><h2><strong>Documentation Contents</strong></h2><ul>
 	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys" target="_blank">Setting up Webhook and Test/Public Keys</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe-setting-up-stripe-success-and-failed-payment-pages" target="_blank">Setting up Stripe Success ,Cancel Payment and Already Subscribed Pages</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages" target="_blank">Setting up Stripe Success, Cancel Payment and Already Subscribed Pages</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices" target="_blank">Create Subscription Prices</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference" target="_blank">Shortcodes &amp; Subscription Events</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-register-form" target="_blank">Add Subscription Plans to a Register Form</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-registeration-form" target="_blank">Add Subscription Plans to a Register Form</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1611-stripe---create-test-customer-billings" target="_blank">Create &amp; Test Customer Billings</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1610-stripe---test-your-integration" target="_blank">Test your integration</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1803-test-your-integration-with-stripe-test-clocks" target="_blank">Test your integration with Stripe test clocks</a></li>	

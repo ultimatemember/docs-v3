@@ -4,7 +4,7 @@
 	Before testing your integration, make sure you've read and setup the required details in the following documentation before you proceed:</p><ul>
 	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys" target="_blank">Setting up Webhook and Test/Public Keys</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe-setting-up-stripe-success-and-failed-payment-pages" target="_blank">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages" target="_blank">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices" target="_blank">Create Subscription Prices</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference" target="_blank">Shortcodes &amp; Subscription Events</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-register-form" target="_blank">Add Subscription Plans to a Register Form</a></li>	
@@ -90,7 +90,7 @@
 <li>Now go to your <strong>Stripe Dashboard&gt;Billing&gt; Test clocks&gt;</strong> Select your test clocks simulation and click on the user with the trial subscription.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d38e7cfd7fe604a7fe372/file-1pygW0NFDs.png" alt=""></li>		
 <li>You'll see in the customer's overview that the subscription is on trial, then in the <strong>invoices </strong>section, you'll see that an <strong>invoice of $0.00</strong> is generated due to the free trial.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d3e3774f970393a8b088d/file-QEvuXRqk6P.png" alt=""></li>		
-<li>Go to <strong>wp-admin&gt;Users</strong> and check if the role and the status have changed to Trialing.&nbsp;<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d3f4e74f970393a8b088e/file-ZuaLJX0j0V.png" alt=""></li>	</ul></li>	
+<li>Go to <strong>wp-admin&gt;Users</strong> and check if the role and the status have changed to Trialing.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afa5be249755d2f85c394/file-rKZOAjlct6.png">&nbsp;</li>	</ul></li>	
 <li>
 	
 <ul>
@@ -100,9 +100,9 @@
 		Take notice that in this example, the Plan Subscription will automatically renew after&nbsp;
 		<strong>one year;</strong>&nbsp;therefore, we'll test it later using a test clock.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d46a21f9ba00c2bcf970e/file-A5gRAVSgpk.png" alt=""></li>		
-<li>Go to Stripe Dashboard&gt; Billings&gt; Test Clocks&gt; Select your test clocks simulation&gt; click on the customer with a&nbsp;<strong>paused plan. </strong>You'll see in the customer's <strong>Overview&gt; Subscriptions </strong>that the collection is paused.<img src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d4544b71911316e4000ed/file-hUX9yseHtQ.png" alt=""></li>		
-<li>Go to wp-admin&gt;Users and check if the role and status have changed.<br>
-		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d461ff39eb10e8e84b8cb/file-IqR4IkY2Fn.png" alt=""></li>	</ul><ul>
+<li>Go to Stripe Dashboard&gt; Billings&gt; Test Clocks&gt; Select your test clocks simulation&gt; click on the customer with a&nbsp;<strong>paused plan. </strong>You'll see in the customer's <strong>Overview&gt; Subscriptions </strong>that the collection is paused.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d4544b71911316e4000ed/file-hUX9yseHtQ.png" alt=""></li>		
+<li>Go to wp-admin&gt;Users and check if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afb4ce249755d2f85c395/file-ldlqBmMzAX.png">
+		</li>	</ul><ul>
 		
 <h4>Resume</h4><li>Go to Billing&gt; Test Clocks&gt; Select your test clock simulation and click on the <strong>Advance time</strong>&nbsp;button.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d4d8d1f9ba00c2bcf9710/file-bg4srJuk3i.png" alt=""></li>		
@@ -112,7 +112,7 @@
 <li>In the customer's overview, the subscription becomes active because the plan has been resumed. You can see in the Payments and Invoices that the payment for the 1st year was canceled and void because the subscription plan was paused.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d6ec4b71911316e40010b/file-4uQj5w5Q7R.png" alt=""></li>		
 <li>Go to <strong>wp-admin&gt; Users</strong> and check if the role and status have changed.<br>
-		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d70a0b71911316e40010c/file-IZ4YOvdahw.png" alt=""></li>	</ul></li>	
+		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afc388a815002c99863c0/file-q1XjBC6usa.png"></li>	</ul></li>	
 <li>
 	
 <h3>Cancel</h3><ul>
@@ -126,7 +126,7 @@
 		<div>
 			Go to wp-admin&gt;Users and check if the role and status have changed.
 			<br>
-			<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d7707b71911316e40011b/file-RIYjEZydjf.png" style="width: 1027px;" alt="">
+			<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afced8a815002c99863c2/file-ur9DR5RW0O.png">
 		</div></li>	</ul></li>	
 <li>
 	
@@ -140,7 +140,7 @@
 		<strong></strong><img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d80e61f9ba00c2bcf974b/file-ukGXeAdaQk.png" alt=""></li>		
 <li>&nbsp;Once the clock time has been advanced, the payment failed, the customer was not charged because the card is declined, so the status will be <strong>Past Due.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d85b4cfd7fe604a7fe3be/file-lQueAWPVxR.png" alt=""></strong></li>		
-<li>You can check in<strong> wp-admin&gt;Users</strong> if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649eb133f39eb10e8e84ba3f/file-3xjNNJVKh5.png" alt="">
+<li>You can check in<strong> wp-admin&gt;Users</strong> if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afe0d302287021e634b53/file-IQJbCMbFpt.png">
 		</li>	</ul></li>	
 <li>
 	
@@ -164,8 +164,7 @@
 			
 <p style="">
 				You can check in&nbsp;
-				<strong>wp-admin&gt;Users</strong> if the role and status have changed.<br>
-				<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649dc92d1f9ba00c2bcf97af/file-yYAmi2I6lb.png" alt="">
+				<strong>wp-admin&gt;Users</strong> if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650affc69446233b93528037/file-12OIAFc2wA.png"><br>
 			</p><p>
 				<strong></strong><span style="background-color: initial;"><br>
 				</span>

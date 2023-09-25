@@ -4,7 +4,7 @@
 	 To test the integration, ensure that you've read and setup the required details in the following documentation before you proceed:</p><ul>
 	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys">Setting up Webhook and Test/Public Keys</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe-setting-up-stripe-success-and-failed-payment-pages">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment&nbsp;Pages</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices">Create Subscription Prices</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference">Shortcode Reference</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1611-stripe---create-test-customer-billings">Create &amp; Test Customer Billings</a></li></ul><blockquote>
