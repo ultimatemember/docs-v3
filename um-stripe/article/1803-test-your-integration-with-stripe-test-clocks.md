@@ -10,7 +10,7 @@ layout: UMLayout
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages" target="_blank">Setting up Stripe Success and Cancel Payment Pages</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices" target="_blank">Create Subscription Prices</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference" target="_blank">Shortcodes & Subscription Events</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-register-form" target="_blank">Add Subscription Plans to a Register Form</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-registeration-form" target="_blank">Add Subscription Plans to a Register Form</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1611-stripe---create-test-customer-billings" target="_blank">Create & Test Customer Billings</a></li></ul><blockquote>
 	
 <p>

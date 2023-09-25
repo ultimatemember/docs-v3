@@ -6,7 +6,7 @@ layout: UMLayout
 	 Before adding a Stripe plan to a registration form, ensure that you've read and set up the required details in the following documentation articles:</p><ul>
 	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys" target="_blank">Setting up Webhook and Test/Public Keys</a></li>	
-<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe-setting-up-stripe-success-and-failed-payment-pages" target="_blank">Setting up Stripe Success and Cancel Payment Pages</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages" target="_blank">Setting up Stripe Success and Cancel Payment Pages</a></li>	
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices" target="_blank">Create Subscription Prices</a></li></ul><p>
 	 To add a Stripe subscription plan to a registration form, go to 
 	<strong>WP Admin > Ultimate Member > Forms > Edit/Add a Registration form.</strong> Click on the " <strong>plus(</strong><strong>+)</strong> " icon to show the Fields Manager.</p><p>
