@@ -6,6 +6,10 @@ actionText: Get Started →
 actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
 ---
 
+<div style="text-align:center;">
+<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12+-7856ff"/>
+<img src="https://img.shields.io/badge/uses-@stripe/stripe--php_v10.5.10-7856ff"/>
+</div>
 <div class="features">
   <div class="feature">
     <h2>Subscription Service</h2>
@@ -20,6 +24,7 @@ actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
     <p>Take advantage of the Stripe Checkout system that supports dozens of Payment Method Types.</p>
   </div>
 </div>
+
 
 ::: slot footer
 Copyright © 2023 [Ultimate Member Group Ltd.](https://ultimatemember.com/)
