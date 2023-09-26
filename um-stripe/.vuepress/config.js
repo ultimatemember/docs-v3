@@ -47,6 +47,7 @@ module.exports = {
           { 
             title: 'Getting Started',
             collapsable: false,
+            sidebarDepth: 0,    // optional, defaults to 1
             children: [
               ['article/1606-introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
             ],

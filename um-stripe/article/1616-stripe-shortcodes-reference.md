@@ -71,7 +71,7 @@ return esc_attr( "You're subscribed to a plan!" );
 <pre>[ultimatemember_stripe_checkout label="$2 CAD/month" class="my-class-button"]
 </pre>
 
-### payment_method_types
+### payment\_method\_types
 <p>
 	This attribute overrides the payment method type on the Stripe checkout page. </p><ul>
 	
@@ -148,7 +148,7 @@ return esc_attr( "You're subscribed to a plan!" );
 	 This attribute holds a role that will be assigned to customers when their subscription is paused. When a subscription is resumed, and the subscription is trialing, it will assign the role set in the 
 	<strong>trialing</strong> attribute. If the subscription is not trialing, it will assign the role set in the <strong>active</strong> attribute.</p><hr>
 
-###  past_due 
+###  past\_due 
 <p>
 	 This attribute holds a role that will be assigned to customers when their subscription is 
 	<strong>past due</strong>.</p><hr>
@@ -165,7 +165,7 @@ return esc_attr( "You're subscribed to a plan!" );
 <li>When a customer cancels the subscription immediately</li>	
 <li>Or at the end of the period when the subscription is canceled automatically by Stripe</li></ul><hr>
 
-###  trial_period_days 
+###  trial\_period\_days 
 <p>
 	 The default number of trial days when subscribing a customer to a plan. This attribute enables the trialing functionality of the subscription plan. This will always overwrite any trials that might apply via a subscribed plan.</p><hr>
 <strong>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1610-stripe---test-your-integration" style="font-family: inherit; font-size: 21px;">Test Your Integration</a></strong>
