@@ -8,6 +8,7 @@ tags:
 ---
 # um\_disable\_blocks\_script
 Disable Gutenberg scripts to avoid the conflicts.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php
 apply_filters( 'um_disable_blocks_script', $disabled )
 ```
@@ -20,7 +21,7 @@ If this is set to true, Stripe Guternberg blocks are disabled.
 
 ### Parameters
 
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong>$disabled</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >bool</span>
 <div style="margin-left:10px;padding: 10px 5px">Whether the Blocks script is disabled</div>
 </div>
@@ -31,8 +32,8 @@ If this is set to true, Stripe Guternberg blocks are disabled.
 ### Sample Usage
 
 ``` php
-add_filter( 'um_disable_blocks_script', 'um_09252023_disable_blocks_script ', 10, 1 )
-function um_09252023_disable_blocks_script( $disabled ){
+add_filter( 'um_disable_blocks_script', 'um_09272023_disable_blocks_script ', 10, 1 )
+function um_09272023_disable_blocks_script( $disabled ){
   return $disabled;
 }
 ```

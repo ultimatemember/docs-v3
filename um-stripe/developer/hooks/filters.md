@@ -24,6 +24,9 @@ Allow unique billing email
 ## [um_stripe_webhook_name](./filters/um_stripe_webhook_name)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify Stripe Webhook name
+## [um_whitelisted_metakeys](./filters/um_whitelisted_metakeys)<Badge text="Since 2.6.7" vertical="middle" />
+
+Filters whitelisted usermeta keys that can be stored inside DB after UM Form submission.
 ## [umm_stripe_already_subscribed_text](./filters/umm_stripe_already_subscribed_text)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify text that's displayed when a user is already subscribed.

@@ -8,6 +8,7 @@ tags:
 ---
 # umm\_stripe\_already\_subscribed\_text
 Modify text that's displayed when a user is already subscribed.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php
 apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )
 ```
@@ -15,7 +16,7 @@ apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )
 
 ### Parameters
 
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong>$subscribed_text</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
 <div style="margin-left:10px;padding: 10px 5px">Already Subscribed content.</div>
 </div>
@@ -26,8 +27,8 @@ apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_already_subscribed_text', 'um_09252023_stripe_already_subscribed_text ', 10, 1 )
-function um_09252023_stripe_already_subscribed_text( $subscribed_text ){
+add_filter( 'umm_stripe_already_subscribed_text', 'um_09272023_stripe_already_subscribed_text ', 10, 1 )
+function um_09272023_stripe_already_subscribed_text( $subscribed_text ){
   return $subscribed_text;
 }
 ```

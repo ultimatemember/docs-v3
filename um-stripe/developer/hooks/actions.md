@@ -12,8 +12,12 @@ sidebarDepth: 0
 ## [um_stripe_webhook_payload_event_init](./actions/um_stripe_webhook_payload_event_init)<Badge text="Since 1.0.0" vertical="middle" />
 
 Catch Stripe's Webhook Payload Events
+## [um_submit_form_register](./actions/um_submit_form_register)
+
+## [umm_stripe_session_completed](./actions/umm_stripe_session_completed)
+Triggers when the checkout session is completed.
 ## [umm_stripe_status_active](./actions/umm_stripe_status_active)
-Triggers when the subscriptions has been active.
+Triggers when the payments have been succesfully made.
 ## [umm_stripe_status_canceled](./actions/umm_stripe_status_canceled)
 Triggers when the subscriptions has been cancelled.
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)
@@ -30,6 +34,8 @@ Triggers when the subscriptions has been pause
 
 Fires once a subscription & account status has been revoked from a WP account.
 ## [umm_stripe_status_trialing](./actions/umm_stripe_status_trialing)
-Triggers when the subscription is `trialing`
+Triggers when the subscriptions has been trialing
 ## [umm_stripe_status_unpaid](./actions/umm_stripe_status_unpaid)
 Triggers when the subscription is `unpaid`
+## [umm_stripe_status_{$status}](./actions/umm_stripe_status_{$status})
+Assign Role based on the role set in the Stripe Plan settings.

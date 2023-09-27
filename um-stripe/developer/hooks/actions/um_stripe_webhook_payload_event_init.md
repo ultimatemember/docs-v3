@@ -8,6 +8,7 @@ tags:
 ---
 # um\_stripe\_webhook\_payload\_event\_init
 Catch Stripe's Webhook Payload Events
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php
 do_action( 'um_stripe_webhook_payload_event_init', $event )
 ```
@@ -20,7 +21,7 @@ When Stripe sends a Webhook payload to the site, this hook is fired.
 
 ### Parameters
 
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong>$event</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >object</span>
 <div style="margin-left:10px;padding: 10px 5px">Payload objects</div>
 </div>
@@ -31,8 +32,8 @@ When Stripe sends a Webhook payload to the site, this hook is fired.
 ### Sample Usage
 
 ``` php
-add_action( 'um_stripe_webhook_payload_event_init', 'um_09252023_stripe_webhook_payload_event_init ', 10, 1 )
-function um_09252023_stripe_webhook_payload_event_init( $event ){
+add_action( 'um_stripe_webhook_payload_event_init', 'um_09272023_stripe_webhook_payload_event_init ', 10, 1 )
+function um_09272023_stripe_webhook_payload_event_init( $event ){
  // do something
 }
 ```

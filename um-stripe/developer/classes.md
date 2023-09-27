@@ -2558,6 +2558,34 @@ public function __construct(  ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Fields::add_field_validation" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_field_validation ( )   
+-----
+
+Add custom Stripe Email validation.
+
+```php
+public function add_field_validation( array $validations ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$validations` | **`array`** | List of declated field validations. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$validations
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Fields::add_stripe_core_fields" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_stripe_core_fields ( )   
 -----
 
@@ -2597,6 +2625,32 @@ public function add_stripe_predefined_field( array $fields ) : array
 
 | | |
 |:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Fields::validate_email_unique" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> validate_email_unique ( )   
+-----
+
+Validate Stripe Email address
+
+```php
+public function validate_email_unique( array $array, string $key, array $submitted_data ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$array` | **`array`** |  |
+| `$key` | **`string`** |  |
+| `$submitted_data` | **`array`** |  |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -3002,10 +3056,82 @@ public function __construct(  ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Registration::checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout ( )   
+-----
+
+Checkout
+
+```php
+public function checkout( array $submitted_data, array $form_data ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$submitted_data` | **`array`** | Submitted Data. |
+| `$form_data` | **`array`** | Register Form settings. |
+
+***Description:***
+
+Sends the submitted to Stripe checkout session.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::redirect" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> redirect ( )   
+-----
+
+Redirect after succesful checkout.
+
+```php
+public function redirect(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::register" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> register ( )   
+-----
+
+Process Registration
+
+```php
+public function register( object $checkout_session, string $payment_mode ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$checkout_session` | **`object`** | Checkout Session Object. |
+| `$payment_mode` | **`string`** | Payment Mode. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Registration::set_stripe_customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_stripe_customer ( )   
 -----
 
-Assign Role on Trialing subscription
+Stripe Checkout
 
 ```php
 public function set_stripe_customer( integer $user_id, array $args, boolean $auto_login = true ) : void
@@ -3568,6 +3694,7 @@ public function assign_stripe_account( integer $old_user_id, integer $new_user_i
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -3618,6 +3745,7 @@ public function check_api_key(  ) : void
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -3700,17 +3828,19 @@ public function get_cpt_price_mode( integer $post_id ) : void
 Get Order Details with Checkout Session
 
 ```php
-public function get_order_details( string $checkout_session, boolean $once = false ) : void
+public function get_order_details( string $checkout_session, boolean $once = false, boolean $session_only = false ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$checkout_session` | **`string`** | Checkout Session ID. |
 | `$once` <Badge text="optional" type="warn"/>| **`boolean`** | Cache checkout session data once. |
+| `$session_only` <Badge text="optional" type="warn"/>| **`boolean`** | Whether returning the session object only. |
 
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -3806,6 +3936,7 @@ public function get_tax_meta( string $code ) : void
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -5415,7 +5546,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-25, 1:25 AM</span>
+        <span class="time">2023-09-27, 6:40 PM</span>
     </div>
 </div>
 

@@ -15,11 +15,11 @@ do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 
 ### Parameters
 
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong>$um_user_id</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >integer</span>
 <div style="margin-left:10px;padding: 10px 5px">the user ID.</div>
 </div>
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong>$role_unpaid</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
 <div style="margin-left:10px;padding: 10px 5px">the user Role.</div>
 </div>
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_unpaid', 'um_09252023_stripe_status_unpaid ', 10, 2 )
-function um_09252023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
+add_action( 'umm_stripe_status_unpaid', 'um_09272023_stripe_status_unpaid ', 10, 2 )
+function um_09272023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
  // do something
 }
 ```

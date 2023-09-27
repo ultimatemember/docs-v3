@@ -8,6 +8,7 @@ tags:
 ---
 # um\_stripe\_webhook\_name
 Modify Stripe Webhook name
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php
 apply_filters( 'um_stripe_webhook_name',  )
 ```
@@ -22,8 +23,8 @@ apply_filters( 'um_stripe_webhook_name',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_webhook_name', 'um_09252023_stripe_webhook_name ', 10, 0 )
-function um_09252023_stripe_webhook_name(  ){
+add_filter( 'um_stripe_webhook_name', 'um_09272023_stripe_webhook_name ', 10, 0 )
+function um_09272023_stripe_webhook_name(  ){
   return ;
 }
 ```

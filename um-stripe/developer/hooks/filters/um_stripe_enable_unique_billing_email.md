@@ -8,6 +8,7 @@ tags:
 ---
 # um\_stripe\_enable\_unique\_billing\_email
 Allow unique billing email
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php
 apply_filters( 'um_stripe_enable_unique_billing_email',  )
 ```
@@ -15,7 +16,7 @@ apply_filters( 'um_stripe_enable_unique_billing_email',  )
 
 ### Parameters
 
-<div style='padding: 20px 0px 10px;'>
+<div style='padding: 10px 0px 10px;'>
 <strong></strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >boolean</span>
 <div style="margin-left:10px;padding: 10px 5px"></div>
 </div>
@@ -26,8 +27,8 @@ apply_filters( 'um_stripe_enable_unique_billing_email',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_enable_unique_billing_email', 'um_09252023_stripe_enable_unique_billing_email ', 10, 1 )
-function um_09252023_stripe_enable_unique_billing_email(  ){
+add_filter( 'um_stripe_enable_unique_billing_email', 'um_09272023_stripe_enable_unique_billing_email ', 10, 1 )
+function um_09272023_stripe_enable_unique_billing_email(  ){
   return ;
 }
 ```
