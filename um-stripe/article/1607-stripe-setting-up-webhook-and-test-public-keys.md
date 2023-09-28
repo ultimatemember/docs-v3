@@ -2,7 +2,8 @@
 layout: UMLayout
 ---
 # Setting up Webhook and Test/Public Keys
-
+<p>
+	To get started, first, you must set up the integration by adding your Stripe keys and generating the Webhook URL.</p>
 
 ### Test/Publish Keys
 <p>
@@ -99,7 +100,7 @@ layout: UMLayout
 	When you check/uncheck the 
 	<strong>"Sandbox/Test Mode"</strong>, you will notice the fields' labels are changing. When checked, the fields will be in test mode, if it is unchecked it means that it is in live mode.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649e7c9dcfd7fe604a7fe4a7/file-BeAy5kC8DH.png" style="width: 517.6px;" alt=""></p><p>
-	 In the Stripe settings, you'll find a webhook endpoint ready for you to copy and paste into your Stripe.com account.</p><ul>
+	 In the Stripe settings, you'll find a webhook endpoint ready for you to copy and paste into your Stripe.com account. When you connect with Stripe, it automatically generates the Webhook URL based on the current domain of your site and adds the event hooks to the Webhook settings on your Stripe account. More details are listed below:</p><ul>
 	
 <li>Head to <strong>U</strong><strong>ltimate Member > Settings > Extensions> Stripe</strong>. Beside the Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the <strong>"Connect with stripe" </strong>button, and your Webhook endpoint will be added instantly to your Stripe account settings.
 	
@@ -159,4 +160,5 @@ layout: UMLayout
 	
 <p>
 		Depending on which you set up first, you can repeat this process for your live Webhook Secret or vice versa.
-	</p></li></ul><p><strong>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment Pages</a><strong></strong></strong></p>
+	</p></li></ul><p>
+	<strong>NEXT: <a href="../article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages">Setting up Stripe Success and Cancel Payment Pages</a><strong></strong></strong></p>

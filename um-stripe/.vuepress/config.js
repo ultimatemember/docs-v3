@@ -1,9 +1,9 @@
 module.exports = {
     // Directory where will be generated the HTML files by VuePress
-    dest: 'um-stripe/dist/',
+    dest: 'docs/v1/',
 
     // Base URL. Useful for GitHub pages.
-    base: '/docs-v3/um-stripe/',
+    base: '/',
   
     // Title of your project
     title: 'Stripe - Ultimate Member Docs',
@@ -50,6 +50,7 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
               ['article/1606-introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
+              ['developer/beta-testing', 'Beta Testing' ],
             ],
           },
           {
@@ -96,20 +97,20 @@ module.exports = {
       },
     },
     plugins: {
-      'register-components': {},
-      '@vuepress/plugin-medium-zoom':{
-        selector: 'img'
-      },
-      '@vuepress/back-to-top': {},
-      'vuepress-plugin-right-anchor': {
-        ignore: [
-          '/developer/hooks/actions.html',
-          '/developer/hooks/filters.html'
-          // more...
-        ],
-        
-        customClass: 'your-customClass',
-        disableGlobalUI: false,
-      }
-    }
+          'register-components': {},
+          '@vuepress/plugin-medium-zoom':{
+            selector: 'img'
+          },
+          '@vuepress/back-to-top': {},
+          'vuepress-plugin-right-anchor': {
+            ignore: [
+              '/developer/hooks/actions.html',
+              '/developer/hooks/filters.html'
+              // more...
+            ],
+            
+            customClass: 'your-customClass',
+            disableGlobalUI: false,
+          }
+        }
   };
