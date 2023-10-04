@@ -12,12 +12,10 @@ sidebarDepth: 0
 ## [um_stripe_webhook_payload_event_init](./actions/um_stripe_webhook_payload_event_init)<Badge text="Since 1.0.0" vertical="middle" />
 
 Catch Stripe's Webhook Payload Events
-## [um_submit_form_register](./actions/um_submit_form_register)
-
 ## [umm_stripe_session_completed](./actions/umm_stripe_session_completed)
 Triggers when the checkout session is completed.
 ## [umm_stripe_status_active](./actions/umm_stripe_status_active)
-Triggers when the payments have been succesfully made.
+Triggers when the charge has active.
 ## [umm_stripe_status_canceled](./actions/umm_stripe_status_canceled)
 Triggers when the subscriptions has been cancelled.
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)

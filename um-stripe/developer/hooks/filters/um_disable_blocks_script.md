@@ -32,8 +32,8 @@ If this is set to true, Stripe Guternberg blocks are disabled.
 ### Sample Usage
 
 ``` php
-add_filter( 'um_disable_blocks_script', 'um_09272023_disable_blocks_script ', 10, 1 )
-function um_09272023_disable_blocks_script( $disabled ){
+add_filter( 'um_disable_blocks_script', 'um_1042023_disable_blocks_script ', 10, 1 )
+function um_1042023_disable_blocks_script( $disabled ){
   return $disabled;
 }
 ```

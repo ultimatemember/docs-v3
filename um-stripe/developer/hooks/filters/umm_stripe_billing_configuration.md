@@ -27,8 +27,8 @@ apply_filters( 'umm_stripe_billing_configuration', $args )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_billing_configuration', 'um_09272023_stripe_billing_configuration ', 10, 1 )
-function um_09272023_stripe_billing_configuration( $args ){
+add_filter( 'umm_stripe_billing_configuration', 'um_1042023_stripe_billing_configuration ', 10, 1 )
+function um_1042023_stripe_billing_configuration( $args ){
   return $args;
 }
 ```

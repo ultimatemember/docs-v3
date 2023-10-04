@@ -9,9 +9,6 @@ sidebarDepth: 0
 >> **IMPORTANT:** Before making any PHP changes, make sure you have FTP access so you can still access your site if there are any mistakes in your code. 
 >
 > You can find more details in the  [WordPress docs](https://developer.wordpress.org/plugins/hooks/) if you need to get more familiar with using WordPress filters.
-## [um_disable_blocks_script](./filters/um_disable_blocks_script)<Badge text="Since 1.0.0" vertical="middle" />
-
-Disable Gutenberg scripts to avoid the conflicts.
 ## [um_stripe_checkout_direct_url](./filters/um_stripe_checkout_direct_url)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify Checkout Direct URL
@@ -24,9 +21,6 @@ Allow unique billing email
 ## [um_stripe_webhook_name](./filters/um_stripe_webhook_name)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify Stripe Webhook name
-## [um_whitelisted_metakeys](./filters/um_whitelisted_metakeys)<Badge text="Since 2.6.7" vertical="middle" />
-
-Filters whitelisted usermeta keys that can be stored inside DB after UM Form submission.
 ## [umm_stripe_already_subscribed_text](./filters/umm_stripe_already_subscribed_text)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify text that's displayed when a user is already subscribed.

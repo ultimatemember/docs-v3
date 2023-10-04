@@ -31,8 +31,8 @@ apply_filters( 'um_whitelisted_metakeys', $whitelisted_metakeys, $form_data )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_whitelisted_metakeys', 'um_09272023_whitelisted_metakeys ', 10, 2 )
-function um_09272023_whitelisted_metakeys( $whitelisted_metakeys, $form_data ){
+add_filter( 'um_whitelisted_metakeys', 'um_1042023_whitelisted_metakeys ', 10, 2 )
+function um_1042023_whitelisted_metakeys( $whitelisted_metakeys, $form_data ){
   return $whitelisted_metakeys;
 }
 ```

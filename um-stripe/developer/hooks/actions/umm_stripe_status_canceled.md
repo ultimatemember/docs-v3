@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_canceled', 'um_09272023_stripe_status_canceled ', 10, 2 )
-function um_09272023_stripe_status_canceled( $um_user_id, $role_cancelled ){
+add_action( 'umm_stripe_status_canceled', 'um_1042023_stripe_status_canceled ', 10, 2 )
+function um_1042023_stripe_status_canceled( $um_user_id, $role_cancelled ){
  // do something
 }
 ```

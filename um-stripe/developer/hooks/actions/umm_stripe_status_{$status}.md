@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $rolethe )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_{$status}', 'um_09272023_stripe_status_{$status} ', 10, 2 )
-function um_09272023_stripe_status_{$status}( $user_id, $rolethe ){
+add_action( 'umm_stripe_status_{$status}', 'um_1042023_stripe_status_{$status} ', 10, 2 )
+function um_1042023_stripe_status_{$status}( $user_id, $rolethe ){
  // do something
 }
 ```

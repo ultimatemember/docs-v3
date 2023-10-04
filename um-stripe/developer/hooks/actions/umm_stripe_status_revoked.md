@@ -31,8 +31,8 @@ do_action( 'umm_stripe_status_revoked', $old_user_id, $role_inactive )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_revoked', 'um_09272023_stripe_status_revoked ', 10, 2 )
-function um_09272023_stripe_status_revoked( $old_user_id, $role_inactive ){
+add_action( 'umm_stripe_status_revoked', 'um_1042023_stripe_status_revoked ', 10, 2 )
+function um_1042023_stripe_status_revoked( $old_user_id, $role_inactive ){
  // do something
 }
 ```

@@ -47,8 +47,8 @@ apply_filters( 'um_stripe_checkout_sessions_create_args', $args, $mode, $umm_sub
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_checkout_sessions_create_args', 'um_09272023_stripe_checkout_sessions_create_args ', 10, 6 )
-function um_09272023_stripe_checkout_sessions_create_args( $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id ){
+add_filter( 'um_stripe_checkout_sessions_create_args', 'um_1042023_stripe_checkout_sessions_create_args ', 10, 6 )
+function um_1042023_stripe_checkout_sessions_create_args( $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id ){
   return $args;
 }
 ```

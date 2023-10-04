@@ -22,8 +22,8 @@ do_action( 'um_submit_form_register',  )
 ### Sample Usage
 
 ``` php
-add_action( 'um_submit_form_register', 'um_09272023_submit_form_register ', 10, 0 )
-function um_09272023_submit_form_register(  ){
+add_action( 'um_submit_form_register', 'um_1042023_submit_form_register ', 10, 0 )
+function um_1042023_submit_form_register(  ){
  // do something
 }
 ```

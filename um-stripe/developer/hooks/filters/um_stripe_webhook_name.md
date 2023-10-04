@@ -23,8 +23,8 @@ apply_filters( 'um_stripe_webhook_name',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_webhook_name', 'um_09272023_stripe_webhook_name ', 10, 0 )
-function um_09272023_stripe_webhook_name(  ){
+add_filter( 'um_stripe_webhook_name', 'um_1042023_stripe_webhook_name ', 10, 0 )
+function um_1042023_stripe_webhook_name(  ){
   return ;
 }
 ```
