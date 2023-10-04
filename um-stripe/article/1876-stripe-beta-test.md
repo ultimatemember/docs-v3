@@ -3,6 +3,7 @@ layout: UMLayout
 ---
 # Beta Test
 <p>
+	Stripe beta testing is only available to customers who have purchased or subscribed to the<strong> </strong> <a href="https://ultimatemember.com/pricing/">Ultimate Member Theme Pass or Extension Pass</a>.</p><p>
 	To begin Stripe beta testing, follow the steps below:</p><ol>
 	
 <li>Go to <a href="http://ultimatemember.com/">ultimatemember.com</a> and sign in to your account.<br>
@@ -19,5 +20,9 @@ layout: UMLayout
 <li>
 	
 <p>
-		Download the Stripe Extension File, then upload and <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/27-installing-an-extension">install</a> it to your website.<br>
-	</p></li></ol>
+		Download the Stripe Extension File, then upload and 
+		<a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/27-installing-an-extension">install</a> it to your website.<br>
+	</p></li>
+</ol>
+
+> To submit/report an issue or feedback, please use our [support ticket page](http://ultimatemember.com/support/ticket/).

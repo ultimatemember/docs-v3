@@ -12,7 +12,7 @@ module.exports = {
     description: 'Integrates the popular payment processing platform Stripe with Ultimate Member',
   
     head: [
-      ['link', { rel: 'icon', href: '/favicon.svg' }], // Custom favicon
+      ['link', { rel: 'icon', href: 'https://ultimatemember.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png' }], // Custom favicon
     ],
   
     // Plugins config
@@ -50,7 +50,7 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
               ['article/1606-introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
-              ['developer/beta-testing', 'Beta Testing' ],
+              ['article/1876-stripe-beta-test', 'For Beta Testers' ],
             ],
           },
           {
