@@ -9,9 +9,6 @@ sidebarDepth: 0
 >> **IMPORTANT:** Before making any PHP changes, make sure you have FTP access so you can still access your site if there are any mistakes in your code. 
 >
 > You can find more details in the  [WordPress docs](https://developer.wordpress.org/plugins/hooks/) if you need to get more familiar with using WordPress filters.
-## [um_stripe_checkout_direct_url](./filters/um_stripe_checkout_direct_url)<Badge text="Since 1.0.0" vertical="middle" />
-
-Modify Checkout Direct URL
 ## [um_stripe_checkout_sessions_create_args](./filters/um_stripe_checkout_sessions_create_args)<Badge text="Since 1.0.0" vertical="middle" />
 
 Filter array before checkout sessions creation

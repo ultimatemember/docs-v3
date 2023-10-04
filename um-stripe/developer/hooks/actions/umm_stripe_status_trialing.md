@@ -3,11 +3,11 @@ layout: UMLayout
 tags: 
   - umm_stripe_status_trialing
   - actions
-  - Triggers when the subscriptions has been trialing
+  - Triggers when the subscription is `trialing`.
   - hooks
 ---
 # umm\_stripe\_status\_trialing
-Triggers when the subscriptions has been trialing
+Triggers when the subscription is `trialing`.
 ``` php
 do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
 ```

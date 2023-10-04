@@ -10,12 +10,16 @@ tags:
 Exclude protected roles from the List
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php
-apply_filters( 'umm_stripe_roles_exclude_from_list',  )
+apply_filters( 'umm_stripe_roles_exclude_from_list', $um_wp_roles )
 ```
 <div class='hook-sep'></div>
 
 ### Parameters
 
+<div style='padding: 10px 0px 10px;'>
+<strong>$um_wp_roles</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >array</span>
+<div style="margin-left:10px;padding: 10px 5px">WP Roles slugs</div>
+</div>
 <div class='hook-sep'></div>
 
 
@@ -23,9 +27,9 @@ apply_filters( 'umm_stripe_roles_exclude_from_list',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_roles_exclude_from_list', 'um_1042023_stripe_roles_exclude_from_list ', 10, 0 )
-function um_1042023_stripe_roles_exclude_from_list(  ){
-  return ;
+add_filter( 'umm_stripe_roles_exclude_from_list', 'um_1042023_stripe_roles_exclude_from_list ', 10, 1 )
+function um_1042023_stripe_roles_exclude_from_list( $um_wp_roles ){
+  return $um_wp_roles;
 }
 ```
 <div class='hook-sep'></div>

@@ -3,11 +3,11 @@ layout: UMLayout
 tags: 
   - umm_stripe_status_incomplete
   - actions
-  - Triggers when the charge has incomplete.
+  - Triggers when the subscription is `incomplete`
   - hooks
 ---
 # umm\_stripe\_status\_incomplete
-Triggers when the charge has incomplete.
+Triggers when the subscription is `incomplete`
 ``` php
 do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )
 ```
