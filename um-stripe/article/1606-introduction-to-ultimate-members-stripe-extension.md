@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Introduction to Ultimate Member Stripe Extension
+# Introduction to Stripe Extension
 <p>
 	 Ultimate Member - Stripe extension allows you to integrate Stripe Checkout Page and Customer Billing features. With this extension, customers are redirected to an externally hosted checkout page and customer billing page, allowing users to pay, subscribe, and manage plans. This also allows you to restrict content( shortcode, post, pages, tags & taxonomies ) by Stripe Plans and updates a user's role by Stripe subscription statuses via Webhook. </p><p>
 	 Stripe is a simple way to accept payments online. Stripe has no setup fees, no monthly fees, and no hidden costs. Hundreds of thousands of businesses—from startups to Fortune 500 companies—rely on Stripe’s software tools to accept payments and expand globally securely.</p><p>
