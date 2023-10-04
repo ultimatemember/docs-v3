@@ -37,6 +37,8 @@ module.exports = {
               { text: 'v1.x', link: '/' },
             ]
           },
+          { link: '/developer/roadmap', text: 'Roadmap' },
+        
         { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
 
       ],
