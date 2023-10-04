@@ -7,7 +7,7 @@ actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
 ---
 
 <div  style="text-align:center;">
-*currently open to <a href="./developer/beta-testing">beta testing</a>
+*currently open to <a href="./article/1876-stripe-beta-test">beta testers</a>
 </div>
 <div style="text-align:center;text-indent: 20px;padding-top:30px">
 <img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-7856ff?style=social&logo=wordpress"/>&nbsp;&nbsp;
