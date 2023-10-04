@@ -31,11 +31,11 @@ module.exports = {
     nav: [
         { text: 'Home', link: '/' }, 
         {
-            text: 'v1.x',
-            ariaLabel: 'Version',
-            items: [
-              { text: 'v1.x', link: '/' },
-            ]
+          text: 'v1.0.0-beta.10',
+          ariaLabel: 'Version',
+          items: [
+            { text: 'v1.0.0-beta.10', link: '/' },
+          ]
           },
           { link: '/developer/roadmap', text: 'Roadmap' },
         
