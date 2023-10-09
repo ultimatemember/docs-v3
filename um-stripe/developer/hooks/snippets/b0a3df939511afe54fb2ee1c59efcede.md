@@ -15,6 +15,9 @@ function um_1092023_stripe_checkout_sessions_create_args( $args, $mode, $umm_sub
 
   // Change Cancel URL
   $args['cancel_url' ] = "http://yourdomain.com/my-cancel-page/";
+
   return $args;
 }
 ```
+
+To get the list of the configuration items, you may check it at [Stripe Checkout Session's API documentation](https://stripe.com/docs/api/checkout/sessions/create)
