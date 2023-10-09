@@ -30,8 +30,7 @@ layout: UMLayout
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/62984bb95732000792520c0e/file-Det8o1q8E1.png" style="width: 476px; display: block; margin: auto;" alt=""></p>
 <div>
 	<p>
-	5. Once the product is saved, you need to 
-		<strong><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1846-import-existing-subscription-prices-from-your-stripe-account">import the prices from your Stripe Account</a> </strong>in <strong>wp-admin> Ultimate Member> Settings>Extension>Stripe</strong>. Once the import is done, the created Prices will be displayed in the Stripe Plans form in
+	5. Once the product is saved, you need to <strong><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1846-import-existing-subscription-prices-from-your-stripe-account">import the prices from your Stripe Account</a> </strong>in <strong>wp-admin> Ultimate Member> Settings>Extension>Stripe</strong>. Once the import is done, the created Prices will be displayed in the Stripe Plans form in
 		<strong style="background-color: initial;"> WP-</strong><strong style="background-color: initial;">Admin > Ultimate</strong><strong style="background-color: initial;"> Member</strong><strong style="background-color: initial;"> > Stripe Plans. </strong>
 	</p>
 </div><p>
@@ -52,12 +51,12 @@ layout: UMLayout
 <li><strong>Subscription Price </strong>- If prices are imported from your Stripe account, it only displays the product prices you've created in Stripe, and you'll be unable to select from the prices. If you set up the Stripe Plan in Ultimate Member, you can choose which imported subscription price you prefer.</li>	</ol></li>	
 <li><strong>Roles</strong> - Assign a role to each <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference">Stripe Events</a>.</li>	
 <li><strong>Shortcode</strong> - The <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference">shortcode</a> generates a button for customers to check out and subscribe to your Stripe plan.</li>	
-<li><strong>Subscribe URL </strong>- The URLs are auto-generated once your import price from your stripe account. The URL will redirect users to the Stripe Checkout with your Stripe plan.
+<li><strong>Subscribe URL </strong>- The URLs are auto-generated once you import the price from your stripe account. The URL will redirect users to the Stripe Checkout with your Stripe plan.
 	
 <ol>
 		
 <li><strong>Short </strong>- This subscribe URL includes the stripe plan ID e.g. <a href="https://ultimate-member-32612-8491614.umsites.net?um_stripe_plan_id=51">https://ultimate-member-32612-8491614.umsites.net?um_stripe_plan_id=51</a></li>		
-<li><strong>Hashed</strong> - This subscribe URL is a hashed URL to prevent the post_id from being exposed. The created Stripe Checkout Page when you activated the UM Stripe plugin is to hold the generated hashed as a Subscribe URL. e.g.<a href="https://ultimate-member-32612-8491614.umsites.net/stripe/"> https://ultimate-member-32612-8491614.umsites.net/stripe/</a></li>	</ol></li></ol>
+<li><strong>Hashed</strong> - This subscribe URL is a hashed URL to prevent the post_id from being exposed. The created Stripe Checkout Page when you activated the UM Stripe plugin is to hold the generated hashed as a Subscribe URL. e.g.<a href="https://ultimate-member-32612-8491614.umsites.net/stripe/"> https://ultimate-member-32612-8491614.umsites.net/stripe/<a href="https://um.x/checkout/OTg3MmVkOWZjMjJmYzE4MmQzNzFjM2U5ZWQzMTYwOTQ">OTg3MmVkOWZjMjJmYzE4MmQzNzFjM2U5ZWQzMTYwOTQ</a></a></li>	</ol></li></ol>
 
 ### Customize the slug of the Subscribe URL
 <p>

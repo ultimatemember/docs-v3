@@ -77,8 +77,7 @@ layout: UMLayout
 	The "
 	<strong>View on Stripe"</strong> link under each status opens a new tab to your customer's Stripe overview page.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649afde8c5d2b53344e72e26/file-hqPDKXkaAG.png" alt="" style="display: block; margin: auto;"></p><h4>Invoices and Active Subscriptions</h4><p>
-	When you edit a user with an 
-	<strong>active subscription status </strong>in <strong>wp-admin > Users</strong>, you'll be able to see the user's or customer's subscriptions and invoices table under the<strong> </strong><strong>Ultimate Member Stripe</strong> section.</p><p>
+	When you edit a user with an <strong>active subscription status </strong>in <strong>wp-admin > Users</strong>, you'll be able to see the user's or customer's subscriptions and invoices table under the <strong>Ultimate Member Stripe</strong> section.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650b11a4e249755d2f85c3bd/file-A5KmoUMXbs.png"></p><p>
 	The invoice table will only display the most recent invoices, not all. You need to click the "Manage on Stripe" link, which will open a new tab to the customer overview on Stripe.com.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650b12fd15e8de2d9d32584f/file-f3OSIYeqjM.png"></p><p class="callout-blue">
