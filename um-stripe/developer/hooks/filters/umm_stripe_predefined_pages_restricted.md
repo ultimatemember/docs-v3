@@ -27,8 +27,8 @@ apply_filters( 'umm_stripe_predefined_pages_restricted', $is_restricted_page )
 ### Sample Usage
 
 ``` php
-add_filter( 'umm_stripe_predefined_pages_restricted', 'um_1042023_stripe_predefined_pages_restricted ', 10, 1 )
-function um_1042023_stripe_predefined_pages_restricted( $is_restricted_page ){
+add_filter( 'umm_stripe_predefined_pages_restricted', 'um_1092023_stripe_predefined_pages_restricted ', 10, 1 )
+function um_1092023_stripe_predefined_pages_restricted( $is_restricted_page ){
   return $is_restricted_page;
 }
 ```

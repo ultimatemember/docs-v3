@@ -9,7 +9,7 @@ tags:
 # umm\_stripe\_status\_{$status}
 Assign Role based on the role set in the Stripe Plan settings.
 ``` php
-do_action( 'umm_stripe_status_{$status}', $user_id, $rolethe )
+do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 ```
 <div class='hook-sep'></div>
 
@@ -20,8 +20,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $rolethe )
 <div style="margin-left:10px;padding: 10px 5px">the user ID.</div>
 </div>
 <div style='padding: 10px 0px 10px;'>
-<strong>$rolethe</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
-<div style="margin-left:10px;padding: 10px 5px">user Role.</div>
+<strong>$role</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
+<div style="margin-left:10px;padding: 10px 5px">the user Role.</div>
 </div>
 <div class='hook-sep'></div>
 
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $rolethe )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_{$status}', 'um_1042023_stripe_status_{$status} ', 10, 2 )
-function um_1042023_stripe_status_{$status}( $user_id, $rolethe ){
+add_action( 'umm_stripe_status_{$status}', 'um_1092023_stripe_status_{$status} ', 10, 2 )
+function um_1092023_stripe_status_{$status}( $user_id, $role ){
  // do something
 }
 ```

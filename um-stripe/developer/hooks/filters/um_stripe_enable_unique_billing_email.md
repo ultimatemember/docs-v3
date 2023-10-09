@@ -27,8 +27,8 @@ apply_filters( 'um_stripe_enable_unique_billing_email', $enable_billing_email )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_enable_unique_billing_email', 'um_1042023_stripe_enable_unique_billing_email ', 10, 1 )
-function um_1042023_stripe_enable_unique_billing_email( $enable_billing_email ){
+add_filter( 'um_stripe_enable_unique_billing_email', 'um_1092023_stripe_enable_unique_billing_email ', 10, 1 )
+function um_1092023_stripe_enable_unique_billing_email( $enable_billing_email ){
   return $enable_billing_email;
 }
 ```

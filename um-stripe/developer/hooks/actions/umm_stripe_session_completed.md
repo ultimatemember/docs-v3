@@ -30,8 +30,8 @@ do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_session_completed', 'um_1042023_stripe_session_completed ', 10, 2 )
-function um_1042023_stripe_session_completed( $checkout_session, $payment_mode ){
+add_action( 'umm_stripe_session_completed', 'um_1092023_stripe_session_completed ', 10, 2 )
+function um_1092023_stripe_session_completed( $checkout_session, $payment_mode ){
  // do something
 }
 ```

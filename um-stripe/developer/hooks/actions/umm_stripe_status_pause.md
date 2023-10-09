@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_pause', $um_user_id, $role_pause )
 ### Sample Usage
 
 ``` php
-add_action( 'umm_stripe_status_pause', 'um_1042023_stripe_status_pause ', 10, 2 )
-function um_1042023_stripe_status_pause( $um_user_id, $role_pause ){
+add_action( 'umm_stripe_status_pause', 'um_1092023_stripe_status_pause ', 10, 2 )
+function um_1092023_stripe_status_pause( $um_user_id, $role_pause ){
  // do something
 }
 ```

@@ -10,12 +10,16 @@ tags:
 Modify Stripe Webhook name
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php
-apply_filters( 'um_stripe_webhook_name',  )
+apply_filters( 'um_stripe_webhook_name', $webhook_name )
 ```
 <div class='hook-sep'></div>
 
 ### Parameters
 
+<div style='padding: 10px 0px 10px;'>
+<strong>$webhook_name</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
+<div style="margin-left:10px;padding: 10px 5px">Webhook Name for the Stripe Webhook URL.</div>
+</div>
 <div class='hook-sep'></div>
 
 
@@ -23,9 +27,9 @@ apply_filters( 'um_stripe_webhook_name',  )
 ### Sample Usage
 
 ``` php
-add_filter( 'um_stripe_webhook_name', 'um_1042023_stripe_webhook_name ', 10, 0 )
-function um_1042023_stripe_webhook_name(  ){
-  return ;
+add_filter( 'um_stripe_webhook_name', 'um_1092023_stripe_webhook_name ', 10, 1 )
+function um_1092023_stripe_webhook_name( $webhook_name ){
+  return $webhook_name;
 }
 ```
 <div class='hook-sep'></div>
