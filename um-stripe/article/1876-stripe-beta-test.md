@@ -24,4 +24,5 @@ layout: UMLayout
 		Download the Stripe Extension File, then upload and 
 		<a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/27-installing-an-extension">install</a> it to your website.<br>
 	</p></li></ol><p>
-	> To submit/report an issue or feedback, please use our [support ticket page](http://ultimatemember.com/support/ticket/).</p>
+
+> To submit/report an issue or feedback, please use our [support ticket page](http://ultimatemember.com/support/ticket/).</p>
