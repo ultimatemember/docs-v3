@@ -58,5 +58,6 @@ function um_1092023_stripe_checkout_sessions_create_args( $args, $mode, $umm_sub
 
 ### Related Snippets
 
-Nothing was found
+- [ Modify Checkout Sessions configuration](../snippets/b0a3df939511afe54fb2ee1c59efcede)
+
 

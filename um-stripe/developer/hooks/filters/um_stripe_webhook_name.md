@@ -38,5 +38,6 @@ function um_1092023_stripe_webhook_name( $webhook_name ){
 
 ### Related Snippets
 
-Nothing was found
+- [ Change the default webhook name `umm-stripe-webhook`](../snippets/b677007d75f81fa6888832ce5fd27631)
+
 

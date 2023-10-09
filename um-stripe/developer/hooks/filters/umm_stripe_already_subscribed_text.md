@@ -38,5 +38,6 @@ function um_1092023_stripe_already_subscribed_text( $subscribed_text ){
 
 ### Related Snippets
 
-Nothing was found
+- [ Change the Already Subscribed Text](../snippets/a805ab0c6ced9d3c29c5f528c6877a8d)
+
 
