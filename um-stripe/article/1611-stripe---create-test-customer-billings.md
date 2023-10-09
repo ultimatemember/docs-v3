@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Create & Test Customer Billings
+# Create & Test Customer Billings
 <p>
 	Stripe provides a 
 	<strong>Customer Billing Portal</strong> page that you can integrate into your site using a shortcode to display a button or link for customers to manage their plans and view their billing history. For the redirection to work, the user must be logged in.</p>

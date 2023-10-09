@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Test your integration
+# Test your integration
 <p>
 	Sandbox/Test Mode allows you to process subscriptions and simulate different payment responses using 
 	<a href="https://stripe.com/docs/testing#cards">Stripe.com Test Cards</a>. Toggle the Sandbox/Test Mode checkbox and ensure the API Keys are listed in the<strong> Ultimate Member > Settings > Extensions > Stripe</strong>. After that, click the Subscription button or add a Stripe Subscription Plan field to a Register form to redirect you to the Stripe Checkout page and then add the test card details.  </p><p>

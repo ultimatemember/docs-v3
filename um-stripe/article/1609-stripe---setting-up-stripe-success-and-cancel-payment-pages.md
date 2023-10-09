@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Setting up Stripe Success, Cancel Payment and Already Subscribed Pages
+# Setting up Stripe Success, Cancel Payment and Already Subscribed Pages
 <div>
 	<p>
 		When you activate the Stripe extension from 

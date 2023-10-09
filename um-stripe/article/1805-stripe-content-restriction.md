@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Content Restriction
+# Content Restriction
 <p>
 	The 
 	<strong>Stripe Content Restriction</strong> feature settings allow you to restrict the access of users to posts, pages, tags, and taxonomies by Stripe Plans. This article provides instructions on how to use the stripe content restriction. You need to enable the "Content Restriction" settings for the post types and taxonomies in<strong> wp-admin > Ultimate Member > Settings > Access > Restriction Content.</strong></p><p>

@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Setting up Webhook and Test/Public Keys
+# Setting up Webhook and Test/Public Keys
 <p>
 	To get started, first, you must set up the integration by adding your Stripe keys and generating the Webhook URL.</p>
 

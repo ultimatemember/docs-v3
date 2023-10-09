@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Stripe - Shortcodes & Subscription Events
+# Shortcodes & Subscription Events
 
 
 ## Stripe Customer Portal Shortcode
