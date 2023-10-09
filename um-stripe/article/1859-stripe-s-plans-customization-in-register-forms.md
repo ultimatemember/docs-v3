@@ -3,16 +3,12 @@ layout: UMLayout
 ---
 # Stripe’s Plans Customization in Register Forms
 <p>
-	Customize the Stripe Plans displayed in Registration Forms by using the CSS selectors provided below. Add the code to the current theme's styles.css file or use Customize Settings if the theme supports it. We recommend that you use the UM theme for the best results.
-</p>
-
+	Customize the Stripe Plans displayed in Registration Forms by using the CSS selectors provided below. Add the code to the current theme's styles.css file or use Customize Settings if the theme supports it. We recommend that you use the UM theme for the best results.</p>
 
 ### For Multiple plans:
-
 <p>
- 
-
-``` css
+ </p><p>
+	``` css
 /* Plan Item */
 .um .um-stripe-field-multiple_visible .um-stripe-plan-item { 
 	border-radius: 10px;
@@ -45,19 +41,13 @@ layout: UMLayout
 	background: #f9fafb;
 	border: 1px solid #475476;
 }
-```
-</p>
-<p>
-	<img class="callout-blue" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/648818eb7f8c2575e3544c74/file-wFAxDgxJhY.png" alt="">
-</p>
-
+```</p><p>
+	<img class="callout-blue" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/648818eb7f8c2575e3544c74/file-wFAxDgxJhY.png" alt=""></p>
 
 ### For Single Plan:
-
 <p>
- 
-
-
+ </p><p>
+	
 ```css
 
 /* Plan Item */
@@ -82,16 +72,12 @@ layout: UMLayout
 .um-stripe-product-desc{
 	font-size: 14px;
  }
-```
-</p>
-
+```</p>
 
 ### Additional CSS selectors for the price/amount format:
-
 <p>
- 
-
-
+ </p><p>
+	
 ```css
 
 /* Currency */
@@ -112,11 +98,6 @@ layout: UMLayout
 }
 /* Slash Symbol*/
 .um-stripe-plan-item .um-stripe-price-title .um-stripe-price-sep{  }
-```
-</p>
-<p>
-	<strong>Note: The CSS selector for the word "every" will not appear on the other plans</strong>
-</p>
-<p>
-	<img class="callout-blue" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6491d4a8e9352a3c57926b17/file-NI5qt1TftB.png" alt="">
-</p>
+```</p><p>
+	<strong>Note: The CSS selector for the word "every" will not appear on the other plans</strong></p><p>
+	<img class="callout-blue" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6491d4a8e9352a3c57926b17/file-NI5qt1TftB.png" alt=""></p>

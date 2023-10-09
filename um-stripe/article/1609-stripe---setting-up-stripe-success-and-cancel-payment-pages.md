@@ -1,20 +1,21 @@
 ---
 layout: UMLayout
 ---
-# Setting up Success, Cancel Payment and Already Subscribed Pages
+# Stripe - Setting up Stripe Success, Cancel Payment and Already Subscribed Pages
 <div>
 	<p>
-		When you activate the Stripe extension from <strong>wp-admin>Plugins</strong>, a notification on top will appear, showing you the pages that need to be created. When you click the<strong> "Create Pages"</strong> button, the Stripe Pages, which are the <strong>Success</strong><strong>, </strong><strong>Cancel,</strong> and<strong> Already Subscribed</strong> Pages, will be created automatically and assigned to the page settings.
+		When you activate the Stripe extension from 
+		<strong>wp-admin>Plugins</strong>, a notification on top will appear, showing you the pages that need to be created. When you click the<strong> "Create Pages"</strong> button, the Stripe Pages, which are the<strong> Success</strong><strong>, </strong><strong>Cancel,</strong> <strong>Already Subscribed</strong> and <strong>Checkout</strong> Pages, will be created automatically and assigned to the page settings.
 	</p>
 	<p>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649daa89cfd7fe604a7fe3f8/file-L8HXGD6oiW.png">
 	</p>
 	<p>
 		Go to 
-		<strong>wp-admin> Pages</strong> to check if the pages are successfully created.
+		<strong>wp-admin> Pages</strong> to check if the pages are successfully created
 	</p>
 	<p>
-		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649daa9d1f9ba00c2bcf9783/file-nscOM9Ktil.png">
+		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d4b04c00c2b65208e1bdd/file-lqJ8eYdLyw.png">
 	</p>
 </div><p>
 	 When a user attempts to subscribe and is then redirected to the Stripe Checkout page, there are three pages the user will be redirected to:</p><ul>
@@ -37,5 +38,5 @@ layout: UMLayout
 	 To set the Success, Canceled, and Already Subscribed Pages, go to 
 	<strong>WP Admin > Ultimate Member > Settings > General > Pages.<br>
 	</strong></p><p>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649dacad74f970393a8b0905/file-RwgNVvJSMH.png"></p><p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d515dc00c2b65208e1be7/file-1TdG8ksZhD.png" style="width: 766.6px;"></p><p>
 	<strong>NEXT: <a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1617-create-subscription-prices">Create Subscription Prices</a></strong></p>

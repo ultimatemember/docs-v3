@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# FAQ - How Do Subscriptions Handle Staging Sites and Migrations?
+# Stripe FAQ - How Do Subscriptions Handle Staging Sites and Migrations?
 <p>
 	 When working on Staging Sites and planning on migrating to another site or live site, you need to check the following:</p><ol>
 	

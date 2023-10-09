@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Test your integration with test clocks
+# Test your integration with Stripe test clocks
 <p>
 	Ultimate Member Stripe extension integrates the stripe checkout page, and customer billing features, allowing users to pay, subscribe and manage plans. Once you set up this extension, you must test its integrity.</p><p>
 	Before testing your integration, make sure you've read and setup the required details in the following documentation before you proceed:</p><ul>
@@ -26,10 +26,7 @@ layout: UMLayout
 	<a href="https://stripe.com/docs/billing/testing/test-clocks" target="_blank">https://stripe.com/docs/billing/testing/test-clocks</a></p><p>
 	To see if the integration is working we suggest you create roles in 
 	<strong>wp-admin> Ultimate Member> User Roles</strong> so you can set in <strong>wp-admin>Ultimate Member> Stripe Plans> Edit a plan</strong> and see what happens when a subscription is active, unpaid, paused, past due, canceled or trialing.</p><p>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649be2c58bdb973f12e46186/file-DgYe5G7ZYE.png" alt=""></p>
-
-### Testing Integration with Stripe Test Clocks
-<p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65203aeeed8c6d2f1cffe18c/file-hz19TMVPIo.png">Testing Integration with Stripe Test Clocks</p><p>
 	Go to your 
 	<a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe Dashboard</a> and set it to test mode.</p><p>
 	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649be3e01c43322e9690e38f/file-YNcAe1bx4l.png" alt=""></p><p>
@@ -48,7 +45,7 @@ layout: UMLayout
 <li>Go to <strong>wp-admin>Ultimate Member> Settings> Extension>Stripe</strong></li>		
 <li>Enable Sandbox/Test Mode</li>		
 <li>Enable the Test Clock and paste the <strong>Test Clock ID </strong>in the field.  This will create a Stripe customer for the Test clock</li>		
-<li>Click Save Changes<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649becf9c5d2b53344e72ef1/file-KpoDHOTQtd.png" alt=""></li>	</ul></li>	
+<li>Click Save Changes<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65203d44c00c2b65208e1ef8/file-rCs2zMAzrl.png"></li>	</ul></li>	
 <li><strong>Set up your testing simulation<br>
 	</strong>Create a customer you need for a test case for your simulation.
 	
@@ -58,7 +55,7 @@ layout: UMLayout
 		
 <ul>
 			
-<li>Go to wp-admin> Users, and create a new customer or subscriber account.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649bef1c8bdb973f12e46191/file-qEZpB7VPNK.png" alt="">
+<li>Go to wp-admin> Users, and create a new customer or subscriber account.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65203f54c00c2b65208e1efb/file-m79tfOPVRd.png">
 			</li>
 			
 <li>
@@ -157,7 +154,7 @@ layout: UMLayout
 		<strong></strong><img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d80e61f9ba00c2bcf974b/file-ukGXeAdaQk.png" alt=""></li>		
 <li> Once the clock time has been advanced, the payment failed, the customer was not charged because the card is declined, so the status will be <strong>Past Due.<br>
 		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649d85b4cfd7fe604a7fe3be/file-lQueAWPVxR.png" alt=""></strong></li>		
-<li>You can check in<strong> wp-admin>Users</strong> if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650afe0d302287021e634b53/file-IQJbCMbFpt.png">
+<li>You can check in<strong> wp-admin>Users</strong> if the role and status have changed.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/652046b7dfdf44337125d9d7/file-6WMJeSIQ8u.png">
 		</li>	</ul></li>	
 <li>
 	

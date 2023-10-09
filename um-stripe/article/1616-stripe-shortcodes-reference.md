@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Shortcodes & Subscription Events
+# Stripe - Shortcodes & Subscription Events
 
 
 ## Stripe Customer Portal Shortcode
@@ -39,7 +39,7 @@ layout: UMLayout
 ## id 
 <p>
 	The Stripe Plan ID has been generated in wp-admin > Ultimate Member > Stripe Plans > Add or Edit a Plan. When you create a Stripe plan, the shortcode will be displayed in the Stripe plan settings.</p><p>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6475e34b549b2b747a06a567/file-XkX7HnXT3I.png" alt="" style="display: block; margin: auto;"></p>
+	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651dbb29ed8c6d2f1cffdf26/file-IVhGzqfqP9.png"></p>
 
 ### type
 

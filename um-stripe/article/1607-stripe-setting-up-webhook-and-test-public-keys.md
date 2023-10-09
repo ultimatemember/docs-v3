@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Setting up Webhook and Test/Public Keys
+# Stripe - Setting up Webhook and Test/Public Keys
 <p>
 	To get started, first, you must set up the integration by adding your Stripe keys and generating the Webhook URL.</p>
 
@@ -105,16 +105,19 @@ layout: UMLayout
 <li>Head to <strong>U</strong><strong>ltimate Member > Settings > Extensions> Stripe</strong>. Beside the Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the <strong>"Connect with stripe" </strong>button, and your Webhook endpoint will be added instantly to your Stripe account settings.
 	
 <p>
-		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa281b57bfa3b524b136f/file-M8377saI19.png">
+		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d3275c00c2b65208e1bc0/file-eOlKAHidzO.png">
 	</p></li>	
 <li>When you try to click on 
-	<strong style="background-color: initial;">"Connect with Stripe"</strong>, it should validate the Publishable key and Secret key. It will show an error message when they are invalid. </li>
-	<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa146b57bfa3b524b136e/file-kGDfiY7hDa.png">
+	<strong style="background-color: initial;">"Connect with Stripe"</strong>, it should validate the Publishable key and Secret key. It will show an error message when they are invalid. 
+	
+<p>
+		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d348642d97d1c045913a2/file-1aCXRBBaU2.png">
+	</p></li>
 	
 <li>
 	<div>
 		When successfully connected, it should show the
-		<strong> "Disconnect Stripe account"</strong> and <strong>"Import Prices from your Stripe account"</strong> buttons.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa34996b8220e08ace2e3/file-dyZW46gcRc.png">
+		<strong> "Disconnect Stripe account"</strong> and <strong>"Import Prices from your Stripe account"</strong> buttons.<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d357905231a0b51d232e8/file-bUpDJLwy2J.png">
 	</div></li>
 	
 <li>
@@ -127,7 +130,7 @@ layout: UMLayout
 <li>Next, in your Stripe Dashboard, go to <a href="https://dashboard.stripe.com/webhooks" target="_blank">Webhook Setting</a> and check if the webhook URL has been added to the webhook endpoint. There may be a delay before it appears, so please wait a few seconds or try to reload the Stripe page.
 	
 <p>
-		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650aa4bcb57bfa3b524b1370/file-GDPcaMr1WL.png">
+		<img class="noBdr" src="https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d37d3dfdf44337125d6b8/file-uv47d7EVe0.png">
 	</p></li>	
 <li>To view the events, click the webhook endpoint URL. When you click on the Connect with Stripe button from the previous step above, it auto-generates the following event hooks(17):
 	

@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# FAQ - How to Connect a Customer account to a WordPress Account?
+# Stripe FAQ - How to Connect a Stripe Customer account to a WordPress Account?
 <p>
 	<span style="font-weight: normal;">1. To connect the Stripe Customer to a WordPress account, go to 
 	</span><a href="https://dashboard.stripe.com/test/customers" style="font-size: 14px;" target="_blank">https://dashboard.stripe.com/test/customers</a></p><p>

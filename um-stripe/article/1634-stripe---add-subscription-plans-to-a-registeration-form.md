@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# Add Subscription Plans to a Registration Form
+# Stripe - Add Subscription Plans to a Registration Form
 <p>
 	 Before adding a Stripe plan to a registration form, ensure that you've read and set up the required details in the following documentation articles:</p><ul>
 	

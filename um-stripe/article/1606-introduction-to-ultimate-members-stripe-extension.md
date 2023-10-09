@@ -27,4 +27,9 @@ layout: UMLayout
 <li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1865-display-subscription-status-invoices-and-active-subscriptions-in-the-admin-screen" target="_blank">Display Subscription Status, Invoices and Active Subscriptions in the Admin screen</a></li></ul>
 
 ### Frequently Asked Questions:
-<ul><li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1612-stripe-faq-how-do-subscriptions-handle-staging-sites-and-migrations" target="_blank">How Do Subscriptions Handle Staging Sites and Migrations?</a></li><li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1618-do-subscriptions-replace-or-merge-roles" target="_blank">Do Subscriptions Replace or Merge Roles?</a></li><li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1619-how-many-subscriptions-a-user-can-subscribe-to" target="_blank">How Many Subscriptions a User Can Subscribe to?</a></li><li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1626-how-to-connect-a-stripe-customer-account-to-a-wordpress-account" target="_blank">How to Connect a Stripe Customer account to a WordPress Account?</a></li></ul>
+<ul>
+	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1612-stripe-faq-how-do-subscriptions-handle-staging-sites-and-migrations" target="_blank">How Do Subscriptions Handle Staging Sites and Migrations?</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1618-do-subscriptions-replace-or-merge-roles" target="_blank">Do Subscriptions Replace or Merge Roles?</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1619-how-many-subscriptions-a-user-can-subscribe-to" target="_blank">How Many Subscriptions a User Can Subscribe to?</a></li>	
+<li><a href="https://ultimatemember.github.io/docs-v3/um-stripe/article/1626-how-to-connect-a-stripe-customer-account-to-a-wordpress-account" target="_blank">How to Connect a Stripe Customer account to a WordPress Account?</a></li></ul>

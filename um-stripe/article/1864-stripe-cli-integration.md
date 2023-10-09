@@ -1,7 +1,7 @@
 ---
 layout: UMLayout
 ---
-# CLI Integration
+# Stripe CLI Integration
 
 
 ### Overview
