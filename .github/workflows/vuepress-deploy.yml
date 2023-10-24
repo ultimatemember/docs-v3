@@ -10,11 +10,15 @@ jobs:
         node-version: 16
     - name: Build VuePress
       run: |
-        yarn && yarn vuepress build um-stripe
+        yarn
+        yarn vuepress build um-stripe
+        yarn vuepress build extended
     - name: Commit files
       run: |
         mkdir deploy/um-stripe/
+        mkdir deploy/extended/
         mv um-stripe/dist/* deploy/um-stripe/
+        mv extended/dist/* deploy/extended/
         cd deploy/
         git init
         git config --local user.email "action@github.com"

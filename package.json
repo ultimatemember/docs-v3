@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev um-stripe",
-    "docs:build": "vuepress build um-stripe"
+    "docs:dev-stripe": "vuepress dev um-stripe",
+    "docs:build-stripe": "vuepress build um-stripe",
+    "docs:dev-extended": "vuepress dev extended",
+    "docs:build-extended": "vuepress build extended"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,14 @@
   },
   "homepage": "https://github.com/ultimatemember/docs-v3#readme",
   "dependencies": {
-    "vuepress": "^1.9.10",
-    "@vuepress/plugin-register-components": "^1.9.10"
+    "@vuepress/plugin-register-components": "^1.9.10",
+    "markdown-it-codetabs": "^1.2.0",
+    "vuepress": "^1.9.10"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.10",
     "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-right-anchor": "^0.5.5"
   }
 }
