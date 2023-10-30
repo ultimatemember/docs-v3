@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_unpaid
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_unpaid
 Triggers when the subscription is `unpaid`
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_unpaid', 'um_1092023_stripe_status_unpaid ', 10, 2 )
-function um_1092023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_unpaid', 'um_10252023_stripe_status_unpaid ', 10, 2 )
+function um_10252023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
  // do something
 }
 ```

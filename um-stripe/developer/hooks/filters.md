@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 sidebarDepth: 0
 ---
 # Filters

@@ -1,27 +1,35 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import fs_path from "path";
+
+import { defaultTheme, defineUserConfig,viteBundler } from 'vuepress'
+import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
+import { palettePlugin } from '@vuepress/plugin-palette'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 function getSideBar(folder, title) {
-  const extension = [".md"];
 
   const files = fs
-    .readdirSync(path.join(`${__dirname}/../${folder}`))
+    .readdirSync(fs_path.join(`${__dirname}/../${folder}`))
     .filter(
       (item) =>
         item.toLowerCase() != "readme.md" &&
-        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() 
+        fs.statSync(fs_path.join(`${__dirname}/../${folder}`, item)).isFile() 
     );
 
     var arr = [];
     files.forEach( function( v, i ) { 
-      arr.push( folder + '/' + v.replace('.md','') );
+      arr.push( '/' + folder + '/' + v.replace('.md','') );
     });
 
-    console.log(arr);
 
   return arr;
 }
-module.exports = {
+export default defineUserConfig({
+    lang: 'en-US',
     // Directory where will be generated the HTML files by VuePress
     dest: 'extended/dist/',     
     
@@ -37,112 +45,107 @@ module.exports = {
     head: [
       ['link', { rel: 'icon', href: 'https://ultimatemember.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png' }], // Custom favicon
     ],
-  
-    // Plugins config
-    plugins: {
-      '@vuepress/google-analytics': {
-        ga: 'UA-58599811-1', // GoogleAnalytics ID (optional. use your own ga)
-      },
-      '@vuepress/back-to-top': {},
-    },
-  
-    themeConfig: {
+    theme: defaultTheme({
       
-    // logo
-    logo: '/icon-128x128.png',
+      // logo
+      logo: '/icon-128x128.png',
 
-    nav: [
-        { text: 'Home', link: '/' }, 
-        {
-          text: 'v2.0.0',
-          ariaLabel: 'Version',
-          items: [
-            { text: 'v2.0.0', link: '/' },
-          ]
-          },
-          { link: '/developer/roadmap', text: 'Roadmap' },
-        
-        { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
+      navbar: [
+          { text: 'Home', link: '/' }, 
+          {
+            text: 'v2.0.0',
+            children: [
+              { text: 'v2.0.0', link: '/' },
+            ]
+            },
+            { link: '/developer/roadmap', text: 'Roadmap' },
+          
+          { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
 
-      ],
-  
-      sidebar:
-        [
-          {   title: 'Getting Started',
+        ],
+    
+        sidebar:
+          [
+            {  
+                  text: 'Getting Started',
+                collapsable: false,
+                sidebarDepth: 0,    // optional, defaults to 1
+              children: [
+                    {
+                      link: '/installation', text: 'Installation',
+                    }
+                ],
+            },
+            // Normal documentation sidebar
+            { 
+              text: 'Developer',
               collapsable: false,
               sidebarDepth: 0,    // optional, defaults to 1
-             children: [
-                  ['/installation','Installation'],
+              children: [
+                { link: '/developer/create-extensions', text: 'Create Extensions' },
+                { link: '/developer/how-to-contribute', text: 'Contribute' },
+                { link: '/developer/report-issues', text: 'Report Issues' }
               ],
-          },
-          // Normal documentation sidebar
-          { 
-            title: 'Developer',
-            collapsable: false,
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-              ['developer/create-extensions', 'Create Extensions' ],
-              ['developer/how-to-contribute', 'Contribute' ],
-              ['developer/report-issues', 'Report Issues']
-            ],
-          },
-          { 
-            title: 'Extended',
-            sidebarDepth: 0,    // optional, defaults to 1
-            collapsable: false,
-            children: getSideBar("article", "Extended"),
-          }
-      
-        ]
-      ,
-  
-      // You can ignore the following optional customizations --------------------
-  
-      markdown: {
-        lineNumbers: false,
-        toc: { includeLevel: [1, 2, 3] },
-        extendMarkdown: md => {
-          // use more markdown-it plugins!
-          md.use(require('markdown-it-codetabs'))
-        }
-      },
-  
-      sidebarDepth: 3,
-  
-      lastUpdated: true,
-
-      evergreen: false,
-      
-      searchPlaceholder: 'Search Documentation',
-
-      // Repository configurations
-      docsDir: 'docs',
-      editLinks: true,
-    },
-  
-    // custom webpack configuration
-    configureWebpack: {
-      resolve: {
-        alias: {
-          // Aliases
-          '@github': '../../.github/assets',
+            },
+            { 
+              text: 'Extended',
+              sidebarDepth: 0,    // optional, defaults to 1
+              collapsable: false,
+              children: getSideBar("article", "Extended"),
+            }
+        
+          ]
+        ,
+    
+        // You can ignore the following optional customizations --------------------
+    
+        markdown: {
+          lineNumbers: false,
+          toc: { includeLevel: [1, 2, 3] },
         },
-      },
+    
+        sidebarDepth: 3,
+    
+        lastUpdated: true,
+
+        evergreen: false,
+        
+        searchPlaceholder: 'Search Documentation',
+
+        // Repository configurations
+        docsDir: 'extended',
+        editLinks: true,
+        repo: 'http://github.com/ultimatemember/docs-v3/',
+    }),
+    alias: {
+      '@theme/HomeFooter.vue': fs_path.resolve(__dirname, './components/UMHomeFooter.vue'),
+      '@theme/PageEdit.vue': fs_path.resolve(__dirname, './components/UMPageEdit.vue'),
+  
     },
-    plugins: {
-          'register-components': {},
-          '@vuepress/plugin-medium-zoom':{
-            selector: 'img'
-          },
-          '@vuepress/back-to-top': {},
-          'vuepress-plugin-right-anchor': {
-            ignore: [
-             ],
-            
-            customClass: 'your-customClass',
-            disableGlobalUI: false,
-          }
-        }
-  };
-
-
+    plugins: [
+          activeHeaderLinksPlugin({
+            // options
+          }),
+          palettePlugin({ preset: 'sass' }),
+          nprogressPlugin(),
+          backToTopPlugin(),
+          mediumZoomPlugin({
+            // options
+          }),
+          prismjsPlugin({
+            preloadLanguages: ['bash','sh']
+          }),
+          searchPlugin( {
+            locales: {
+            '/': {
+              placeholder: 'Search',
+            },
+               // exclude the homepage
+           isSearchable: (page) => page.path !== '/',
+   
+          }}),
+         
+    ],
+    bundler: viteBundler({     }),
+   
+  });

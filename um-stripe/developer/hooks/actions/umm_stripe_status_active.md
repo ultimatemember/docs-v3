@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_active
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_active
 Triggers when the payments have been succesfully made.
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_active', $um_user_id, $role )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_active', $um_user_id, $role )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_active', 'um_1092023_stripe_status_active ', 10, 2 )
-function um_1092023_stripe_status_active( $um_user_id, $role ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_active', 'um_10252023_stripe_status_active ', 10, 2 )
+function um_10252023_stripe_status_active( $um_user_id, $role ){
  // do something
 }
 ```

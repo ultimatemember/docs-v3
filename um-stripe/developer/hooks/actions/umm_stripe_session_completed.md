@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_session_completed
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_session\_completed
 Triggers when the checkout session is completed.
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_session_completed', 'um_1092023_stripe_session_completed ', 10, 2 )
-function um_1092023_stripe_session_completed( $checkout_session, $payment_mode ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_session_completed', 'um_10252023_stripe_session_completed ', 10, 2 )
+function um_10252023_stripe_session_completed( $checkout_session, $payment_mode ){
  // do something
 }
 ```

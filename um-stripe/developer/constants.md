@@ -12,7 +12,7 @@ pageClass: phpdoc-api-generated-page
 
 
 
-```php
+```php:no-line-numbers
 UM_STRIPE_EXTENSION = $plugin_data['Name'];
 ```
 
@@ -30,7 +30,25 @@ UM_STRIPE_EXTENSION = $plugin_data['Name'];
 
 
 
-```php
+```php:no-line-numbers
+UM_STRIPE_PATH = plugin_dir_path(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_STRIPE_PATH`    
+
+
+
+```php:no-line-numbers
 UM_STRIPE_PATH = plugin_dir_path(__FILE__);
 ```
 
@@ -48,7 +66,25 @@ UM_STRIPE_PATH = plugin_dir_path(__FILE__);
 
 
 
-```php
+```php:no-line-numbers
+UM_STRIPE_PLUGIN = plugin_basename(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_STRIPE_PLUGIN`    
+
+
+
+```php:no-line-numbers
 UM_STRIPE_PLUGIN = plugin_basename(__FILE__);
 ```
 
@@ -66,8 +102,8 @@ UM_STRIPE_PLUGIN = plugin_basename(__FILE__);
 
 
 
-```php
-UM_STRIPE_REQUIRES = '2.6.12';
+```php:no-line-numbers
+UM_STRIPE_REQUIRES = '2.7.0';
 ```
 
 **Type:** **`mixed`**
@@ -84,7 +120,7 @@ UM_STRIPE_REQUIRES = '2.6.12';
 
 
 
-```php
+```php:no-line-numbers
 UM_STRIPE_TEXTDOMAIN = 'um-stripe';
 ```
 
@@ -102,7 +138,25 @@ UM_STRIPE_TEXTDOMAIN = 'um-stripe';
 
 
 
-```php
+```php:no-line-numbers
+UM_STRIPE_URL = plugin_dir_url(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_STRIPE_URL`    
+
+
+
+```php:no-line-numbers
 UM_STRIPE_URL = plugin_dir_url(__FILE__);
 ```
 
@@ -120,7 +174,7 @@ UM_STRIPE_URL = plugin_dir_url(__FILE__);
 
 
 
-```php
+```php:no-line-numbers
 UM_STRIPE_VERSION = $plugin_data['Version'];
 ```
 
@@ -140,9 +194,9 @@ UM_STRIPE_VERSION = $plugin_data['Version'];
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-27, 6:40 PM</span>
+        <span class="time">2023-10-25, 5:09 PM</span>
     </div>
 </div>
 
 
-<style src="./.assets/normalization.css" scoped/>
+

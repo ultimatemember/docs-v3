@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_canceled
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_canceled
 Triggers when the subscriptions has been cancelled.
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_canceled', 'um_1092023_stripe_status_canceled ', 10, 2 )
-function um_1092023_stripe_status_canceled( $um_user_id, $role_cancelled ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_canceled', 'um_10252023_stripe_status_canceled ', 10, 2 )
+function um_10252023_stripe_status_canceled( $um_user_id, $role_cancelled ){
  // do something
 }
 ```

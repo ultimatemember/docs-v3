@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_onetime_refunded
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_onetime\_refunded
 Triggers when the charge is refunded.
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_onetime_refunded', 'um_1092023_stripe_status_onetime_refunded ', 10, 2 )
-function um_1092023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_onetime_refunded', 'um_10252023_stripe_status_onetime_refunded ', 10, 2 )
+function um_10252023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
  // do something
 }
 ```

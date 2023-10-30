@@ -1,0 +1,27 @@
+@import 'prismjs/themes/okaidia.css';
+
+.home .hero {
+    min-height: 300px;
+    padding-top:50px
+}
+.home .hero .description{
+    max-width: 80% !important;
+}
+
+.page {
+    padding-left: 0px
+}
+
+.code-group__nav-tab {
+    padding: 5px 20px 5px 20px;
+}
+
+.badge.tip {
+    background-color: #ccc;
+}
+h2[id^="um-stripe"] .badge.tip,
+h2[id^="umm-stripe"] .badge.tip {
+    float: right;
+    margin-top: 10px;
+   
+}

@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_incomplete_expired
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_incomplete\_expired
 Triggers when the charge has expired
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_incomplete_expired', $um_user_id, $role_expired )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_incomplete_expired', $um_user_id, $role_expired )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_incomplete_expired', 'um_1092023_stripe_status_incomplete_expired ', 10, 2 )
-function um_1092023_stripe_status_incomplete_expired( $um_user_id, $role_expired ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_incomplete_expired', 'um_10252023_stripe_status_incomplete_expired ', 10, 2 )
+function um_10252023_stripe_status_incomplete_expired( $um_user_id, $role_expired ){
  // do something
 }
 ```

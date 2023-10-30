@@ -1,6 +1,3 @@
----
-layout: UMLayout
----
 
 # Create Extensions
 
@@ -16,18 +13,31 @@ Prerequisites
     - [VSCode](https://code.visualstudio.com/) is recommended.
 
 UM Extended plugin can be cloned with:
+<CodeGroup>
+  <CodeGroupItem title="Git-Clone">
 
-```sh [um1:Git clone]
+```bash:no-line-numbers
 gh repo clone ultimatemember/Extended
 ```
 
-```sh [um1:Curl]
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Curl"  active>
+
+```bash:no-line-numbers
 curl -d '' https://github.com/ultimatemember/Extended.git
 ```
 
-```sh [um1:WP-CLI]
-gh repo clone ultimatemember/Extended
+  </CodeGroupItem>
+
+  <CodeGroupItem title="WP-CLI" active>
+
+```bash:no-line-numbers
+wp plugin install https://github.com/ultimatemember/Extended/archive/refs/heads/main.zip --force
 ```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ::: tip Clone in the Plugins Directory
 We recommend that you clone the plugin into `/wp-content/plugins/` directory. This is how we develop our plugins. This allows us to test plugins directly on our local WordPress site and commits our changes to the repository.
@@ -36,14 +46,14 @@ We recommend that you clone the plugin into `/wp-content/plugins/` directory. Th
 ### Install Dependencies
 Once the plugin has been cloned & extracted, run the following command within the extended directory `/wp-content/plugins/Extended/`:
 
-``` sh
+```bash:no-line-numbers
 composer install
 ```
 
 ### Activate the Plugin
 Activate the Extended plugin via the Plugins manager or via WP-CLI with:
 
-``` sh
+```bash:no-line-numbers
 wp plugin activate Extended
 ```
 and run the Scaffold commands below.
@@ -52,7 +62,7 @@ and run the Scaffold commands below.
 
 UM Extended plugin has a `um-wpcli` extension that integrates WP-CLI to help you in creating and testing extensions. You can create a new extension with:
 
-```sh
+```bash:no-line-numbers
 wp um dev scaffold robert
 ```
 

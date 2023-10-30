@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - um_stripe_checkout_direct_url
   - filters
@@ -9,7 +8,7 @@ tags:
 # um\_stripe\_checkout\_direct\_url
 Modify Checkout Direct URL
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'um_stripe_checkout_direct_url', $site_url )
 ```
 <div class='hook-sep'></div>
@@ -26,9 +25,9 @@ apply_filters( 'um_stripe_checkout_direct_url', $site_url )
 
 ### Sample Usage
 
-``` php
-add_filter( 'um_stripe_checkout_direct_url', 'um_1042023_stripe_checkout_direct_url ', 10, 1 )
-function um_1042023_stripe_checkout_direct_url( $site_url ){
+``` php:no-line-numbers
+add_filter( 'um_stripe_checkout_direct_url', 'um_10252023_stripe_checkout_direct_url ', 10, 1 )
+function um_10252023_stripe_checkout_direct_url( $site_url ){
   return $site_url;
 }
 ```

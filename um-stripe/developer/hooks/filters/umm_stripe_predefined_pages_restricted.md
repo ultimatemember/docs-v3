@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_predefined_pages_restricted
   - filters
@@ -9,7 +8,7 @@ tags:
 # umm\_stripe\_predefined\_pages\_restricted
 Restrict predefined pages.
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'umm_stripe_predefined_pages_restricted', $is_restricted_page )
 ```
 <div class='hook-sep'></div>
@@ -26,9 +25,9 @@ apply_filters( 'umm_stripe_predefined_pages_restricted', $is_restricted_page )
 
 ### Sample Usage
 
-``` php
-add_filter( 'umm_stripe_predefined_pages_restricted', 'um_1092023_stripe_predefined_pages_restricted ', 10, 1 )
-function um_1092023_stripe_predefined_pages_restricted( $is_restricted_page ){
+``` php:no-line-numbers
+add_filter( 'umm_stripe_predefined_pages_restricted', 'um_10252023_stripe_predefined_pages_restricted ', 10, 1 )
+function um_10252023_stripe_predefined_pages_restricted( $is_restricted_page ){
   return $is_restricted_page;
 }
 ```

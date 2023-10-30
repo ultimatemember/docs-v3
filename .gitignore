@@ -3,3 +3,5 @@ build
 um-stripe/ultimatemember/*.php
 node_modules
 package-lock.json
+.cache
+.temp

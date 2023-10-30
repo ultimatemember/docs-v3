@@ -1,14 +1,13 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_trialing
   - actions
-  - Triggers when the subscription is `trialing`.
+  - Triggers when the subscriptions has been trialing
   - hooks
 ---
 # umm\_stripe\_status\_trialing
-Triggers when the subscription is `trialing`.
-``` php
+Triggers when the subscriptions has been trialing
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_trialing', 'um_1092023_stripe_status_trialing ', 10, 2 )
-function um_1092023_stripe_status_trialing( $um_user_id, $role_trialing ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_trialing', 'um_10252023_stripe_status_trialing ', 10, 2 )
+function um_10252023_stripe_status_trialing( $um_user_id, $role_trialing ){
  // do something
 }
 ```

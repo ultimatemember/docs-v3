@@ -1,4 +1,34 @@
-module.exports = {
+import fs from "fs";
+import fs_path from "path";
+
+import { defaultTheme, defineUserConfig,viteBundler } from 'vuepress'
+import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
+import { palettePlugin } from '@vuepress/plugin-palette'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+import { searchPlugin } from '@vuepress/plugin-search'
+
+function getSideBar(folder, title) {
+
+  const files = fs
+    .readdirSync(fs_path.join(`${__dirname}/../${folder}`))
+    .filter(
+      (item) =>
+        item.toLowerCase() != "readme.md" &&
+        fs.statSync(fs_path.join(`${__dirname}/../${folder}`, item)).isFile() 
+    );
+
+    var arr = [];
+    files.forEach( function( v, i ) { 
+      arr.push( '/' + folder + '/' + v.replace('.md','') );
+    });
+
+
+  return arr;
+}
+export default defineUserConfig({
     // Directory where will be generated the HTML files by VuePress
     dest: 'um-stripe/dist/',     
     
@@ -6,7 +36,7 @@ module.exports = {
     base: '/docs-v3/um-stripe/',
   
     // Title of your project
-    title: 'Stripe - Ultimate Member Docs',
+    title: 'UM + Stripe Docs',
   
     // Description of your project
     description: 'Integrates the popular payment processing platform Stripe with Ultimate Member',
@@ -23,96 +53,100 @@ module.exports = {
       '@vuepress/back-to-top': {},
     },
   
-    themeConfig: {
-      
-    // logo
-    logo: '/icon-128x128.png',
-
-    nav: [
-        { text: 'Home', link: '/' }, 
-        {
-          text: 'v1.0.0-beta.10',
-          ariaLabel: 'Version',
-          items: [
-            { text: 'v1.0.0-beta.10', link: '/' },
-          ]
-          },
-          { link: '/developer/roadmap', text: 'Roadmap' },
+    theme: defaultTheme({
         
-        { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
+      // logo
+      logo: '/icon-128x128.png',
 
-      ],
-  
-      sidebar:
-        [
-          // Normal documentation sidebar
-          { 
-            title: 'Getting Started',
-            collapsable: false,
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-              ['article/1606-introduction-to-ultimate-members-stripe-extension', 'Introduction' ],
-              ['article/1876-stripe-beta-test', 'For Beta Testers' ],
-            ],
-          },
+      navbar: [
+          { text: 'Home', link: '/' }, 
           {
-            title: 'Developer',
-            collapsable: false,
+            text: 'v1.0.2-beta.2',
             children: [
-              ['developer/hooks/actions','Actions'],
-              ['developer/hooks/filters','Filters'],
-              'developer/functions',
-              'developer/classes',
-              ['developer/hooks/snippets','Code Snippets'],
-            ],
-          },
-        ]
-      ,
-  
-      // You can ignore the following optional customizations --------------------
-  
-      markdown: {
-        lineNumbers: false,
-        toc: { includeLevel: [1, 2, 3] },
-      },
-  
-      sidebarDepth: 3,
-  
-      lastUpdated: true,
+              { text: 'v1.0.2-beta.2', link: '/' },
+            ]
+            },
+            { link: '/developer/roadmap', text: 'Roadmap' },
+          
+          { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
 
-      evergreen: false,
-      
-      searchPlaceholder: 'Search Documentation',
+        ],
+        sidebar:
+          [
+            // Normal documentation sidebar
+            { 
+              text: 'Getting Started',
+              collapsable: false,
+              sidebarDepth: 0,    // optional, defaults to 1
+              children: [
+                { link: '/article/1606-introduction-to-ultimate-members-stripe-extension', text: 'Introduction' },
+                { link: '/article/1876-stripe-beta-test', text: 'For Beta Testers' },
+              ],
+            },
+            {
+              text: 'Developer',
+              collapsable: false,
+              children: [
+                { link: '/developer/hooks/actions', text: 'Actions'},
+                { link: '/developer/hooks/filters', text: 'Filters'},
+                '/developer/functions',
+                '/developer/classes',
+                { link: '/developer/hooks/snippets', text: 'Code Snippets' },
+              ],
+            },
+          ]
+        ,
+    
+        // You can ignore the following optional customizations --------------------
+    
+        markdown: {
+          lineNumbers: false,
+          toc: { includeLevel: [1, 2, 3] },
+        },
+    
+        sidebarDepth: 3,
+    
+        lastUpdated: true,
 
-      // Repository configurations
-      docsDir: 'docs',
-      editLinks: true,
-    },
+        evergreen: false,
+        
+        searchPlaceholder: 'Search Documentation',
+
+        // Repository configurations
+        docsDir: 'um-stripe',
+        editLinks: true,
+        repo: 'http://github.com/ultimatemember/docs-v3/',
+    }),
   
     // custom webpack configuration
-    configureWebpack: {
-      resolve: {
-        alias: {
-          // Aliases
-          '@github': '../../.github/assets',
-        },
-      },
+    alias: {
+      '@theme/HomeFooter.vue': fs_path.resolve(__dirname, './components/UMHomeFooter.vue'),
+      '@theme/PageEdit.vue': fs_path.resolve(__dirname, './components/UMPageEdit.vue'),
+  
     },
-    plugins: {
-          'register-components': {},
-          '@vuepress/plugin-medium-zoom':{
-            selector: 'img'
-          },
-          '@vuepress/back-to-top': {},
-          'vuepress-plugin-right-anchor': {
-            ignore: [
-              '/developer/hooks/actions.html',
-              '/developer/hooks/filters.html'
-              // more...
-            ],
-            
-            customClass: 'your-customClass',
-            disableGlobalUI: false,
-          }
-        }
-  };
+    plugins: [
+          activeHeaderLinksPlugin({
+            // options
+          }),
+          palettePlugin({ preset: 'sass' }),
+          nprogressPlugin(),
+          backToTopPlugin(),
+          mediumZoomPlugin({
+            // options
+          }),
+          prismjsPlugin({
+            preloadLanguages: ['bash','sh']
+          }),
+          searchPlugin( {
+            locales: {
+            '/': {
+              placeholder: 'Search',
+            },
+              // exclude the homepage
+          isSearchable: (page) => page.path !== '/',
+
+          }}),
+        
+    ],
+    bundler: viteBundler({     }),
+  });

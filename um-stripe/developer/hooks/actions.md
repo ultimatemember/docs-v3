@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 sidebarDepth: 0
 ---
 # Actions
@@ -18,6 +17,9 @@ Triggers when the checkout session is completed.
 Triggers when the payments have been succesfully made.
 ## [umm_stripe_status_canceled](./actions/umm_stripe_status_canceled)
 Triggers when the subscriptions has been cancelled.
+## [umm_stripe_status_changed](./actions/umm_stripe_status_changed)<Badge text="Since 1.0.3" vertical="middle" />
+
+Triggers when the status has changed
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)
 Triggers when the subscription is `incomplete`
 ## [umm_stripe_status_incomplete_expired](./actions/umm_stripe_status_incomplete_expired)
@@ -32,7 +34,7 @@ Triggers when the subscriptions has been pause
 
 Fires once a subscription & account status has been revoked from a WP account.
 ## [umm_stripe_status_trialing](./actions/umm_stripe_status_trialing)
-Triggers when the subscription is `trialing`.
+Triggers when the subscriptions has been trialing
 ## [umm_stripe_status_unpaid](./actions/umm_stripe_status_unpaid)
 Triggers when the subscription is `unpaid`
 ## [umm_stripe_status_{$status}](./actions/umm_stripe_status_{$status})

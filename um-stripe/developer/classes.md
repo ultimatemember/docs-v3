@@ -36,7 +36,7 @@ Class  UM_Stripe_API
 
 Init constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -57,7 +57,7 @@ public function __construct(  ) : void
 
 Admin Init class
 
-```php
+```php:no-line-numbers
 public function admin(  ) : \includes\admin\Init()
 ```
 
@@ -78,8 +78,29 @@ public function admin(  ) : \includes\admin\Init()
 
 Ajax class
 
-```php
+```php:no-line-numbers
 public function ajax(  ) : \includes\ajax\Init()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Stripe_API::berlindb" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> berlindb ( )   
+-----
+
+Initialize BerlinDB
+
+```php:no-line-numbers
+public function berlindb(  ) : \Init()
 ```
 
 
@@ -99,7 +120,7 @@ public function ajax(  ) : \includes\ajax\Init()
 
 Common class
 
-```php
+```php:no-line-numbers
 public function common(  ) : \includes\common\Init()
 ```
 
@@ -120,7 +141,7 @@ public function common(  ) : \includes\common\Init()
 
 Frontend class
 
-```php
+```php:no-line-numbers
 public function frontend(  ) : \includes\frontend\Init()
 ```
 
@@ -141,7 +162,7 @@ public function frontend(  ) : \includes\frontend\Init()
 
 Instance function
 
-```php
+```php:no-line-numbers
 public static function instance(  ) : \Init
 ```
 
@@ -221,7 +242,7 @@ Class Plugin
 
 Init hooks
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -242,7 +263,7 @@ public function __construct(  ) : void
 
 Admin Notice on Activation.
 
-```php
+```php:no-line-numbers
 public function admin_notice(  ) : void
 ```
 
@@ -263,7 +284,7 @@ public function admin_notice(  ) : void
 
 Runs only when the plugin is activated.
 
-```php
+```php:no-line-numbers
 public function admin_notice_activation_hook(  ) : void
 ```
 
@@ -284,7 +305,7 @@ public function admin_notice_activation_hook(  ) : void
 
 Function to add links to the plugin action links
 
-```php
+```php:no-line-numbers
 public function plugin_action_links( array $links ) : void
 ```
 
@@ -340,7 +361,7 @@ Class Enqueue
 
 Init constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -360,7 +381,7 @@ public function __construct(  ) : void
 
 Get Fields settings
 
-```php
+```php:no-line-numbers
 public function get_fields( array $data ) : void
 ```
 
@@ -384,7 +405,7 @@ public function get_fields( array $data ) : void
 
 Posts/Pages Settings
 
-```php
+```php:no-line-numbers
 public function post_settings_fields( array $fields, array $data, object $object, object $post_type_object ) : void
 ```
 
@@ -411,7 +432,7 @@ public function post_settings_fields( array $fields, array $data, object $object
 
 Taxonomy Settings
 
-```php
+```php:no-line-numbers
 public function taxonomy_settings_fields( array $fields, array $data, string $action ) : void
 ```
 
@@ -470,7 +491,7 @@ Class Enqueue
 
 Construct
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -491,7 +512,7 @@ public function __construct(  ) : void
 
 Enqueue Block scripts
 
-```php
+```php:no-line-numbers
 public function block_editor(  ) : void
 ```
 
@@ -512,7 +533,7 @@ public function block_editor(  ) : void
 
 Init
 
-```php
+```php:no-line-numbers
 public function init(  ) : void
 ```
 
@@ -533,7 +554,7 @@ public function init(  ) : void
 
 Include admin scripts for um_form post type screen
 
-```php
+```php:no-line-numbers
 public function um_form_screen( string $hook ) : void
 ```
 
@@ -557,7 +578,7 @@ public function um_form_screen( string $hook ) : void
 
 Enqueue scripts
 
-```php
+```php:no-line-numbers
 public function wp_enqueue_scripts( string $hook ) : void
 ```
 
@@ -581,7 +602,7 @@ public function wp_enqueue_scripts( string $hook ) : void
 
 Enqueue Stripe script
 
-```php
+```php:no-line-numbers
 public function wp_enqueue_stripe_script( string $hook ) : void
 ```
 
@@ -605,7 +626,7 @@ public function wp_enqueue_stripe_script( string $hook ) : void
 
 Enqueue Scripts to the users.php screen.
 
-```php
+```php:no-line-numbers
 public function wp_enqueue_stripe_script_users( string $hook ) : void
 ```
 
@@ -662,7 +683,7 @@ Class Init
 
 Class Content_Restriction
 
-```php
+```php:no-line-numbers
 public function content_restriction(  ) : \um_ext\um_stripe\admin\Content_Restriction()
 ```
 
@@ -683,7 +704,7 @@ public function content_restriction(  ) : \um_ext\um_stripe\admin\Content_Restri
 
 Class Enqueue
 
-```php
+```php:no-line-numbers
 public function enqueue(  ) : \um_ext\um_stripe\admin\Enqueue()
 ```
 
@@ -704,7 +725,7 @@ public function enqueue(  ) : \um_ext\um_stripe\admin\Enqueue()
 
 Load includes.
 
-```php
+```php:no-line-numbers
 public function includes(  ) : void
 ```
 
@@ -725,7 +746,7 @@ public function includes(  ) : void
 
 Class Menu
 
-```php
+```php:no-line-numbers
 public function menu(  ) : \um_ext\um_stripe\admin\Menu()
 ```
 
@@ -746,7 +767,7 @@ public function menu(  ) : \um_ext\um_stripe\admin\Menu()
 
 Class Metabox
 
-```php
+```php:no-line-numbers
 public function metabox(  ) : \um_ext\um_stripe\admin\Metabox()
 ```
 
@@ -767,7 +788,7 @@ public function metabox(  ) : \um_ext\um_stripe\admin\Metabox()
 
 Class Profile
 
-```php
+```php:no-line-numbers
 public function profile(  ) : \um_ext\um_stripe\admin\Profile()
 ```
 
@@ -788,7 +809,7 @@ public function profile(  ) : \um_ext\um_stripe\admin\Profile()
 
 Class Settings
 
-```php
+```php:no-line-numbers
 public function settings(  ) : \um_ext\um_stripe\admin\Settings()
 ```
 
@@ -809,7 +830,7 @@ public function settings(  ) : \um_ext\um_stripe\admin\Settings()
 
 Class Site_Health
 
-```php
+```php:no-line-numbers
 public function site_health(  ) : \um_ext\um_stripe\admin\Site_Health()
 ```
 
@@ -830,7 +851,7 @@ public function site_health(  ) : \um_ext\um_stripe\admin\Site_Health()
 
 Class User_Columns
 
-```php
+```php:no-line-numbers
 public function user_columns(  ) : \um_ext\um_stripe\admin\User_Columns()
 ```
 
@@ -884,7 +905,7 @@ Class Menu
 
 Menu constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -905,7 +926,7 @@ public function __construct(  ) : void
 
 Add settings page for group's members
 
-```php
+```php:no-line-numbers
 public function extend_admin_menu(  ) : void
 ```
 
@@ -959,7 +980,7 @@ Class Metabox
 
 Metabox constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -980,7 +1001,7 @@ public function __construct(  ) : void
 
 Add metaboxes with options to Add/Edit Profile Tab screen
 
-```php
+```php:no-line-numbers
 public function add_metabox(  ) : void
 ```
 
@@ -1001,7 +1022,7 @@ public function add_metabox(  ) : void
 
 Add metabox forms
 
-```php
+```php:no-line-numbers
 public function add_metabox_form(  ) : void
 ```
 
@@ -1022,7 +1043,7 @@ public function add_metabox_form(  ) : void
 
 Add extra user profile fields.
 
-```php
+```php:no-line-numbers
 public function extra_user_profile_fields( object $user ) : void
 ```
 
@@ -1045,7 +1066,7 @@ public function extra_user_profile_fields( object $user ) : void
 
 Save form metabox
 
-```php
+```php:no-line-numbers
 public function save_metabox_form( integer $post_id, object $post ) : mixed
 ```
 
@@ -1103,7 +1124,7 @@ Class Profile
 
 Profile constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1124,7 +1145,7 @@ public function __construct(  ) : void
 
 Save field values
 
-```php
+```php:no-line-numbers
 public function save_extra_user_profile_fields( integer $user_id ) : void
 ```
 
@@ -1181,7 +1202,7 @@ Class Settings
 
 Settings constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1202,7 +1223,7 @@ public function __construct(  ) : void
 
 Add Localize Scripts
 
-```php
+```php:no-line-numbers
 public function add_localize_data( array $data ) : array
 ```
 
@@ -1230,7 +1251,7 @@ $data Updated Localize data.
 
 Apply sanitazations for all stripe settings
 
-```php
+```php:no-line-numbers
 public function add_settings_sanitize( array $settings_map ) : array
 ```
 
@@ -1254,7 +1275,7 @@ public function add_settings_sanitize( array $settings_map ) : array
 
 Sanitize info text
 
-```php
+```php:no-line-numbers
 public function custom_info_text_sanitizer( mixed $content ) : mixed
 ```
 
@@ -1282,7 +1303,7 @@ $content Sanitized content.
 
 Extend settings
 
-```php
+```php:no-line-numbers
 public function extend_settings( array $settings ) : array
 ```
 
@@ -1306,7 +1327,7 @@ public function extend_settings( array $settings ) : array
 
 Check if Stripe API is connected
 
-```php
+```php:no-line-numbers
 public function is_stripe_connected(  ) : boolean
 ```
 
@@ -1364,7 +1385,7 @@ Class Site_Health
 
 Site_Health constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1385,7 +1406,7 @@ public function __construct(  ) : void
 
 Add our data to Site Health information.
 
-```php
+```php:no-line-numbers
 public function debug_information( array $info ) : array
 ```
 
@@ -1413,7 +1434,7 @@ The updated Site Health information.
 
 Extend predefined pages.
 
-```php
+```php:no-line-numbers
 public function um_debug_information_pages( array $pages ) : array
 ```
 
@@ -1470,7 +1491,7 @@ Class User_Columns
 
 Init hooks
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1491,7 +1512,7 @@ public function __construct(  ) : void
 
 Add new columns
 
-```php
+```php:no-line-numbers
 public function show_user_subscriptions_column( array $columns ) : array
 ```
 
@@ -1519,7 +1540,7 @@ $column
 
 Add new columns
 
-```php
+```php:no-line-numbers
 public function show_user_subscriptions_row( string $val, string $column_name, integer $user_id ) : string
 ```
 
@@ -1555,7 +1576,7 @@ $val
 Sandbox Mode
 
 
-```php
+```php:no-line-numbers
 public $is_sandbox_mode = null;
 ```
 
@@ -1602,7 +1623,7 @@ Class Checkout
 
 Init constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1623,7 +1644,7 @@ public function __construct(  ) : void
 
 Create checkout session
 
-```php
+```php:no-line-numbers
 public function create_checkout_session(  ) : void
 ```
 
@@ -1632,6 +1653,27 @@ public function create_checkout_session(  ) : void
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-ajax-Checkout::get_payment_intent" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_payment_intent ( )   
+-----
+
+Create checkout session
+
+```php:no-line-numbers
+public function get_payment_intent(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
 
 
 
@@ -1677,7 +1719,7 @@ Class Customer
 
 Init constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1698,7 +1740,7 @@ public function __construct(  ) : void
 
 Search Stripe Customer
 
-```php
+```php:no-line-numbers
 public function search_customer(  ) : void
 ```
 
@@ -1752,7 +1794,7 @@ Class Init
 
 Checkout Ajax class
 
-```php
+```php:no-line-numbers
 public function checkout(  ) : \um_ext\um_stripe\ajax\Checkout()
 ```
 
@@ -1773,7 +1815,7 @@ public function checkout(  ) : \um_ext\um_stripe\ajax\Checkout()
 
 Customer Ajax class
 
-```php
+```php:no-line-numbers
 public function customer(  ) : \um_ext\um_stripe\ajax\Customer()
 ```
 
@@ -1794,7 +1836,7 @@ public function customer(  ) : \um_ext\um_stripe\ajax\Customer()
 
 Include dependencies
 
-```php
+```php:no-line-numbers
 public function includes(  ) : void
 ```
 
@@ -1815,7 +1857,7 @@ public function includes(  ) : void
 
 Metabox Ajax class
 
-```php
+```php:no-line-numbers
 public function metabox(  ) : \um_ext\um_stripe\ajax\Metabox()
 ```
 
@@ -1836,7 +1878,7 @@ public function metabox(  ) : \um_ext\um_stripe\ajax\Metabox()
 
 Settings Ajax class
 
-```php
+```php:no-line-numbers
 public function settings(  ) : \um_ext\um_stripe\ajax\Metabox()
 ```
 
@@ -1890,7 +1932,7 @@ Class Metabox
 
 Metabox constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -1911,7 +1953,7 @@ public function __construct(  ) : void
 
 Stripe Plans field
 
-```php
+```php:no-line-numbers
 public function add_stripe_plans_field(  ) : void
 ```
 
@@ -1932,7 +1974,7 @@ public function add_stripe_plans_field(  ) : void
 
 Stripe Plans Type
 
-```php
+```php:no-line-numbers
 public function add_stripe_plans_type_field(  ) : void
 ```
 
@@ -1986,7 +2028,7 @@ Class Settings
 
 Init hooks
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -2007,7 +2049,7 @@ public function __construct(  ) : void
 
 Create a Webhook
 
-```php
+```php:no-line-numbers
 public function create_webhook( boolean $testmode = true ) : mixed
 ```
 
@@ -2035,7 +2077,7 @@ returns the webhook secret on success, otherwise return fals.
 
 Get Stripe Products
 
-```php
+```php:no-line-numbers
 public function get_stripe_prices( string $secret_key, string $start_after = null, string $type = 'recurring' ) : array
 ```
 
@@ -2065,7 +2107,7 @@ $plans       Stripe Products.
 
 Import products
 
-```php
+```php:no-line-numbers
 public function import_products(  ) : \um_ext\um_stripe\ajax\json
 ```
 
@@ -2090,7 +2132,7 @@ $data products data.
 
 Import Stripe Products
 
-```php
+```php:no-line-numbers
 public function import_stripe_products( string $start_after = '' ) : void
 ```
 
@@ -2113,7 +2155,7 @@ public function import_stripe_products( string $start_after = '' ) : void
 
 Check if Webhook exists
 
-```php
+```php:no-line-numbers
 public function is_webhook_exists(  ) : boolean
 ```
 
@@ -2138,7 +2180,7 @@ True if exists, otherwise false.
 
 Test Stripe connection
 
-```php
+```php:no-line-numbers
 public function test_api_connection(  ) : array
 ```
 
@@ -2163,7 +2205,7 @@ $data Stripe products.
 
 Test Stripe Disconnection
 
-```php
+```php:no-line-numbers
 public function test_api_disconnection(  ) : array
 ```
 
@@ -2218,7 +2260,7 @@ Class CPT
 
 Post Type
 
-```php
+```php:no-line-numbers
 POST_TYPE = 'umm_stripe';
 ```
 
@@ -2240,7 +2282,7 @@ POST_TYPE = 'umm_stripe';
 
 Initialize the class and set its properties.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -2261,7 +2303,7 @@ public function __construct(  ) : void
 
 Add Stripe custom post type
 
-```php
+```php:no-line-numbers
 public function add_um_cpt( array $cpt ) : array
 ```
 
@@ -2285,7 +2327,7 @@ public function add_um_cpt( array $cpt ) : array
 
 Create UM's CPT
 
-```php
+```php:no-line-numbers
 public function create_post_types(  ) : void
 ```
 
@@ -2306,7 +2348,7 @@ public function create_post_types(  ) : void
 
 Create a Subscription Plan
 
-```php
+```php:no-line-numbers
 public function create_subscription_plan( integer $price_id, string $label, string $mode = 'recurring', boolean $livemode = false, array $data = array() ) : array
 ```
 
@@ -2338,7 +2380,7 @@ $data  returns array for status.
 
 Apply custom column rows
 
-```php
+```php:no-line-numbers
 public function custom_row( string $column, integer $post_id ) : void
 ```
 
@@ -2363,7 +2405,7 @@ public function custom_row( string $column, integer $post_id ) : void
 
 Get Subscription Modes
 
-```php
+```php:no-line-numbers
 public function get_subscription_modes(  ) : array
 ```
 
@@ -2388,7 +2430,7 @@ Subscription Modes.
 
 Checks the Stripe Plan existence.
 
-```php
+```php:no-line-numbers
 public function is_plan_exists( integer $price_id ) : mixed
 ```
 
@@ -2416,7 +2458,7 @@ Post ID or boolean false.
 
 Set Post Type Table Columns
 
-```php
+```php:no-line-numbers
 public function set_custom_columns( array $columns ) : \um_ext\um_stripe\common\$columns
 ```
 
@@ -2450,7 +2492,7 @@ modified columns data.
 Subscription Modes
 
 
-```php
+```php:no-line-numbers
 public static $arr_subscription_modes = array();
 ```
 
@@ -2472,7 +2514,7 @@ public static $arr_subscription_modes = array();
 Recurring Meta Keys
 
 
-```php
+```php:no-line-numbers
 public $recurring_meta_keys = array('_um_subscription_status_active', '_um_subscription_status_unpaid', '_um_subscription_status_pause', '_um_subscription_status_past_due', '_um_subscription_status_canceled', '_um_subscription_status_trialing', '_um_subscription_trial_period_days');
 ```
 
@@ -2494,7 +2536,7 @@ public $recurring_meta_keys = array('_um_subscription_status_active', '_um_subsc
 One-time Meta Keys
 
 
-```php
+```php:no-line-numbers
 public $onetime_meta_keys = array('_um_subscription_assign_role', '_um_subscription_assign_role_refunded');
 ```
 
@@ -2542,7 +2584,7 @@ Class Fields
 
 Init constructor
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -2563,7 +2605,7 @@ public function __construct(  ) : void
 
 Add custom Stripe Email validation.
 
-```php
+```php:no-line-numbers
 public function add_field_validation( array $validations ) : array
 ```
 
@@ -2591,7 +2633,7 @@ $validations
 
 Add field attributes
 
-```php
+```php:no-line-numbers
 public function add_stripe_core_fields( array $fields ) : void
 ```
 
@@ -2614,7 +2656,7 @@ public function add_stripe_core_fields( array $fields ) : void
 
 Add predefined fields.
 
-```php
+```php:no-line-numbers
 public function add_stripe_predefined_field( array $fields ) : array
 ```
 
@@ -2637,15 +2679,15 @@ public function add_stripe_predefined_field( array $fields ) : array
 
 Validate Stripe Email address
 
-```php
+```php:no-line-numbers
 public function validate_email_unique( array $array, string $key, array $submitted_data ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
-| `$array` | **`array`** |  |
-| `$key` | **`string`** |  |
-| `$submitted_data` | **`array`** |  |
+| `$array` | **`array`** | Validation settings. |
+| `$key` | **`string`** | Field Key. |
+| `$submitted_data` | **`array`** | Submitted Form Data. |
 
 
 | | |
@@ -2696,7 +2738,7 @@ Class Init
 
 Custom Post Type class
 
-```php
+```php:no-line-numbers
 public function cpt(  ) : \um_ext\um_stripe\common\CPT()
 ```
 
@@ -2717,7 +2759,7 @@ public function cpt(  ) : \um_ext\um_stripe\common\CPT()
 
 Fields class
 
-```php
+```php:no-line-numbers
 public function fields(  ) : \um_ext\um_stripe\common\Fields()
 ```
 
@@ -2738,8 +2780,29 @@ public function fields(  ) : \um_ext\um_stripe\common\Fields()
 
 Includes
 
-```php
+```php:no-line-numbers
 public function includes(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Init::logs" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> logs ( )   
+-----
+
+Logs class
+
+```php:no-line-numbers
+public function logs(  ) : \um_ext\um_stripe\common\Logs()
 ```
 
 
@@ -2759,7 +2822,7 @@ public function includes(  ) : void
 
 Pages class
 
-```php
+```php:no-line-numbers
 public function pages(  ) : \um_ext\um_stripe\common\Pages()
 ```
 
@@ -2780,7 +2843,7 @@ public function pages(  ) : \um_ext\um_stripe\common\Pages()
 
 Registration class
 
-```php
+```php:no-line-numbers
 public function registration(  ) : \um_ext\um_stripe\common\Registration()
 ```
 
@@ -2799,9 +2862,9 @@ public function registration(  ) : \um_ext\um_stripe\common\Registration()
 :::tip <a id="um_ext-um_stripe-common-Init::request_handler" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> request_handler ( )   
 -----
 
-Request Handler  class
+Request Handler class
 
-```php
+```php:no-line-numbers
 public function request_handler(  ) : \um_ext\um_stripe\common\Request_Handler()
 ```
 
@@ -2822,7 +2885,7 @@ public function request_handler(  ) : \um_ext\um_stripe\common\Request_Handler()
 
 Subscription class
 
-```php
+```php:no-line-numbers
 public function subscription(  ) : \um_ext\um_stripe\common\Subscription()
 ```
 
@@ -2843,7 +2906,7 @@ public function subscription(  ) : \um_ext\um_stripe\common\Subscription()
 
 User class
 
-```php
+```php:no-line-numbers
 public function user(  ) : \um_ext\um_stripe\common\User()
 ```
 
@@ -2863,7 +2926,11 @@ public function user(  ) : \um_ext\um_stripe\common\User()
 
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::__construct">__construct()</a>   
 
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::stripe_api">stripe_api()</a>   
+
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_all_products">get_all_products()</a>   
+
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_all_prices">get_all_prices()</a>   
 
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_product">get_product()</a>   
 
@@ -2891,6 +2958,8 @@ public function user(  ) : \um_ext\um_stripe\common\User()
 
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::get_tax_meta">get_tax_meta()</a>   
 
+- [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::base64_encode_url">base64_encode_url()</a>   
+
 ### <span style="display: none;">\um_ext\um_stripe\common\Init</span> Properties
 > This class has not properties.
 
@@ -2903,6 +2972,133 @@ public function user(  ) : \um_ext\um_stripe\common\User()
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_stauses">$stripe_stauses</a>   
 
 - [um_ext\um_stripe\common\\<span style="font-weight: bold;">Stripe</span>](classes.html#um_ext-um_stripe-common-stripe)::<a href="classes.html#um_ext-um_stripe-common-Stripe::$stripe_payment_method_types">$stripe_payment_method_types</a>   
+        
+##  `um_ext\um_stripe\common\Logs`    
+
+Class Logs
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Logs</span> Constants
+    
+:::tip ENVIRONMENT   
+-----
+
+
+
+```php:no-line-numbers
+ENVIRONMENT = 'development';
+```
+
+**Type:** **`mixed`**
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Logs</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Logs::get_ip_address" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_ip_address ( )  <Badge text="static" type="warn"/>  
+-----
+
+Get IP Address.
+
+```php:no-line-numbers
+public static function get_ip_address(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Logs::user" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> user ( )   
+-----
+
+Log a User activity
+
+```php:no-line-numbers
+public function user( string $action, integer $user_id = null, string $username = '', string $current_page = '', string $description = '', string $action_objects = array() ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$action` | **`string`** | User Action. |
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+| `$username` <Badge text="optional" type="warn"/>| **`string`** | Username. |
+| `$current_page` <Badge text="optional" type="warn"/>| **`string`** | Current page. |
+| `$description` <Badge text="optional" type="warn"/>| **`string`** | Log name. |
+| `$action_objects` <Badge text="optional" type="warn"/>| **`string`** | Useful for storing data about the activity. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Logs::webhook" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> webhook ( )   
+-----
+
+Log a Webhook activity
+
+```php:no-line-numbers
+public function webhook( string $action, integer $user_id = null, string $username = '', string $current_page = '', string $description = '', string $action_objects = array() ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$action` | **`string`** | Webhook Action. |
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+| `$username` <Badge text="optional" type="warn"/>| **`string`** | Username. |
+| `$current_page` <Badge text="optional" type="warn"/>| **`string`** | Current page. |
+| `$description` <Badge text="optional" type="warn"/>| **`string`** | Log name. |
+| `$action_objects` <Badge text="optional" type="warn"/>| **`string`** | Useful for storing data about the activity. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Logs</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Logs</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Logs</span> Inherited properties
+> This class has not inherited properties.
         
 ##  `um_ext\um_stripe\common\Pages`    
 
@@ -2933,7 +3129,7 @@ Class Pages
 
 Initialize the class and set its properties.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -2954,7 +3150,7 @@ public function __construct(  ) : void
 
 Create default pages.
 
-```php
+```php:no-line-numbers
 public function add_predefined_pages( array $pages ) : array
 ```
 
@@ -2973,12 +3169,59 @@ public function add_predefined_pages( array $pages ) : array
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Pages::flush_rewrite_rule" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> flush_rewrite_rule ( )   
+-----
+
+Flush Rewrite rule when the Checkout page has been updated e.g. slug changed.
+
+```php:no-line-numbers
+public function flush_rewrite_rule( integer $post_id, object $post, boolean $update ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | Post ID. |
+| `$post` | **`object`** | Post Object. |
+| `$update` | **`boolean`** | Whethere the post is updated or published. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Pages::init" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> init ( )   
+-----
+
+Rewrite URL for checkout page
+
+```php:no-line-numbers
+public function init(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Pages::predefined_pages_content" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> predefined_pages_content ( )   
 -----
 
 Predefined pages content.
 
-```php
+```php:no-line-numbers
 public function predefined_pages_content( string $content, string $slug ) : string
 ```
 
@@ -3040,7 +3283,7 @@ Class Registration
 
 Initialize the class and set its properties.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -3056,13 +3299,13 @@ public function __construct(  ) : void
 :::
 
   
-:::tip <a id="um_ext-um_stripe-common-Registration::checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout ( )   
+:::tip <a id="um_ext-um_stripe-common-Registration::checkout_on_registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout_on_registration ( )   
 -----
 
 Checkout
 
-```php
-public function checkout( array $submitted_data, array $form_data ) : void
+```php:no-line-numbers
+public function checkout_on_registration( array $submitted_data, array $form_data ) : void
 ```
 
 | Parameter | Type(s) | Description |
@@ -3084,39 +3327,15 @@ Sends the submitted to Stripe checkout session.
 :::
 
   
-:::tip <a id="um_ext-um_stripe-common-Registration::redirect" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> redirect ( )   
+:::tip <a id="um_ext-um_stripe-common-Registration::redirect_after_successful_checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> redirect_after_successful_checkout ( )   
 -----
 
-Redirect after succesful checkout.
+Redirect after successful checkout.
 
-```php
-public function redirect(  ) : void
+```php:no-line-numbers
+public function redirect_after_successful_checkout(  ) : void
 ```
 
-
-
-| | |
-|:--------:| ----------- |
-
-
-
-
-:::
-
-  
-:::tip <a id="um_ext-um_stripe-common-Registration::register" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> register ( )   
------
-
-Process Registration
-
-```php
-public function register( object $checkout_session, string $payment_mode ) : void
-```
-
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$checkout_session` | **`object`** | Checkout Session Object. |
-| `$payment_mode` | **`string`** | Payment Mode. |
 
 
 | | |
@@ -3133,15 +3352,14 @@ public function register( object $checkout_session, string $payment_mode ) : voi
 
 Stripe Checkout
 
-```php
-public function set_stripe_customer( integer $user_id, array $args, boolean $auto_login = true ) : void
+```php:no-line-numbers
+public function set_stripe_customer( integer $user_id, array $args ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$user_id` | **`integer`** | The customer ID. |
 | `$args` | **`array`** | Form array arguments. |
-| `$auto_login` <Badge text="optional" type="warn"/>| **`boolean`** | Auto login the user when true. |
 
 
 | | |
@@ -3159,7 +3377,7 @@ public function set_stripe_customer( integer $user_id, array $args, boolean $aut
 
 Validate billing email address
 
-```php
+```php:no-line-numbers
 public function validate_billing_email( array $args ) : void
 ```
 
@@ -3171,6 +3389,30 @@ public function validate_billing_email( array $args ) : void
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::webhook_register" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> webhook_register ( )   
+-----
+
+Process Registration
+
+```php:no-line-numbers
+public function webhook_register( object $checkout_session, string $payment_mode ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$checkout_session` | **`object`** | Checkout Session Object. |
+| `$payment_mode` | **`string`** | Payment Mode. |
+
+
+| | |
+|:--------:| ----------- |
 
 
 
@@ -3216,7 +3458,7 @@ Class Request_Handler
 
 Init hooks
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -3238,7 +3480,7 @@ public function __construct(  ) : void
 Subscription via Direct URL
 Redirect User to Stripe checkout with selected Stripe Price ID.
 
-```php
+```php:no-line-numbers
 public function checkout(  ) : void
 ```
 
@@ -3259,7 +3501,7 @@ public function checkout(  ) : void
 
 Create Customer portal session
 
-```php
+```php:no-line-numbers
 public function customer_portal_session(  ) : void
 ```
 
@@ -3280,7 +3522,7 @@ public function customer_portal_session(  ) : void
 
 Deletes all user roles
 
-```php
+```php:no-line-numbers
 public function flush_roles( integer $user_id ) : void
 ```
 
@@ -3304,7 +3546,7 @@ public function flush_roles( integer $user_id ) : void
 
 Add Stripe hosts for safe redirection.
 
-```php
+```php:no-line-numbers
 public function stripe_redirect_hosts( array $hosts ) : array
 ```
 
@@ -3332,7 +3574,7 @@ modified allowed hosts.
 
 Switch old role with the a new role
 
-```php
+```php:no-line-numbers
 public function swap_role( integer $user_id, string $new_role ) : void
 ```
 
@@ -3356,7 +3598,7 @@ public function swap_role( integer $user_id, string $new_role ) : void
 
 Assign Role on Active subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_active( integer $user_id, integer $role ) : void
 ```
 
@@ -3381,7 +3623,7 @@ public function umm_stripe_status_active( integer $user_id, integer $role ) : vo
 
 Assign Role on Canceled subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_canceled( integer $user_id, integer $role ) : void
 ```
 
@@ -3406,7 +3648,7 @@ public function umm_stripe_status_canceled( integer $user_id, integer $role ) : 
 
 Assign Role on Incomplete subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_incomplete( integer $user_id, integer $role ) : void
 ```
 
@@ -3431,7 +3673,7 @@ public function umm_stripe_status_incomplete( integer $user_id, integer $role ) 
 
 Assign Role on Incomplete-Expired subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_incomplete_expired( integer $user_id, integer $role ) : void
 ```
 
@@ -3456,7 +3698,7 @@ public function umm_stripe_status_incomplete_expired( integer $user_id, integer 
 
 Set role on one-time refund
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_onetime_refunded( integer $user_id, integer $role ) : void
 ```
 
@@ -3481,7 +3723,7 @@ public function umm_stripe_status_onetime_refunded( integer $user_id, integer $r
 
 Assign Role on Past Due subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_past_due( integer $user_id, integer $role ) : void
 ```
 
@@ -3506,7 +3748,7 @@ public function umm_stripe_status_past_due( integer $user_id, integer $role ) : 
 
 Assign Role on Pause subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_pause( integer $user_id, integer $role ) : void
 ```
 
@@ -3531,7 +3773,7 @@ public function umm_stripe_status_pause( integer $user_id, integer $role ) : voi
 
 Assign Role on Trialing subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_trialing( integer $user_id, integer $role ) : void
 ```
 
@@ -3556,7 +3798,7 @@ public function umm_stripe_status_trialing( integer $user_id, integer $role ) : 
 
 Assign Role on Unpaid subscription
 
-```php
+```php:no-line-numbers
 public function umm_stripe_status_unpaid( integer $user_id, integer $role ) : void
 ```
 
@@ -3581,7 +3823,7 @@ public function umm_stripe_status_unpaid( integer $user_id, integer $role ) : vo
 
 Delete Subscription Status.
 
-```php
+```php:no-line-numbers
 public function umm_stripe_user_status_delete( integer $user_id ) : void
 ```
 
@@ -3605,7 +3847,7 @@ public function umm_stripe_user_status_delete( integer $user_id ) : void
 
 Handles webhook responses
 
-```php
+```php:no-line-numbers
 public function webhook_response(  ) : void
 ```
 
@@ -3660,7 +3902,7 @@ Class Stripe
 
 Init
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -3681,7 +3923,7 @@ public function __construct(  ) : void
 
 Assign Stripe account to a another WP account
 
-```php
+```php:no-line-numbers
 public function assign_stripe_account( integer $old_user_id, integer $new_user_id, string $stripe_customer_id ) : boolean
 ```
 
@@ -3702,12 +3944,39 @@ public function assign_stripe_account( integer $old_user_id, integer $new_user_i
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Stripe::base64_encode_url" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> base64_encode_url ( )   
+-----
+
+Base64 encoding.
+
+```php:no-line-numbers
+public function base64_encode_url( string $string ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$string` | **`string`** | String to process. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+***Returns:***
+
+encoded string.
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Stripe::cache_price" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> cache_price ( )   
 -----
 
 Cache Stripe Prices
 
-```php
+```php:no-line-numbers
 public function cache_price( string $id, string $label, array $data, string $type, string $livemode, string $price_label, object $obj_product ) : void
 ```
 
@@ -3737,7 +4006,7 @@ public function cache_price( string $id, string $label, array $data, string $typ
 
 Checks API keys validation
 
-```php
+```php:no-line-numbers
 public function check_api_key(  ) : void
 ```
 
@@ -3753,12 +4022,33 @@ public function check_api_key(  ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Stripe::get_all_prices" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_all_prices ( )   
+-----
+
+Get all prices from cache
+
+```php:no-line-numbers
+public function get_all_prices(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Stripe::get_all_products" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_all_products ( )   
 -----
 
 Get all products from cache
 
-```php
+```php:no-line-numbers
 public function get_all_products(  ) : void
 ```
 
@@ -3779,7 +4069,7 @@ public function get_all_products(  ) : void
 
 Get Price ID from Custom Post Type
 
-```php
+```php:no-line-numbers
 public function get_cpt_price_id( integer $post_id ) : void
 ```
 
@@ -3803,7 +4093,7 @@ public function get_cpt_price_id( integer $post_id ) : void
 
 Get Price Mode from Custom Post Type
 
-```php
+```php:no-line-numbers
 public function get_cpt_price_mode( integer $post_id ) : void
 ```
 
@@ -3827,7 +4117,7 @@ public function get_cpt_price_mode( integer $post_id ) : void
 
 Get Order Details with Checkout Session
 
-```php
+```php:no-line-numbers
 public function get_order_details( string $checkout_session, boolean $once = false, boolean $session_only = false ) : void
 ```
 
@@ -3853,7 +4143,7 @@ public function get_order_details( string $checkout_session, boolean $once = fal
 
 Get Stripe Price
 
-```php
+```php:no-line-numbers
 public function get_price( string $price_id, boolean $with_product = false ) : void
 ```
 
@@ -3877,7 +4167,7 @@ public function get_price( string $price_id, boolean $with_product = false ) : v
 
 Get product from cache
 
-```php
+```php:no-line-numbers
 public function get_product( string $product_id ) : void
 ```
 
@@ -3901,7 +4191,7 @@ public function get_product( string $product_id ) : void
 
 Get status title
 
-```php
+```php:no-line-numbers
 public function get_status_title( string $status_slug ) : string
 ```
 
@@ -3925,7 +4215,7 @@ public function get_status_title( string $status_slug ) : string
 
 Get Tax Meta
 
-```php
+```php:no-line-numbers
 public function get_tax_meta( string $code ) : void
 ```
 
@@ -3949,7 +4239,7 @@ public function get_tax_meta( string $code ) : void
 
 Check if a billing email already in use on Stripe.com
 
-```php
+```php:no-line-numbers
 public function is_billing_email_exists( string $email ) : boolean
 ```
 
@@ -3968,12 +4258,36 @@ public function is_billing_email_exists( string $email ) : boolean
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Stripe::stripe_api" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> stripe_api ( )   
+-----
+
+Stripe PHP core library
+
+```php:no-line-numbers
+public function stripe_api( string $secret_key = '' ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$secret_key` <Badge text="optional" type="warn"/>| **`string`** | Stripe API secret key. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Stripe::update_cache_price_product" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> update_cache_price_product ( )   
 -----
 
 Cache Price's Product.
 
-```php
+```php:no-line-numbers
 public function update_cache_price_product( string $price_id, object $obj_product ) : void
 ```
 
@@ -3998,7 +4312,7 @@ public function update_cache_price_product( string $price_id, object $obj_produc
 
 Update a product cache.
 
-```php
+```php:no-line-numbers
 public function update_product_cache( string $product_id, object $obj_product ) : void
 ```
 
@@ -4029,7 +4343,7 @@ public function update_product_cache( string $product_id, object $obj_product ) 
 Stripe Products
 
 
-```php
+```php:no-line-numbers
 public $stripe_products = array();
 ```
 
@@ -4051,7 +4365,7 @@ public $stripe_products = array();
 Stripe Prices
 
 
-```php
+```php:no-line-numbers
 public $stripe_prices = array();
 ```
 
@@ -4073,7 +4387,7 @@ public $stripe_prices = array();
 Stripe Statuses
 
 
-```php
+```php:no-line-numbers
 public $stripe_stauses = array();
 ```
 
@@ -4095,7 +4409,7 @@ public $stripe_stauses = array();
 Stripe Statuses
 
 
-```php
+```php:no-line-numbers
 public $stripe_payment_method_types = array('acss_debit', 'affirm', 'afterpay_clearpay', 'alipay', 'au_becs_debit', 'bacs_debit', 'bancontact', 'blik', 'boleto', 'card', 'cashapp', 'customer_balance', 'eps', 'fpx', 'giropay', 'grabpay', 'ideal', 'klarna', 'konbini', 'link', 'oxxo', 'p24', 'paynow', 'paypal', 'pix', 'promptpay', 'sepa_debit', 'sofort', 'us_bank_account', 'wechat_pay', 'zip');
 ```
 
@@ -4138,18 +4452,39 @@ Class Subscription
 
 ### <span style="display: none;">\um_ext\um_stripe\common\Subscription</span> Methods
   
+:::tip <a id="um_ext-um_stripe-common-Subscription::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Class Init
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Subscription::get_amount_decimal_formatted" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_amount_decimal_formatted ( )   
 -----
 
 Format into 2 decimal place.
 
-```php
-public function get_amount_decimal_formatted( float $number, string $currency = '' ) : float
+```php:no-line-numbers
+public function get_amount_decimal_formatted( float $number = 0, string $currency = '' ) : float
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
-| `$number` | **`float`** | Number. |
+| `$number` <Badge text="optional" type="warn"/>| **`float`** | Number. |
 | `$currency` <Badge text="optional" type="warn"/>| **`string`** | Currency Code. |
 
 
@@ -4171,7 +4506,7 @@ formatted number.
 
 Gets one-time subscription's role
 
-```php
+```php:no-line-numbers
 public function get_onetime_role( integer $customer_id = null, string $status = '', integer $user_id = null ) : string
 ```
 
@@ -4201,7 +4536,7 @@ $role The role slug.
 
 Gets subscription's role
 
-```php
+```php:no-line-numbers
 public function get_role( integer $customer_id = null, string $status = '', integer $user_id = null ) : string
 ```
 
@@ -4226,12 +4561,40 @@ $role The role slug.
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Subscription::get_user_id_by_checkout_session_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_user_id_by_checkout_session_id ( )   
+-----
+
+Get WP User ID by Stripe Checkout Session ID
+
+```php:no-line-numbers
+public function get_user_id_by_checkout_session_id( string $session_id ) : integer
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$session_id` | **`string`** | Stripe Checkout Session ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$user_id WP User ID.
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Subscription::get_user_id_by_customer_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_user_id_by_customer_id ( )   
 -----
 
 Get WP User ID by Stripe customer id
 
-```php
+```php:no-line-numbers
 public function get_user_id_by_customer_id( string $customer_id ) : integer
 ```
 
@@ -4249,6 +4612,32 @@ public function get_user_id_by_customer_id( string $customer_id ) : integer
 ***Returns:***
 
 $user_id WP User ID.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Subscription::umm_stripe_status_changed" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> umm_stripe_status_changed ( )   
+-----
+
+Update Subscription cache
+
+```php:no-line-numbers
+public function umm_stripe_status_changed( string $status, integer $user_id, string $role ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$status` | **`string`** | Subscription status. |
+| `$user_id` | **`integer`** | User ID. |
+| `$role` | **`string`** | The user role. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
 
 
 :::
@@ -4292,7 +4681,7 @@ Class User
 
 Creates a Stripe Customer
 
-```php
+```php:no-line-numbers
 public function create_stripe_customer( integer|null $user_id = null, null|string $billing_email = null ) : mixed
 ```
 
@@ -4321,7 +4710,7 @@ $customer_id customer's ID or null.
 
 Delete Stripe customer on UM Account deletion
 
-```php
+```php:no-line-numbers
 public function delete_user( integer $user_id ) : void
 ```
 
@@ -4345,7 +4734,7 @@ public function delete_user( integer $user_id ) : void
 
 Gets user's subscription ID
 
-```php
+```php:no-line-numbers
 public function get_subscription_id( integer $user_id = null ) : void
 ```
 
@@ -4369,7 +4758,7 @@ public function get_subscription_id( integer $user_id = null ) : void
 
 Hooks
 
-```php
+```php:no-line-numbers
 public function hooks(  ) : void
 ```
 
@@ -4390,7 +4779,7 @@ public function hooks(  ) : void
 
 Checks if a user is already subscribed
 
-```php
+```php:no-line-numbers
 public function is_subscribed( integer $user_id = null, boolean $return_status = false ) : mixed
 ```
 
@@ -4423,6 +4812,103 @@ $status The status name.
 #### <span style="display: none;">\um_ext\um_stripe\common\User</span> Inherited properties
 > This class has not inherited properties.
         
+##  `um_ext\um_stripe\db\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-db-Init::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Includes
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-Init::logs" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> logs ( )   
+-----
+
+Logs table
+
+```php:no-line-numbers
+public function logs(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-Init::subscriptions" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> subscriptions ( )   
+-----
+
+Subscriptions table
+
+```php:no-line-numbers
+public function subscriptions(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Inherited properties
+> This class has not inherited properties.
+        
 ##  `um_ext\um_stripe\frontend\Content_Restriction`    
 
 Class Enqueue
@@ -4452,7 +4938,7 @@ Class Enqueue
 
 Init constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -4473,7 +4959,7 @@ public function __construct(  ) : void
 
 Apply Post/Page restrictions based on Stripe Plans
 
-```php
+```php:no-line-numbers
 public function apply_post_restrictions( boolean $restricted, integer $object_id ) : void
 ```
 
@@ -4498,7 +4984,7 @@ public function apply_post_restrictions( boolean $restricted, integer $object_id
 
 Apply Taxonomy restrictions based on Stripe Plans
 
-```php
+```php:no-line-numbers
 public function apply_taxonomy_restrictions( boolean $restricted, integer $object_id ) : void
 ```
 
@@ -4518,12 +5004,33 @@ public function apply_taxonomy_restrictions( boolean $restricted, integer $objec
 :::
 
   
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::cache_price_hash_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> cache_price_hash_id ( )   
+-----
+
+Cache Price & Plans IDs
+
+```php:no-line-numbers
+public function cache_price_hash_id(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::get_post_restriction_settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_post_restriction_settings ( )   
 -----
 
 Get Post/Page Restriction settings
 
-```php
+```php:no-line-numbers
 public function get_post_restriction_settings( integer $object_id ) : void
 ```
 
@@ -4547,7 +5054,7 @@ public function get_post_restriction_settings( integer $object_id ) : void
 
 Get Taxonomy Restriction settings
 
-```php
+```php:no-line-numbers
 public function get_taxonomy_restriction_settings( integer $object_id ) : void
 ```
 
@@ -4571,7 +5078,7 @@ public function get_taxonomy_restriction_settings( integer $object_id ) : void
 
 Init
 
-```php
+```php:no-line-numbers
 public function init(  ) : void
 ```
 
@@ -4624,7 +5131,7 @@ Class Enqueue
 
 Enqueue constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -4645,7 +5152,7 @@ public function __construct(  ) : void
 
 Enqueue front-end scripts
 
-```php
+```php:no-line-numbers
 public function wp_enqueue_scripts(  ) : void
 ```
 
@@ -4699,7 +5206,7 @@ Class Init
 
 Class Content_Restriction
 
-```php
+```php:no-line-numbers
 public function content_restriction(  ) : \um_ext\um_stripe\frontend\Content_Restriction()
 ```
 
@@ -4720,7 +5227,7 @@ public function content_restriction(  ) : \um_ext\um_stripe\frontend\Content_Res
 
 Enqueue class
 
-```php
+```php:no-line-numbers
 public function enqueue(  ) : \um_ext\um_stripe\frontend\Enqueue()
 ```
 
@@ -4741,7 +5248,7 @@ public function enqueue(  ) : \um_ext\um_stripe\frontend\Enqueue()
 
 Include dependencies
 
-```php
+```php:no-line-numbers
 public function includes(  ) : void
 ```
 
@@ -4762,7 +5269,7 @@ public function includes(  ) : void
 
 Registration class
 
-```php
+```php:no-line-numbers
 public function registration(  ) : \um_ext\um_stripe\frontend\Registration()
 ```
 
@@ -4783,7 +5290,7 @@ public function registration(  ) : \um_ext\um_stripe\frontend\Registration()
 
 Shortcode class
 
-```php
+```php:no-line-numbers
 public function shortcode(  ) : \um_ext\um_stripe\frontend\Shortcode()
 ```
 
@@ -4837,7 +5344,7 @@ Class Registration
 
 Initialize the class and set its properties.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -4858,7 +5365,7 @@ public function __construct(  ) : void
 
 Allow HTML tags for Stripe Plans labels
 
-```php
+```php:no-line-numbers
 public function builder_input_map( array $args ) : array
 ```
 
@@ -4886,7 +5393,7 @@ $args updated field options.
 
 Register fields
 
-```php
+```php:no-line-numbers
 public function um_stripe_field_register( string $output, array $data ) : string
 ```
 
@@ -4944,7 +5451,7 @@ Class Shortcode
 
 Shortcode constructor.
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -4965,7 +5472,7 @@ public function __construct(  ) : void
 
 Stripe Button shortcode.
 
-```php
+```php:no-line-numbers
 public function ultimatemember_stripe( array $atts = array() ) : string
 ```
 
@@ -4989,7 +5496,7 @@ public function ultimatemember_stripe( array $atts = array() ) : string
 
 Stripe Customer Portal
 
-```php
+```php:no-line-numbers
 public function ultimatemember_stripe_customer_portal( array $atts = array() ) : string
 ```
 
@@ -5013,8 +5520,31 @@ public function ultimatemember_stripe_customer_portal( array $atts = array() ) :
 
 Displays Order Details
 
-```php
+```php:no-line-numbers
 public function ultimatemember_stripe_order_details( array $args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Shortcode attributes. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::ultimatemember_stripe_payment_checkout_form" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> ultimatemember_stripe_payment_checkout_form ( )   
+-----
+
+Displays Checkout form
+
+```php:no-line-numbers
+public function ultimatemember_stripe_payment_checkout_form( array $args ) : void
 ```
 
 | Parameter | Type(s) | Description |
@@ -5042,7 +5572,7 @@ public function ultimatemember_stripe_order_details( array $args ) : void
 Already Subscribed
 
 
-```php
+```php:no-line-numbers
 public $already_subscribed = 0;
 ```
 
@@ -5058,6 +5588,1169 @@ public $already_subscribed = 0;
 
 
 #### <span style="display: none;">\um_ext\um_stripe\frontend\Shortcode</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\logs\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Init::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Includes
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Init::query" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> query ( )   
+-----
+
+Query
+
+```php:no-line-numbers
+public function query(  ) : \um_ext\um_stripe\db\logs\Query()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Init::schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> schema ( )   
+-----
+
+Schema class
+
+```php:no-line-numbers
+public function schema(  ) : \um_ext\um_stripe\db\logs\Schema()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Init::table" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> table ( )   
+-----
+
+Table class
+
+```php:no-line-numbers
+public function table(  ) : \um_ext\um_stripe\db\logs\table()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\logs\Logs_Query`    
+
+Class Logs_Query
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-query)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Query</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Query</span> Methods
+> This class has not methods.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Query</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Query</span> Properties
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$table_name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_name   
+-----
+
+Name of the database table to query.
+
+
+```php:no-line-numbers
+protected $table_name = 'um_stripe_logs';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$table_alias" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_alias   
+-----
+
+String used to alias the database table in MySQL statement.
+
+
+```php:no-line-numbers
+protected $table_alias = 'um_stripe_log';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Keep this short, but descriptive. I.E. "tr" for term relationships.
+
+This is used to avoid collisions with JOINs.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$table_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_schema   
+-----
+
+Name of class used to setup the database schema.
+
+
+```php:no-line-numbers
+protected $table_schema = 'um_ext\um_stripe\db\logs\Logs_Schema';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$item_name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_name   
+-----
+
+Name for a single item.
+
+
+```php:no-line-numbers
+protected $item_name = 'um_stripe_log';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Use underscores between words. I.E. "term_relationship"
+
+This is used to automatically generate action hooks.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$item_name_plural" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_name_plural   
+-----
+
+Plural version for a group of items.
+
+
+```php:no-line-numbers
+protected $item_name_plural = 'um_stripe_logs';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Use underscores between words. I.E. "term_relationships"
+
+This is used to automatically generate action hooks.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Query::$item_shape" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_shape   
+-----
+
+Name of class used to turn IDs into first-class objects.
+
+
+```php:no-line-numbers
+protected $item_shape = 'Log';
+```
+
+***Types:***
+- `mixed`
+
+***Description:***
+
+This is used when looping through return values to guarantee their shape.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Query</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\logs\Logs_Schema`    
+
+Class Logs_Schema
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-schema)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Schema</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Schema</span> Methods
+> This class has not methods.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Schema</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Schema</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Logs_Schema::$columns" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $columns   
+-----
+
+Columns
+
+
+```php:no-line-numbers
+public $columns = array('id' => array('name' => 'id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'extra' => 'auto_increment', 'primary' => true, 'sortable' => true), 'action' => array('name' => 'action', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'trigger_type' => array('name' => 'trigger_type', 'type' => 'tinytext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'user_id' => array('name' => 'user_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'username' => array('name' => 'username', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'current_page' => array('name' => 'current_page', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'ip_address' => array('name' => 'ip_address', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'description' => array('name' => 'description', 'type' => 'longtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'metadata' => array('name' => 'metadata', 'type' => 'longtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'date_created' => array('name' => 'date_created', 'type' => 'timestamp', 'date_query' => true, 'unsigned' => true, 'searchable' => true, 'sortable' => true));
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Schema</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\logs\Logs_Table`    
+
+Class Logs_Table
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-table)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Table</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Table</span> Methods
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::__10052023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __10052023 ( )   
+-----
+
+Upgrade to version 10052023
+ - Change table constraint
+
+```php:no-line-numbers
+protected function __10052023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::set_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_schema ( )   
+-----
+
+Setup this database table.
+
+```php:no-line-numbers
+protected function set_schema(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Table</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Table</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Logs_Table::$name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $name   
+-----
+
+Table name, without the global table prefix.
+
+
+```php:no-line-numbers
+public $name = 'um_stripe_logs';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::$db_version_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $db_version_key   
+-----
+
+Database version key (saved in _options or _sitemeta)
+
+
+```php:no-line-numbers
+protected $db_version_key = 'um_stripe_logs_version';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-logs-Logs_Table::$description" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $description   
+-----
+
+Optional description.
+
+
+```php:no-line-numbers
+public $description = 'UM Stripe Logs';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::$version" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $version   
+-----
+
+Database version.
+
+
+```php:no-line-numbers
+protected $version = '10052023';
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::$upgrades" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $upgrades   
+-----
+
+Key => value array of versions => methods.
+
+
+```php:no-line-numbers
+protected $upgrades = array('10052023' => 10052023);
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\logs\Logs_Table</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\subscriptions\Init`    
+
+Class Init
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Init</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Init::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Includes
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Init::query" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> query ( )   
+-----
+
+Query
+
+```php:no-line-numbers
+public function query(  ) : \um_ext\um_stripe\db\subscriptions\Query()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Init::rows" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> rows ( )   
+-----
+
+Rows class
+
+```php:no-line-numbers
+public function rows(  ) : \um_ext\um_stripe\db\subscriptions\rows()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Init::schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> schema ( )   
+-----
+
+Schema class
+
+```php:no-line-numbers
+public function schema(  ) : \um_ext\um_stripe\db\subscriptions\Schema()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Init::table" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> table ( )   
+-----
+
+Table class
+
+```php:no-line-numbers
+public function table(  ) : \um_ext\um_stripe\db\subscriptions\table()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Init</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Init</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\subscriptions\Subscriptions`    
+
+Class Subscriptions_Query
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-row)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Subscriptions::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Subscriptions constructor.
+
+```php:no-line-numbers
+public function __construct( object $item ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$item` | **`object`** | row. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\subscriptions\Subscriptions_Query`    
+
+Class Subscriptions_Query
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-query)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Query</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Query</span> Methods
+> This class has not methods.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Query</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Query</span> Properties
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$table_name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_name   
+-----
+
+Name of the database table to query.
+
+
+```php:no-line-numbers
+protected $table_name = 'um_stripe_subscriptions';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$table_alias" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_alias   
+-----
+
+String used to alias the database table in MySQL statement.
+
+
+```php:no-line-numbers
+protected $table_alias = 'um_stripe_subscription';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Keep this short, but descriptive. I.E. "tr" for term relationships.
+
+This is used to avoid collisions with JOINs.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$table_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $table_schema   
+-----
+
+Name of class used to setup the database schema.
+
+
+```php:no-line-numbers
+protected $table_schema = 'um_ext\um_stripe\db\subscriptions\Subscriptions_Schema';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$item_name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_name   
+-----
+
+Name for a single item.
+
+
+```php:no-line-numbers
+protected $item_name = 'um_stripe_subscription';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Use underscores between words. I.E. "term_relationship"
+
+This is used to automatically generate action hooks.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$item_name_plural" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_name_plural   
+-----
+
+Plural version for a group of items.
+
+
+```php:no-line-numbers
+protected $item_name_plural = 'um_stripe_subscriptions';
+```
+
+***Types:***
+- `string`
+
+***Description:***
+
+Use underscores between words. I.E. "term_relationships"
+
+This is used to automatically generate action hooks.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Query::$item_shape" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $item_shape   
+-----
+
+Name of class used to turn IDs into first-class objects.
+
+
+```php:no-line-numbers
+protected $item_shape = 'Subscriptions';
+```
+
+***Types:***
+- `mixed`
+
+***Description:***
+
+This is used when looping through return values to guarantee their shape.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Query</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\subscriptions\Subscriptions_Schema`    
+
+Class Subscriptions_Schema
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-schema)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Schema</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Schema</span> Methods
+> This class has not methods.
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Schema</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Schema</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Schema::$columns" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $columns   
+-----
+
+Columns
+
+
+```php:no-line-numbers
+public $columns = array('id' => array('name' => 'id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'extra' => 'auto_increment', 'primary' => true, 'sortable' => true), 'user_id' => array('name' => 'user_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'type' => array('name' => 'type', 'type' => 'enum', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'plan_id' => array('name' => 'plan_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'subscription_id' => array('name' => 'subscription_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'price_id' => array('name' => 'price_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'product_id' => array('name' => 'product_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'hash_id' => array('name' => 'hash_id', 'type' => 'longtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'status' => array('name' => 'status', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'date_created' => array('name' => 'date_created', 'type' => 'timestamp', 'date_query' => true, 'unsigned' => true, 'searchable' => true, 'sortable' => true));
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Schema</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\db\subscriptions\Subscriptions_Table`    
+
+Class Subscriptions_Table
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_stripe-vendor-berlindb-database-table)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Table</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Table</span> Methods
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__10202023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __10202023 ( )   
+-----
+
+Upgrade to version 10202023
+ - Change table constraint
+
+```php:no-line-numbers
+protected function __10202023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::set_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_schema ( )   
+-----
+
+Setup this database table.
+
+```php:no-line-numbers
+protected function set_schema(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Table</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Table</span> Properties
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::$name" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $name   
+-----
+
+Table name, without the global table prefix.
+
+
+```php:no-line-numbers
+public $name = 'um_stripe_subscriptions';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::$db_version_key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $db_version_key   
+-----
+
+Database version key (saved in _options or _sitemeta)
+
+
+```php:no-line-numbers
+protected $db_version_key = 'um_stripe_subscriptions_version';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::$description" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $description   
+-----
+
+Optional description.
+
+
+```php:no-line-numbers
+public $description = 'UM Stripe Subscriptions';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::$version" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $version   
+-----
+
+Database version.
+
+
+```php:no-line-numbers
+protected $version = '10202023';
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::$upgrades" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $upgrades   
+-----
+
+Key => value array of versions => methods.
+
+
+```php:no-line-numbers
+protected $upgrades = array('10202023' => 10202023);
+```
+
+***Types:***
+- `array`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions_Table</span> Inherited properties
 > This class has not inherited properties.
         
 ##  `um_ext\um_stripe\Functions`    
@@ -5089,7 +6782,7 @@ Class Functions
 
 Get formatted Billing Plan Title
 
-```php
+```php:no-line-numbers
 public function get_billing_plan_formatted_title( object $price_data, string $interval, integer $interval_count, boolean $bill_next_line = false, boolean $onetime = false ) : string
 ```
 
@@ -5121,7 +6814,7 @@ Formatted Billing Plan Title.
 
 Get Billing Plan Title
 
-```php
+```php:no-line-numbers
 public function get_billing_plan_title( float $price, string $interval, integer $interval_count, boolean $bill_next_line = false ) : string
 ```
 
@@ -5152,7 +6845,7 @@ Formatted Billing Plan Title.
 
 Get Stripe Plans
 
-```php
+```php:no-line-numbers
 public function get_plans( boolean $include_id_in_labels = false ) : array
 ```
 
@@ -5180,7 +6873,7 @@ Posts.
 
 Get Price by Post ID
 
-```php
+```php:no-line-numbers
 public function get_price_by_post_id( integer $post_id ) : string
 ```
 
@@ -5208,7 +6901,7 @@ Formatted Price.
 
 Get Price Data from Cache
 
-```php
+```php:no-line-numbers
 public function get_price_data_by_post_id( integer $post_id ) : mixed
 ```
 
@@ -5236,7 +6929,7 @@ Price data array, false when nothing found in the cache.
 
 Get Price Mode by Post ID
 
-```php
+```php:no-line-numbers
 public function get_price_mode_by_post_id( integer $post_id ) : string
 ```
 
@@ -5264,7 +6957,7 @@ $mode Mode in HTML format.
 
 Get Stripe Public key
 
-```php
+```php:no-line-numbers
 public function get_public_key(  ) : void
 ```
 
@@ -5285,7 +6978,7 @@ public function get_public_key(  ) : void
 
 Get Stripe Secret key
 
-```php
+```php:no-line-numbers
 public function get_secret_key(  ) : void
 ```
 
@@ -5306,7 +6999,7 @@ public function get_secret_key(  ) : void
 
 Get Stripe Prices
 
-```php
+```php:no-line-numbers
 public function get_stripe_prices(  ) : void
 ```
 
@@ -5327,7 +7020,7 @@ public function get_stripe_prices(  ) : void
 
 Get Subscription Mode label
 
-```php
+```php:no-line-numbers
 public function get_subscription_mode_title( string $mode_slug ) : string
 ```
 
@@ -5355,7 +7048,7 @@ Subscription Label
 
 Get Stripe Webhook key
 
-```php
+```php:no-line-numbers
 public function get_webhook_key(  ) : void
 ```
 
@@ -5378,7 +7071,7 @@ Gets the webhook URL for Stripe triggers. Used mainly for
 asyncronous redirect payment methods in which statuses are
 not immediately chargeable.
 
-```php
+```php:no-line-numbers
 public static function get_webhook_url(  ) : string
 ```
 
@@ -5399,7 +7092,7 @@ public static function get_webhook_url(  ) : string
 
 Get Delete Roles option
 
-```php
+```php:no-line-numbers
 public function is_delete_roles(  ) : boolean
 ```
 
@@ -5426,7 +7119,7 @@ public function is_delete_roles(  ) : boolean
 Price Options
 
 
-```php
+```php:no-line-numbers
 public static $price_option = array();
 ```
 
@@ -5474,7 +7167,7 @@ Class Install
 
 Init
 
-```php
+```php:no-line-numbers
 public function __construct(  ) : void
 ```
 
@@ -5495,7 +7188,7 @@ public function __construct(  ) : void
 
 Start installation process.
 
-```php
+```php:no-line-numbers
 public function start(  ) : void
 ```
 
@@ -5522,7 +7215,7 @@ public function start(  ) : void
 Default settings
 
 
-```php
+```php:no-line-numbers
 public $settings_defaults;
 ```
 
@@ -5546,9 +7239,9 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-27, 6:40 PM</span>
+        <span class="time">2023-10-25, 5:09 PM</span>
     </div>
 </div>
 
 
-<style src="./.assets/normalization.css" scoped/>
+

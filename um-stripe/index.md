@@ -1,17 +1,24 @@
 ---
 home: true
-heroText: Ultimate Member + Stripe
+heroText: Ultimate Member + Stripe 
 heroImage: /stripe.png
-actionText: Get Started  →
-actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
+heroHeight: 150
+actions:
+  - text: Get Started  →
+    link: article/1606-introduction-to-ultimate-members-stripe-extension
+    type: primary
+  - text: Developer Docs
+    link: /developer/hooks/actions
+    type: secondary
 ---
 
-<div  style="text-align:center;">
+<div style="text-align:center;text-indent: 20px;padding-top:10px">
+<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-cccccc?style=social&logo=wordpress"/>&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-cccccc?style=social&logo=github"/>
+
+<div  style="text-align:center;padding-top:20px">
 *currently open to <a href="./article/1876-stripe-beta-test">beta testers</a>
 </div>
-<div style="text-align:center;text-indent: 20px;padding-top:30px">
-<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-7856ff?style=social&logo=wordpress"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-7856ff?style=social&logo=github"/>
 </div>
 <div class="features">
   <div class="feature">
@@ -28,7 +35,3 @@ actionLink: article/1606-introduction-to-ultimate-members-stripe-extension
   </div>
 </div>
 
-
-::: slot footer
-Copyright © 2023 [Ultimate Member Group Ltd.](https://ultimatemember.com/)
-:::

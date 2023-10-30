@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - Code Snippets
   - code snippets

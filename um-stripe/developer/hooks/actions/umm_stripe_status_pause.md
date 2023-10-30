@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_pause
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_pause
 Triggers when the subscriptions has been pause
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_pause', $um_user_id, $role_pause )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_pause', $um_user_id, $role_pause )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_pause', 'um_1092023_stripe_status_pause ', 10, 2 )
-function um_1092023_stripe_status_pause( $um_user_id, $role_pause ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_pause', 'um_10252023_stripe_status_pause ', 10, 2 )
+function um_10252023_stripe_status_pause( $um_user_id, $role_pause ){
  // do something
 }
 ```

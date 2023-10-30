@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - um_stripe_checkout_sessions_create_args
   - filters
@@ -9,7 +8,7 @@ tags:
 # um\_stripe\_checkout\_sessions\_create\_args
 Filter array before checkout sessions creation
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'um_stripe_checkout_sessions_create_args', $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id )
 ```
 <div class='hook-sep'></div>
@@ -46,9 +45,9 @@ apply_filters( 'um_stripe_checkout_sessions_create_args', $args, $mode, $umm_sub
 
 ### Sample Usage
 
-``` php
-add_filter( 'um_stripe_checkout_sessions_create_args', 'um_1092023_stripe_checkout_sessions_create_args ', 10, 6 )
-function um_1092023_stripe_checkout_sessions_create_args( $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id ){
+``` php:no-line-numbers
+add_filter( 'um_stripe_checkout_sessions_create_args', 'um_10252023_stripe_checkout_sessions_create_args ', 10, 6 )
+function um_10252023_stripe_checkout_sessions_create_args( $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id ){
   return $args;
 }
 ```

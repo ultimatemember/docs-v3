@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - um_stripe_webhook_name
   - filters
@@ -9,7 +8,7 @@ tags:
 # um\_stripe\_webhook\_name
 Modify Stripe Webhook name
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'um_stripe_webhook_name', $webhook_name )
 ```
 <div class='hook-sep'></div>
@@ -26,9 +25,9 @@ apply_filters( 'um_stripe_webhook_name', $webhook_name )
 
 ### Sample Usage
 
-``` php
-add_filter( 'um_stripe_webhook_name', 'um_1092023_stripe_webhook_name ', 10, 1 )
-function um_1092023_stripe_webhook_name( $webhook_name ){
+``` php:no-line-numbers
+add_filter( 'um_stripe_webhook_name', 'um_10252023_stripe_webhook_name ', 10, 1 )
+function um_10252023_stripe_webhook_name( $webhook_name ){
   return $webhook_name;
 }
 ```

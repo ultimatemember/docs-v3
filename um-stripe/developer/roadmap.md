@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 title: Stripe Extension Roadmap
 ---
 # Roadmap

@@ -12,7 +12,7 @@ pageClass: phpdoc-api-generated-page
 
 Activation hook
 
-```php
+```php:no-line-numbers
 function um_stripe_activation_hook(  ) : void
 ```
 
@@ -32,7 +32,7 @@ Handles the processes on plugin activation.
 
 Check Core dependencies
 
-```php
+```php:no-line-numbers
 function um_stripe_check_dependencies(  ) : void
 ```
 
@@ -52,7 +52,7 @@ This handles the Ultimate Member core dependencies and validation of plugin requ
 
 Show error notice for older PHP versions
 
-```php
+```php:no-line-numbers
 function um_stripe_dependencies(  ) : void
 ```
 
@@ -68,11 +68,34 @@ Displays the required PHP version in the admin screen.
 
 
         
+##  `um_stripe_extend_license_settings()`    
+
+Extend license settings
+
+```php:no-line-numbers
+function um_stripe_extend_license_settings( array $settings ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$settings` | **`array`** | core and extension settings. |
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+        
 ##  `um_stripe_init()`    
 
 Create class variable
 
-```php
+```php:no-line-numbers
 function um_stripe_init(  ) : void
 ```
 
@@ -92,7 +115,7 @@ Initialize the Stripe API class.
 
 Load plugin languages.
 
-```php
+```php:no-line-numbers
 function um_stripe_plugins_loaded(  ) : void
 ```
 
@@ -114,9 +137,9 @@ Loads the language files.
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-09-27, 6:40 PM</span>
+        <span class="time">2023-10-25, 5:09 PM</span>
     </div>
 </div>
 
 
-<style src="./.assets/normalization.css" scoped/>
+

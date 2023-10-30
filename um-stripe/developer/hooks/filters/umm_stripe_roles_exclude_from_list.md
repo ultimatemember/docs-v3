@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_roles_exclude_from_list
   - filters
@@ -9,7 +8,7 @@ tags:
 # umm\_stripe\_roles\_exclude\_from\_list
 Exclude protected roles from the List
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'umm_stripe_roles_exclude_from_list', $um_wp_roles )
 ```
 <div class='hook-sep'></div>
@@ -26,9 +25,9 @@ apply_filters( 'umm_stripe_roles_exclude_from_list', $um_wp_roles )
 
 ### Sample Usage
 
-``` php
-add_filter( 'umm_stripe_roles_exclude_from_list', 'um_1092023_stripe_roles_exclude_from_list ', 10, 1 )
-function um_1092023_stripe_roles_exclude_from_list( $um_wp_roles ){
+``` php:no-line-numbers
+add_filter( 'umm_stripe_roles_exclude_from_list', 'um_10252023_stripe_roles_exclude_from_list ', 10, 1 )
+function um_10252023_stripe_roles_exclude_from_list( $um_wp_roles ){
   return $um_wp_roles;
 }
 ```

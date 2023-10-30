@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_{$status}
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_{$status}
 Assign Role based on the role set in the Stripe Plan settings.
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_{$status}', 'um_1092023_stripe_status_{$status} ', 10, 2 )
-function um_1092023_stripe_status_{$status}( $user_id, $role ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_{$status}', 'um_10252023_stripe_status_{$status} ', 10, 2 )
+function um_10252023_stripe_status_{$status}( $user_id, $role ){
  // do something
 }
 ```

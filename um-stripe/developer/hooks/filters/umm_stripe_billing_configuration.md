@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_billing_configuration
   - filters
@@ -9,7 +8,7 @@ tags:
 # umm\_stripe\_billing\_configuration
 Filter billing configuration before creating the Stripe billing portal.
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 apply_filters( 'umm_stripe_billing_configuration', $args )
 ```
 <div class='hook-sep'></div>
@@ -26,9 +25,9 @@ apply_filters( 'umm_stripe_billing_configuration', $args )
 
 ### Sample Usage
 
-``` php
-add_filter( 'umm_stripe_billing_configuration', 'um_1092023_stripe_billing_configuration ', 10, 1 )
-function um_1092023_stripe_billing_configuration( $args ){
+``` php:no-line-numbers
+add_filter( 'umm_stripe_billing_configuration', 'um_10252023_stripe_billing_configuration ', 10, 1 )
+function um_10252023_stripe_billing_configuration( $args ){
   return $args;
 }
 ```

@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_past_due
   - actions
@@ -8,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_past\_due
 Triggers when the subscription is `pass due`
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )
 ```
 <div class='hook-sep'></div>
@@ -29,9 +28,9 @@ do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_past_due', 'um_1092023_stripe_status_past_due ', 10, 2 )
-function um_1092023_stripe_status_past_due( $um_user_id, $role_past_due ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_past_due', 'um_10252023_stripe_status_past_due ', 10, 2 )
+function um_10252023_stripe_status_past_due( $um_user_id, $role_past_due ){
  // do something
 }
 ```

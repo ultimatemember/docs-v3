@@ -7,7 +7,9 @@
     "docs:dev-stripe": "vuepress dev um-stripe",
     "docs:build-stripe": "vuepress build um-stripe",
     "docs:dev-extended": "vuepress dev extended",
-    "docs:build-extended": "vuepress build extended"
+    "docs:build-extended": "vuepress build extended",
+    "docs:dev-social-login": "vuepress dev social-login",
+    "docs:build-social-login": "vuepress build social-login"
   },
   "repository": {
     "type": "git",
@@ -20,14 +22,27 @@
   },
   "homepage": "https://github.com/ultimatemember/docs-v3#readme",
   "dependencies": {
-    "@vuepress/plugin-register-components": "^1.9.10",
-    "markdown-it-codetabs": "^1.2.0",
-    "vuepress": "^1.9.10"
+    "@vuepress/bundler-webpack": "2.0.0-beta.45",
+    "@vuepress/cli": "2.0.0-beta.45",
+    "@vuepress/plugin-google-analytics": "^1.9.10",
+    "@vuepress/theme-default": "^1.9.10",
+    "@vuepress/utils": "2.0.0-alpha.1",
+    "prismjs": "^1.29.0"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.9.10",
-    "@vuepress/plugin-medium-zoom": "^1.9.10",
-    "vuepress-plugin-auto-sidebar": "^2.3.2",
-    "vuepress-plugin-right-anchor": "^0.5.5"
+    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/plugin-active-header-links": "2.0.0-beta.67",
+    "@vuepress/plugin-back-to-top": "2.0.0-beta.67",
+    "@vuepress/plugin-medium-zoom": "2.0.0-beta.67",
+    "@vuepress/plugin-nprogress": "2.0.0-beta.67",
+    "@vuepress/plugin-palette": "2.0.0-beta.67",
+    "@vuepress/plugin-prismjs": "2.0.0-beta.67",
+    "@vuepress/plugin-register-components": "2.0.0-beta.67",
+    "@vuepress/plugin-search": "2.0.0-beta.67",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.7",
+    "vuepress": "2.0.0-beta.67",
+    "webpack": "^5.89.0"
   }
 }

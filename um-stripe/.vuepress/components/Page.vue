@@ -2,43 +2,30 @@
   <main class="page">
     <slot name="top" />
 
-      <div class="theme-default-content">
-        <Breadcrumbs />
-
-        <Content />
-
-        <hr />
-      </div>
-
-      <PageEdit />
+    <Content class="theme-default-content" />
+    <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
 
     <slot name="bottom" />
-    <UMFooter/>
+   
   </main>
 </template>
 
 <script>
-import PageEdit from "@theme/components/PageEdit.vue";
-import PageNav from "@theme/components/PageNav.vue";
+import PageEdit from '@vuepress/theme-default/components/PageEdit.vue'
+import PageNav from '@vuepress/theme-default/components/PageNav.vue'
 
 export default {
   components: { PageEdit, PageNav },
-  props: ["sidebarItems"]
-};
+  props: ['sidebarItems']
+}
 </script>
 
 <style lang="stylus">
-@require '../styles/wrapper.styl';
 
-.page 
-  padding-bottom: 2rem;
-  display: block;
-
-.vssue
-  @extend $wrapper;
-  padding-left: 0;
-  padding-right: 0;
+.page
+  padding-bottom 2rem
+  display block
 
 </style>

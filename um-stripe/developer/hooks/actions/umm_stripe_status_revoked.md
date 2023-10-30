@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 tags: 
   - umm_stripe_status_revoked
   - actions
@@ -9,7 +8,7 @@ tags:
 # umm\_stripe\_status\_revoked
 Fires once a subscription & account status has been revoked from a WP account.
 <Badge text="Since 1.0.0" vertical="middle" />
-``` php
+``` php:no-line-numbers
 do_action( 'umm_stripe_status_revoked', $old_user_id, $role_inactive )
 ```
 <div class='hook-sep'></div>
@@ -30,9 +29,9 @@ do_action( 'umm_stripe_status_revoked', $old_user_id, $role_inactive )
 
 ### Sample Usage
 
-``` php
-add_action( 'umm_stripe_status_revoked', 'um_1092023_stripe_status_revoked ', 10, 2 )
-function um_1092023_stripe_status_revoked( $old_user_id, $role_inactive ){
+``` php:no-line-numbers
+add_action( 'umm_stripe_status_revoked', 'um_10252023_stripe_status_revoked ', 10, 2 )
+function um_10252023_stripe_status_revoked( $old_user_id, $role_inactive ){
  // do something
 }
 ```

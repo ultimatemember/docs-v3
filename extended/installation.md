@@ -1,6 +1,4 @@
----
-layout: UMLayout
----
+
 
 # Getting Started
 
@@ -11,11 +9,11 @@ There are many approaches in building membership/community sites with Ultimate M
 
 | Core       |      Latest     |      Pre-Release     | 
 | ------------- | :-----------: | :-----------: |
-| ![Static Badge](https://img.shields.io/badge/Requires_Ultimate_Member-version_2.6.8-8A2BE2) | ![GitHub release (with filter)](https://img.shields.io/github/v/release/ultimatemember/Extended?label=Latest%20Release)| ![GitHub release (with filter)](https://img.shields.io/github/v/release/ultimatemember/Extended?filter=2.0.0&label=Version)
+| ![Static Badge](https://img.shields.io/badge/Requires-version_2.6.8+-7856ff) | ![GitHub release (with filter)](https://img.shields.io/github/v/release/ultimatemember/Extended?label=Latest%20Release)| ![GitHub release (with filter)](https://img.shields.io/github/v/release/ultimatemember/Extended?filter=2.0.0-beta2&label=Version)
 
 
 ::: tip How To Contribute?
-Do you want to share ideas & customizations to help others? Please read our guide on how to [Contribute](/developer/how-to-contribute). Are you a Developer? Please see our guide to [develop extensions](/developer/create-extensions/).
+Do you want to share ideas & customizations to help others? Please read our guide on how to [Contribute](developer/how-to-contribute). Are you a Developer? Please see our guide to [develop extensions](developer/create-extensions/).
 :::
 
 ## Installation
