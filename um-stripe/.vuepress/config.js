@@ -45,14 +45,6 @@ export default defineUserConfig({
       ['link', { rel: 'icon', href: 'https://ultimatemember.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png' }], // Custom favicon
     ],
   
-    // Plugins config
-    plugins: {
-      '@vuepress/google-analytics': {
-        ga: 'UA-58599811-1', // GoogleAnalytics ID (optional. use your own ga)
-      },
-      '@vuepress/back-to-top': {},
-    },
-  
     theme: defaultTheme({
         
       // logo

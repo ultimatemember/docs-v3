@@ -1,0 +1,401 @@
+{
+    "$schema": "https://raw.githubusercontent.com/wp-hooks/generator/0.9.0/schema.json",
+    "hooks": [
+        {
+            "name": "um_mycred_hook_defaults",
+            "file": "includes/core/hooks/um-mycred-social-login.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_mycred_hook_defaults",
+            "file": "includes/core/hooks/um-mycred-social-login.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_mycred_hooks_data",
+            "file": "includes/core/hooks/um-mycred-social-login.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_mycred_hooks_data",
+            "file": "includes/core/hooks/um-mycred-social-login.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_login_assigned_form_id",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_callback_url",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_callback_url__{$provider}",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_connect_url",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_connect_url__{$provider}",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_do_login_error_return_url",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_do_login_error_return_url__{$provider}",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_get_user_profile",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_login_networks",
+            "file": "includes/core/um-social-login-init.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks",
+            "file": "includes/core/um-social-login-init.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks",
+            "file": "includes/core/class-social-login-setup.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks_output",
+            "file": "includes/core/class-social-login-shortcode.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks_output",
+            "file": "includes/core/filters/um-social-login-profile.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_return_url",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_return_url",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_return_url__{$provider}",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_return_url__{$provider}",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_window_process_error_return_url",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_window_process_error_return_url__{$provider}",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_{$provider}__config",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "Example usage: add_filter(\"um_social_login_{$provider}__config\", function( $config ){ $config[          'scope' => ['r_liteprofile', .",
+                "long_description": ".. ],          'enabled' => true,          'keys' => [                   'key' => '...',                   'secret' => '...',          ]      ],   return $config; });",
+                "tags": [],
+                "long_description_html": "<p>.. ], 'enabled' =&gt; true, 'keys' =&gt; [ 'key' =&gt; '...', 'secret' =&gt; '...', ] ], return $config; });</p>"
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_profile__custom_data_{$key}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_sso_automatic_login_with_email",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_sso_generate_email",
+            "file": "includes/core/filters/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_sso_generate_email_address",
+            "file": "includes/core/filters/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_sso_generate_email_domain",
+            "file": "includes/core/filters/um-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_sso_load_hybridauth",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "Load hybridauth library to specific pages e.g. /login/ or /register/",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_sso_returned_raw_data",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "{$config['provider_slug']}\"}",
+            "file": "includes/core/class-social-login-hybridauth.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        }
+    ]
+}

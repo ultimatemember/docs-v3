@@ -1,0 +1,425 @@
+{
+    "$schema": "https://raw.githubusercontent.com/wp-hooks/generator/0.9.0/schema.json",
+    "hooks": [
+        {
+            "name": "um_before_form",
+            "file": "templates/buttons.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_post_registration_approved_hook",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_do_authenticated_process",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_link_user",
+            "file": "includes/core/actions/um-social-login-form.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_link_user",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_do_link_user__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_link_user_error",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_do_link_user_error__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_login",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_do_login",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 6
+        },
+        {
+            "name": "um_social_do_login__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_do_login_error",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_do_login_error",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_login_error__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_do_oauth_window_process",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_do_oauth_window_process__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_do_redirect_after_login",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_do_register_authenticated_process",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 6
+        },
+        {
+            "name": "um_social_do_register_error",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_do_register_error__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_doing_oauth_window_process",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_doing_oauth_window_process__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_social_doing_register",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_doing_register__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_doing_shortcode",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 6
+        },
+        {
+            "name": "um_social_doing_shortcode__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 5
+        },
+        {
+            "name": "um_social_login_after_connect",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_after_disconnect",
+            "file": "includes/core/class-social-login-disconnect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_after_provider_title",
+            "file": "includes/core/filters/um-social-login-account.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_social_login_after_{$provider}_connect",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_after_{$provider}_disconnect",
+            "file": "includes/core/class-social-login-disconnect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_before_show_overlay",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 0
+        },
+        {
+            "name": "um_social_oauth_window_process_error",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 4
+        },
+        {
+            "name": "um_social_oauth_window_process_error__{$provider}",
+            "file": "includes/core/class-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_user_login",
+            "file": "includes/core/actions/um-social-login-connect.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        }
+    ]
+}

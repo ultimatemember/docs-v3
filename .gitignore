@@ -1,6 +1,8 @@
 deploy.sh
 build
 um-stripe/ultimatemember/*.php
+social-login/ultimatemember/vendor
+social-login/ultimatemember/*.php
 node_modules
 package-lock.json
 .cache

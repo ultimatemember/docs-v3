@@ -17,8 +17,10 @@ jobs:
       run: |
         mkdir deploy/um-stripe/
         mkdir deploy/extended/
+        mkdir deploy/social-login/
         mv um-stripe/dist/* deploy/um-stripe/
         mv extended/dist/* deploy/extended/
+        mv social-login/dist/* deploy/social-login/
         cd deploy/
         git init
         git config --local user.email "action@github.com"
