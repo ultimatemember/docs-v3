@@ -47,6 +47,6 @@ Triggers when the subscriptions has been trialing
 ## [umm_stripe_status_unpaid](./actions/umm_stripe_status_unpaid)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the subscription is `unpaid`
-## [umm_stripe_status_{$status}](./actions/umm_stripe_status_{$status})<Badge text="Since 1.0.0" vertical="middle" />
+## [umm_stripe_status_{$status}](./actions/umm_stripe_status___status_)<Badge text="Since 1.0.0" vertical="middle" />
 
 Assign Role based on the role set in the Stripe Plan settings.
