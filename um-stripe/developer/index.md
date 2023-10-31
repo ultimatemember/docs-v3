@@ -1,4 +1,0 @@
----
-layout: UMLayout
----
-# Developer

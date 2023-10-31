@@ -11,9 +11,9 @@ jobs:
     - name: Build VuePress
       run: |
         yarn
-        yarn vuepress build um-stripe
-        yarn vuepress build extended
-        yarn vuepress build social-login
+        yarn vuepress build src/um-stripe
+        yarn vuepress build src/Extended
+        yarn vuepress build src/um-social-login
     - name: Commit files
       run: |
         mkdir deploy/um-stripe/

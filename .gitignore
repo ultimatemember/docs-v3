@@ -8,3 +8,6 @@ package-lock.json
 .cache
 .temp
 pnpm-lock.yaml
+.um
+vendor
+composer.lock

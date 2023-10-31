@@ -1,0 +1,83 @@
+{
+    "name": "ultimatemember/docs",
+    "description": "Doc Generator By Ultimate Member Group Ltd.",
+    "type": "wordpress-plugin",
+    "homepage": "https://ultimatemember.com/",
+    "license": "GPL-3.0-or-later",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+      {
+        "name": "Ultimate Member Group Ltd.",
+        "email": "team@ultimatemember.com"
+      }
+    ],
+    "scripts": {
+      "um_build_docs": [
+        "php .um/build.php"
+      ],
+      "phpdoc": [
+        "phpdoc"
+      ],
+      "wp-hooks": [
+        "wp-hooks-generator --input=.  --ignore-files=/vendor/,/.github/ --output=docs/ultimatemember/hooks ",
+        "php docs/ultimatemember/hooks.php",
+        "php docs/ultimatemember/snippets.php"
+      ],
+      "helpscout_sync": [
+        "php docs/ultimatemember/helpscout.php"
+      ],
+      "render_snippets": [
+        "php docs/ultimatemember/snippets.php"
+      ],
+      "test": [
+        "php docs/ultimatemember/tests.php",
+        "Composer\\Config::disableProcessTimeout"
+      ]
+    },
+    "extra": {
+      "wp-hooks": {
+        "ignore-files": [
+          "docs/",
+          "vendor/",
+          "php-scoper/"
+        ]
+      }
+    },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/champsupertramp/phpdoc-vuepress"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/champsupertramp/html-to-markdown"
+      }
+    ],
+    "require-dev": {
+      "wp-cli/wp-cli": "*",
+      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+      "object-calisthenics/phpcs-calisthenics-rules": "*",
+      "phpcompatibility/phpcompatibility-wp": "*",
+      "wp-coding-standards/wpcs": "2.3.0",
+      "squizlabs/php_codesniffer": "3.*",
+      "phpdocumentor/phpdocumentor": "2.9",
+      "champsupertramp/phpdoc-vuepress": "dev-master",
+      "champsupertramp/html-to-markdown": "dev-master",
+      "dompdf/dompdf": "^0.8.6",
+      "jms/serializer": "^1.7",
+      "wp-hooks/generator": "^0.9.0",
+      "vlucas/phpdotenv": "^5.5",
+      "league/html-to-markdown": "^5.1"
+    },
+    "config": {
+      "allow-plugins": {
+        "symfony/flex": true,
+        "dealerdirect/phpcodesniffer-composer-installer": true,
+        "phpdocumentor/unified-asset-installer": true,
+        "composer/installers": true
+      },
+      "process-timeout":0
+    }
+  }
+  

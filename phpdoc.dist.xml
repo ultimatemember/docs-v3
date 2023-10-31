@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>Ultimate Member Stripe - Documentations</title>
+  
+    <transformations>
+        <template name="vendor/champsupertramp/phpdoc-vuepress/data/templates/vuepress" />
+    </transformations>
+    <files>
+        <directory>.</directory> <!-- Scan and parse all the php files except those found in the paths below -->
+        <directory>includes/*</directory>
+        <directory>templates/*</directory>
+        <ignore>assets/*</ignore>
+        <ignore>docs/*</ignore>
+        <ignore>vendor/*</ignore>
+    </files>
+    <cache>build/cache</cache>
+</phpdoc>
