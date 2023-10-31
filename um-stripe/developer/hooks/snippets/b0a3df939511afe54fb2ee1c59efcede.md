@@ -1,5 +1,4 @@
 ---
-layout: UMLayout
 title: Modify Checkout Sessions configuration
 ---
 # Modify Checkout Sessions configuration
