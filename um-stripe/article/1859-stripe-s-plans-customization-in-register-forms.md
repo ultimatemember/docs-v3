@@ -5,7 +5,8 @@
 
 ### For Multiple plans:
 
-```css
+```
+
 /* Plan Item */
 .um .um-stripe-field-multiple_visible .um-stripe-plan-item { 
 	border-radius: 10px;
@@ -44,7 +45,8 @@
 
 ### <strong>For Single Plan:</strong>
 
-```css
+```
+
 /* Plan Item */
 .um .um-stripe-field-single_visible .um-stripe-plan-item {
 	color: #475476;
@@ -71,7 +73,8 @@
 
 ### Additional CSS selectors for the price/amount format:
 
-```css
+```
+
 /* Currency */
 .um-stripe-plan-item  .um-stripe-price-title .um-stripe-price-currency{
    color: red;

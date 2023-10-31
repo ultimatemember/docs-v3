@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_{$status}
 Assign Role based on the role set in the Stripe Plan settings.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_{$status}', 'um_10252023_stripe_status_{$status} ', 10, 2 )
-function um_10252023_stripe_status_{$status}( $user_id, $role ){
+add_action( 'umm_stripe_status_{$status}', 'um_10312023_stripe_status_{$status} ', 10, 2 )
+function um_10312023_stripe_status_{$status}( $user_id, $role ){
  // do something
 }
 ```

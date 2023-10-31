@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_active
 Triggers when the payments have been succesfully made.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_active', $um_user_id, $role )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_active', $um_user_id, $role )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_active', 'um_10252023_stripe_status_active ', 10, 2 )
-function um_10252023_stripe_status_active( $um_user_id, $role ){
+add_action( 'umm_stripe_status_active', 'um_10312023_stripe_status_active ', 10, 2 )
+function um_10312023_stripe_status_active( $um_user_id, $role ){
  // do something
 }
 ```

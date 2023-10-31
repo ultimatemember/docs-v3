@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_onetime\_refunded
 Triggers when the charge is refunded.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_onetime_refunded', 'um_10252023_stripe_status_onetime_refunded ', 10, 2 )
-function um_10252023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
+add_action( 'umm_stripe_status_onetime_refunded', 'um_10312023_stripe_status_onetime_refunded ', 10, 2 )
+function um_10312023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
  // do something
 }
 ```

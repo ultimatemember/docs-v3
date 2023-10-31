@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_past\_due
 Triggers when the subscription is `pass due`
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_past_due', 'um_10252023_stripe_status_past_due ', 10, 2 )
-function um_10252023_stripe_status_past_due( $um_user_id, $role_past_due ){
+add_action( 'umm_stripe_status_past_due', 'um_10312023_stripe_status_past_due ', 10, 2 )
+function um_10312023_stripe_status_past_due( $um_user_id, $role_past_due ){
  // do something
 }
 ```

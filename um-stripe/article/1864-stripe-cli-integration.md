@@ -21,7 +21,8 @@
          ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649434c9c5d2b53344e729ae/file-rBgBPcK9Lo.png)
 - Copy the Webhook secret and add it in the /wp-config.php file before the "That's all" code comment:
 
-```php
+```
+
 define( 'UM_STRIPE_DEV_LOCAL', 'whsec_5741b47f3f9faabd935713136e08a47e3f6e7d3b78e501787e9891838d2' );
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */

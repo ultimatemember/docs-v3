@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_canceled
 Triggers when the subscriptions has been cancelled.
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_canceled', 'um_10252023_stripe_status_canceled ', 10, 2 )
-function um_10252023_stripe_status_canceled( $um_user_id, $role_cancelled ){
+add_action( 'umm_stripe_status_canceled', 'um_10312023_stripe_status_canceled ', 10, 2 )
+function um_10312023_stripe_status_canceled( $um_user_id, $role_cancelled ){
  // do something
 }
 ```

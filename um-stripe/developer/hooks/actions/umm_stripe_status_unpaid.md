@@ -7,6 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_unpaid
 Triggers when the subscription is `unpaid`
+<Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 ```
@@ -29,8 +30,8 @@ do_action( 'umm_stripe_status_unpaid', $um_user_id, $role_unpaid )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_unpaid', 'um_10252023_stripe_status_unpaid ', 10, 2 )
-function um_10252023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
+add_action( 'umm_stripe_status_unpaid', 'um_10312023_stripe_status_unpaid ', 10, 2 )
+function um_10312023_stripe_status_unpaid( $um_user_id, $role_unpaid ){
  // do something
 }
 ```
