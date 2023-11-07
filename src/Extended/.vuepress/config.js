@@ -31,7 +31,7 @@ function getSideBar(folder, title) {
 export default defineUserConfig({
     lang: 'en-US',
     // Directory where will be generated the HTML files by VuePress
-    dest: 'Extended/dist/',     
+    dest: 'extended/dist/',     
     
     // Base URL. Useful for GitHub pages.     
     base: '/docs-v3/extended/',
