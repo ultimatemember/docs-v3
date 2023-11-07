@@ -25,7 +25,7 @@
         "php docs/ultimatemember/snippets.php"
       ],
       "helpscout_sync": [
-        "php docs/ultimatemember/helpscout.php"
+        "php .um/helpscout.php"
       ],
       "render_snippets": [
         "php docs/ultimatemember/snippets.php"

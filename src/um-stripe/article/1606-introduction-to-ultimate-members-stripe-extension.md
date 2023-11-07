@@ -32,6 +32,8 @@
 - [Stripe’s Plans Customization in Register Forms](/docs-v3/um-stripe/article/1859-stripe-s-plans-customization-in-register-forms)
 - [Display Subscription Status, Invoices and Active Subscriptions in the Admin screen](/docs-v3/um-stripe/article/1865-display-subscription-status-invoices-and-active-subscriptions-in-the-admin-screen)
 - [Stripe Settings](/docs-v3/um-stripe/article/1886-stripe-settings)
+- [Stripe - Support Payment Link for Checkout](/docs-v3/um-stripe/article/1885-stripe-support-payment-link-for-checkout)
+- [Pricing Model-Customer Chooses Price](/docs-v3/um-stripe/article/1888-pricing-model-customer-chooses-price)
 
 ### <strong>Frequently Asked Questions:</strong>
 

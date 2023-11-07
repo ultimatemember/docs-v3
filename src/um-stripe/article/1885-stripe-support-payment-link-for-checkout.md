@@ -11,7 +11,7 @@
 
 ### <strong>Setup</strong>
 
- To setup the Stripe Payment Link, you have to follow the steps below:
+ To set up the Stripe Payment Link, you have to follow the steps below:
 
 1. Go to your  [Stripe dashboard](https://dashboard.stripe.com/) .
 2. On the menu tab, click on <strong>More</strong> to show more stripe products and features.
@@ -26,7 +26,7 @@
     
     > <strong>Note:</strong> This only supports the Subscription products. One-time payment doesn’t create Stripe customer through the Payment Link’s checkout.
 9. Select the <strong>client reference ID</strong> from the options and enter the parameter `um_stripe_custom_checkout` in the field. The URL below is the payment link that you can copy and use.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6537f6a45929497d15ca1133/file-JepZ8xhCHK.png)
-10. Once you copy the Payment Link, you can paste it now to your preference. Once the payment link is click, it will redirect you to the Stripe Checkout page with the product price.  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65394d8103e87e076b635e2e/file-263F6w981Z.png)  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65394db16a23f959ef28c8f9/file-faW0wp6rvG.png)
+10. Once you copy the Payment Link, you can paste it now to your preference. Once the payment link is clicked, it will redirect you to the Stripe Checkout page with the product price.  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65394d8103e87e076b635e2e/file-263F6w981Z.png)  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65394db16a23f959ef28c8f9/file-faW0wp6rvG.png)
 
 ### Customize Payment Link Button
 

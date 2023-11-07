@@ -157,7 +157,7 @@ function umm_stripe_show_overlay(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-07, 11:39 AM</span>
+        <span class="time">2023-11-07, 1:11 PM</span>
     </div>
 </div>
 
