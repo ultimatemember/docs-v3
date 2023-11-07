@@ -26,7 +26,7 @@ apply_filters( 'umm_stripe_roles_exclude_from_list', $um_wp_roles )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_roles_exclude_from_list', 'um_1172023_stripe_roles_exclude_from_list ', 10, 1 )
+add_filter( 'umm_stripe_roles_exclude_from_list', 'um_1172023_stripe_roles_exclude_from_list', 10, 1 );
 function um_1172023_stripe_roles_exclude_from_list( $um_wp_roles ){
   return $um_wp_roles;
 }

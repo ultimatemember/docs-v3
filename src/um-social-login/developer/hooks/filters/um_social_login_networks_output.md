@@ -21,7 +21,7 @@ apply_filters( 'um_social_login_networks_output',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_networks_output', 'um_1172023_social_login_networks_output ', 10, 0 )
+add_filter( 'um_social_login_networks_output', 'um_1172023_social_login_networks_output', 10, 0 );
 function um_1172023_social_login_networks_output(  ){
   return ;
 }

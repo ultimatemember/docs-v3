@@ -21,7 +21,7 @@ do_action( 'um_admin_addon_hook',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_admin_addon_hook', 'um_1172023_admin_addon_hook ', 10, 0 )
+add_action( 'um_admin_addon_hook', 'um_1172023_admin_addon_hook', 10, 0 );
 function um_1172023_admin_addon_hook(  ){
  // do something
 }

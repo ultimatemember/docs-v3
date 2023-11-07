@@ -21,7 +21,7 @@ apply_filters( 'um_cron_resend_activation_link_recurrence',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_cron_resend_activation_link_recurrence', 'um_1172023_cron_resend_activation_link_recurrence ', 10, 0 )
+add_filter( 'um_cron_resend_activation_link_recurrence', 'um_1172023_cron_resend_activation_link_recurrence', 10, 0 );
 function um_1172023_cron_resend_activation_link_recurrence(  ){
   return ;
 }

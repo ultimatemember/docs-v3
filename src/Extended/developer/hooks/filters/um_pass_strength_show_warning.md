@@ -21,7 +21,7 @@ apply_filters( 'um_pass_strength_show_warning',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_pass_strength_show_warning', 'um_1172023_pass_strength_show_warning ', 10, 0 )
+add_filter( 'um_pass_strength_show_warning', 'um_1172023_pass_strength_show_warning', 10, 0 );
 function um_1172023_pass_strength_show_warning(  ){
   return ;
 }

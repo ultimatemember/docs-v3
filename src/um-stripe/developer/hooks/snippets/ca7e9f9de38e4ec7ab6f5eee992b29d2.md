@@ -5,7 +5,7 @@ title: Send admin email notification
 
 This code snippet sends an admin notificaiton when there's a newly created Stripe customer.
 ``` php
-add_action( 'um_stripe_webhook_payload_event_init', 'um_09202023_stripe_webhook_payload_event_init ', 10, 1 )
+add_action( 'um_stripe_webhook_payload_event_init', 'um_09202023_stripe_webhook_payload_event_init', 10, 1 );
 function um_09202023_stripe_webhook_payload_event_init( $event ){
  
 		// Handle the event.

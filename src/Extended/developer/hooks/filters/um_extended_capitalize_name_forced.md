@@ -26,7 +26,7 @@ By default, this is set to TRUE. This may affect performance of the server. If s
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_extended_capitalize_name_forced', 'um_1172023_extended_capitalize_name_forced ', 10, 0 )
+add_filter( 'um_extended_capitalize_name_forced', 'um_1172023_extended_capitalize_name_forced', 10, 0 );
 function um_1172023_extended_capitalize_name_forced(  ){
   return ;
 }

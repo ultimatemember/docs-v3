@@ -21,7 +21,7 @@ apply_filters( 'um_cron_delete_users_status',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_cron_delete_users_status', 'um_1172023_cron_delete_users_status ', 10, 0 )
+add_filter( 'um_cron_delete_users_status', 'um_1172023_cron_delete_users_status', 10, 0 );
 function um_1172023_cron_delete_users_status(  ){
   return ;
 }

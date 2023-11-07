@@ -21,7 +21,7 @@ apply_filters( 'um_extended_capitlize_name__word_splitters',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_extended_capitlize_name__word_splitters', 'um_1172023_extended_capitlize_name__word_splitters ', 10, 0 )
+add_filter( 'um_extended_capitlize_name__word_splitters', 'um_1172023_extended_capitlize_name__word_splitters', 10, 0 );
 function um_1172023_extended_capitlize_name__word_splitters(  ){
   return ;
 }

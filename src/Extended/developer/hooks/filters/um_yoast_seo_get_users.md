@@ -21,7 +21,7 @@ apply_filters( 'um_yoast_seo_get_users',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_yoast_seo_get_users', 'um_1172023_yoast_seo_get_users ', 10, 0 )
+add_filter( 'um_yoast_seo_get_users', 'um_1172023_yoast_seo_get_users', 10, 0 );
 function um_1172023_yoast_seo_get_users(  ){
   return ;
 }

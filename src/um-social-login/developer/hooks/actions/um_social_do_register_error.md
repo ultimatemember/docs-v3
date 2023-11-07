@@ -21,7 +21,7 @@ do_action( 'um_social_do_register_error',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_register_error', 'um_1172023_social_do_register_error ', 10, 0 )
+add_action( 'um_social_do_register_error', 'um_1172023_social_do_register_error', 10, 0 );
 function um_1172023_social_do_register_error(  ){
  // do something
 }

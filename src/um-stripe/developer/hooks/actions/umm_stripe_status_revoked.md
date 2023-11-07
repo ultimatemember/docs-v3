@@ -30,7 +30,7 @@ do_action( 'umm_stripe_status_revoked', $old_user_id, $role_inactive )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_revoked', 'um_1172023_stripe_status_revoked ', 10, 2 )
+add_action( 'umm_stripe_status_revoked', 'um_1172023_stripe_status_revoked', 10, 2 );
 function um_1172023_stripe_status_revoked( $old_user_id, $role_inactive ){
  // do something
 }

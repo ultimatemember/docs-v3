@@ -21,7 +21,7 @@ apply_filters( 'um_user_shortcode_filter__{$atts['meta_key']}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_user_shortcode_filter__{$atts['meta_key']}', 'um_1172023_user_shortcode_filter____atts['meta_key']_ ', 10, 0 )
+add_filter( 'um_user_shortcode_filter__{$atts['meta_key']}', 'um_1172023_user_shortcode_filter____atts['meta_key']_', 10, 0 );
 function um_1172023_user_shortcode_filter____atts['meta_key']_(  ){
   return ;
 }

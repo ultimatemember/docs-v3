@@ -21,7 +21,7 @@ apply_filters( 'um_pass_strength_show_suggestions',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_pass_strength_show_suggestions', 'um_1172023_pass_strength_show_suggestions ', 10, 0 )
+add_filter( 'um_pass_strength_show_suggestions', 'um_1172023_pass_strength_show_suggestions', 10, 0 );
 function um_1172023_pass_strength_show_suggestions(  ){
   return ;
 }

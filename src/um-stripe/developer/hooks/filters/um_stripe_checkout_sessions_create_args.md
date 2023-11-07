@@ -46,7 +46,7 @@ apply_filters( 'um_stripe_checkout_sessions_create_args', $args, $mode, $umm_sub
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_stripe_checkout_sessions_create_args', 'um_1172023_stripe_checkout_sessions_create_args ', 10, 6 )
+add_filter( 'um_stripe_checkout_sessions_create_args', 'um_1172023_stripe_checkout_sessions_create_args', 10, 6 );
 function um_1172023_stripe_checkout_sessions_create_args( $args, $mode, $umm_subscription_id, $umm_price_id, $user_id, $customer_id ){
   return $args;
 }

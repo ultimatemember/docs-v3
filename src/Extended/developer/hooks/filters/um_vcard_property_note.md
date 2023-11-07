@@ -21,7 +21,7 @@ apply_filters( 'um_vcard_property_note',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_vcard_property_note', 'um_1172023_vcard_property_note ', 10, 0 )
+add_filter( 'um_vcard_property_note', 'um_1172023_vcard_property_note', 10, 0 );
 function um_1172023_vcard_property_note(  ){
   return ;
 }

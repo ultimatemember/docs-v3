@@ -30,7 +30,7 @@ do_action( 'umm_stripe_status_active', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_active', 'um_1172023_stripe_status_active ', 10, 2 )
+add_action( 'umm_stripe_status_active', 'um_1172023_stripe_status_active', 10, 2 );
 function um_1172023_stripe_status_active( $um_user_id, $role_active ){
  // do something
 }
