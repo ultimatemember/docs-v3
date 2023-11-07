@@ -794,7 +794,7 @@ public function handle( string $namespace, string $directory, string $output = '
 -----
 
 Create Scaffold
-Command: wp um dev scaffold <namespace>
+Command: wp um dev scaffold \<namespace\>
 
 ```php:no-line-numbers
 public function scaffold( array $args, array $assoc_args ) : void
@@ -3586,7 +3586,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-07, 8:08 AM</span>
+        <span class="time">2023-11-07, 8:24 AM</span>
     </div>
 </div>
 
