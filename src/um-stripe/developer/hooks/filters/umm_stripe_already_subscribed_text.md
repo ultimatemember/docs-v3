@@ -26,8 +26,8 @@ apply_filters( 'umm_stripe_already_subscribed_text', $subscribed_text )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_already_subscribed_text', 'um_10312023_stripe_already_subscribed_text ', 10, 1 )
-function um_10312023_stripe_already_subscribed_text( $subscribed_text ){
+add_filter( 'umm_stripe_already_subscribed_text', 'um_1172023_stripe_already_subscribed_text ', 10, 1 )
+function um_1172023_stripe_already_subscribed_text( $subscribed_text ){
   return $subscribed_text;
 }
 ```

@@ -75,7 +75,7 @@ function um_extended_blockemails_loading_allowed(  ) : void
         
 ##  `um_extended_blockemails_plugin()`    
 
-Global function-holder. Works similar to a singleton's instance().
+Global function-holder. Works similar to a singleton's instance.
 
 ```php:no-line-numbers
 function um_extended_blockemails_plugin(  ) : \UM_Extended_Block_Emails\Core
@@ -91,6 +91,10 @@ function um_extended_blockemails_plugin(  ) : \UM_Extended_Block_Emails\Core
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
 
+
+### Returns
+
+Extension class.
 
         
 ##  `um_extended_blockemails_ultimatemember_requirement_notice()`    
@@ -1198,7 +1202,7 @@ function um_wpcli_ultimatemember_requirement_notice(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-10-31, 4:37 PM</span>
+        <span class="time">2023-11-07, 8:08 AM</span>
     </div>
 </div>
 

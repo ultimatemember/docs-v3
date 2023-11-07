@@ -391,6 +391,31 @@
             "args": 1
         },
         {
+            "name": "umm_stripe_checkout_details_date_format",
+            "file": "includes/common/class-stripe.php",
+            "type": "filter",
+            "doc": {
+                "description": "Change date format in Checkout details",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.3"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Default: F d, Y",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$date_format"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
             "name": "umm_stripe_predefined_pages_restricted",
             "file": "includes/frontend/class-content-restriction.php",
             "type": "filter",

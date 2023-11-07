@@ -31,8 +31,8 @@ When Stripe sends a Webhook payload to the site, this hook is fired.
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_stripe_webhook_payload_event_init', 'um_10312023_stripe_webhook_payload_event_init ', 10, 1 )
-function um_10312023_stripe_webhook_payload_event_init( $event ){
+add_action( 'um_stripe_webhook_payload_event_init', 'um_1172023_stripe_webhook_payload_event_init ', 10, 1 )
+function um_1172023_stripe_webhook_payload_event_init( $event ){
  // do something
 }
 ```

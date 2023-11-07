@@ -18,3 +18,6 @@ tags:
 ### umm\_stripe\_already\_subscribed\_text
 - [ Change the Already Subscribed Text](../hooks/snippets/80c31fdae8323764866e750935bdb00b)
 
+### umm\_stripe\_checkout\_details\_date\_format
+- [ Change Date Format in Checkout Details page.](../hooks/snippets/c4d6f7b94d60655478ea8ee05f6d2be3)
+

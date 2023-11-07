@@ -4589,13 +4589,14 @@ public function __construct(  ) : void
 Format into 2 decimal place.
 
 ```php:no-line-numbers
-public function get_amount_decimal_formatted( float $number = 0, string $currency = '' ) : float
+public function get_amount_decimal_formatted( float $number = 0, string $currency = '', boolean $symbol = false ) : float
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$number` <Badge text="optional" type="warn"/>| **`float`** | Number. |
 | `$currency` <Badge text="optional" type="warn"/>| **`string`** | Currency Code. |
+| `$symbol` <Badge text="optional" type="warn"/>| **`boolean`** | Whethere include the currency symbol in the format. |
 
 
 | | |
@@ -7412,7 +7413,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-10-31, 4:37 PM</span>
+        <span class="time">2023-11-07, 8:08 AM</span>
     </div>
 </div>
 
