@@ -31,7 +31,7 @@ function getSideBar(folder, title) {
 export default defineUserConfig({
     lang: 'en-US',
     // Directory where will be generated the HTML files by VuePress
-    dest: 'extended/dist/',     
+    dest: 'Extended/dist/',     
     
     // Base URL. Useful for GitHub pages.     
     base: '/docs-v3/extended/',
@@ -73,7 +73,11 @@ export default defineUserConfig({
               children: [
                     {
                       link: '/installation', text: 'Installation',
-                    }
+                    },
+                    { link: '/create-extensions', text: 'Create Extensions' },
+                    { link: '/how-to-contribute', text: 'Contribute' },
+                    { link: '/report-issues', text: 'Report Issues' }
+                 
                 ],
             },
             // Normal documentation sidebar
@@ -81,11 +85,7 @@ export default defineUserConfig({
               text: 'Developer',
               collapsable: false,
               sidebarDepth: 0,    // optional, defaults to 1
-              children: [
-                { link: '/developer/create-extensions', text: 'Create Extensions' },
-                { link: '/developer/how-to-contribute', text: 'Contribute' },
-                { link: '/developer/report-issues', text: 'Report Issues' }
-              ],
+              children: getSideBar("developer", "Developer"),
             },
             { 
               text: 'Extended',
