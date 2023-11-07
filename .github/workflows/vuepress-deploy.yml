@@ -22,6 +22,7 @@ jobs:
         mv um-stripe/dist/* deploy/um-stripe/
         mv extended/dist/* deploy/extended/
         mv social-login/dist/* deploy/social-login/
+        sed -i '1d' .gitignore
         cd deploy/
         git init
         git config --local user.email "action@github.com"
