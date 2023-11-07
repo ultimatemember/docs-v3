@@ -1,0 +1,173 @@
+{
+    "$schema": "https://raw.githubusercontent.com/wp-hooks/generator/0.9.0/schema.json",
+    "hooks": [
+        {
+            "name": "um_cron_delete_users_after",
+            "file": "src/um-cron-delete/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_cron_delete_users_before",
+            "file": "src/um-cron-delete/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_cron_delete_users_status",
+            "file": "src/um-cron-delete/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_cron_resend_activation_link_recurrence",
+            "file": "src/um-cronjob-activation-email/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_extended_capitalize_name_forced",
+            "file": "src/um-capitalize-name/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "Force capitalization",
+                "long_description": "By default, this is set to TRUE. This may affect performance of the server. If set to FALSE, display names will capitlized on form submissions instead.",
+                "tags": [],
+                "long_description_html": "<p>By default, this is set to TRUE. This may affect performance of the server. If set to FALSE, display names will capitlized on form submissions instead.</p>"
+            },
+            "args": 1
+        },
+        {
+            "name": "um_extended_capitlize_name__lowercase_exceptions",
+            "file": "src/um-capitalize-name/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_extended_capitlize_name__uppercase_exceptions",
+            "file": "src/um-capitalize-name/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_extended_capitlize_name__word_splitters",
+            "file": "src/um-capitalize-name/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_pass_strength_show_score",
+            "file": "src/um-pass-strength/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_pass_strength_show_suggestions",
+            "file": "src/um-pass-strength/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_pass_strength_show_warning",
+            "file": "src/um-pass-strength/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_user_shortcode_filter__{$atts['meta_key']}",
+            "file": "src/um-user-shortcode/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_vcard_property_note",
+            "file": "src/um-vcard/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "um_yoast_seo_get_users",
+            "file": "src/um-yoast-seo/src/Core.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        }
+    ]
+}

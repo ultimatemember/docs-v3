@@ -691,6 +691,133 @@ private $assets = array('settings');
 #### <span style="display: none;">\UM_Extended_API</span> Inherited properties
 > This class has not inherited properties.
         
+##  `UM_WPCLI\Commands\Core`    
+
+Class Core to handle all plugin initialization.
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\UM_WPCLI\Commands\Core</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\UM_WPCLI\Commands\Core</span> Methods
+  
+:::tip <a id="UM_WPCLI-Commands-Core::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_WPCLI-Commands-Core::test_security_settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> test_security_settings ( )   
+-----
+
+Test Security Settings.
+
+```php:no-line-numbers
+public function test_security_settings( array $args, array $assoc_args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Command arguments. |
+| `$assoc_args` | **`array`** | Associated arguments. |
+
+***Description:***
+
+Command: wp um security test user=<user_id>
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_WPCLI-Commands-Core::test_security_settings_affected_users" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> test_security_settings_affected_users ( )   
+-----
+
+Test Affected Users by Banned Capabilities
+Command: wp um security affected users
+
+```php:no-line-numbers
+public function test_security_settings_affected_users(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_WPCLI-Commands-Core::test_security_settings_total_flagged_accounts" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> test_security_settings_total_flagged_accounts ( )   
+-----
+
+Total Flagged accounts
+Command: wp um security flagged users interval=<today|last_hour>
+
+```php:no-line-numbers
+public function test_security_settings_total_flagged_accounts( array $args, array $assoc_args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Command arguments. |
+| `$assoc_args` | **`array`** | Associated arguments. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\UM_WPCLI\Commands\Core</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\UM_WPCLI\Commands\Core</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\UM_WPCLI\Commands\Core</span> Inherited properties
+> This class has not inherited properties.
+        
 ##  `UM_WPCLI\Commands\Developer`    
 
 Class Core to handle all plugin initialization.
@@ -3586,7 +3713,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-07, 8:52 AM</span>
+        <span class="time">2023-11-07, 8:57 AM</span>
     </div>
 </div>
 
