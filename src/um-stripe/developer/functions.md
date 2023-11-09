@@ -130,26 +130,6 @@ Loads the language files.
 | ***Since*** |`v1.0.0`<br />|
 
 
-        
-##  `um_ext\um_stripe\common\umm_stripe_show_overlay()`    
-
-Display overlay
-
-```php:no-line-numbers
-function umm_stripe_show_overlay(  ) : void
-```
-
-
-
-### Description
-
-> No description.
-
-| | |
-|:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
-
-
 
 
 --------
@@ -157,7 +137,7 @@ function umm_stripe_show_overlay(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-07, 1:11 PM</span>
+        <span class="time">2023-11-09, 7:23 AM</span>
     </div>
 </div>
 

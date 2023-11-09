@@ -81,10 +81,6 @@ html.dark {
   }
 
 
-.page {
-  padding-left: 0px
-}
-
 .code-group__nav-tab {
   padding: 5px 20px 5px 20px;
 }
@@ -117,3 +113,6 @@ html.dark body ul strong {
   color: #c3bfc3
 }
 
+.page .theme-default-content, .page-meta, .page-nav {
+  max-width: 70% 
+}

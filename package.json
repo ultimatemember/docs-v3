@@ -6,8 +6,8 @@
   "scripts": {
     "docs:dev-stripe": "vuepress dev src/um-stripe",
     "docs:build-stripe": "vuepress build src/um-stripe",
-    "docs:dev-extended": "vuepress dev src/Extended",
-    "docs:build-extended": "vuepress build src/Extended",
+    "docs:dev-extended": "vuepress dev src/um-extended",
+    "docs:build-extended": "vuepress build src/um-extended",
     "docs:dev-social-login": "vuepress dev src/um-social-login",
     "docs:build-social-login": "vuepress build src/um-social-login"
   },

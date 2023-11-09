@@ -5,17 +5,14 @@
 
  This document provides instructions on correctly setting up a LinkedIn application so that users can log in/register via LinkedIn on your site. You will need to purchase our  [social login extension](https://ultimatemember.com/extensions/social-login/)  if you want users to log in via LinkedIn.
 
-<strong>Notice:</strong> LinkedIn API is now offering a way for your app to authenticate members using OpenID Connect. The old LinkedIn API for Login has been deprecated. With this update, the feature <strong>"Sign In with LinkedIn using OpenID Connect"</strong> should be enabled in your LinkedIn App settings under the Product tab. To use the old LinkedIn API connection(3-legged OAuth Flow), please use the code snippet below:
+<strong>Notice:</strong> LinkedIn API is now offering a way for your app to authenticate members using OpenID Connect. The old LinkedIn API for Login has been deprecated. With this update, the feature <strong>"Sign In with LinkedIn using OpenID Connect"</strong> should be enabled in your LinkedIn App settings under the Product tab. To use the old LinkedIn API connection(3-legged OAuth Flow), please use the code snippet below:```
 
-```
-<?php
 add_filter( 'um_social_login_linkedin__config', 'um_social_login_linkedin_backward_compatibility__config' );
 function um_social_login_linkedin_backward_compatibility__config( $config ) {
     $config['provider'] = 'LinkedIn';
     $config['scope'] = array( 'r_liteprofile', 'r_emailaddress' ); // Add 'w_member_social' in the array if you have the permission to use it.
     return $config;
 }
-?>
 ```
 
 ### Creating a new app

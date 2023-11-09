@@ -3482,6 +3482,27 @@ public function set_stripe_customer( integer $user_id, array $args ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Registration::show_overlay" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_overlay ( )   
+-----
+
+Display overlay
+
+```php:no-line-numbers
+public function show_overlay(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Registration::validate_billing_email" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> validate_billing_email ( )   
 -----
 
@@ -6125,6 +6146,28 @@ protected function __10052023(  ) : boolean
 :::
 
   
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::__11092023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __11092023 ( )   
+-----
+
+Upgrade to version 11092023
+ - Change table constraint
+
+```php:no-line-numbers
+protected function __11092023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::set_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_schema ( )   
 -----
 
@@ -6224,7 +6267,7 @@ Database version.
 
 
 ```php:no-line-numbers
-protected $version = '10052023';
+protected $version = '11092023';
 ```
 
 ***Types:***
@@ -6246,7 +6289,7 @@ Key => value array of versions => methods.
 
 
 ```php:no-line-numbers
-protected $upgrades = array('10052023' => 10052023);
+protected $upgrades = array('10052023' => 10052023, '11092023' => 11092023);
 ```
 
 ***Types:***
@@ -6746,6 +6789,28 @@ protected function __10202023(  ) : boolean
 :::
 
   
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__11092023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __11092023 ( )   
+-----
+
+Upgrade to version 11092023
+ - Change table constraint
+
+```php:no-line-numbers
+protected function __11092023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::set_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_schema ( )   
 -----
 
@@ -6845,7 +6910,7 @@ Database version.
 
 
 ```php:no-line-numbers
-protected $version = '10202023';
+protected $version = '11092023';
 ```
 
 ***Types:***
@@ -6867,7 +6932,7 @@ Key => value array of versions => methods.
 
 
 ```php:no-line-numbers
-protected $upgrades = array('10202023' => 10202023);
+protected $upgrades = array('10202023' => 10202023, '11092023' => 11092023);
 ```
 
 ***Types:***
@@ -7413,7 +7478,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-07, 1:11 PM</span>
+        <span class="time">2023-11-09, 7:23 AM</span>
     </div>
 </div>
 
