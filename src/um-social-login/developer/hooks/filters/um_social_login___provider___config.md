@@ -26,8 +26,8 @@ apply_filters( 'um_social_login_{$provider}__config',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_{$provider}__config', 'um_1192023_social_login___provider___config', 10, 0 );
-function um_1192023_social_login___provider___config(  ){
+add_filter( 'um_social_login_{$provider}__config', 'um_11162023_social_login___provider___config', 10, 0 );
+function um_11162023_social_login___provider___config(  ){
   return ;
 }
 ```

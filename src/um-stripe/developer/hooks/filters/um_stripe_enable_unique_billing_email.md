@@ -26,8 +26,8 @@ apply_filters( 'um_stripe_enable_unique_billing_email', $enable_billing_email )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_stripe_enable_unique_billing_email', 'um_1192023_stripe_enable_unique_billing_email', 10, 1 );
-function um_1192023_stripe_enable_unique_billing_email( $enable_billing_email ){
+add_filter( 'um_stripe_enable_unique_billing_email', 'um_11162023_stripe_enable_unique_billing_email', 10, 1 );
+function um_11162023_stripe_enable_unique_billing_email( $enable_billing_email ){
   return $enable_billing_email;
 }
 ```

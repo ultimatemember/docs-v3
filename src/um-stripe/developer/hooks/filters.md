@@ -23,7 +23,7 @@ Modify text that's displayed when a user is already subscribed.
 ## [umm_stripe_billing_configuration](./filters/umm_stripe_billing_configuration)<Badge text="Since 1.0.0" vertical="middle" />
 
 Filter billing configuration before creating the Stripe billing portal.
-## [umm_stripe_checkout_details_date_format](./filters/umm_stripe_checkout_details_date_format)<Badge text="Since 1.0.3" vertical="middle" />
+## [umm_stripe_checkout_details_date_format](./filters/umm_stripe_checkout_details_date_format)<Badge text="Since 1.0.2" vertical="middle" />
 
 Change date format in Checkout details
 ## [umm_stripe_predefined_pages_restricted](./filters/umm_stripe_predefined_pages_restricted)<Badge text="Since 1.0.0" vertical="middle" />

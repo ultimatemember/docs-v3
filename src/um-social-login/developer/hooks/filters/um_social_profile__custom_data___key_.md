@@ -21,8 +21,8 @@ apply_filters( 'um_social_profile__custom_data_{$key}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_profile__custom_data_{$key}', 'um_1192023_social_profile__custom_data___key_', 10, 0 );
-function um_1192023_social_profile__custom_data___key_(  ){
+add_filter( 'um_social_profile__custom_data_{$key}', 'um_11162023_social_profile__custom_data___key_', 10, 0 );
+function um_11162023_social_profile__custom_data___key_(  ){
   return ;
 }
 ```

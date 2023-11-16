@@ -1741,7 +1741,7 @@ public function get_payment_intent(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -3495,7 +3495,7 @@ public function show_overlay(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -3998,7 +3998,28 @@ public function webhook_response(  ) : void
 > This class has not inherited methods.
 
 ### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Properties
-> This class has not properties.
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::$checkout_session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $checkout_session   
+-----
+
+Checkout Session
+
+
+```php:no-line-numbers
+public $checkout_session = null;
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.2`<br />|
+
+
+:::
+
 
 #### <span style="display: none;">\um_ext\um_stripe\common\Request_Handler</span> Inherited properties
 > This class has not inherited properties.
@@ -4166,7 +4187,7 @@ public function get_all_prices(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -4596,7 +4617,7 @@ public function __construct(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -4727,12 +4748,13 @@ $user_id WP User ID.
 Get WP User ID by Stripe customer id
 
 ```php:no-line-numbers
-public function get_user_id_by_customer_id( string $customer_id ) : integer
+public function get_user_id_by_customer_id( string $customer_id, integer $payment_intent_id = null ) : integer
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$customer_id` | **`string`** | Stripe customer ID. |
+| `$payment_intent_id` <Badge text="optional" type="warn"/>| **`integer`** | Payment Intent ID. |
 
 
 | | |
@@ -4767,7 +4789,7 @@ public function umm_stripe_status_changed( string $status, integer $user_id, str
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -4854,6 +4876,30 @@ public function delete_user( integer $user_id ) : void
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-User::get_subscription_data" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_subscription_data ( )   
+-----
+
+Get a user's subscription data
+
+```php:no-line-numbers
+public function get_subscription_data( integer $user_id = null ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | User ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -4961,7 +5007,7 @@ Class Init
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 ### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Constants
@@ -4982,7 +5028,7 @@ public function __construct(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -5003,7 +5049,7 @@ public function logs(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -5024,7 +5070,7 @@ public function subscriptions(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -5149,7 +5195,7 @@ public function cache_price_hash_id(  ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -5246,7 +5292,7 @@ private $price_hash_id = null;
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 :::
@@ -6160,7 +6206,7 @@ protected function __11092023(  ) : boolean
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -6386,7 +6432,7 @@ public function rows(  ) : \um_ext\um_stripe\db\subscriptions\rows()
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -6462,7 +6508,7 @@ Class Subscriptions_Query
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 ### <span style="display: none;">\um_ext\um_stripe\db\subscriptions\Subscriptions</span> Constants
@@ -6725,7 +6771,7 @@ Columns
 
 
 ```php:no-line-numbers
-public $columns = array('id' => array('name' => 'id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'extra' => 'auto_increment', 'primary' => true, 'sortable' => true), 'user_id' => array('name' => 'user_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'type' => array('name' => 'type', 'type' => 'enum', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'plan_id' => array('name' => 'plan_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'subscription_id' => array('name' => 'subscription_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'price_id' => array('name' => 'price_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'product_id' => array('name' => 'product_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'hash_id' => array('name' => 'hash_id', 'type' => 'longtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'status' => array('name' => 'status', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'date_created' => array('name' => 'date_created', 'type' => 'timestamp', 'date_query' => true, 'unsigned' => true, 'searchable' => true, 'sortable' => true));
+public $columns = array('id' => array('name' => 'id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'extra' => 'auto_increment', 'primary' => true, 'sortable' => true), 'user_id' => array('name' => 'user_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'type' => array('name' => 'type', 'type' => 'enum', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'plan_id' => array('name' => 'plan_id', 'type' => 'bigint', 'length' => '20', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'subscription_id' => array('name' => 'subscription_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'price_id' => array('name' => 'price_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'product_id' => array('name' => 'product_id', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'hash_id' => array('name' => 'hash_id', 'type' => 'longtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'status' => array('name' => 'status', 'type' => 'mediumtext', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'payment_link' => array('name' => 'payment_link', 'type' => 'tinyint', 'unsigned' => true, 'searchable' => true, 'sortable' => true), 'date_created' => array('name' => 'date_created', 'type' => 'timestamp', 'date_query' => true, 'unsigned' => true, 'searchable' => true, 'sortable' => true));
 ```
 
 ***Types:***
@@ -6781,7 +6827,7 @@ protected function __10202023(  ) : boolean
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -6803,7 +6849,29 @@ protected function __11092023(  ) : boolean
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.3`<br />|
+| ***Since*** |`v1.0.2`<br />|
+
+
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__11132023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __11132023 ( )   
+-----
+
+Upgrade to version 11132023
+ - Add new colum for payment_link mode.
+
+```php:no-line-numbers
+protected function __11132023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.2`<br />|
 
 
 
@@ -6910,7 +6978,7 @@ Database version.
 
 
 ```php:no-line-numbers
-protected $version = '11092023';
+protected $version = '11132023';
 ```
 
 ***Types:***
@@ -6932,7 +7000,7 @@ Key => value array of versions => methods.
 
 
 ```php:no-line-numbers
-protected $upgrades = array('10202023' => 10202023, '11092023' => 11092023);
+protected $upgrades = array('10202023' => 10202023, '11092023' => 11092023, '11132023' => 11132023);
 ```
 
 ***Types:***
@@ -7478,7 +7546,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-09, 7:23 AM</span>
+        <span class="time">2023-11-16, 6:30 AM</span>
     </div>
 </div>
 

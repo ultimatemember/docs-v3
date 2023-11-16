@@ -20,7 +20,7 @@ Triggers when the subscriptions has been active.
 ## [umm_stripe_status_canceled](./actions/umm_stripe_status_canceled)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the subscriptions has been cancelled.
-## [umm_stripe_status_changed](./actions/umm_stripe_status_changed)<Badge text="Since 1.0.3" vertical="middle" />
+## [umm_stripe_status_changed](./actions/umm_stripe_status_changed)<Badge text="Since 1.0.2" vertical="middle" />
 
 Triggers when the status has changed
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)<Badge text="Since 1.0.0" vertical="middle" />

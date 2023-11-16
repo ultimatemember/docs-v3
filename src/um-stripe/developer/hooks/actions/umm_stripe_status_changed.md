@@ -7,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_status\_changed
 Triggers when the status has changed
-<Badge text="Since 1.0.3" vertical="middle" />
+<Badge text="Since 1.0.2" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_changed', $status, $um_user_id, $role_past_due )
 ```
@@ -34,8 +34,8 @@ do_action( 'umm_stripe_status_changed', $status, $um_user_id, $role_past_due )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_changed', 'um_1192023_stripe_status_changed', 10, 3 );
-function um_1192023_stripe_status_changed( $status, $um_user_id, $role_past_due ){
+add_action( 'umm_stripe_status_changed', 'um_11162023_stripe_status_changed', 10, 3 );
+function um_11162023_stripe_status_changed( $status, $um_user_id, $role_past_due ){
  // do something
 }
 ```

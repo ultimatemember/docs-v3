@@ -14,7 +14,7 @@ pageClass: phpdoc-api-generated-page
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-09, 7:23 AM</span>
+        <span class="time">2023-11-16, 6:30 AM</span>
     </div>
 </div>
 

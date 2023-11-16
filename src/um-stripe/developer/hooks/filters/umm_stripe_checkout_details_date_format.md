@@ -7,7 +7,7 @@ tags:
 ---
 # umm\_stripe\_checkout\_details\_date\_format
 Change date format in Checkout details
-<Badge text="Since 1.0.3" vertical="middle" />
+<Badge text="Since 1.0.2" vertical="middle" />
 ``` php:no-line-numbers
 apply_filters( 'umm_stripe_checkout_details_date_format', $date_format )
 ```
@@ -26,8 +26,8 @@ apply_filters( 'umm_stripe_checkout_details_date_format', $date_format )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_checkout_details_date_format', 'um_1192023_stripe_checkout_details_date_format', 10, 1 );
-function um_1192023_stripe_checkout_details_date_format( $date_format ){
+add_filter( 'umm_stripe_checkout_details_date_format', 'um_11162023_stripe_checkout_details_date_format', 10, 1 );
+function um_11162023_stripe_checkout_details_date_format( $date_format ){
   return $date_format;
 }
 ```

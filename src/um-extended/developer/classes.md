@@ -1661,15 +1661,19 @@ public function predefined_fields( array $arr ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Cover_Photo-Core::set_temp_user_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_temp_user_id ( )   
+:::tip <a id="UM_Extended_Cover_Photo-Core::set_cover_photo" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_cover_photo ( )   
 -----
 
-Set Temporary user id
+Multiply Cover Photo with different sizes
 
 ```php:no-line-numbers
-public function set_temp_user_id(  ) : void
+public function set_cover_photo( integer $user_id, array $args ) : void
 ```
 
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | the user ID. |
+| `$args` | **`array`** | Field settings. |
 
 
 | | |
@@ -1681,19 +1685,15 @@ public function set_temp_user_id(  ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Cover_Photo-Core::um_registration_set_cover_photo" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> um_registration_set_cover_photo ( )   
+:::tip <a id="UM_Extended_Cover_Photo-Core::set_temp_user_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_temp_user_id ( )   
 -----
 
-Multiply Cover Photo with different sizes
+Set Temporary user id
 
 ```php:no-line-numbers
-public function um_registration_set_cover_photo( integer $user_id, array $args ) : void
+public function set_temp_user_id(  ) : void
 ```
 
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$user_id` | **`integer`** | the user ID. |
-| `$args` | **`array`** | Field settings. |
 
 
 | | |
@@ -2625,15 +2625,19 @@ public function profile_photo_script(  ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Profile_Photo-Core::set_temp_user_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_temp_user_id ( )   
+:::tip <a id="UM_Extended_Profile_Photo-Core::set_profile_photo" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_profile_photo ( )   
 -----
 
-Set Temporary user id
+Multiply Profile Photo with different sizes
 
 ```php:no-line-numbers
-public function set_temp_user_id(  ) : void
+public function set_profile_photo( integer $user_id, array $args ) : void
 ```
 
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | the user ID. |
+| `$args` | **`array`** | Field settings. |
 
 
 | | |
@@ -2645,19 +2649,15 @@ public function set_temp_user_id(  ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Profile_Photo-Core::um_registration_set_profile_photo" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> um_registration_set_profile_photo ( )   
+:::tip <a id="UM_Extended_Profile_Photo-Core::set_temp_user_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_temp_user_id ( )   
 -----
 
-Multiply Profile Photo with different sizes
+Set Temporary user id
 
 ```php:no-line-numbers
-public function um_registration_set_profile_photo( integer $user_id, array $args ) : void
+public function set_temp_user_id(  ) : void
 ```
 
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$user_id` | **`integer`** | the user ID. |
-| `$args` | **`array`** | Field settings. |
 
 
 | | |
@@ -3583,7 +3583,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-09, 7:23 AM</span>
+        <span class="time">2023-11-16, 6:30 AM</span>
     </div>
 </div>
 
