@@ -52,10 +52,11 @@ export default defineUserConfig({
 
       navbar: [
           { text: 'Home', link: '/' }, 
+          { text: 'Main Site', link: 'https://ultimatemember.com' }, 
           {
-            text: 'v1.0.2-beta.2',
+            text: 'v1.0.5-Beta.6',
             children: [
-              { text: 'v1.0.2-beta.2', link: '/' },
+              { text: 'v1.0.5-Beta.6', link: 'https://ultimatemember.com/downloads/' },
             ]
             },
             { link: '/developer/roadmap', text: 'Roadmap' },
