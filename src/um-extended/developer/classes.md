@@ -2273,13 +2273,13 @@ public function __construct(  ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Math_Captcha-Core::captcha_field" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> captcha_field ( )   
+:::tip <a id="UM_Extended_Math_Captcha-Core::add_field" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_field ( )   
 -----
 
 Render Captcha Field
 
 ```php:no-line-numbers
-public function captcha_field(  ) : void
+public function add_field(  ) : void
 ```
 
 
@@ -2293,13 +2293,13 @@ public function captcha_field(  ) : void
 :::
 
   
-:::tip <a id="UM_Extended_Math_Captcha-Core::captcha_validate" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> captcha_validate ( )   
+:::tip <a id="UM_Extended_Math_Captcha-Core::validate" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> validate ( )   
 -----
 
 Validate Captcha
 
 ```php:no-line-numbers
-public function captcha_validate( array $post_form ) : void
+public function validate( array $post_form ) : void
 ```
 
 | Parameter | Type(s) | Description |
@@ -2320,7 +2320,48 @@ public function captcha_validate( array $post_form ) : void
 > This class has not inherited methods.
 
 ### <span style="display: none;">\UM_Extended_Math_Captcha\Core</span> Properties
-> This class has not properties.
+  
+:::tip <a id="UM_Extended_Math_Captcha-Core::$cpa" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $cpa   
+-----
+
+PHP-based Simple Math Captcha
+
+
+```php:no-line-numbers
+public $cpa;
+```
+
+***Types:***
+- `\Kmlpandey77\MathCaptcha\Captcha`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Math_Captcha-Core::$key" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $key   
+-----
+
+Math Captcha field's name
+
+
+```php:no-line-numbers
+public $key = 'um_math_challenge';
+```
+
+***Types:***
+- `string`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
 
 #### <span style="display: none;">\UM_Extended_Math_Captcha\Core</span> Inherited properties
 > This class has not inherited properties.
@@ -3583,7 +3624,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-16, 6:30 AM</span>
+        <span class="time">2023-12-19, 1:46 PM</span>
     </div>
 </div>
 

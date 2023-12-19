@@ -2563,6 +2563,30 @@ Post ID or boolean false.
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-CPT::remove_quick_edit" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> remove_quick_edit ( )   
+-----
+
+Remove quick edit from Custom Post Type table
+
+```php:no-line-numbers
+public function remove_quick_edit( array $cpts ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$cpts` | **`array`** | Custom Post Types to filter. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-CPT::set_custom_columns" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_custom_columns ( )   
 -----
 
@@ -6214,6 +6238,28 @@ protected function __11092023(  ) : boolean
 :::
 
   
+:::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::__12162023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __12162023 ( )   
+-----
+
+Upgrade to version 12162023
+ - Fix Containts
+
+```php:no-line-numbers
+protected function __12162023(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.6`<br />|
+
+
+
+
+:::
+
+  
 :::warning <a id="um_ext-um_stripe-db-logs-Logs_Table::set_schema" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_schema ( )   
 -----
 
@@ -6313,7 +6359,7 @@ Database version.
 
 
 ```php:no-line-numbers
-protected $version = '11092023';
+protected $version = '12162023';
 ```
 
 ***Types:***
@@ -6335,7 +6381,7 @@ Key => value array of versions => methods.
 
 
 ```php:no-line-numbers
-protected $upgrades = array('10052023' => 10052023, '11092023' => 11092023);
+protected $upgrades = array('10052023' => 10052023, '11092023' => 11092023, '12162023' => 12162023);
 ```
 
 ***Types:***
@@ -6857,14 +6903,14 @@ protected function __11092023(  ) : boolean
 :::
 
   
-:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__11132023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __11132023 ( )   
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__11292023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __11292023 ( )   
 -----
 
-Upgrade to version 11132023
+Upgrade to version 11292023
  - Add new colum for payment_link mode.
 
 ```php:no-line-numbers
-protected function __11132023(  ) : boolean
+protected function __11292023(  ) : boolean
 ```
 
 
@@ -6872,6 +6918,28 @@ protected function __11132023(  ) : boolean
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.2`<br />|
+
+
+
+
+:::
+
+  
+:::warning <a id="um_ext-um_stripe-db-subscriptions-Subscriptions_Table::__12162023" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __12162023 ( )   
+-----
+
+Upgrade to version 12162023
+ - Fix constaint
+
+```php:no-line-numbers
+protected function __12162023(  ) : boolean
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.6`<br />|
 
 
 
@@ -6978,7 +7046,7 @@ Database version.
 
 
 ```php:no-line-numbers
-protected $version = '11132023';
+protected $version = '12162023';
 ```
 
 ***Types:***
@@ -7000,7 +7068,7 @@ Key => value array of versions => methods.
 
 
 ```php:no-line-numbers
-protected $upgrades = array('10202023' => 10202023, '11092023' => 11092023, '11132023' => 11132023);
+protected $upgrades = array('10202023' => 10202023, '11092023' => 11092023, '11292023' => 11292023, '12142023' => 11092023, '12162023' => 12162023);
 ```
 
 ***Types:***
@@ -7546,7 +7614,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-16, 6:30 AM</span>
+        <span class="time">2023-12-19, 1:46 PM</span>
     </div>
 </div>
 

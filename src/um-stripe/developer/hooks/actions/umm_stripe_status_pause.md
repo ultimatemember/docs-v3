@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_pause', $um_user_id, $role_pause )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_pause', 'um_11162023_stripe_status_pause', 10, 2 );
-function um_11162023_stripe_status_pause( $um_user_id, $role_pause ){
+add_action( 'umm_stripe_status_pause', 'um_12192023_stripe_status_pause', 10, 2 );
+function um_12192023_stripe_status_pause( $um_user_id, $role_pause ){
  // do something
 }
 ```

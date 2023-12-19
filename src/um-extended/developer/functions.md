@@ -30,6 +30,51 @@ function _cleanup_header_comment( mixed $str ) : void
 
 
         
+##  `_cleanup_header_comment()`    
+
+
+
+```php:no-line-numbers
+function _cleanup_header_comment( mixed $str ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$str` | **`mixed`** |  |
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+
+        
+##  `get_file_data()`    
+
+
+
+```php:no-line-numbers
+function get_file_data( mixed $file, mixed $context = '' ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$file` | **`mixed`** |  |
+| `$context` <Badge text="optional" type="warn"/>| **`mixed`** |  |
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+
+        
 ##  `get_file_data()`    
 
 
@@ -1202,7 +1247,7 @@ function um_wpcli_ultimatemember_requirement_notice(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-16, 6:30 AM</span>
+        <span class="time">2023-12-19, 1:46 PM</span>
     </div>
 </div>
 

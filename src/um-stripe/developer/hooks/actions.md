@@ -16,7 +16,7 @@ Catch Stripe's Webhook Payload Events
 Triggers when the checkout session is completed.
 ## [umm_stripe_status_active](./actions/umm_stripe_status_active)<Badge text="Since 1.0.0" vertical="middle" />
 
-Triggers when the subscriptions has been active.
+Triggers when the payments have been succesfully made.
 ## [umm_stripe_status_canceled](./actions/umm_stripe_status_canceled)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the subscriptions has been cancelled.
@@ -43,7 +43,7 @@ Triggers when the subscriptions has been pause
 Fires once a subscription & account status has been revoked from a WP account.
 ## [umm_stripe_status_trialing](./actions/umm_stripe_status_trialing)<Badge text="Since 1.0.0" vertical="middle" />
 
-Triggers when the subscription is `trialing`
+Triggers when the subscriptions has been trialing
 ## [umm_stripe_status_unpaid](./actions/umm_stripe_status_unpaid)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the subscription is `unpaid`

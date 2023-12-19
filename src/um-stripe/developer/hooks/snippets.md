@@ -4,6 +4,9 @@ tags:
   - code snippets
 ---
 # Code Snippets
+### Miscellaneous
+- [ Disable Stripe Customer creation in WP Admin > Users](../hooks/snippets/69dff8f4ee2370e95fa0e9f26af524fd)
+
 ### um\_stripe\_checkout\_sessions\_create\_args
 - [ Modify Checkout Sessions configuration](../hooks/snippets/feae4326c6fb8f2616ba43a79c0fb84e)
 

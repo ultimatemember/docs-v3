@@ -21,8 +21,8 @@ do_action( 'um_social_login_after_provider_title',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_login_after_provider_title', 'um_11162023_social_login_after_provider_title', 10, 0 );
-function um_11162023_social_login_after_provider_title(  ){
+add_action( 'um_social_login_after_provider_title', 'um_12192023_social_login_after_provider_title', 10, 0 );
+function um_12192023_social_login_after_provider_title(  ){
  // do something
 }
 ```

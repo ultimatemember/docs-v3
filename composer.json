@@ -21,14 +21,14 @@
       ],
       "wp-hooks": [
         "wp-hooks-generator --input=.  --ignore-files=/vendor/,/.github/ --output=docs/ultimatemember/hooks ",
-        "php docs/ultimatemember/hooks.php",
-        "php docs/ultimatemember/snippets.php"
+        "php .um/hooks.php",
+        "php .um/snippets.php"
       ],
       "helpscout_sync": [
         "php .um/helpscout.php"
       ],
       "render_snippets": [
-        "php docs/ultimatemember/snippets.php"
+        "php .um/snippets.php"
       ],
       "test": [
         "php docs/ultimatemember/tests.php",

@@ -380,6 +380,29 @@ public function __construct(  ) : void
 :::
 
   
+:::tip <a id="UM_Social_Login_API::add_cpt" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> add_cpt ( )   
+-----
+
+Add Custom Post Type
+
+```php:no-line-numbers
+public function add_cpt( array $um_cpt ) : array
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$um_cpt` | **`array`** | Custom Post Types. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
 :::tip <a id="UM_Social_Login_API::admin" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> admin ( )   
 -----
 
@@ -3641,7 +3664,7 @@ public $data = array();
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-16, 6:30 AM</span>
+        <span class="time">2023-12-19, 1:46 PM</span>
     </div>
 </div>
 

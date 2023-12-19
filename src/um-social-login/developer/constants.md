@@ -103,7 +103,7 @@ UM_SOCIAL_LOGIN_PLUGIN = plugin_basename(__FILE__);
 
 
 ```php:no-line-numbers
-UM_SOCIAL_LOGIN_REQUIRES = '2.6.11';
+UM_SOCIAL_LOGIN_REQUIRES = '2.7.0';
 ```
 
 **Type:** **`mixed`**
@@ -248,7 +248,7 @@ UM_SSO_WINDOW = 'parent';
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-11-16, 6:30 AM</span>
+        <span class="time">2023-12-19, 1:46 PM</span>
     </div>
 </div>
 
