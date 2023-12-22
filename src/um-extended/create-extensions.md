@@ -4,44 +4,6 @@
 
 We've created a plugin `um-wpcli` that integrates [WP-CLI](http://wp-cli.org/) for our custom commands to test & scaffold new Ultimate Member extensions. This tool will help you create extensions from scratch following our plugin file & directory structures and follow best practices with PHP(`PSR4`) & WordPress Coding Standards.
 
-Installation
-
-Prerequisites
-- [Node.js](https://nodejs.org/) version 16 or higher.
-- [WP-CLI](https://wp-cli.org/) version 2.8.1 or higher.
-- [Composer](https://getcomposer.org/) version 2.5.8 or higher.
-- Terminal for accessing WP-CLI via its command line interface (CLI).
-   Either supports:
-    - [VSCode](https://code.visualstudio.com/)
-    - [PHPStorm](https://www.jetbrains.com/phpstorm/) 
-
-UM Extended plugin can be cloned with:
-<CodeGroup>
-  <CodeGroupItem title="Git-Clone">
-
-```bash:no-line-numbers
-gh repo clone ultimatemember/Extended
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="Curl"  active>
-
-```bash:no-line-numbers
-curl -d '' https://github.com/ultimatemember/Extended.git
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="WP-CLI" active>
-
-```bash:no-line-numbers
-wp plugin install https://github.com/ultimatemember/Extended/archive/refs/heads/main.zip --force
-```
-
-  </CodeGroupItem>
-</CodeGroup>
-
 ## Installation
 
 #### Prerequisites
@@ -49,7 +11,9 @@ wp plugin install https://github.com/ultimatemember/Extended/archive/refs/heads/
 - [WP-CLI](https://wp-cli.org) version 2.8.1 or higher.
 - [Composer](https://getcomposer.org) version 2.5.8 or higher.
 - Terminal for accessing WP-CLI via its command line interface (CLI).
-   - [VSCode](https://code.visualstudio.com/) is recommended.
+  - Supports:
+    - [VSCode](https://code.visualstudio.com/)
+    - [PHPStorm](https://www.jetbrains.com/phpstorm/) 
 
 UM Extended plugin can be cloned with:
 ::: code-group
@@ -84,31 +48,6 @@ Activate the Extended plugin via the Plugins manager or via WP-CLI with:
 ```bash:no-line-numbers
 wp plugin activate Extended
 ```
-and run the Scaffold commands below.
-
-### Scaffold
-
-UM Extended plugin has a `um-wpcli` extension that integrates WP-CLI to help you in creating and testing extensions. You can create a new extension with:
-
-```bash:no-line-numbers
-wp um dev scaffold robert
-```
-
-the generated file structure should look like this:
-
-#### Install Dependencies
-
-Once the plugin has been cloned & extracted, run the following command within the extended directory `/wp-content/plugins/Extended/`:
-```sh
-composer install
-```
-
-#### Activate the Plugin
-Activate the Extended plugin via the Plugins manager or via WP-CLI with:
-```sh
-wp plugin activate Extended
-```
-
 and run the Scaffold commands below.
 
 
