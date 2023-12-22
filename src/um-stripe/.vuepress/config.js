@@ -106,7 +106,7 @@ export default defineUserConfig({
         searchPlaceholder: 'Search Documentation',
 
         // Repository configurations
-        docsDir: 'um-stripe',
+        docsDir: 'src/um-stripe',
         editLinks: true,
         repo: 'http://github.com/ultimatemember/docs-v3/',
     }),
