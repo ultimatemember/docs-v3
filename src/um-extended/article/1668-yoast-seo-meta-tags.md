@@ -4,7 +4,7 @@
 Overview
 --------
 
- Yoast SEO plugin adds Open Graph meta tags to the user profile for the Social Media site's web crawler. To install the plugin, you can read the guide  [here.](/docs-v3/um-extended/article/1889-installation)
+ The Yoast SEO plugin is handy as it includes Open Graph meta tags in user profiles. This feature is designed for social media site web crawlers, ensuring that shared content looks good and follows SEO best practices. It's a straightforward addition that helps improve how user profiles appear on various social media platforms.
 
 ###  The example generated meta tags in the wp\_head:
 

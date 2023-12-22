@@ -21,8 +21,8 @@ do_action( 'um_social_login_before_show_overlay',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_login_before_show_overlay', 'um_12192023_social_login_before_show_overlay', 10, 0 );
-function um_12192023_social_login_before_show_overlay(  ){
+add_action( 'um_social_login_before_show_overlay', 'um_12222023_social_login_before_show_overlay', 10, 0 );
+function um_12222023_social_login_before_show_overlay(  ){
  // do something
 }
 ```

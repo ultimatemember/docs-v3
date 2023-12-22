@@ -45,25 +45,4 @@
 
   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651d94f005231a0b51d23376/file-DckD8Q6zKx.png)
 
-### UM Stripe Plan Settings
-
-1. <strong>Title</strong> - Add or edit the title of your Stripe plan.
-2. <strong>Setup Subscription</strong>
-    1. <strong>Type</strong> - If prices are imported from your Stripe account, it only displays the product payment type, and you'll be unable to edit it. If you set up the Stripe Plan in Ultimate Member, you can choose whether your product is <strong>recurring</strong> or <strong>one-time</strong>.
-    2. <strong>Subscription Price</strong> - If prices are imported from your Stripe account, it only displays the product prices you've created in Stripe, and you'll be unable to select from the prices. If you set up the Stripe Plan in Ultimate Member, you can choose which imported subscription price you prefer.
-3. <strong>Roles</strong> - Assign a role to each  [Stripe Events](/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference) .
-4. <strong>Shortcode</strong> - The  [shortcode](/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference)  generates a button for customers to check out and subscribe to your Stripe plan.
-5. <strong>Subscribe URL</strong> - The URLs are auto-generated once you import the price from your stripe account. The URL will redirect users to the Stripe Checkout with your Stripe plan. 
-    1. <strong>Short</strong> - This subscribe URL includes the stripe plan ID e.g.  [https://ultimate-member-32612-8491614.umsites.net?um\_stripe\_plan\_id=51](https://ultimate-member-32612-8491614.umsites.net?um_stripe_plan_id=51)
-    2. <strong>Hashed</strong> - This subscribe URL is a hashed URL to prevent the post\_id from being exposed. The created Stripe Checkout Page when you activated the UM Stripe plugin is to hold the generated hashed as a Subscribe URL. e.g. [ https://ultimate-member-32612-8491614.umsites.net/stripe/](https://ultimate-member-32612-8491614.umsites.net/stripe/)  [OTg3MmVkOWZjMjJmYzE4MmQzNzFjM2U5ZWQzMTYwOTQ](https://um.x/checkout/OTg3MmVkOWZjMjJmYzE4MmQzNzFjM2U5ZWQzMTYwOTQ)
-
-### Customize the slug of the Subscribe URL
-
- The default URL slug is yoursitedomain.com/ <strong>stripe</strong>/--random hash ID--/. To customize the slug of the Subscribe URL, do the following steps:
-
-- Go to <strong>wp-Admin &gt; Pages &gt;Hover to UM Stripe Checkout page&gt; Click on "Quick Edit" ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651db1f9ed8c6d2f1cffdf15/file-eleEKK6C3y.png)</strong>
-- Type your preferred slug in the field.  
-      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651db292c00c2b65208e1c82/file-VQ0SaN8bsz.png)
-- Click the <strong>U</strong><strong>pdate</strong> button to save. When you visit the page, you'll notice the modified slug in the Stripe Checkout URL. If there is no URL parameter or if the URL parameter is wrong, the page will be inaccessible and will redirect to the homepage.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/651db77a42d97d1c0459145f/file-yZAx80VqBx.png)
-
  <strong>NEXT:  [SHORTCODE REFERENCE](/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference)</strong>

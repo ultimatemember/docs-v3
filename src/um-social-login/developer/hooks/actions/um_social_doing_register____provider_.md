@@ -21,8 +21,8 @@ do_action( 'um_social_doing_register__{$provider}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_doing_register__{$provider}', 'um_12192023_social_doing_register____provider_', 10, 0 );
-function um_12192023_social_doing_register____provider_(  ){
+add_action( 'um_social_doing_register__{$provider}', 'um_12222023_social_doing_register____provider_', 10, 0 );
+function um_12222023_social_doing_register____provider_(  ){
  // do something
 }
 ```

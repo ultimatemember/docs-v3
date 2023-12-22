@@ -4,9 +4,13 @@
 Overview
 --------
 
- This plugin allows you to schedule user deletions with  [WP Cronjob](https://developer.wordpress.org/plugins/cron/) , when activated, you can set the schedule of when the users will be deleted and the status of the users with the filter hooks below.
+ Empower your WordPress site management with the Ultimate Member plugin:
 
- To install Schedule User Deletions with the WP Cronjob plugin, you can read the guide  [here](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions) .
+- Scheduled User Deletions: Automate user deletions using WP Cronjob.
+- Flexible Scheduling: Set your own schedule for user deletions.
+- Filter Hooks: Manage user statuses with customizable filter hooks.
+
+ With this plugin, you gain the ability to schedule user deletions using WP Cronjob. Once activated, you have the flexibility to set the schedule for when user deletions will take place. Additionally, the plugin provides filter hooks to manage the status of users, offering a customizable and efficient solution for user management on your WordPress site.
 
 Available filter hooks:
 -----------------------

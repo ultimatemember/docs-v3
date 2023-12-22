@@ -26,8 +26,8 @@ apply_filters( 'um_stripe_webhook_name', $webhook_name )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_stripe_webhook_name', 'um_12192023_stripe_webhook_name', 10, 1 );
-function um_12192023_stripe_webhook_name( $webhook_name ){
+add_filter( 'um_stripe_webhook_name', 'um_12222023_stripe_webhook_name', 10, 1 );
+function um_12222023_stripe_webhook_name( $webhook_name ){
   return $webhook_name;
 }
 ```

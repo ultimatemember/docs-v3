@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_past_due', $um_user_id, $role_past_due )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_past_due', 'um_12192023_stripe_status_past_due', 10, 2 );
-function um_12192023_stripe_status_past_due( $um_user_id, $role_past_due ){
+add_action( 'umm_stripe_status_past_due', 'um_12222023_stripe_status_past_due', 10, 2 );
+function um_12222023_stripe_status_past_due( $um_user_id, $role_past_due ){
  // do something
 }
 ```

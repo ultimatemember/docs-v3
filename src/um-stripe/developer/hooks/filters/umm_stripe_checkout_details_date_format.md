@@ -26,8 +26,8 @@ apply_filters( 'umm_stripe_checkout_details_date_format', $date_format )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_checkout_details_date_format', 'um_12192023_stripe_checkout_details_date_format', 10, 1 );
-function um_12192023_stripe_checkout_details_date_format( $date_format ){
+add_filter( 'umm_stripe_checkout_details_date_format', 'um_12222023_stripe_checkout_details_date_format', 10, 1 );
+function um_12222023_stripe_checkout_details_date_format( $date_format ){
   return $date_format;
 }
 ```

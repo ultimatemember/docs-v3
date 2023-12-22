@@ -4,49 +4,41 @@
 Overview
 --------
 
- This plugin enables you to generate dummy accounts in Ultimate Member. To install this plugin, you can read the guide  [here.](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions)
+ The Generate Dummies plugin offers a convenient solution for users looking to streamline the testing and development process. With this plugin, users can easily generate simulated or dummy accounts within the Ultimate Member framework. This tool is especially useful for testing and development purposes, allowing website administrators and developers to generate dummy accounts systematically. By simulating user interactions, the plugin assists in evaluating and fine-tuning the functionality of the Ultimate Member plugin before deploying it to a live audience. This feature-rich extension simplifies the testing process, ensuring a smoother and more reliable user experience.
 
-Generate Dummies Tab
---------------------
+### Generate Dummies Tab 
 
- A new tab will be added in the Ultimate Member Menu when the plugin is activated. Go to <strong>wp-admin&gt; Ultimate Member&gt; Generate Dummies</strong>.
+ Upon activating the plugin, a new tab,  <strong>"Generate Dummies,"</strong> is added to the Ultimate Member Menu. Navigate to <strong>wp-admin &gt; Ultimate Member &gt; Generate Dummies.</strong>
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e035e2b54d116b7c397060/file-2htJMR8hZV.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f26f5687c016dc15b761c/file-CbRBVcF9jK.png)
 
-Settings
---------
+### Settings 
 
- You can customize the dummies accounts in the Generate Dummies Settings.
+ Customize dummy accounts in the Generate Dummies Settings:
 
-- <strong>How many dummies?</strong> - Set the number of dummies you want to generate.
-- <strong>Available Nationalities:</strong> (<strong>AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US)</strong> - The nationalities of the dummies you want to generate.
-- <strong>Gender: Male, Female, Both</strong> - Set the gender of the dummies.
-- <strong>Generate Random Colored Cover photos</strong> - If you enable this setting, the dummies' profiles will have random colored cover photos.
-- <strong>Notification</strong> - Disable email notification to admins when dummies are generated.
-- <strong>Account Email pattern</strong> - Set the email patterns of the dummy accounts.
-- <strong>Account Passwords</strong> - Set the dummy accounts password.
+- <strong>How many dummies?:</strong> Set the number of dummies you want to generate.
+- <strong>Available Nationalities:</strong> Choose from various nationalities for the generated dummies. 
+    - (AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US)
+- <strong>Gender:</strong> Specify the gender of the dummies (male, female, or both).
+- <strong>Generate Random Colored Cover Photos:</strong> Enable dummies' profiles to have randomly colored cover photos.
+- <strong>Notification:</strong> Disable email notifications to admins when dummies are generated.
+- <strong>Account Email Pattern:</strong> Set email patterns for dummy accounts.
+- <strong>Account Passwords:</strong> Set passwords for dummy accounts.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e03ae61adf855680c796f8/file-UECAAuMcIR.png)
+ After configuring settings, click <strong>"Start Generating Dummies"</strong> to create them. Use <strong>"Remove Generated Dummies"</strong> to clear generated dummies.
 
- Once you have set your settings, click the <strong>"Start Generating Dummies"</strong> button from the Actions to Generate the dummies. Click the <strong>"Remove Generated Dummies"</strong> button to remove the generated dummies.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f27da2d28585006d0177d/file-LDfm5MWUBA.png)
 
-Clear User Cache
-----------------
+### Clear User Cache
 
- Go to <strong>wp-admin&gt;Ultimate Member&gt; Dashboard&gt; User Cache</strong>
+ Go to <strong>wp-admin &gt; Ultimate Member &gt; Dashboard &gt; User Cache.</strong> You need to clear the user cache to refresh data; this is needed if the generated dummies' profiles and cover photos do not appear. Once you click the clear cache button, a confirmation message will indicate that the cache has been removed.
 
- You need to clear the user cache so that the data refreshes and the generated dummies profile and cover photos appear.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f2933687c016dc15b761d/file-QjdMeS6V2d.png)
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e0407f79a38f5473fd397e/file-o73xFYpwDP.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f2acd8fd0677319115f23/file-DwPAyyRW8K.png)
 
- A message will appear that the cache was removed.
+ Check the generated dummies in <strong>wp-admin &gt; Users</strong>. Hover over a dummy user and click <strong>"View Profile"</strong> to see the dummy account's profile.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e040bdc73ba12e69a4f99f/file-QVMGGM0jfO.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f2c672d28585006d0177e/file-obYecRrLaC.png)
 
- You can now check the generated dummies in <strong>wp-admin&gt; Users</strong>.
-
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e043551adf855680c79736/file-ypQXIqJ24p.png)
-
- To view the profile of the dummy account, hover your mouse over the generated dummy user and click on <strong>View Profile</strong>.
-
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e043c8c73ba12e69a4f9af/file-QL9qZD2GcM.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f2d40687c016dc15b761e/file-k6jGYwXLzZ.png)

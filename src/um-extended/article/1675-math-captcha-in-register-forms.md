@@ -4,14 +4,16 @@
 Overview
 --------
 
- Math Captcha allows you to use simple math problems to test site users to prove their human identity. You can read the installation guide  [here](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions) .
+ Math Captcha serves as a robust solution to authenticate human users on websites by employing simple math problems. This plugin provides a versatile and effective means of verifying user identity. The integration and customization options empower site administrators to strike the ideal balance between security and user experience.This document provides an overview of the activation, functionality, and customization of Math Captcha on your site.
 
- Once the plugin is activated, it is automatically enabled. Go to your site's registration page to check and test the Math Captcha.
+#### Activation and Testing:
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e5444e8200bc052eb7f510/file-NoJi5tjkVR.png)
+ Upon activation, Math Captcha seamlessly integrates into the site's registration process, providing a barrier against automated bot infiltration. To verify its functionality, navigate to the registration page for a real-time assessment
 
- If you want to change the width of the Math Challenge text field, you can try and use the CSS code below:
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cf80c00e96206bf000e17/file-BEJEq1oL6u.png)
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/623c7010c1e53608cf9ec3fc/file-OhIwJ5Q2l0.png)
+### Customization-Adjusting Math Challenge Text Field Width:
 
-  <strong>Warning: We have created this code example to provide guidance and to make it easier for you to implement this code into your website. However, we are not able to provide any support when it comes to customizing the plugin. If you need help implementing this code, please hire a developer.</strong>
+ For those seeking a tailored user interface, customization of the Math Challenge text field width is achievable through CSS coding. The following code snippet illustrates this adjustment:
+
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cf8f78fd0677319115d4b/file-l5n023hXgU.png)

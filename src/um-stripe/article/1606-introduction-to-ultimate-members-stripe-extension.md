@@ -21,6 +21,7 @@
 - [Setting up Webhook and Test/Public Keys](/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys)
 - [Setting up Stripe Success, Cancel Payment and Already Subscribed Pages](/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages)
 - [Create Subscription Prices](/docs-v3/um-stripe/article/1617-create-subscription-prices)
+- [UM Stripe Plan Settings](https://secure.helpscout.net/docs/561c9e86c697916fa4a83eb9/article/6582aa56ea64e97a8cf9a456)
 - [Shortcodes &amp; Subscription Events](/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference)
 - [Add Subscription Plans to a Register Form](/docs-v3/um-stripe/article/1634-stripe---add-subscription-plans-to-a-registeration-form)
 - [Create &amp; Test Customer Billings](/docs-v3/um-stripe/article/1611-stripe---create-test-customer-billings)

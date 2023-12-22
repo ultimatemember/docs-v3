@@ -56,6 +56,7 @@ Shortcodes  [\#](#shortcodes)
 - Show Social Buttons to logged-in users only
 - Keep users logged in
 - Choose the integration type for the Social buttons: Login only, Register only, or Both ( default ).
+- If you add the social login shortcode on a custom page for users to log and configure the user role settings and set the redirection after the login to a custom URL, the redirection won't work because the social login shortcode is for dynamic page only it'll only reload the current page where the shortcode is added.
 
 ### Creating a new social login shortcode
 

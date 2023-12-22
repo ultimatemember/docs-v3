@@ -4,36 +4,33 @@
 Overview
 --------
 
- This plugin will allow users to upload their profile photos in the Register and Account Forms. You can read the installation guide  [here.](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions)
+ This plugin seamlessly integrates the functionality for users to upload their profile photos directly within the Register and Account Forms. With a user-friendly setup, this feature enhances the registration and account creation process by enabling individuals to personalize their profiles right from the start. Upon installation and activation, users gain the convenience of uploading their profile pictures seamlessly, contributing to a more engaging and visually appealing user experience.
 
-Set up in Register Form
------------------------
+### Setting Up Profile Photo Upload in Register Form
 
- Once the plugin is activated, you need to add the pre-defined field  <strong>"Profile Photo"</strong> to the Register form via UM Form Builder.
+ Follow these steps to integrate profile photo upload functionality in the Register Form after activating the plugin:
 
- Go to <strong>wp-admin&gt; Ultimate Member&gt; Forms&gt; Edit Registration Form</strong>
+1. Navigate to wp-admin &gt; Ultimate Member &gt; Forms &gt; Edit Registration Form.
+2. Click on the "<strong>+</strong>" sign button to add a new field using UM Form Builder.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f50ba8fd0677319115f26/file-oN9NLrK546.png)
+3. In the Fields Manager window, select "<strong>Profile Photo</strong>" from the pre-defined fields.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f51676e5cdb01c2a3301a/file-UMZPupgTbD.png)
+4. After adding the "Profile Photo" field, click on the <strong>"Update"</strong> button to save the changes.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f524500e96206bf001000/file-4Icm2MlnDO.png)
 
- Click on the plus " <strong>+</strong>" sign button to add a field.
+ With this configuration, users will be able to upload their profile photos seamlessly during the registration process, contributing to a more personalized and visually enriched user profile.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e057d31adf855680c797fb/file-GkMp0FMAQJ.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f54d7687c016dc15b7624/file-sbCHrzqyzY.png)
 
- The Fields Manager window will appear then select <strong>"Profile Photo"</strong> from the pre-defined fields.
+### Setting Up Profile Photo Upload in Account Form 
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e0599fc73ba12e69a4fa77/file-Vldc3U0gTf.png)
+ To enable and support the Profile Photo uploader in the Account Form, use the provided code snippet:
 
- Once added, click on the <strong>"Update"</strong> button to save changes.
+```
+add_filter( 'um_account_tab_general_fields', 'um_011921_add_profile_photo_uploader', 10, 2 );
+function um_011921_add_profile_photo_uploader( $args, $shortcode_args ) {
+    $args = 'register_profile_photo,' . $args;
+    return $args;
+}
+```
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e05a6fb54d116b7c397182/file-jE8Pp6FwCv.png)
-
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e8255a39e5d05141b60c9e/file-3Qd7Z50dN5.png)
-
-<strong>Set up in the Account Form</strong>
--------------------------------------------
-
- It is required to set the <strong>Profile Photo Uploader</strong> first in the Register Form, and you need to use the code snippet below to enable and support the Profile Photo uploader in the Account Form:
-
-``` add\_filter( 'um\_account\_tab\_general\_fields', 'um\_011921\_add\_profile\_photo\_uploader', 10, 2 ); function um\_011921\_add\_profile\_photo\_uploader( $args, $shortcode\_args ) { $args = 'register\_profile\_photo,' . $args; return $args; } ```
-
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e8374f68cd260cc2d324f0/file-APyMykMmSl.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654f568600e96206bf001001/file-AcOmUsoqHx.png)
 
  <strong>Note: If you have encountered any issues, go to this  [article](/docs-v3/um-extended/article/114-photo-uploads-not-working) .</strong>

@@ -6,10 +6,9 @@ Overview
 
   [](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions)
 
- This plugin allows users to set their passwords via email activation after registration. It generates a link within email templates, enabling users to complete the setup. For installation instructions, please refer to this  [document](/docs-v3/um-extended/article/1889-installation) .
+ This plugin simplifies the password setup process for users by allowing them to set their passwords through email activation after registration. It seamlessly generates a link within email templates, enabling users to effortlessly complete the setup at their convenience.
 
-Setup
------
+### Setup
 
 1. Add the following shortcode to generate a "Set Password" link within UM Email Templates:
  ```

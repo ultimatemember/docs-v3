@@ -4,31 +4,36 @@
 Overview
 --------
 
- User Browser Detects User's IP Address, Operating Systems, and Browsers. You can find the instructions on how to set up the  [User Browser Detect](https://github.com/ultimatemember/Extended)  plugin in this document. For the plugin installation guide, you can read it  [here](/docs-v3/um-extended/article/1663-download-installation-of-the-basic-extensions) .
+ The User Browser Detects extension efficiently identifies and captures essential user information, including IP addresses, operating systems, and browsers. This functionality provides valuable insights into the user's online environment, aiding in a more informed and personalized user experience.
 
-Settings
---------
+Setup
+-----
 
- Add 3 Predefined fields in the UM Form Builder to capture User Agents and IP Addresses. Go to <strong>wp-admin&gt; Ultimate Member&gt; Forms&gt; Edit Registration Form.</strong>
+1. Navigate to wp-admin &gt; Ultimate Member &gt; Forms &gt; Edit Registration Form.
+2. Click on the plus '+' sign button to add a new field.
+3. In the Field Manager, select the following predefined fields: 
+    1. User IP Address
+    2. User Operating System
+    3. User Web Browser
 
- Click on the plus <strong>'+'</strong> sign button to add a field. Select the following predefined fields from the field manager:
+ By incorporating these predefined fields, you empower your form to capture essential information such as the user's IP address, operating system, and web browser, providing valuable insights for a more comprehensive user profile.
 
-- User IP Address
-- User Operating System
-- User Web Browser
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cc0898fd0677319115d05/file-1I3xh0t1My.png)
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e0149b79a38f5473fd387f/file-6f5oL6EY2N.png)
+ After adding the fields, ensure to click on the  <strong>"Update"</strong> button. This action saves the changes and ensures that the new fields are integrated into your registration form.
 
- After adding the fields, click on the <strong>Update</strong> button to save changes.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cc0d3687c016dc15b73d4/file-MU2xH7FQsq.png)
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e01adc1adf855680c79644/file-8Blc3wIiWE.png)
+ After a user registers on your site, the browser's header information will be recorded. To access and view this data, follow these steps:
 
- Once a user registers on your site, the browser's header will be recorded. To view the user's browser information, go to <strong>WP Admin &gt; Users</strong>. Hover your mouse over the user and click <strong>I</strong><strong>nfo</strong>.
+1. Go to WP Admin &gt; Users.
+2. Hover your mouse over the specific user for whom you want to view browser information.
+3. Click on <strong>"Info"</strong>
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e01f4eb54d116b7c396fdb/file-E5iTvF1p4S.png)
+ This will provide you with detailed insights into the user's browser information, allowing you to access and review the recorded data effortlessly
 
- F The <strong>Review Registration Details</strong> window will appear, you can now see the user's IP Address, Operating System, and Web Browser.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cc323687c016dc15b73d6/file-zpktNkXXmS.png)
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/61e01fffb54d116b7c396fe5/file-z3jl27PFcf.png)
+ Upon accessing the  <strong>"Review Registration Details"</strong> window, you'll have visibility into crucial user information. Here, you can seamlessly observe and analyze the user's IP Address, Operating System, and Web Browser, providing you with a comprehensive overview of their registration details. This added layer of information enhances your understanding of user interactions on your site.
 
- F
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/654cc50000e96206bf000de1/file-L6FHtym0oJ.png)
