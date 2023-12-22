@@ -16,20 +16,31 @@ We've created a plugin `um-wpcli` that integrates [WP-CLI](http://wp-cli.org/) f
     - [PHPStorm](https://www.jetbrains.com/phpstorm/) 
 
 UM Extended plugin can be cloned with:
-::: code-group
+<CodeGroup>
+  <CodeGroupItem title="Git-Clone">
 
-```sh [Git clone]
+```bash:no-line-numbers
 gh repo clone ultimatemember/Extended
 ```
 
-```sh [Curl]
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Curl"  active>
+
+```bash:no-line-numbers
 curl -d '' https://github.com/ultimatemember/Extended.git
 ```
 
-```sh [WP-CLI]
+  </CodeGroupItem>
+
+  <CodeGroupItem title="WP-CLI" active>
+
+```bash:no-line-numbers
 wp plugin install https://github.com/ultimatemember/Extended/archive/refs/heads/main.zip --force
 ```
-:::
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ::: tip Clone in the Plugins Directory
 We recommend that you clone the plugin into `/wp-content/plugins/` directory. This is how we develop our plugins. This allows us to test plugins directly on our local WordPress site and commits our changes to the repository.
