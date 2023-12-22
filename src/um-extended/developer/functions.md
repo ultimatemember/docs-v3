@@ -1247,7 +1247,7 @@ function um_wpcli_ultimatemember_requirement_notice(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2023-12-22, 8:31 AM</span>
+        <span class="time">2023-12-22, 8:58 AM</span>
     </div>
 </div>
 
