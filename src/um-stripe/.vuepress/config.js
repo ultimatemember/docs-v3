@@ -54,9 +54,9 @@ export default defineUserConfig({
           { text: 'Home', link: '/' }, 
           { text: 'Main Site', link: 'https://ultimatemember.com' }, 
           {
-            text: 'v1.0.5-Beta.6',
+            text: 'v1.0.6-Beta.7',
             children: [
-              { text: 'v1.0.5-Beta.6', link: 'https://ultimatemember.com/downloads/' },
+              { text: 'v1.0.6-Beta.7', link: 'https://ultimatemember.com/downloads/' },
             ]
             },
             { link: '/developer/roadmap', text: 'Roadmap' },
