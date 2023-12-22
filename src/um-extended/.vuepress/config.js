@@ -23,6 +23,9 @@ function getSideBar(folder, title) {
 
     var arr = [];
     files.forEach( function( v, i ) { 
+      if( 'article'== folder &&  v.replace('.md','').indexOf( 'installation' ) > -1 ) {
+          return;
+      }
       arr.push( '/' + folder + '/' + v.replace('.md','') );
     });
 
@@ -115,7 +118,7 @@ export default defineUserConfig({
         searchPlaceholder: 'Search Documentation',
 
         // Repository configurations
-        docsDir: 'extended',
+        docsDir: 'src/extended',
         editLinks: true,
         repo: 'http://github.com/ultimatemember/docs-v3/',
     }),
