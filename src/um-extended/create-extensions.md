@@ -11,7 +11,9 @@ Prerequisites
 - [WP-CLI](https://wp-cli.org/) version 2.8.1 or higher.
 - [Composer](https://getcomposer.org/) version 2.5.8 or higher.
 - Terminal for accessing WP-CLI via its command line interface (CLI).
-    - [VSCode](https://code.visualstudio.com/) is recommended.
+   Either supports:
+    - [VSCode](https://code.visualstudio.com/)
+    - [PHPStorm](https://www.jetbrains.com/phpstorm/) 
 
 UM Extended plugin can be cloned with:
 <CodeGroup>
@@ -39,11 +41,6 @@ wp plugin install https://github.com/ultimatemember/Extended/archive/refs/heads/
 
   </CodeGroupItem>
 </CodeGroup>
-
-=======
-# Create Extensions
-
-We've created a plugin `um-wpcli` that integrates [WP-CLI](http://wp-cli.org) for our custom commands to test & scaffold new Ultimate Member extensions. This tool will help you create extensions from scratch following our plugin file & directory structures and follow best practices with PHP(`PSR4`) & WordPress Coding Standards.
 
 ## Installation
 

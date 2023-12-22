@@ -27,6 +27,7 @@
     "@vuepress/plugin-google-analytics": "^1.9.10",
     "@vuepress/theme-default": "^1.9.10",
     "@vuepress/utils": "2.0.0-alpha.1",
+    "markdown-it-include": "^2.0.0",
     "prismjs": "^1.29.0"
   },
   "devDependencies": {

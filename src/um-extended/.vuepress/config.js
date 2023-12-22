@@ -1,5 +1,6 @@
 import fs from "fs";
 import fs_path from "path";
+import markdownItInclude from "markdown-it-include";
 
 import { defaultTheme, defineUserConfig,viteBundler } from 'vuepress'
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
@@ -102,6 +103,7 @@ export default defineUserConfig({
         markdown: {
           lineNumbers: false,
           toc: { includeLevel: [1, 2, 3] },
+         
         },
     
         sidebarDepth: 3,
@@ -144,8 +146,12 @@ export default defineUserConfig({
            isSearchable: (page) => page.path !== '/',
    
           }}),
+          
          
     ],
     bundler: viteBundler({     }),
+    extendsMarkdown: (md) => {
+      md.use(markdownItInclude)
+    }
    
   });
