@@ -4,6 +4,7 @@
  This article serves as a guide for installing the basic extension, offering step-by-step instructions to ensure a smooth installation process.
 
 
+
 1. Download the latest version of the Extended plugin from this  [GitHub repository](https://github.com/ultimatemember/Extended/releases)
 2. Extract the zip file to your local computer.
 3. There are two ways to use the extended plugin: 

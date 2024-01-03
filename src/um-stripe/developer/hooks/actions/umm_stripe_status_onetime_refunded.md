@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_onetime_refunded', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_onetime_refunded', 'um_12222023_stripe_status_onetime_refunded', 10, 2 );
-function um_12222023_stripe_status_onetime_refunded( $um_user_id, $role_active ){
+add_action( 'umm_stripe_status_onetime_refunded', 'um_0132024_stripe_status_onetime_refunded', 10, 2 );
+function um_0132024_stripe_status_onetime_refunded( $um_user_id, $role_active ){
  // do something
 }
 ```

@@ -7,3 +7,7 @@
 .home .hero .description{
     max-width: 80% !important;
 }
+
+.navbar-items .navbar-item:last-child {
+    display: none;
+}

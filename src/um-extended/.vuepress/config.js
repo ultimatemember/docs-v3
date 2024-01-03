@@ -62,9 +62,9 @@ export default defineUserConfig({
               { text: 'v2.0.0', link: '/' },
             ]
             },
-            { link: '/developer/roadmap', text: 'Roadmap' },
           
-          { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
+          { text: 'Support', link: 'https://github.com/ultimatemember/Extended/issues' }, 
+          { text: 'Github', link: 'https://github.com/ultimatemember/Extended/' }, 
 
         ],
     
@@ -118,7 +118,7 @@ export default defineUserConfig({
         searchPlaceholder: 'Search Documentation',
 
         // Repository configurations
-        docsDir: 'src/extended',
+        docsDir: 'src/um-extended',
         editLinks: true,
         repo: 'http://github.com/ultimatemember/docs-v3/',
     }),
