@@ -10,7 +10,7 @@
 3. There are two ways to use the extended plugin: 
     - <strong>Individual extensions:</strong> You can use individual extensions or plugins in the /Extended/src/ directory, and upload them to your site. 
         - For example, If you only need the Browser Detect plugin: 
-            - Click on the `Individual-Extensions.zip`  to download the extensions. ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65578310faa0932173ab7952/file-aPSJLfrflX.png)
+            - Click on the <strong>Individual-Extensions.zip</strong> to download the extensions. ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65578310faa0932173ab7952/file-aPSJLfrflX.png)
             - After downloading, extract the file. The resulting extraction forms a folder named "<strong>assets</strong>," containing separate zip files for each basic extension.  
                   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6557833d02a73d2b897aef6d/file-Bd0a9V8Lwt.png)
             - Upload it to your site by selecting only the um-browser-detect zip and once the plugin is uploaded and activated, it will automatically enable all features &amp; functionalities related to the plugin/extension.

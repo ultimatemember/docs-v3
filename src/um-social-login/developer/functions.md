@@ -611,14 +611,12 @@ function um_social_login_get_path_template( array $located, string $file ) : arr
 Set default avatar when there's no avvatar from getUserProfile()
 
 ```php:no-line-numbers
-function um_social_login_get_user_profile__discord( object $user_profile, \class $hybridauth, string $access_token ) : void
+function um_social_login_get_user_profile__discord( object $user_profile ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$user_profile` | **`object`** | User Profile object. |
-| `$hybridauth` | **`\class`** | Hybridauth class. |
-| `$access_token` | **`string`** | Access token. |
 
 
 ### Description
@@ -1349,7 +1347,7 @@ function um_sso_returned_raw_data( string $key, string $sso_sync_value, array $f
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-03, 6:42 AM</span>
+        <span class="time">2024-01-05, 2:02 PM</span>
     </div>
 </div>
 
