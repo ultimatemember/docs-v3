@@ -24,7 +24,18 @@
 
 - Some use cases:
 
-  Original   ucwords(strtolower($str)   UM Capitalize($str)   jOÃO DA SILVA   João Da Silva   João da Silva   eduardo dall'agnoll   Eduardo Dall'agnoll   Eduardo Dall'Agnoll   Papa joão xxiii   Papa João Xxiii   Papa João XXIII   Google s/a   Google S/a   Google S/A   paul mccartney   Paul Mccartney   Paul McCartney   nome da empresa ltda   Nome Da Empresa Ltda   Nome da Empresa LTDA   nome da empresa me   Nome Da Empresa Me   Nome da Empresa ME   Mr. o'donnel   Mr. O'donnel   Mr. O'Donnel #### Performance
+| Original | ucwords(strtolower($str) | UM Capitalize($str) |
+|---|---|---|
+| jOÃO DA SILVA | João Da Silva | João da Silva |
+| eduardo dall'agnoll | Eduardo Dall'agnoll | Eduardo Dall'Agnoll |
+| Papa joão xxiii | Papa João Xxiii | Papa João XXIII |
+| Google s/a | Google S/a | Google S/A |
+| paul mccartney | Paul Mccartney | Paul McCartney |
+| nome da empresa ltda | Nome Da Empresa Ltda | Nome da Empresa LTDA |
+| nome da empresa me | Nome Da Empresa Me | Nome da Empresa ME |
+| Mr. o'donnel | Mr. O'donnel | Mr. O'Donnel |
+
+#### Performance
 
  By default, this plugin capitalizes the UM Display Name on page load. If you are experiencing performance issues, you can disable this with the following code snippet:
 

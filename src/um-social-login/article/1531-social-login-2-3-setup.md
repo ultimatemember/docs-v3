@@ -81,7 +81,10 @@ Social Registration Forms  [\#](#forms)
 
  There are two ways to process data from Social Network Apps to register a user on your site: <strong>one-step process</strong> or <strong>two-step process</strong>.
 
-   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/5dc195332c7d3a7e9ae386da/file-cg7uEAA3v8.png) Two-step process    ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/5dc193ec2c7d3a7e9ae386c6/file-ZXmJvg150n.png) One-step process ### Two-Step Process
+| ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/5dc195332c7d3a7e9ae386da/file-cg7uEAA3v8.png) Two-step process | ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/5dc193ec2c7d3a7e9ae386c6/file-ZXmJvg150n.png) One-step process |
+|---|---|
+
+### Two-Step Process
 
  There are instances where users can check the fields that will be submitted to your site during the registration process - The two-Step process enables users to check the details and allows them to edit the form or add extra fields to fill out before submitting the <strong>Social Registration</strong> form.
 

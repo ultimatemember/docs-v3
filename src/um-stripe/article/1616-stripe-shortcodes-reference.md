@@ -7,6 +7,7 @@ Stripe Customer Portal Shortcode
  Customers need to have the ability to manage their subscription plans. This shortcode creates a button that redirects customers to the external page of the Stripe Customer Portal to manage subscriptions. A user must be logged in for the redirection to work.
 
 ```
+
 [ultimatemember_stripe_customer_portal]
 ```
 
@@ -18,6 +19,7 @@ Stripe Order Details Shortcode
  This shortcode displays the order details, billing information, and subscription status for the customer. It allows them to review the information they've provided. The order details will be displayed only when the user has completed the Stripe checkout process from the Stripe checkout page.
 
 ```
+
 [ultimatemember_stripe_checkout_order_details]
 ```
 
@@ -32,6 +34,7 @@ Stripe Checkout Shortcode
  The following example shortcode generates a button for customers to check out and subscribe. A user must be logged in for the redirection to work. 
 
 ```
+
 [ultimatemember_stripe_checkout label="$2 CAD/month" id="123"]
 ```
 
@@ -39,7 +42,7 @@ Stripe Checkout Shortcode
 
 ---
 
-###  <strong>label</strong>
+###  <strong>label</strong> 
 
  This attribute is required and is displayed on a page. e.g. <strong>label = "CAD 3.00 / month"</strong>
 
@@ -63,6 +66,7 @@ Stripe Checkout Shortcode
 
 
  ```
+
 You're already subscribed
 	
 ```
@@ -72,6 +76,7 @@ You're already subscribed
  To modify the text, you can use this filter hook: 
 
  ```
+
 <?php 
 add_filter("umm_stripe_already_subscribed_text", function( $text ) {      
 return esc_attr( "You're subscribed to a plan!" );
@@ -87,6 +92,7 @@ return esc_attr( "You're subscribed to a plan!" );
  Add custom classes to the button or anchor element.
 
 ```
+
 [ultimatemember_stripe_checkout label="$2 CAD/month" class="my-class-button"]
 ```
 
@@ -100,37 +106,15 @@ return esc_attr( "You're subscribed to a plan!" );
 
 #### A list of valid payment method types includes:
 
- 1. acss\_debit
-2. affirm
-3. afterpay\_clearpay
-4. alipay
-5. au\_becs\_debit
-6. bacs\_debit
-7. bancontact
-8. blik
-9. boleto
-10. card
-11. card\_present
-12. cashapp
-13. eps
-14. fpx
-15. giropay
-  1. grabpay
-2. ideal
-3. klarna
-4. konbini
-5. link
-6. oxxo
-7. p24
-8. paynow
-9. pix
-10. promptpay
-11. sepa\_debit
-12. sofort
-13. us\_bank\_account
-14. wechat\_pay
-15. zip
- > <strong>Note:</strong> Each payment method type has to be enabled and configured in the Stripe  [<strong>payment method settings.</strong>](https://dashboard.stripe.com/settings/payment_methods)
+| acss\_debit | affirm | afterpay\_clearpay | atdpay | au\_becs\_debit |
+|---|---|---|---|---|
+| bacs\_debit | bancontact | btdk | boleto | card |
+| card\_present | cashapp | eps | fpx | giropay |
+| grabpay | ideal | klarna | konbini | tdnk |
+| oxxo | p24 | paynow | pix | promptpay |
+| sepa\_debit | sofort | us\_bank\_account | wechat\_pay | zip |
+
+> <strong>Note:</strong> Each payment method type has to be enabled and configured in the Stripe  [<strong>payment method settings.</strong>](https://dashboard.stripe.com/settings/payment_methods)
 
 ---
 
@@ -142,7 +126,7 @@ return esc_attr( "You're subscribed to a plan!" );
 
 ---
 
-###  <strong>active</strong>
+###  <strong>active</strong> 
 
  This attribute holds a role that will be assigned to customers when their subscription is active. A subscription moves into `past due` if the initial payment attempt fails. Once the first invoice is paid, the subscription moves into an `active` state. If the first invoice is not paid within 23 hours, the subscription transitions to `incomplete_expired`.
 
@@ -160,26 +144,26 @@ return esc_attr( "You're subscribed to a plan!" );
 
 ---
 
-###  <strong>trialing</strong>
+###  <strong>trialing</strong> 
 
  This attribute holds a role that will be assigned to customers when their subscription is trialing. This is only triggered when the attribute <strong>trial\_period\_days</strong> is set in the WP Admin &gt; Ultimate Member &gt; Stripe Plans settings.
 
 ---
 
-###  <strong>pause</strong>
+###  <strong>pause</strong> 
 
  This attribute holds a role that will be assigned to customers when their subscription is paused. When a subscription is resumed, and the subscription is trialing, it will assign the role set in the <strong>trialing</strong> attribute. If the subscription is not trialing, it will assign the role set in the <strong>active</strong> attribute.
 
 ---
 
-###  <strong>past\_due</strong>
+###  <strong>past\_due</strong> 
 
  This attribute holds a role that will be assigned to customers when their subscription is <strong>past due</strong>.
 
 ---
 
 
-###  <strong>canceled</strong>
+###  <strong>canceled</strong> 
 
  This attribute holds a role that will be assigned to customers when their subscription is <strong>canceled</strong>.   
  Stripe will change the role to canceled with the following cases:

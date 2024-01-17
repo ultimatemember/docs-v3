@@ -7,7 +7,17 @@
 
  When you have successfully set up your Stripe Extension, go to <strong>wp-admin &gt; Users</strong>. Here you'll see the following subscription statuses for your users:
 
-  <strong>Active</strong>   displays when the user's subscription is active   <strong>Inactive</strong>   displays when the user's subscription is inactive   <strong>Trialing</strong>   displays when the user's subscription is trialing   <strong>Canceled</strong>   displays when the user's subscription is canceled   <strong>Revoked</strong>   displays when the user's subscription has been revoked after assigning the Stripe customer to another WP account   <strong>Unpaid</strong>   displays when the user's subscription is unpaid   <strong>Past Due</strong>   displays when the user's subscription is past due   <strong>Paused</strong>   displays when the user's subscription is paused  The " <strong>View on Stripe"</strong> link under each status opens a new tab to your customer's Stripe overview page.
+| <strong>Active</strong> | displays when the user's subscription is active |
+|---|---|
+| <strong>Inactive</strong> | displays when the user's subscription is inactive |
+| <strong>Trialing</strong> | displays when the user's subscription is trialing |
+| <strong>Canceled</strong> | displays when the user's subscription is canceled |
+| <strong>Revoked</strong> | displays when the user's subscription has been revoked after assigning the Stripe customer to another WP account |
+| <strong>Unpaid</strong> | displays when the user's subscription is unpaid |
+| <strong>Past Due</strong> | displays when the user's subscription is past due |
+| <strong>Paused</strong> | displays when the user's subscription is paused |
+
+ The " <strong>View on Stripe"</strong> link under each status opens a new tab to your customer's Stripe overview page.
 
   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649afde8c5d2b53344e72e26/file-hqPDKXkaAG.png)
 

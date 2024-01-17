@@ -53,7 +53,9 @@ Create and Publish app
 6. Select the <strong>Web platform</strong> for your app, then add your <strong>Site URL</strong>, then click the <strong>"Save"</strong> button.  
       ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65a7c861a45534249a235d92/file-aZP3TPULIY.png)
 
-###  Prepare and submit for App Review
+### Prepare and submit for App Review
+
+1. In the prepare and submit for app review section, click on <strong>'Review and complete testing requirements'</strong>
 
 ###   
 Basic App Settings 

@@ -72,7 +72,33 @@
 
  <strong>Data Members:</strong>
 
-     Field Name   Type   Short description       identifier   String   The Unique user’s ID on the connected provider. Can be an integer for some providers, Email, URL, etc.     profileURL   String   URL link to a profile page on the IDp website     webSiteURL   String   User website, blog, web page,     photoURL   String   URL link to user photo or avatar     displayName   String   User dispalyName provided by the IDp or a concatenation of first and last name.     description   String   A short about\_me     firstName   String   User’s first name     lastName   String   User’s last name     gender   String   User’s gender. Values are ‘female’, ‘male’ or NULL     language   String   User’s language     age   Integer   User’s age, note that we don’t calculate it. We return it as it is.     birthDay   Integer   The day in the month in which the person was born.     birthMonth   Integer   The month in which the person was born.     birthYear   Integer   The year in which the person was born.     email   String   User email. Not all of IDp grant access to the user email     emailVerified   String   Verified user email. Note: not all of IDp grant access to verified user email.     phone   String   User’s phone number     address   String   User’s address     country   String   User’s country     region   String   User’s state or region     city   String   User’s city     zip   Integer   Postal code or zip code.     extend   Array   An extra data is related to the user (e.g followers).   
+ | Field Name | Type | Short description |
+|---|---|---|
+| identifier | String | The Unique user’s ID on the connected provider. Can be an integer for some providers, Email, URL, etc. |
+| profileURL | String | URL link to a profile page on the IDp website |
+| webSiteURL | String | User website, blog, web page, |
+| photoURL | String | URL link to user photo or avatar |
+| displayName | String | User dispalyName provided by the IDp or a concatenation of first and last name. |
+| description | String | A short about\_me |
+| firstName | String | User’s first name |
+| lastName | String | User’s last name |
+| gender | String | User’s gender. Values are ‘female’, ‘male’ or NULL |
+| language | String | User’s language |
+| age | Integer | User’s age, note that we don’t calculate it. We return it as it is. |
+| birthDay | Integer | The day in the month in which the person was born. |
+| birthMonth | Integer | The month in which the person was born. |
+| birthYear | Integer | The year in which the person was born. |
+| email | String | User email. Not all of IDp grant access to the user email |
+| emailVerified | String | Verified user email. Note: not all of IDp grant access to verified user email. |
+| phone | String | User’s phone number |
+| address | String | User’s address |
+| country | String | User’s country |
+| region | String | User’s state or region |
+| city | String | User’s city |
+| zip | Integer | Postal code or zip code. |
+| extend | Array | An extra data is related to the user (e.g followers). |
+
+
 
 > If you want to use the extend option, please read the documentation in the link:  [Social Login - Extend Options](/docs-v3/um-social-login/article/1506-social-login-sync-social-register-form-fields-with-extend-option)
 
@@ -114,9 +140,40 @@
 
  Here's a list of supported social network providers and their specifications:
 
-  Adapter Unique Name   Specs   Has 2.3 Settings   Authentication &amp; Basic Profile     
-       Amazon   OAuth2   No   Yes   AOLOpenID   OpenID   No   
-   Yes   Authentiq   OAuth2   No   
-   Yes   BitBucket   OAuth2   No   
-   Yes   Blizzard   OAuth2   No   
-   Yes   Discord   OAuth2   No   Yes   Disqus   OAuth2   No   Yes   Dribbble   OAuth2   No   Yes   <strong>Facebook</strong>   <strong>OAuth2</strong>    <strong>Yes</strong>    <strong>Yes</strong>       Foursquare   OAuth2   No   Yes     <strong>GitHub</strong>   <strong>OAuth2</strong>    <strong>Yes</strong>    <strong>Yes</strong>   GitLab   OAuth2   No   Yes   <strong>Google</strong>   <strong>OAuth2</strong>    <strong>Yes</strong>    <strong>Yes</strong>     <strong>Instagram</strong>   <strong>OAuth2</strong>   <strong>Yes</strong>    <strong>Yes</strong>   <strong>LinkedIn</strong>   <strong>OAuth2</strong>   <strong>Yes</strong>    <strong>Yes</strong>     MicrosoftGraph   OAuth2   No   Yes     OpenID   OpenID   No   Yes   Paypal   OpenID   No   Yes   PaypalOpenID   OpenID   No   Yes   Reddit   OAuth2   No   Yes   Spotify   OAuth2   No   Yes   StackExchange   OAuth2   No   Yes   StackExchangeOpenID   OpenID   No   Yes   Steam   Hybrid   No   Yes   SteemConnect   OAuth2   No   Yes   Tumblr   OAuth1   No   Yes       TwitchTV   OAuth2   No   Yes   <strong>Twitter</strong>   <strong>OAuth1</strong>    <strong>Yes</strong>    <strong>Yes</strong>         WeChat   OAuth2   No   Yes   WindowsLive   OAuth2   No   Yes     <strong>WordPress</strong>   <strong>OAuth2</strong>    <strong>Yes</strong>    <strong>Yes</strong>   Yahoo   OAuth2   No   Yes   YahooOpenID   OpenID   No   Yes  For a more complete list of new things,  [see the changelog at the bottom page](https://ultimatemember.com/roadmap/) .
+| Adapter Unique Name | Specs | Has 2.3 Settings | Authentication &amp; Basic Profile |  |  |  |
+|---|---|---|---|---|---|---|
+| Amazon | OAuth2 | No | Yes |
+| AOLOpenID | OpenID | No | Yes |
+| Authentiq | OAuth2 | No | Yes |
+| BitBucket | OAuth2 | No | Yes |
+| Blizzard | OAuth2 | No | Yes |
+| Discord | OAuth2 | No | Yes |
+| Disqus | OAuth2 | No | Yes |
+| Dribbble | OAuth2 | No | Yes |
+| <strong>Facebook</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |  |  |
+| Foursquare | OAuth2 | No | Yes |  |
+| <strong>GitHub</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |
+| GitLab | OAuth2 | No | Yes |
+| <strong>Google</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |  |
+| <strong>Instagram</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |
+| <strong>LinkedIn</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |  |
+| MicrosoftGraph | OAuth2 | No | Yes |  |
+| OpenID | OpenID | No | Yes |
+| Paypal | OpenID | No | Yes |
+| PaypalOpenID | OpenID | No | Yes |
+| Reddit | OAuth2 | No | Yes |
+| Spotify | OAuth2 | No | Yes |
+| StackExchange | OAuth2 | No | Yes |
+| StackExchangeOpenID | OpenID | No | Yes |
+| Steam | Hybrid | No | Yes |
+| SteemConnect | OAuth2 | No | Yes |
+| Tumblr | OAuth1 | No | Yes |  |  |
+| TwitchTV | OAuth2 | No | Yes |
+| <strong>Twitter</strong> | <strong>OAuth1</strong> | <strong>Yes</strong> | <strong>Yes</strong> |  |  |  |
+| WeChat | OAuth2 | No | Yes |
+| WindowsLive | OAuth2 | No | Yes |  |
+| <strong>WordPress</strong> | <strong>OAuth2</strong> | <strong>Yes</strong> | <strong>Yes</strong> |
+| Yahoo | OAuth2 | No | Yes |
+| YahooOpenID | OpenID | No | Yes |
+
+ For a more complete list of new things,  [see the changelog at the bottom page](https://ultimatemember.com/roadmap/) .
