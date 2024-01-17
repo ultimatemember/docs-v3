@@ -2424,6 +2424,48 @@ public function enqueue_assets(  ) : void
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.1`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Pass_Strength-Core::load_translations" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> load_translations ( )   
+-----
+
+Add languages
+
+```php:no-line-numbers
+public function load_translations(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Pass_Strength-Core::plugin_dir" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> plugin_dir ( )   
+-----
+
+Get Plugin Path
+
+```php:no-line-numbers
+public function plugin_dir(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.1`<br />|
 
 
 
@@ -2444,6 +2486,7 @@ public function plugin_url(  ) : void
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
 
 
 
@@ -2767,6 +2810,258 @@ public function upload_handler( array $override_handler ) : void
 > This class has not properties.
 
 #### <span style="display: none;">\UM_Extended_Profile_Photo\Core</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `UM_Extended_Profile_slug\Enqueue`    
+
+Class Enqueue to handle all plugin initialization.
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |[\\<span style="font-weight: bold;"></span>](classes.html#um_extended_profile_slug-core)|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\UM_Extended_Profile_slug\Enqueue</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\UM_Extended_Profile_slug\Enqueue</span> Methods
+  
+:::tip <a id="UM_Extended_Profile_slug-Enqueue::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_slug-Enqueue::admin_enqueue" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> admin_enqueue ( )   
+-----
+
+Admin Enqueue scripts & styles.
+
+```php:no-line-numbers
+public function admin_enqueue(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_slug-Enqueue::enqueue" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> enqueue ( )   
+-----
+
+Frontend Enqueue scripts & styles.
+
+```php:no-line-numbers
+public function enqueue(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\UM_Extended_Profile_slug\Enqueue</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\UM_Extended_Profile_slug\Enqueue</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\UM_Extended_Profile_slug\Enqueue</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `UM_Extended_Profile_Slug\Core`    
+
+Class Core to handle all plugin initialization.
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+### <span style="display: none;">\UM_Extended_Profile_Slug\Core</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\UM_Extended_Profile_Slug\Core</span> Methods
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::modify_nav_links" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> modify_nav_links ( )   
+-----
+
+Modify Nav Links in Profile forms
+
+```php:no-line-numbers
+public function modify_nav_links(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::plugin_url" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> plugin_url ( )   
+-----
+
+Get Plugin URL
+
+```php:no-line-numbers
+public function plugin_url(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::profile_page_link" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> profile_page_link ( )   
+-----
+
+Modify Profile URLs
+
+```php:no-line-numbers
+public function profile_page_link( string $permalink, integer $post_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$permalink` | **`string`** | Permalink. |
+| `$post_id` | **`integer`** | Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::redirect" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> redirect ( )   
+-----
+
+Redirect to formatted Tab Slug
+
+```php:no-line-numbers
+public function redirect(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="UM_Extended_Profile_Slug-Core::rewrite_rules" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> rewrite_rules ( )   
+-----
+
+Rewrite rules
+
+```php:no-line-numbers
+public function rewrite_rules(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\UM_Extended_Profile_Slug\Core</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\UM_Extended_Profile_Slug\Core</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\UM_Extended_Profile_Slug\Core</span> Inherited properties
 > This class has not inherited properties.
         
 ##  `UM_Extended_Regenerate_Thumbnails\Core`    
@@ -3624,7 +3919,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 

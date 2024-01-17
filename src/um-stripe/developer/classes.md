@@ -2432,6 +2432,30 @@ public function add_um_cpt( array $cpt ) : array
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-CPT::bulk_updated_messages" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> bulk_updated_messages ( )   
+-----
+
+Bulk Updated Messages
+
+```php:no-line-numbers
+public function bulk_updated_messages( array $bulk_messages ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$bulk_messages` | **`array`** | Messages. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-CPT::create_post_types" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> create_post_types ( )   
 -----
 
@@ -2563,6 +2587,30 @@ Post ID or boolean false.
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-CPT::post_updated_messages" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> post_updated_messages ( )   
+-----
+
+Modify Post Action messages
+
+```php:no-line-numbers
+public function post_updated_messages( array $messages ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$messages` | **`array`** | Post Messages. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-CPT::remove_quick_edit" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> remove_quick_edit ( )   
 -----
 
@@ -2580,6 +2628,30 @@ public function remove_quick_edit( array $cpts ) : array
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.3`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-CPT::save_post" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> save_post ( )   
+-----
+
+Save Plan
+
+```php:no-line-numbers
+public function save_post( integer $post_id ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$post_id` | **`integer`** | The Post ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
 
 
 
@@ -7614,7 +7686,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 

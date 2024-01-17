@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_incomplete', 'um_0152024_stripe_status_incomplete', 10, 2 );
-function um_0152024_stripe_status_incomplete( $um_user_id, $role_incomplete ){
+add_action( 'umm_stripe_status_incomplete', 'um_01172024_stripe_status_incomplete', 10, 2 );
+function um_01172024_stripe_status_incomplete( $um_user_id, $role_incomplete ){
  // do something
 }
 ```

@@ -19,9 +19,9 @@ Restricted Key Settings
 
  Enter a key name and look for the resource types listed below in the API Keys and configure the necessary API permissions: 
 
-  <strong>Resource Type</strong>   <strong>Permissions</strong>   Customers   Write   Checkout Sessions   Write   Customer portal   Write   Prices   Read   Subscriptions   Read   Webhook Endpoints   Write  Once you're done setting up the restricted key, click the  <strong>"Create Key"</strong> button, at the bottom right to save your settings.
+  <strong>Resource Type</strong>   <strong>Permissions</strong>   Customers   Write   Checkout Sessions   Write   Customer portal   Write   Prices   Read   Subscriptions   Read   Webhook Endpoints   Write   Tokens   Write  Once you're done setting up the restricted key, click the  <strong>"Create Key"</strong> button, at the bottom right to save your settings.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/650a97d99446233b93527fbb/file-CTgXmhPKdu.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65a658d3a45534249a235bff/file-eCQwIOIGtY.png)
 
 
 

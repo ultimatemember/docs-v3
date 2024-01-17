@@ -1838,6 +1838,27 @@ public function is_connected( integer $user_id, string $provider ) : boolean
 :::
 
   
+:::tip <a id="um_ext-um_social_login-core-Social_Login_Connect::load_overlay" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> load_overlay ( )   
+-----
+
+Load overlay if needed.
+
+```php:no-line-numbers
+public function load_overlay(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v2.5.3`<br />|
+
+
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_social_login-core-Social_Login_Connect::load_overlay_assets" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> load_overlay_assets ( )   
 -----
 
@@ -2106,22 +2127,23 @@ public $do_action = '';
 :::
 
   
-:::tip <a id="um_ext-um_social_login-core-Social_Login_Connect::$is_overlay_loaded" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $is_overlay_loaded   
+:::tip <a id="um_ext-um_social_login-core-Social_Login_Connect::$if_overlay_provider" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $if_overlay_provider   
 -----
 
-Handles Overlay existence
+A provider for the overlay if needed.
 
 
 ```php:no-line-numbers
-public $is_overlay_loaded = 0;
+public $if_overlay_provider;
 ```
 
 ***Types:***
-- `mixed`
+- `string`
 
 
 | | |
 |:--------:| ----------- |
+| ***Since*** |`v2.5.3`<br />|
 
 
 :::
@@ -2822,7 +2844,7 @@ $return_url Return URL.
 :::
 
   
-:::tip <a id="um_ext-um_social_login-core-Social_Login_Hybridauth::get_session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_session ( )   
+:::tip <a id="um_ext-um_social_login-core-Social_Login_Hybridauth::get_session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_session ( )  <Badge text="deprecated" type="error"/> 
 -----
 
 Get Session
@@ -2835,6 +2857,7 @@ public function get_session(  ) : object
 
 | | |
 |:--------:| ----------- |
+| **Deprecated** |since version 2.5.3 <br />|
 
 
 
@@ -2901,6 +2924,27 @@ public function log_error( string $logs ) : void
 
 | | |
 |:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_social_login-core-Social_Login_Hybridauth::session" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> session ( )   
+-----
+
+A shortcut for the session object.
+
+```php:no-line-numbers
+public function session(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v2.5.3`<br />|
 
 
 
@@ -3664,7 +3708,7 @@ public $data = array();
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 

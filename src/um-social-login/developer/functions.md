@@ -657,14 +657,12 @@ function um_social_login_get_user_profile__facebook( object $user_profile, \clas
 Change Avatar size
 
 ```php:no-line-numbers
-function um_social_login_get_user_profile__google( object $user_profile, \class $hybridauth, string $access_token ) : void
+function um_social_login_get_user_profile__google( object $user_profile ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$user_profile` | **`object`** | User Profile object. |
-| `$hybridauth` | **`\class`** | Hybridauth class. |
-| `$access_token` | **`string`** | Access token. |
 
 
 ### Description
@@ -681,14 +679,12 @@ function um_social_login_get_user_profile__google( object $user_profile, \class 
 Clear Last name
 
 ```php:no-line-numbers
-function um_social_login_get_user_profile__twitter( object $user_profile, \class $hybridauth, string $access_token ) : void
+function um_social_login_get_user_profile__twitter( object $user_profile ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$user_profile` | **`object`** | User Profile object. |
-| `$hybridauth` | **`\class`** | Hybridauth class. |
-| `$access_token` | **`string`** | Access token. |
 
 
 ### Description
@@ -1132,32 +1128,6 @@ function um_social_set_redirect_to_page(  ) : void
 
 
         
-##  `um_social_show_register_overlay()`    
-
-Show registration overlay via regular register form
-
-```php:no-line-numbers
-function um_social_show_register_overlay( string $provider, object $user_profile, object $connect, string $return_url ) : void
-```
-
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$provider` | **`string`** | Provider slug. |
-| `$user_profile` | **`object`** | Hybridauth Response. |
-| `$connect` | **`object`** | um_ext\um_social_login\core\Social_Login_Connect Connect Class. |
-| `$return_url` | **`string`** | Return URL. |
-
-
-### Description
-
-> No description.
-
-| | |
-|:--------:| ----------- |
-| ***Since*** |`v2.2`<br />|
-
-
-        
 ##  `um_sso_compatibility_wp_mail_smtp()`    
 
 WP Mail SMTP Compatible
@@ -1347,7 +1317,7 @@ function um_sso_returned_raw_data( string $key, string $sso_sync_value, array $f
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 

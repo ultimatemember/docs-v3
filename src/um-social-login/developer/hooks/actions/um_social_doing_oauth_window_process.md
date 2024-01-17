@@ -21,8 +21,8 @@ do_action( 'um_social_doing_oauth_window_process',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_doing_oauth_window_process', 'um_0152024_social_doing_oauth_window_process', 10, 0 );
-function um_0152024_social_doing_oauth_window_process(  ){
+add_action( 'um_social_doing_oauth_window_process', 'um_01172024_social_doing_oauth_window_process', 10, 0 );
+function um_01172024_social_doing_oauth_window_process(  ){
  // do something
 }
 ```

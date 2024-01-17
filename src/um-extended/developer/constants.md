@@ -80,12 +80,84 @@ UM_EXTENDED_PLUGIN_URL = plugin_dir_url(__FILE__);
 |:--------:| ----------- |
 
         
+##  `UM_EXTENDED_PROFILE_SLUG_PLUGIN_DIR`    
+
+
+
+```php:no-line-numbers
+UM_EXTENDED_PROFILE_SLUG_PLUGIN_DIR = plugin_dir_path(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_EXTENDED_PROFILE_SLUG_PLUGIN_URL`    
+
+
+
+```php:no-line-numbers
+UM_EXTENDED_PROFILE_SLUG_PLUGIN_URL = plugins_url(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_EXTENDED_PSWD_STRENGTH_METER_PLUGIN_DIR`    
+
+
+
+```php:no-line-numbers
+UM_EXTENDED_PSWD_STRENGTH_METER_PLUGIN_DIR = plugin_dir_path(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
 ##  `UM_EXTENDED_PSWD_STRENGTH_METER_PLUGIN_URL`    
 
 
 
 ```php:no-line-numbers
 UM_EXTENDED_PSWD_STRENGTH_METER_PLUGIN_URL = plugin_dir_url(__FILE__);
+```
+
+**Type:** **`mixed`**
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+
+        
+##  `UM_EXTENDED_PSWD_STRENGTH_METER_TEXTDOMAIN`    
+
+
+
+```php:no-line-numbers
+UM_EXTENDED_PSWD_STRENGTH_METER_TEXTDOMAIN = 'um-pass-strength';
 ```
 
 **Type:** **`mixed`**
@@ -158,7 +230,7 @@ UM_WPCLI_PLUGIN_DIR = UM_EXTENDED_PLUGIN_DIR . 'src/um-wpcli/src/';
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 

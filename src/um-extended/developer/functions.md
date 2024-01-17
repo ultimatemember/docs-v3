@@ -801,6 +801,66 @@ function um_extended_plugin(  ) : void
 
 
         
+##  `um_extended_profile_slug_loading_allowed()`    
+
+Don't allow to run the plugin when WP-MAIL-SMTP plugin is not active/installed
+
+```php:no-line-numbers
+function um_extended_profile_slug_loading_allowed(  ) : void
+```
+
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+        
+##  `um_extended_profile_slug_plugin()`    
+
+Global function-holder. Works similar to a singleton's instance().
+
+```php:no-line-numbers
+function um_extended_profile_slug_plugin(  ) : \UM_Extended_Profile_Slug\Core
+```
+
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+        
+##  `um_extended_profile_slug_ultimatemember_requirement_notice()`    
+
+Display the notice after activation
+
+```php:no-line-numbers
+function um_extended_profile_slug_ultimatemember_requirement_notice(  ) : void
+```
+
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.5.0`<br />|
+
+
+        
 ##  `um_extended_profilephoto_loading_allowed()`    
 
 Don't allow to run the plugin when  Ultimate Member plugin is not active/installed
@@ -1247,7 +1307,7 @@ function um_wpcli_ultimatemember_requirement_notice(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-05, 2:02 PM</span>
+        <span class="time">2024-01-17, 2:10 PM</span>
     </div>
 </div>
 
