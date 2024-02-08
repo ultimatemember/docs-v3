@@ -30,8 +30,8 @@ do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_session_completed', 'um_01172024_stripe_session_completed', 10, 2 );
-function um_01172024_stripe_session_completed( $checkout_session, $payment_mode ){
+add_action( 'umm_stripe_session_completed', 'um_0282024_stripe_session_completed', 10, 2 );
+function um_0282024_stripe_session_completed( $checkout_session, $payment_mode ){
  // do something
 }
 ```

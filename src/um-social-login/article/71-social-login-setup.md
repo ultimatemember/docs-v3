@@ -71,6 +71,8 @@
 
  This <strong>form is required</strong> to collect user details (for example, Twitter does not pass over a user’s email address) so the user can complete the registration process. Once a social network account is connected to a user on your site, the user will be logged in straight away when they come back to your site (as long as they are logged in to the social network on that browser).
 
+ <strong>Note:</strong> To synchronize fields using the 1-step process with a specific registration form, you must enable the <strong>"Use this form in the overlay"</strong> option and set it to <strong>"Yes."</strong>
+
   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/64230854b282ac0ba214c05b/file-tmBHuHYSVn.png)
 
 ### Account page

@@ -1,0 +1,16 @@
+---
+---
+# Stripe Subscription Events
+ Stripe Events enables your site to automatically change or merge a user's role. You can create a Stripe Plan and assign a role to each Stripe Event in <strong>WP-Admin &gt; Ultimate Member &gt; Stripe Plans</strong>. For more details, please see this  [doc article](https://stripe.com/docs/billing/subscriptions/overview#subscription-statuses)  on stripe.com
+
+#### List of Stripe Events:
+
+| <strong>Stripe Events</strong> | <strong>Description</strong> |
+|---|---|
+| <strong>active</strong> | This attribute holds a role that will be assigned to customers when their subscription is active. A subscription moves into `past due` if the initial payment attempt fails. Once the first invoice is paid, the subscription moves into an `active` state. If the first invoice is not paid within 23 hours, the subscription transitions to `incomplete_expired`.     A subscription that is currently in a trial period is `trialing` and moves to `active` when the trial period is over. |
+| <strong>trialing</strong> | This attribute holds a role that will be assigned to customers when their subscription is trialing. This is only triggered when the attribute trial\_period\_days is set in the WP Admin &gt; Ultimate Member &gt; Stripe Plans settings. |
+| <strong>unpaid</strong> | This attribute holds a role that will be assigned to customers when their subscription is unpaid.         If subscription collection charges automatically, It becomes `past_due` when payment to renew it fails and `canceled` or `unpaid`(depending on your subscription settings) when Stripe has exhausted all payment retry attempts.        If subscription collection sends an invoice, it becomes `past_due `when its invoice is not paid by the due date and `canceled` or `unpaid` if it is still not paid by an additional deadline after that. Note that when a subscription has a status of `unpaid`, no subsequent invoices will be attempted (invoices will be created but then immediately automatically closed). After receiving updated payment information from a customer, you may reopen and pay their closed invoices. |
+| <strong>pause</strong> | This attribute holds a role that will be assigned to customers when their subscription is paused. When a subscription is resumed, and the subscription is trialing, it will assign the role set in the trialing attribute. If the subscription is not trialing, it will assign the role set in the active attribute. |
+| <strong>past\_due</strong> | This attribute holds a role that will be assigned to customers when their subscription is past due. |
+| <strong>canceled</strong> | This attribute holds a role that will be assigned to customers when their subscription is canceled.     Stripe will change the role to canceled with the following cases:    - When a customer cancels the subscription immediately - Or at the end of the period when the subscription is canceled automatically by Stripe |
+| <strong>trial\_period\_days</strong> | The default number of trial days when subscribing a customer to a plan. This attribute enables the trialing functionality of the subscription plan. This will always overwrite any trials that might apply via a subscribed plan. |

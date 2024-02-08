@@ -26,8 +26,8 @@ apply_filters( 'umm_stripe_predefined_pages_restricted', $is_restricted_page )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_predefined_pages_restricted', 'um_01172024_stripe_predefined_pages_restricted', 10, 1 );
-function um_01172024_stripe_predefined_pages_restricted( $is_restricted_page ){
+add_filter( 'umm_stripe_predefined_pages_restricted', 'um_0282024_stripe_predefined_pages_restricted', 10, 1 );
+function um_0282024_stripe_predefined_pages_restricted( $is_restricted_page ){
   return $is_restricted_page;
 }
 ```

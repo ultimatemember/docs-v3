@@ -21,8 +21,8 @@ do_action( 'um_social_do_register_authenticated_process',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_register_authenticated_process', 'um_01172024_social_do_register_authenticated_process', 10, 0 );
-function um_01172024_social_do_register_authenticated_process(  ){
+add_action( 'um_social_do_register_authenticated_process', 'um_0282024_social_do_register_authenticated_process', 10, 0 );
+function um_0282024_social_do_register_authenticated_process(  ){
  // do something
 }
 ```

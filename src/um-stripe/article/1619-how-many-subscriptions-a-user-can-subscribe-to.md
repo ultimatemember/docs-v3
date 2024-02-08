@@ -1,4 +1,4 @@
 ---
 ---
 # Stripe FAQ - How Many Subscriptions a User Can Subscribe to?
- A customer or user can only subscribe to a single one-time or subscription plan. You may add multiple subscriptions to a customer via <strong>S</strong><strong>tripe &gt; Customer &gt; Subscriptions</strong>, but this will mess up the role assignment of users on your site.
+ A customer or user can only subscribe to a single one-time or subscription plan. You may add multiple subscriptions to a customer via <strong>S</strong><strong>tripe &gt; Customer &gt; Subscriptions</strong>, but this will mess up the role assignment of users on your site. Currently the UM Stripe Extension limits the subscription to one email per subscription and requires the use of a unique and valid email address for each subscription. Read the  [Subscription Limit: One Subscription Per Email Address](/docs-v3/um-stripe/article/1898-subscription-limit-one-subscription-per-email-address)

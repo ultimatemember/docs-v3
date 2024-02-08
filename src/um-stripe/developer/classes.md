@@ -449,14 +449,14 @@ public function get_fields( array $data ) : void
 Posts/Pages Settings
 
 ```php:no-line-numbers
-public function post_settings_fields( array $fields, array $data, object $object, object $post_type_object ) : void
+public function post_settings_fields( array $fields, array $data, object $obj, object $post_type_object ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$fields` | **`array`** | all field settings. |
 | `$data` | **`array`** | individual field settings. |
-| `$object` | **`object`** | class objects. |
+| `$obj` | **`object`** | class objects. |
 | `$post_type_object` | **`object`** | individual post object. |
 
 
@@ -3729,9 +3729,12 @@ public function checkout(  ) : void
 Create Customer portal session
 
 ```php:no-line-numbers
-public function customer_portal_session(  ) : void
+public function customer_portal_session( boolean $direct = false ) : void
 ```
 
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$direct` <Badge text="optional" type="warn"/>| **`boolean`** | Whether to redirect user without the extra parameters. |
 
 
 | | |
@@ -4198,12 +4201,12 @@ public function assign_stripe_account( integer $old_user_id, integer $new_user_i
 Base64 encoding.
 
 ```php:no-line-numbers
-public function base64_encode_url( string $string ) : string
+public function base64_encode_url( string $url ) : string
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
-| `$string` | **`string`** | String to process. |
+| `$url` | **`string`** | String to process. |
 
 
 | | |
@@ -5027,6 +5030,35 @@ public function get_subscription_id( integer $user_id = null ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-User::has_active_subscription" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> has_active_subscription ( )   
+-----
+
+Checks if a user has an active subscription.
+
+```php:no-line-numbers
+public function has_active_subscription( integer $user_id = null, boolean $return_status = false ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` <Badge text="optional" type="warn"/>| **`integer`** | The User ID. |
+| `$return_status` <Badge text="optional" type="warn"/>| **`boolean`** | Return the status name. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+$status The status name.
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-User::hooks" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> hooks ( )   
 -----
 
@@ -5081,7 +5113,28 @@ $status The status name.
 > This class has not inherited methods.
 
 ### <span style="display: none;">\um_ext\um_stripe\common\User</span> Properties
-> This class has not properties.
+  
+:::danger <a id="um_ext-um_stripe-common-User::$has_active_subscription" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $has_active_subscription   
+-----
+
+Has Active Subscription
+
+
+```php:no-line-numbers
+private $has_active_subscription;
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
+
+
+:::
+
 
 #### <span style="display: none;">\um_ext\um_stripe\common\User</span> Inherited properties
 > This class has not inherited properties.
@@ -5181,6 +5234,106 @@ public function subscriptions(  ) : void
 > This class has not properties.
 
 #### <span style="display: none;">\um_ext\um_stripe\db\Init</span> Inherited properties
+> This class has not inherited properties.
+        
+##  `um_ext\um_stripe\frontend\Account`    
+
+Class Account
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Account</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Account</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Account::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Init
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Account::account_tab" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> account_tab ( )   
+-----
+
+Register Billing Tab
+
+```php:no-line-numbers
+public function account_tab( array $tabs ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$tabs` | **`array`** | Tabs. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.8`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Account::billing_tab_content" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> billing_tab_content ( )   
+-----
+
+Add content to account tab
+
+```php:no-line-numbers
+public function billing_tab_content( string $output ) : string
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$output` | **`string`** | HTML output. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Account</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\frontend\Account</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\frontend\Account</span> Inherited properties
 > This class has not inherited properties.
         
 ##  `um_ext\um_stripe\frontend\Content_Restriction`    
@@ -5372,14 +5525,14 @@ public function init(  ) : void
 
 ### <span style="display: none;">\um_ext\um_stripe\frontend\Content_Restriction</span> Properties
   
-:::danger <a id="um_ext-um_stripe-frontend-Content_Restriction::$price_hash_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $price_hash_id   
+:::tip <a id="um_ext-um_stripe-frontend-Content_Restriction::$price_hash_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $price_hash_id   
 -----
 
 Price Hash ID
 
 
 ```php:no-line-numbers
-private $price_hash_id = null;
+public $price_hash_id = null;
 ```
 
 ***Types:***
@@ -5495,6 +5648,27 @@ Class Init
 > This class has not constants.
 
 ### <span style="display: none;">\um_ext\um_stripe\frontend\Init</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-frontend-Init::account" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> account ( )   
+-----
+
+Class Account
+
+```php:no-line-numbers
+public function account(  ) : \um_ext\um_stripe\frontend\Account()
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
   
 :::tip <a id="um_ext-um_stripe-frontend-Init::content_restriction" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> content_restriction ( )   
 -----
@@ -5755,6 +5929,31 @@ public function __construct(  ) : void
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-frontend-Shortcode::show_content" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_content ( )   
+-----
+
+Display Message for inactive subscription.
+
+```php:no-line-numbers
+public function show_content( array $args, mixed $content = '' ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Shortcode attributes. |
+| `$content` <Badge text="optional" type="warn"/>| **`mixed`** | Enclosed content. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
 
 
 
@@ -7686,7 +7885,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-17, 3:43 PM</span>
+        <span class="time">2024-02-08, 6:46 AM</span>
     </div>
 </div>
 

@@ -7,7 +7,7 @@
 
  Ultimate Member: Stripe extension is developed to allow you to integrate Stripe Checkout Page and Customer Billing features on your site. Here are the main features of the UM Stripe extension:
 
-- <strong>Embedded Checkout Support</strong> allows you to host the Stripe Checkout form on your site. With this, the user will be redirected to your site's checkout page instead of a Stripe-hosted checkout page.
+- <strong>Embedded Checkout Support</strong> allows you to host the Stripe Checkout form on your site. By enabling this setting, you can now host the Stripe Checkout form directly on your website, providing a seamless checkout experience for your customers. No more redirections to Stripe-hosted pages! With Embedded Checkout Support, your customers can complete their transactions without ever leaving your website.
 - <strong>Checkout &amp; Customer Billing Pages</strong> allow users to pay, subscribe, and manage plans on your site.
 - <strong>Restrict Contents by Stripe Plans and Prices</strong> allows you to restrict content (shortcodes, posts, pages, tags, and taxonomies) by Stripe plans or prices.
 - <strong>Update a user's role by Stripe subscription statuses via Webhook</strong>
@@ -19,7 +19,7 @@
 =======================================
 
 - [Setting up Webhook and Test/Public Keys](/docs-v3/um-stripe/article/1607-stripe-setting-up-webhook-and-test-public-keys)
-- [Setting up Stripe Success, Cancel Payment and Already Subscribed Pages](/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages)
+- [Setting up Stripe Success, Cancel Payment, and Already Subscribed Pages](/docs-v3/um-stripe/article/1609-stripe---setting-up-stripe-success-and-cancel-payment-pages)
 - [Create Subscription Prices](/docs-v3/um-stripe/article/1617-create-subscription-prices)
 - [UM Stripe Plan Settings](/docs-v3/um-stripe/article/1892-stripe-plan-settings)
 - [Shortcodes &amp; Subscription Events](/docs-v3/um-stripe/article/1616-stripe-shortcodes-reference)
@@ -31,7 +31,7 @@
 - [Import Existing Subscription Prices from your Stripe Account](/docs-v3/um-stripe/article/1846-import-existing-subscription-prices-from-your-stripe-account)
 - [Stripe - Content Restriction](/docs-v3/um-stripe/article/1805-stripe-content-restriction)
 - [Stripe’s Plans Customization in Register Forms](/docs-v3/um-stripe/article/1859-stripe-s-plans-customization-in-register-forms)
-- [Display Subscription Status, Invoices and Active Subscriptions in the Admin screen](/docs-v3/um-stripe/article/1865-display-subscription-status-invoices-and-active-subscriptions-in-the-admin-screen)
+- [Display Subscription Status, Invoices, and Active Subscriptions in the Admin screen](/docs-v3/um-stripe/article/1865-display-subscription-status-invoices-and-active-subscriptions-in-the-admin-screen)
 - [Stripe Settings](/docs-v3/um-stripe/article/1886-stripe-settings)
 - [Stripe - Support Payment Link for Checkout](/docs-v3/um-stripe/article/1885-stripe-support-payment-link-for-checkout)
 - [Pricing Model-Customer Chooses Price](/docs-v3/um-stripe/article/1888-pricing-model-customer-chooses-price)

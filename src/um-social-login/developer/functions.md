@@ -1317,7 +1317,7 @@ function um_sso_returned_raw_data( string $key, string $sso_sync_value, array $f
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-01-17, 3:43 PM</span>
+        <span class="time">2024-02-08, 6:46 AM</span>
     </div>
 </div>
 

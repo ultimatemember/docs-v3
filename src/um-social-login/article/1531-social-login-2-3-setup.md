@@ -101,6 +101,8 @@ Social Registration Forms  [\#](#forms)
 
  There's also an option to show a Splash Screen to display pre-loading content or Image loader on the overlay during the registration process.
 
+ <strong>Note</strong>: To synchronize fields using the 1-step process with a specific registration form, you must enable the <strong>"Use this form in the overlay"</strong> option and set it to <strong>"Yes."</strong>
+
 Profile data import  [\#](#import) 
 -----------------------------------
 

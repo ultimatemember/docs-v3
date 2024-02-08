@@ -1,56 +1,73 @@
 ---
 ---
 # Content Restriction
- The <strong>Stripe Content Restriction</strong> feature settings allow you to restrict the access of users to posts, pages, tags, and taxonomies by the following:
+ The Stripe Content Restriction feature settings enable you to manage user access to posts, pages, tags, and taxonomies in the following ways:
 
-- <strong>Restrict Acces by Stripe Plans</strong> - The UM Stripe Plans settings are designed to attach a Stripe Price to role settings and automatically switch users’ roles based on the subscription status of a customer. This is to maintain the capability to restrict content by Stripe Plan and WP roles with UM Content Restriction settings for Pages, Posts, Taxes, and Categories. Since most plugins and the WP core itself heavily rely on the WP roles to restrict features and functionalities, this feature is ideal for this case and to remain compatible.
-- <strong>Restrict Acces by Stripe Prices</strong> - The UM Stripe prices allows you to restrict content by multiple Stripe Prices which can cover many membership levels with this restriction settings, and one of them is allowing a specific customer to access a dedicated content for him/her.
+### Restrict Access by Stripe Plans
 
- You need to enable the "Content Restriction" settings for the post types and taxonomies in  <strong>wp-admin &gt; Ultimate Member &gt; Settings &gt; Access &gt; Restriction Content.</strong>
+ The UM Stripe Plans settings are designed to attach a Stripe Price to role settings and automatically switch users’ roles based on the subscription status of a customer. This is to maintain the capability to restrict content by Stripe Plan and WP roles with UM Content Restriction settings for Pages, Posts, Taxes, and Categories. This feature is particularly beneficial as many plugins and the WP core rely on WP roles for feature and functionality restrictions, making it an ideal solution for compatibility.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6441482337fd073d73d6d0cd/file-EjtGsP9Szi.png)
+### Restrict Access by Stripe Prices
 
-#### <strong>Restrict Post</strong> 
+ UM Stripe Prices allow you to restrict content by multiple Stripe Prices, covering various membership levels. This includes granting access to dedicated content for users subscribed to or purchasing specific Stripe Prices.
 
-- Go to wp-admin&gt; Posts
-- Add a new post, or edit an existing post
-- Enable " <strong>Restrict access to this post?</strong>" under Ultimate Member: Content Restriction. It will display other content restriction settings.
-- Select <strong>“Logged in users”</strong> in the option “Who can see this post?”, the Stripe restrictions will only show when you select logged-in users.
-- Enable the <strong>"Restrict Access by Stripe Plans"</strong> by clicking on the check box beside it.
-- The <strong>"Select Stripe Plans to allow access to this post"</strong>  feature enables you to choose which <strong>Stripe plans</strong> provide access to a post for users who have either subscribed to or purchased the selected Stripe plan.
-- The <strong>"Select Stripe Prices to allow access to this post"</strong> feature enables you to choose from the dropdown list of <strong>Stripe Prices</strong>, thereby allowing access to the post for users who have subscribed to or purchased the corresponding product with the selected stripe prices.
-- <strong>Can user subscribed to this plan view the content if they do not have the correct permission?</strong> - This allows you to select whether if a subscriber can view the content or not. ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6538394fd8bb8c0afe6e13ef/file-JMVsPUgTVD.png)
+ To implement these feature and settings, enable "Content Restriction" for post types and taxonomies in  <strong>wp-admin &gt; Ultimate Member &gt; Settings &gt; Access &gt; Restriction Content.</strong>
 
- For example, the selected stripe plan in the image below is Basic – CAD$ 3.00 / month. The users who are subscribed to this plan will be the only ones who can access or view the post. You can select multiple plans by clicking on the stripe plan list while the <strong>ctrl</strong> or <strong>cmd</strong> keys is pressed.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65baa108a7493b27a932f846/file-ZOCZBnubnX.png) <strong>Restrict Post</strong>
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/653839d4d8bb8c0afe6e13f0/file-TZO5bbERmI.png)
+1. Go to <strong>wp-admin&gt; Posts</strong> and add a new post, or edit an existing post.
+2. Enable " <strong>Restrict access to this post?</strong>" under Ultimate Member: Content Restriction.
+3. Select <strong>“Logged in users”</strong> in the option “Who can see this post?”, the Stripe restrictions will only show when you select logged-in users.
+4. Enable the <strong>"Restrict Access by Stripe Plans"</strong>
+5. The <strong>"Select Stripe Plans to allow access to this post"</strong>  feature enables you to choose which <strong>Stripe plans</strong> provide access to a post for users who have either subscribed to or purchased the selected Stripe plan.
+6. The <strong>"Select Stripe Prices to allow access to this post"</strong> feature enables you to choose from the dropdown list of <strong>Stripe Prices</strong>, thereby allowing access to the post for users who have subscribed to or purchased the corresponding product with the selected stripe prices.
+7. "<strong>Can users subscribed to this plan view the content if they do not have the correct permission?"</strong> - This option allows you to select whether a subscriber can view the content or not.
 
- By default, Ultimate Member can restrict your content by user roles, and with the Stripe extension, you can restrict content by both Stripe Plans and User Roles or just Stripe Plans which allows you to override the selected user roles in the restriction settings by Stripe Plans.
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b727be30c1875e8e0675d6/file-CTpkXZUAuc.png)
 
- For example, when a logged-in user has the role <strong>"Subscriber"</strong> and tries to access a post/page that has a content restriction that only allows users with the role <strong>"Premium"</strong>, the user won't be able to access it, but if the "Subscriber" user has subscribed to a Stripe Plan, you can override the user role with specific Stripe Plans in the restriction settings. Just choose <strong>"</strong><strong>Yes, as long as a user is subscribed to this plan, they can view the content regardless of their user role"</strong> in the option <strong>"Can user subscribed to this plan view the content if they do not have the correct role permission?".</strong>
+### Example
 
- If you have selected <strong>Stripe prices</strong> from the <strong>"</strong><strong>Select Stripe Prices to allow access to this post"</strong> option, like the example in the image below. The users or subscribers who have purchased with the selected Stripe price will be able to access the post regardless of their subscribed Stripe plan and role.
+ In the image provided below, the selectedStripe plan is the Basic Plan, priced at $9.99/month. Only users subscribed to this specific plan will have access to view the associated post. For your convenience, you can select multiple plans simultaneously by holding down the <strong>Ctrl</strong> or <strong>Cmd</strong> keys and clicking on the desired prices in the Stripe plan list.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65383a4a5d28e52158f520e8/file-HbJYwxJQu2.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b72ac052a6af5def3c8ec5/file-iAous03AM2.png)
 
- <strong>Custom Post Type</strong>
+ By default, Ultimate Member offers content restriction based on user roles. With the integration of the Stripe extension, you gain the capability to restrict content using either Stripe Plans, User Roles, or a combination of both. This feature empowers you to override the selected user roles in the restriction settings by prioritizing Stripe Plans.
 
- If you have installed other plugins that generated or created your own custom post type, you can also use the Stripe-Content Restriction. You need to enable it in <strong>Access settings</strong>. The "Content Restriction" settings of the custom post types or taxonomies will appear on the list in wp-admin &gt; Ultimate Member &gt; Settings &gt; Access &gt; Restriction Content.
+ For instance, consider a scenario where a logged-in user holds the role <strong>"Member"</strong> but attempts to access a post/page restricted to users with the role <strong>"Subscriber."</strong> In such cases, the user would typically be denied access. However, if the "Member" user has subscribed to a specific Stripe Plan, you can surpass the user role restrictions by specifying certain Stripe Plans in the restriction settings. Simply select <strong>"Yes, as long as a user is subscribed to this plan/price, they can view the content regardless of their user role"</strong> in the option "Can users subscribed to this plan view the content if they do not have the correct role permission?"
 
-- In the example below, we have installed and activated the WooCommerce plugin. The WooCommerce custom post types and taxonomies are displayed in <strong>"Enable the "Content Restriction" setting for post types"</strong> and <strong>"Enable the "Content Restriction" settings for taxonomies"</strong>
-- Check the checkboxes to enable it.  
-      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6446952b35387a4818397414/file-2t7FZM07rW.png)
-- Go to your Custom Post/Product/Page, click edit or add new
-- Enable <strong>"Restrict access to this post?"</strong> under Ultimate Member: Content Restriction
-- Select <strong>“Logged-in users”</strong> in the option “Who can see this post?”
-- Enable <strong>"Restrict Access by Stripe Plans"</strong>
-- Select Stripe Plans from <strong>"Select Stripe Plans to allow access to this post"</strong>
-- Select Stripe Prices from <strong>"Select Stripe Prices to allow access to this post"</strong> if you want to allow users to access post based on purchased prices
-- Select permission in <strong>"Can user subscribed to this plan view the content if they do not have the correct permission? "  
-      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6539c3d26a23f959ef28c9b4/file-xNZcIjv2tH.png)</strong>
+ Furthermore, if you have opted to utilize Stripe prices from the " <strong>Select Stripe Prices to allow access to this post"</strong> option, users or subscribers who have purchased the selected Stripe price will gain access to the post, regardless of their subscribed Stripe plan and assigned role.
 
-#### <strong>Restrict Page</strong>  
+### Custom Post Type
 
+ To seamlessly integrate additional plugins that introduce custom post types with the Stripe-Content Restriction feature, follow these steps:
+
+1. Navigate to wp-admin &gt; Ultimate Member &gt; Settings &gt; Access &gt; Restriction Content .
+2. Enable the settings for your custom post types or taxonomies to activate the integration. 
+    - This ensures that content restriction capabilities extend to the specific custom post types or taxonomies introduced by other plugins, providing comprehensive control over access within your site.
+
+#### Example
+
+ In the following example, we've installed and activated the WooCommerce plugin. The WooCommerce custom post types and taxonomies are visible in the sections labeled:
+
+- "Enable the 'Content Restriction' setting for post types."
+- "Enable the 'Content Restriction' settings for taxonomies."
+
+ Make sure to tick the checkboxes to activate these settings; UM Content Restriction won't be visible unless these are enabled.
+
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65baacf80b2b8f0dacd7fa18/file-KhcPGUvxWJ.png)
+
+ For custom post types, follow these additional steps:
+
+1. Go to your Custom Post/Product/Page and either edit an existing one or add a new one.
+2. Enable <strong>"Restrict access to this post?"</strong> under "Ultimate Member: Content Restriction."
+3. Select <strong>"Logged-in users"</strong> in the option "Who can see this post?"
+4. Enable <strong>"Restrict Access by Stripe Plans."</strong>
+5. Choose the relevant Stripe Plans from <strong>"Select Stripe Plans to allow access to this post."</strong>
+6. Optionally, select Stripe Prices from <strong>"Select Stripe Prices to allow access to this post"</strong> if you want to grant access based on purchased prices.
+7. Specify permissions in <strong>"Can users subscribed to this plan view the content if they do not have the correct permission?"  
+      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65bab0b48e1d144482a9fce6/file-VRpzJleDpM.png)</strong>
+
+### <strong>Restrict Page</strong>
 
 - Go to wp-admin&gt; Pages
 - Add a new page or edit an existing page
@@ -59,17 +76,17 @@
 - Scroll down and enable <strong>"Restrict Access by Stripe Plans"</strong>
 - Select <strong>Stripe Plans</strong> in <strong>"Select Stripe Plans to allow access to this post"</strong>
 - Select <strong>Stripe Prices</strong> from <strong>"Select Stripe Prices to allow access to this post"</strong> if you want to allow users to access page based on purchased prices
-- Select permission in <strong>"Can user subscribed to this plan view the content if they do not have the correct permission?" ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/6538394fd8bb8c0afe6e13ef/file-JMVsPUgTVD.png)</strong>
-    
-    #### Restrict Post Tag
-    
-    
-    - Go to wp-admin&gt; Posts&gt;Tags
-    - Add a new tag or edit an existing tag
-    - Enable <strong>"Restrict access to this post?"</strong> under Ultimate Member: Content Restriction
-    - Select <strong>“Logged-in users”</strong> in the option “Who can see this post?”
-    - Scroll down and enable <strong>"Restrict Access by Stripe Plans"</strong>
-    - Select Stripe Plans in <strong>"Select Stripe Plans to allow access to this post"</strong>
-    - Select Stripe Prices from <strong>"Select Stripe Prices to allow access to this post"</strong> if you want to allow users to access page based on purchased prices
-    - Select a permission in <strong>"Can user subscribed to this plan view the content if they do not have the correct permission? "</strong>
-      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65383fca5d28e52158f520ee/file-wsYBmuh0kw.png)
+- Select permission in <strong>"Can user subscribed to this plan view the content if they do not have the correct permission?" ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65bab3760b2b8f0dacd7fa21/file-PdfhdrMuzP.png)</strong>
+
+### Restrict Post Tag 
+
+1. Go to wp-admin&gt; Posts&gt;Tags
+2. Add a new tag or edit an existing tag
+3. Enable <strong>"Restrict access to this post?"</strong> under Ultimate Member: Content Restriction
+4. Select <strong>“Logged-in users”</strong> in the option “Who can see this post?”
+5. Scroll down and enable <strong>"Restrict Access by Stripe Plans"</strong>
+6. Select Stripe Plans in <strong>"Select Stripe Plans to allow access to this post"</strong>
+7. Select Stripe Prices from <strong>"Select Stripe Prices to allow access to this post"</strong> if you want to allow users to access page based on purchased prices
+8. Select a permission in <strong>"Can user subscribed to this plan view the content if they do not have the correct permission? "</strong>
+
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65bab8d9a7493b27a932f85f/file-ddee7WYbgD.png)
