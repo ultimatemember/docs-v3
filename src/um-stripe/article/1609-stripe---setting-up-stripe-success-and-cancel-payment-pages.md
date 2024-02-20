@@ -1,7 +1,10 @@
 ---
 ---
-# Setting up Stripe Success, Cancel Payment, Already Subscribed,Customer Portal and Stripe Checkout URL Pages
- Once you have installed the Stripe extension on your WordPress website, a notification will appear on the top of your wp-admin page. This notification will indicate which pages need to be created. To create the required pages, simply click on the <strong>"Create Pages"</strong> button. Once you have completed this step, the Stripe Pages, including the <strong>Success, Cancel, Already Subscribed,</strong> <strong>Stripe Checkout URL</strong> and <strong>Customer Portal</strong> pages will automatically be assigned to the page settings.  
+# Setting up Stripe Success, Cancel Payment, Already Subscribed,Customer Portal,Stripe Checkout URL and Embedded Checkout Pages
+ Once you have installed the Stripe extension on your WordPress website, a notification will appear on the top of your wp-admin page. This notification will indicate which pages need to be created. To create the required pages, simply click on the <strong>"Create Pages"</strong> button. Once you have completed this step, the Stripe Pages, including the <strong>Success, Cancel, Already Subscribed,</strong> <strong>Stripe Checkout URL</strong> and <strong>Customer Portal</strong> pages will automatically be assigned to the page settings. 
+
+ <strong>Note:</strong> If the 'create pages' button did not automatically generate the pages, you can create them manually. Refer to this article for guidance:  [How to Create Stripe Pages Manually](/docs-v3/um-stripe/article/1900-how-to-create-stripe-pages-manually) .
+
 
 
   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b427cd20e3b82eb738e083/file-7jSHQalUOk.png) 
@@ -22,5 +25,11 @@
  To set the Success, Canceled, Already Subscribed, Stripe Checkout URL Pages and Customer Portal, go to <strong>WP Admin &gt; Ultimate Member &gt; Settings &gt; General &gt; Pages.</strong>
 
   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b4c51e30c1875e8e067575/file-etUumfKj6X.png)
+
+- <strong>Stripe Embedded Checkout (Payment Checkout Page)</strong> - By enabling the <strong>'Stripe Embedded Checkout'</strong> feature within the  [Stripe settings](/docs-v3/um-stripe/article/1886-stripe-settings) , when you click the <strong>'Create pages'</strong> button it'll automatically generate the <strong>'Payment Checkout page'</strong>. This specialized page is crafted to streamline the transaction process for users, facilitating quick and effortless purchases. Alternatively, if you favor embedding the checkout form directly onto your website, you have the option to enable this setting. Doing so empowers users to finalize their purchases seamlessly without the need to navigate away from your site
+
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6d5b320e3b82eb738e105/file-bp6tUgIiHT.png)
+
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65c628bb18ce7f6806c755c1/file-wzAdnLpUJY.png)
 
  <strong>NEXT:  [Create Subscription Prices](/docs-v3/um-stripe/article/1617-create-subscription-prices)</strong>

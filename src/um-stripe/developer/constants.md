@@ -194,7 +194,7 @@ UM_STRIPE_VERSION = $plugin_data['Version'];
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-02-08, 6:46 AM</span>
+        <span class="time">2024-02-20, 11:59 AM</span>
     </div>
 </div>
 

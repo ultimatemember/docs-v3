@@ -21,8 +21,8 @@ do_action( 'um_social_do_redirect_after_login',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_redirect_after_login', 'um_0282024_social_do_redirect_after_login', 10, 0 );
-function um_0282024_social_do_redirect_after_login(  ){
+add_action( 'um_social_do_redirect_after_login', 'um_02202024_social_do_redirect_after_login', 10, 0 );
+function um_02202024_social_do_redirect_after_login(  ){
  // do something
 }
 ```

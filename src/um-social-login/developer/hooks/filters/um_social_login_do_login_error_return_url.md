@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_do_login_error_return_url',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_do_login_error_return_url', 'um_0282024_social_login_do_login_error_return_url', 10, 0 );
-function um_0282024_social_login_do_login_error_return_url(  ){
+add_filter( 'um_social_login_do_login_error_return_url', 'um_02202024_social_login_do_login_error_return_url', 10, 0 );
+function um_02202024_social_login_do_login_error_return_url(  ){
   return ;
 }
 ```

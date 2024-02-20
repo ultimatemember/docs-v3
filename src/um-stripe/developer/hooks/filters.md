@@ -11,9 +11,6 @@ sidebarDepth: 0
 ## [um_stripe_checkout_sessions_create_args](./filters/um_stripe_checkout_sessions_create_args)<Badge text="Since 1.0.0" vertical="middle" />
 
 Filter array before checkout sessions creation
-## [um_stripe_enable_unique_billing_email](./filters/um_stripe_enable_unique_billing_email)<Badge text="Since 1.0.0" vertical="middle" />
-
-Allow unique billing email
 ## [um_stripe_webhook_name](./filters/um_stripe_webhook_name)<Badge text="Since 1.0.0" vertical="middle" />
 
 Modify Stripe Webhook name
