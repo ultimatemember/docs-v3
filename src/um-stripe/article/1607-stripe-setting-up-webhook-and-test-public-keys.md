@@ -21,19 +21,20 @@ Restricted Key Settings
 
  Enter a key name look for the resource types listed below in the API Keys and configure the necessary API permissions: 
 
-| <strong>Resource Type</strong> | <strong>Permissions</strong> |
-|---|---|
-| Customers | Write |
-| Checkout Sessions | Write |
-| Customer Portal | Write |
-| Prices | Read |
-| Subscriptions | Read |
-| Webhook Endpoints | Write |
-| Tokens | Write |
+| <strong>Resource Type</strong> | <strong>Permissions</strong> | <strong>Resources</strong> |
+|---|---|---|
+| Credit notes | Read | Billing resources |
+| Customers | Write | Core resources |
+| Checkout Sessions | Write | Checkout resources |
+| Customer Portal | Write | Billing resources |
+| Prices | Read | Billing resources |
+| Subscriptions | Read | Billing resources |
+| Webhook Endpoints | Write | Webhook resources |
+| Tokens | Write | Core/Issuing Resources |
 
  Once you're done setting up the restricted key, click the <strong>"Create Key"</strong> button, at the bottom right to save your settings.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b3cf201280097516451a7e/file-8VeEHK23cL.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65e569a98cb417537bd299ef/file-T1eBcCTtHS.png)
 
 
 
@@ -48,7 +49,7 @@ Restricted Key Settings
 
  In the Stripe settings, you'll find a webhook endpoint ready for you to copy and paste into your Stripe.com account. When you connect with Stripe, it automatically generates the Webhook URL based on the current domain of your site and adds the event hooks to the Webhook settings on your Stripe account. More details are listed below:
 
-- Head to <strong>U</strong><strong>ltimate Member &gt; Settings &gt; Extensions&gt; Stripe</strong>. Beside the Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the <strong>"Connect with stripe"</strong> button, and your Webhook endpoint will be added instantly to your Stripe account settings.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b3ead230c1875e8e067503/file-K4lq6KrFrC.png)
+- Head to <strong>U</strong><strong>ltimate Member &gt; Settings &gt; Extensions&gt; Stripe</strong>. Beside the Webhook Endpoints section is where you can copy your Webhook endpoint URL or when you have added the API Keys, Press on the <strong>"Connect with stripe"</strong> button, and your Webhook endpoint will be added instantly to your Stripe account settings.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65e4b4826ba1d916ec467329/file-h9fDsMfPVe.png)
 - When you try to click on the <strong>"Connect with Stripe"</strong> button, it should validate the <strong>Publishable key</strong> and <strong>Live Restricted or Secret Key</strong>. It will show an error message when they are invalid.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b3ecad20e3b82eb738e03f/file-sBW1ndw4Rq.png)
 - If the connection is successful, the <strong>"Disconnect Stripe Account"</strong> and <strong>"Import Prices from your Stripe Account"</strong> buttons should appear. ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b40a6020e3b82eb738e059/file-ENGgEYd5JL.png)
 - If you are trying to connect with Stripe and have installed the Stripe extension on your localhost or own computer while using a local domain, you may encounter an error (as shown in the image below). To receive the payload or events from Stripe.com events transactions, your site's Webhook URL must be publicly accessible. It's important to note that even if you encounter this webhook creation error, you can still import pricing locally.  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b416e1270765339befc708/file-tHbL81sLRs.png)

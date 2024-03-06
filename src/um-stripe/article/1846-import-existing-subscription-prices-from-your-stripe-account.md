@@ -6,7 +6,7 @@
  The following steps will guide you on how to import your existing subscription prices from your Stripe account:
 
 - Go to <strong>wp-admin&gt;Ultimate Member&gt; Settings&gt; Extensions&gt;Stripe.</strong>
-- Click the <strong>"Import Prices from your Stripe Account"</strong> button.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6e9131280097516451b76/file-J0CN3UAIMN.png)
+- Click the <strong>"Import Prices from your Stripe Account"</strong> button.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65e4d60be1b845099279232d/file-il6PqdmP6x.png)
 - Once the import is done, It will display all the existing subscription prices you have created in Stripe.  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6ea1620e3b82eb738e108/file-AsoMN245C0.png)
 - When you import prices from the Stripe.com account, it should create Stripe Plans automatically and be ready to use. Go to <strong>wp-admin&gt; Ultimate Member&gt; Stripe Plans</strong>. You can see here the following: 
     - <strong>Plan ID</strong> - You can use this to set the Stripe field's default selected plan in the Register form via the Form Builder

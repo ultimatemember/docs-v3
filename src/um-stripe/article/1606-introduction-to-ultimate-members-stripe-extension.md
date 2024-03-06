@@ -35,6 +35,10 @@
 - [Stripe Settings](/docs-v3/um-stripe/article/1886-stripe-settings)
 - [Stripe - Support Payment Link for Checkout](/docs-v3/um-stripe/article/1885-stripe-support-payment-link-for-checkout)
 - [Pricing Model-Customer Chooses Price](/docs-v3/um-stripe/article/1888-pricing-model-customer-chooses-price)
+- [Stripe Parameters](/docs-v3/um-stripe/article/1899-stripe-placeholders-attribute)
+- [Subscription Limit: One Subscription Per Email Address](/docs-v3/um-stripe/article/1898-subscription-limit-one-subscription-per-email-address)
+- [Enable Payment Method](/docs-v3/um-stripe/article/1901-enable-payment-method)
+- [How to Create Stripe Pages Manually?](/docs-v3/um-stripe/article/1900-how-to-create-stripe-pages-manually)
 
 ### <strong>Frequently Asked Questions:</strong>
 

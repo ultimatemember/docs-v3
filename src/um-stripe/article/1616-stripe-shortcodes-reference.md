@@ -1,7 +1,7 @@
 ---
 ---
 # Stripe Shortcodes
-Shortcodes in plugins serve to dynamically display content, extend functionality, customize features, integrate with other plugins or themes, and simplify complex tasks by allowing users to easily insert specific plugin features into their website content with minimal coding knowledge. As such, here are the Stripe shortcodes to simplify the integration of Stripe into your site.
+ Shortcodes in plugins serve to dynamically display content, extend functionality, customize features, integrate with other plugins or themes, and simplify complex tasks by allowing users to easily insert specific plugin features into their website content with minimal coding knowledge. As such, here are the Stripe shortcodes to simplify the integration of Stripe into your site.
 
 Stripe Customer Portal Shortcode
 --------------------------------

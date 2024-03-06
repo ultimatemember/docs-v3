@@ -21,8 +21,8 @@ do_action( 'um_social_do_link_user',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_link_user', 'um_02202024_social_do_link_user', 10, 0 );
-function um_02202024_social_do_link_user(  ){
+add_action( 'um_social_do_link_user', 'um_0362024_social_do_link_user', 10, 0 );
+function um_0362024_social_do_link_user(  ){
  // do something
 }
 ```

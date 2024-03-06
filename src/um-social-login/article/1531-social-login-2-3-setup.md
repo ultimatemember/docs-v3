@@ -103,6 +103,21 @@ Social Registration Forms  [\#](#forms)
 
  <strong>Note</strong>: To synchronize fields using the 1-step process with a specific registration form, you must enable the <strong>"Use this form in the overlay"</strong> option and set it to <strong>"Yes."</strong>
 
+ In the one-step process of social login with Ultimate Member, users are registered and logged in automatically without having to set a password during the registration process. This approach is designed to streamline the user experience and make it easier for users to sign up and access the site quickly.
+
+ <strong>Here's how it works:</strong>
+
+1. <strong>Social Login Initiation:</strong> When a user chooses to log in with a social account (e.g., Facebook, Google) on your site, Ultimate Member's one-step process kicks in.
+2. <strong>Authentication and Registration:</strong> The user is redirected to the chosen social network's login page, where they authenticate their account. Once authenticated, the social network provides necessary user information to Ultimate Member.
+3. <strong>Automatic Registration:</strong> Ultimate Member automatically registers the user on your WordPress site using the information provided by the social network. This registration process includes creating a new user account in the WordPress database.
+4. <strong>Immediate Login:</strong> After registration is successful, Ultimate Member automatically logs the user in to their newly created account. This means the user can access the site's features and content without the need to log in again manually.
+5. <strong>Password Setting:</strong> Since  [no password is set](/docs-v3/um-social-login/article/1927-setting-passwords-in-ultimate-member-register-forms)  during the registration process, users are prompted to set a password after registration. This is typically done through a link provided in the Welcome Email. This email with a  [placeholder](/docs-v3/um-social-login/article/1340-placeholders-for-email-templates)  is a notification sent to users, typically after registration, that contains a dynamic placeholder tag like `{action_url}`. This placeholder tag is crucial when no password field is present during registration, such as in a one-step social login process. The `{action_url}` placeholder generates a link in the email that allows users to set their password. Users can click on this link to be redirected to a page where they can securely set their password, ensuring a smooth registration process and access to their account.
+
+####  Benefits of One-Step Process:
+
+- <strong>Simplified Registration:</strong> Users can sign up quickly and easily without the need to fill out a lengthy registration form.
+- <strong>Instant Access</strong>: Users can access the site immediately after registration, enhancing the overall user experience.
+
 Profile data import  [\#](#import) 
 -----------------------------------
 

@@ -18,17 +18,17 @@
     - <strong>Command Line:</strong> <strong>stripe listen --forward-to "localhost:8000/?umm-stripe-webhook=true"</strong>
     - <strong>Output:</strong>`Ready! Your webhook signing secret is '{{WEBHOOK_SIGNING_SECRET}}' (^C to quit)`
         
-         ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649434c9c5d2b53344e729ae/file-rBgBPcK9Lo.png)
+          ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/649434c9c5d2b53344e729ae/file-rBgBPcK9Lo.png)
 - Copy the Webhook secret and add it in the /wp-config.php file before the "That's all" code comment:
-
+ 
 ```
-
 define( 'UM_STRIPE_DEV_LOCAL', 'whsec_5741b47f3f9faabd935713136e08a47e3f6e7d3b78e501787e9891838d2' );
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) { 
     define( 'ABSPATH', __DIR__ . '/' );
 }
+	
 ```
 
  When the aforementioned constant is defined or added to that file, the following message appears in <strong>wp-admin&gt;Ultimate Member&gt;Settings&gt;Extensions&gt;Stripe</strong>:
@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     
     
     - <strong>Command Line:</strong>  `stripe listen --load-from-webhooks-api --forward-to localhost:5000`
- 
+
  With this command, events are sent to your public webhook endpoint on Stripe-registered and will be forwarded to your local webhook endpoint. The path is appended to your local webhook endpoint in the `--forward-to` the path once the path has been loaded, parsed and its registered events have been taken into account. Use the `WEBHOOK_SIGNING_SECRET` from the initial output of the `listen` commands when validating webhook signatures.
 
  2. Trigger events to test your webhooks integration

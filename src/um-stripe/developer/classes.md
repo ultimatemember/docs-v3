@@ -1575,33 +1575,6 @@ public function __construct(  ) : void
 :::
 
   
-:::tip <a id="um_ext-um_stripe-admin-User_Columns::show_plan_title_for_admin_review_registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_plan_title_for_admin_review_registration ( )   
------
-
-Add Stripe Plan Title to the Submitted Data form
-
-```php:no-line-numbers
-public function show_plan_title_for_admin_review_registration( string $v, string $k, array $data, string $style ) : void
-```
-
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$v` | **`string`** | Value. |
-| `$k` | **`string`** | Meta Key. |
-| `$data` | **`array`** | Field data. |
-| `$style` | **`string`** | CSS styles. |
-
-
-| | |
-|:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
-
-
-
-
-:::
-
-  
 :::tip <a id="um_ext-um_stripe-admin-User_Columns::show_user_subscriptions_column" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_user_subscriptions_column ( )   
 -----
 
@@ -4959,6 +4932,31 @@ $status The status name.
 
 :::
 
+  
+:::tip <a id="um_ext-um_stripe-common-User::show_plan_title_for_admin_review_registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_plan_title_for_admin_review_registration ( )   
+-----
+
+Add Stripe Plan Title to the Submitted Data form
+
+```php:no-line-numbers
+public function show_plan_title_for_admin_review_registration( string $v, string $k ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$v` | **`string`** | Value. |
+| `$k` | **`string`** | Meta Key. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.7`<br />|
+
+
+
+
+:::
+
 
 #### <span style="display: none;">\um_ext\um_stripe\common\User</span> Inherited methods
 > This class has not inherited methods.
@@ -7736,7 +7734,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-02-20, 11:59 AM</span>
+        <span class="time">2024-03-06, 7:12 AM</span>
     </div>
 </div>
 

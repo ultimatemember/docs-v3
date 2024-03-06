@@ -11,7 +11,11 @@
 
  To add a Stripe subscription plan to a registration form, do the following steps:
 
-- Go to <strong>wp-admin &gt; Ultimate Member &gt; Forms &gt; Edit/Add a Registration form.</strong> Click on the " <strong>plus(</strong><strong>+)</strong> " icon to show the Fields Manager.   ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6ff4a1280097516451b78/file-KWTfSQHKIb.png)
+- Go to <strong>wp-admin &gt; Ultimate Member &gt; Forms &gt; Edit/Add a Registration form.</strong> Click on the " <strong>plus(</strong><strong>+)</strong> " icon to show the Fields Manager where you can select which necessary fields to include in your registration form.   
+       
+    <strong>Note:</strong> When there's no Password field in the Register forms, the  [placeholder](/docs-v3/um-stripe/article/1340-placeholders-for-email-templates)  tag `{action_url}` must be used or added in your  ['account welcome email'](/docs-v3/um-stripe/article/42-emails-tab#email_templates)  to allow users to set their password. Similarly, when using the direct subscribe URL or the Payment Links with Stripe, these placeholder tag can also be used in the Welcome Email templates.
+    
+      ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6ff4a1280097516451b78/file-KWTfSQHKIb.png)
 - Click <strong>"Stripe Plans"</strong> in the Predefined Fields section of the Fields Manager. You may also add a predefined field called <strong>"Stripe Billing Email"</strong> if you want to add an option where this email field’s value will be used as the billing email for the Stripe Account. ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b700801280097516451b7a/file-VOhzFYuWY0.png)
 - Edit the '<strong>Stripe Plans'</strong> field by clicking the <strong>'</strong><strong>Pencil icon.' ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b7084b270765339befc7a7/file-UHBd5vqD9T.png)</strong>
 - There are <strong>three (3) stripe plan types</strong> available for displaying the field in a registration form:
