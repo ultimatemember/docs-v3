@@ -26,8 +26,8 @@ apply_filters( 'umm_stripe_billing_configuration', $args )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'umm_stripe_billing_configuration', 'um_0362024_stripe_billing_configuration', 10, 1 );
-function um_0362024_stripe_billing_configuration( $args ){
+add_filter( 'umm_stripe_billing_configuration', 'um_0372024_stripe_billing_configuration', 10, 1 );
+function um_0372024_stripe_billing_configuration( $args ){
   return $args;
 }
 ```

@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_connect_url__{$provider}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_connect_url__{$provider}', 'um_0362024_social_login_connect_url____provider_', 10, 0 );
-function um_0362024_social_login_connect_url____provider_(  ){
+add_filter( 'um_social_login_connect_url__{$provider}', 'um_0372024_social_login_connect_url____provider_', 10, 0 );
+function um_0372024_social_login_connect_url____provider_(  ){
   return ;
 }
 ```

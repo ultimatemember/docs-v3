@@ -21,8 +21,8 @@ do_action( 'um_social_doing_shortcode',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_doing_shortcode', 'um_0362024_social_doing_shortcode', 10, 0 );
-function um_0362024_social_doing_shortcode(  ){
+add_action( 'um_social_doing_shortcode', 'um_0372024_social_doing_shortcode', 10, 0 );
+function um_0372024_social_doing_shortcode(  ){
  // do something
 }
 ```

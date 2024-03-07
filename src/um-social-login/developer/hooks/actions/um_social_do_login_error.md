@@ -21,8 +21,8 @@ do_action( 'um_social_do_login_error',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_login_error', 'um_0362024_social_do_login_error', 10, 0 );
-function um_0362024_social_do_login_error(  ){
+add_action( 'um_social_do_login_error', 'um_0372024_social_do_login_error', 10, 0 );
+function um_0372024_social_do_login_error(  ){
  // do something
 }
 ```
