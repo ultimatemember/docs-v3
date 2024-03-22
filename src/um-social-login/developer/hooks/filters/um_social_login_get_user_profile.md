@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_get_user_profile',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_get_user_profile', 'um_0372024_social_login_get_user_profile', 10, 0 );
-function um_0372024_social_login_get_user_profile(  ){
+add_filter( 'um_social_login_get_user_profile', 'um_03222024_social_login_get_user_profile', 10, 0 );
+function um_03222024_social_login_get_user_profile(  ){
   return ;
 }
 ```

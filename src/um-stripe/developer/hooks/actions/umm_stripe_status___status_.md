@@ -9,7 +9,7 @@ tags:
 Assign Role based on the role set in the Stripe Plan settings.
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
-do_action( 'umm_stripe_status_{$status}', $user_id, $role )
+do_action( 'umm_stripe_status_{$status}', $user_id, $rolethe )
 ```
 <div class='hook-sep'></div>
 
@@ -20,8 +20,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 <div style="margin-left:10px;padding: 10px 5px">the user ID.</div>
 </div>
 <div style='padding: 10px 0px 10px;'>
-<strong>$role</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
-<div style="margin-left:10px;padding: 10px 5px">the user Role.</div>
+<strong>$rolethe</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >string</span>
+<div style="margin-left:10px;padding: 10px 5px">user Role.</div>
 </div>
 <div class='hook-sep'></div>
 
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_{$status}', $user_id, $role )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_{$status}', 'um_0282024_stripe_status___status_', 10, 2 );
-function um_0282024_stripe_status___status_( $user_id, $role ){
+add_action( 'umm_stripe_status_{$status}', 'um_03222024_stripe_status___status_', 10, 2 );
+function um_03222024_stripe_status___status_( $user_id, $rolethe ){
  // do something
 }
 ```

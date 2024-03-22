@@ -2,11 +2,11 @@
 tags: 
   - umm_stripe_status_active
   - actions
-  - Triggers when the charge has active.
+  - Triggers when the charge has active
   - hooks
 ---
 # umm\_stripe\_status\_active
-Triggers when the charge has active.
+Triggers when the charge has active
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_active', $um_user_id, $role_active )
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_active', $um_user_id, $role_active )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_active', 'um_0372024_stripe_status_active', 10, 2 );
-function um_0372024_stripe_status_active( $um_user_id, $role_active ){
+add_action( 'umm_stripe_status_active', 'um_03222024_stripe_status_active', 10, 2 );
+function um_03222024_stripe_status_active( $um_user_id, $role_active ){
  // do something
 }
 ```
@@ -41,5 +41,6 @@ function um_0372024_stripe_status_active( $um_user_id, $role_active ){
 
 ### Related Snippets
 
-Nothing was found
+- [ Add or Remove extra roles from wp account upon subscription activation or cancellation](../snippets/e2c3d12ec774f6a6383ca9abb5f2011e)
+
 

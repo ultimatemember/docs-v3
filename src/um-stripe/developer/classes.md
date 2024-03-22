@@ -1824,6 +1824,27 @@ public function search_customer(  ) : void
 :::
 
   
+:::tip <a id="um_ext-um_stripe-ajax-Customer::search_stripe_plans" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> search_stripe_plans ( )   
+-----
+
+Search Stripe Plans
+
+```php:no-line-numbers
+public function search_stripe_plans(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.8`<br />|
+
+
+
+
+:::
+
+  
 :::danger <a id="um_ext-um_stripe-ajax-Customer::verify_nonce" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> verify_nonce ( )   
 -----
 
@@ -3460,6 +3481,202 @@ Predefined page content.
 #### <span style="display: none;">\um_ext\um_stripe\common\Pages</span> Inherited properties
 > This class has not inherited properties.
         
+##  `um_ext\um_stripe\common\Registration`    
+
+Class Registration
+
+
+
+
+
+
+|     |     |
+| ---:|:--- |
+| **Extends** |_Nothing_|
+| **Implements** |_Nothing_|
+| **Uses** |_Nothing_|
+
+| | |
+|:--------:| ----------- |
+
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Constants
+> This class has not constants.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Methods
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::__construct" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> __construct ( )   
+-----
+
+Initialize the class and set its properties.
+
+```php:no-line-numbers
+public function __construct(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::checkout_on_registration" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> checkout_on_registration ( )   
+-----
+
+Checkout
+
+```php:no-line-numbers
+public function checkout_on_registration( array $submitted_data, array $form_data ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$submitted_data` | **`array`** | Submitted Data. |
+| `$form_data` | **`array`** | Register Form settings. |
+
+***Description:***
+
+Sends the submitted to Stripe checkout session.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::redirect_after_successful_checkout" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> redirect_after_successful_checkout ( )   
+-----
+
+Redirect after successful checkout.
+
+```php:no-line-numbers
+public function redirect_after_successful_checkout(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::set_stripe_customer" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> set_stripe_customer ( )   
+-----
+
+Stripe Checkout
+
+```php:no-line-numbers
+public function set_stripe_customer( integer $user_id, array $args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$user_id` | **`integer`** | The customer ID. |
+| `$args` | **`array`** | Form array arguments. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::show_overlay" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> show_overlay ( )   
+-----
+
+Display overlay
+
+```php:no-line-numbers
+public function show_overlay(  ) : void
+```
+
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.2`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::validate_billing_email" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> validate_billing_email ( )   
+-----
+
+Validate billing email address
+
+```php:no-line-numbers
+public function validate_billing_email( array $args ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$args` | **`array`** | Form submitted fields. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.0`<br />|
+
+
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Registration::webhook_register" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> webhook_register ( )   
+-----
+
+Process Registration
+
+```php:no-line-numbers
+public function webhook_register( object $checkout_session, string $payment_mode ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$checkout_session` | **`object`** | Checkout Session Object. |
+| `$payment_mode` | **`string`** | Payment Mode. |
+
+
+| | |
+|:--------:| ----------- |
+
+
+
+
+:::
+
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Inherited methods
+> This class has not inherited methods.
+
+### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Properties
+> This class has not properties.
+
+#### <span style="display: none;">\um_ext\um_stripe\common\Registration</span> Inherited properties
+> This class has not inherited properties.
+        
 ##  `um_ext\um_stripe\common\Request_Handler`    
 
 Class Request_Handler
@@ -3939,6 +4156,28 @@ public $checkout_session = null;
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.2`<br />|
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::$customer_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $customer_id   
+-----
+
+Customer ID in process
+
+
+```php:no-line-numbers
+public $customer_id = null;
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.8`<br />|
 
 
 :::
@@ -7734,7 +7973,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-03-07, 11:56 AM</span>
+        <span class="time">2024-03-22, 5:15 AM</span>
     </div>
 </div>
 

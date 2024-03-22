@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_trialing', 'um_0372024_stripe_status_trialing', 10, 2 );
-function um_0372024_stripe_status_trialing( $um_user_id, $role_trialing ){
+add_action( 'umm_stripe_status_trialing', 'um_03222024_stripe_status_trialing', 10, 2 );
+function um_03222024_stripe_status_trialing( $um_user_id, $role_trialing ){
  // do something
 }
 ```

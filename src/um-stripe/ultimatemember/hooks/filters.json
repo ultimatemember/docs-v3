@@ -96,6 +96,161 @@
             "args": 6
         },
         {
+            "name": "um_stripe_checkout_sessions_create_args",
+            "file": "includes/common/class-registration.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter array before checkout sessions creation",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Stripe Checkout Sessions configurations.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$args"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Subsription Mode.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$mode"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Subscription ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$umm_subscription_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe Price.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$umm_price_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "WP User ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe Customer ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$customer_id"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 6
+        },
+        {
+            "name": "um_stripe_checkout_sessions_create_args",
+            "file": "includes/common/class-registration.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter array before checkout sessions creation",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Stripe Checkout Sessions configurations.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$args"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Subsription Mode.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$mode"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Subscription ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$umm_subscription_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe Price.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$umm_price_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "WP User ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe Customer ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$customer_id"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 6
+        },
+        {
+            "name": "um_stripe_enable_unique_billing_email",
+            "file": "includes/common/class-registration.php",
+            "type": "filter",
+            "doc": {
+                "description": "Allow unique billing email",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Enable or disable the unique billing email.",
+                        "types": [
+                            "boolean"
+                        ],
+                        "variable": "$enable_billing_email"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
             "name": "um_stripe_webhook_name",
             "file": "includes/common/class-request-handler.php",
             "type": "filter",
@@ -184,6 +339,46 @@
                 "long_description_html": ""
             },
             "args": 1
+        },
+        {
+            "name": "um_whitelisted_metakeys",
+            "file": "includes/common/class-registration.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filters whitelisted usermeta keys that can be stored inside DB after UM Form submission.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Whitelisted usermeta keys.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$whitelisted_metakeys"
+                    },
+                    {
+                        "name": "param",
+                        "content": "UM form data.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$form_data"
+                    },
+                    {
+                        "name": "return",
+                        "content": "$cf_metakeys Whitelisted usermeta keys.",
+                        "types": [
+                            "array"
+                        ]
+                    },
+                    {
+                        "name": "since",
+                        "content": "2.6.7"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
         },
         {
             "name": "umm_stripe_already_subscribed_text",

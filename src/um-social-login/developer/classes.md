@@ -3060,6 +3060,27 @@ public $available_networks = array();
 
 :::
 
+  
+:::tip <a id="um_ext-um_social_login-core-Social_Login_Hybridauth::$called" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $called   
+-----
+
+Times connectUser is called
+
+
+```php:no-line-numbers
+public $called = 0;
+```
+
+***Types:***
+- `integer`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
 
 #### <span style="display: none;">\um_ext\um_social_login\core\Social_Login_Hybridauth</span> Inherited properties
 > This class has not inherited properties.
@@ -3708,7 +3729,7 @@ public $data = array();
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-03-07, 11:56 AM</span>
+        <span class="time">2024-03-22, 5:15 AM</span>
     </div>
 </div>
 

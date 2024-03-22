@@ -3515,6 +3515,32 @@ public function add_field( array $fields ) : void
 :::
 
   
+:::tip <a id="UM_Extended_Vcard-Core::block_removing" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> block_removing ( )   
+-----
+
+Don't remove the vcard.vcf file from the members' folder.
+
+```php:no-line-numbers
+public function block_removing( boolean $can_unlink, integer $user_id, string $str ) : boolean
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$can_unlink` | **`boolean`** | Can unlink or not. |
+| `$user_id` | **`integer`** | User ID. |
+| `$str` | **`string`** | File name. |
+
+
+| | |
+|:--------:| ----------- |
+| **See also** |`\um\core\Uploader::remove_unused_uploads()`   <br /> |
+
+
+
+
+:::
+
+  
 :::tip <a id="UM_Extended_Vcard-Core::generate" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> generate ( )   
 -----
 
@@ -3919,7 +3945,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-03-07, 11:56 AM</span>
+        <span class="time">2024-03-22, 5:15 AM</span>
     </div>
 </div>
 

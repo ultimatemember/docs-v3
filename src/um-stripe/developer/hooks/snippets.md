@@ -24,3 +24,9 @@ tags:
 ### umm\_stripe\_checkout\_details\_date\_format
 - [ Change Date Format in Checkout Details page.](../hooks/snippets/c4d6f7b94d60655478ea8ee05f6d2be3)
 
+### umm\_stripe\_status\_active
+- [ Add or Remove extra roles from wp account upon subscription activation or cancellation](../hooks/snippets/e2c3d12ec774f6a6383ca9abb5f2011e)
+
+### umm\_stripe\_status\_canceled
+- [ Add or Remove extra roles from wp account upon subscription activation or cancellation](../hooks/snippets/a554f641538624c3405add064c80469d)
+

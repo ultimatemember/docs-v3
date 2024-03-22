@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_canceled', 'um_0372024_stripe_status_canceled', 10, 2 );
-function um_0372024_stripe_status_canceled( $um_user_id, $role_cancelled ){
+add_action( 'umm_stripe_status_canceled', 'um_03222024_stripe_status_canceled', 10, 2 );
+function um_03222024_stripe_status_canceled( $um_user_id, $role_cancelled ){
  // do something
 }
 ```
@@ -41,5 +41,6 @@ function um_0372024_stripe_status_canceled( $um_user_id, $role_cancelled ){
 
 ### Related Snippets
 
-Nothing was found
+- [ Add or Remove extra roles from wp account upon subscription activation or cancellation](../snippets/a554f641538624c3405add064c80469d)
+
 

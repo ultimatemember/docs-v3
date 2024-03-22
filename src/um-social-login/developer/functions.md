@@ -1243,13 +1243,13 @@ function um_sso_github_settings( array $networks ) : void
 Make register fields hidden for One-step process
 
 ```php:no-line-numbers
-function um_sso_make_fields_hidden( array $fields = array(), integer $base_form_id ) : void
+function um_sso_make_fields_hidden( array $fields = array(), integer $base_form_id = null ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$fields` <Badge text="optional" type="warn"/>| **`array`** | Fields data. |
-| `$base_form_id` | **`integer`** | Form ID. |
+| `$base_form_id` <Badge text="optional" type="warn"/>| **`integer`** | Form ID. |
 
 
 ### Description
@@ -1317,7 +1317,7 @@ function um_sso_returned_raw_data( string $key, string $sso_sync_value, array $f
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-03-07, 11:56 AM</span>
+        <span class="time">2024-03-22, 5:15 AM</span>
     </div>
 </div>
 
