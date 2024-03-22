@@ -1,0 +1,1 @@
+import{_ as t,o,c as r,a as e,b as c}from"./app-d1e08aba.js";const a={},n=e("h1",{id:"contribute",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#contribute","aria-hidden":"true"},"#"),c(" Contribute")],-1),s=[n];function i(_,d){return o(),r("div",null,s)}const u=t(a,[["render",i],["__file","how-to-contribute.html.vue"]]);export{u as default};

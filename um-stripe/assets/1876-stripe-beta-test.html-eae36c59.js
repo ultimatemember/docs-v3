@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4f48c395","path":"/article/1876-stripe-beta-test.html","title":"Stripe Beta Test","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1711085047000,"contributors":[{"name":"Champ Camba","email":"champsupertramp@users.noreply.github.com","commits":1}]},"filePathRelative":"article/1876-stripe-beta-test.md"}');export{t as data};

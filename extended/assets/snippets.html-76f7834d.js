@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as a,a as e,b as c}from"./app-d1e08aba.js";const n={},o=e("h1",{id:"code-snippets",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#code-snippets","aria-hidden":"true"},"#"),c(" Code Snippets")],-1),r=[o];function d(i,_){return t(),a("div",null,r)}const h=s(n,[["render",d],["__file","snippets.html.vue"]]);export{h as default};
