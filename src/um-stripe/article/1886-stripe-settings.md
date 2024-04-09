@@ -5,7 +5,7 @@
 
  Effortless online payments are a cornerstone of e-commerce and digital businesses. The Stripe Settings puts the power of secure, customizable payment processing at your fingertips. With these settings, you can fine-tune your Stripe integration to suit your business needs, enabling seamless, reliable transactions.
 
-  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65b6c9dc1280097516451b6b/file-J7UeaIjapA.png)
+  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/660ae6628f8fca7f5efd37f7/file-iLIx8Ur69j.png)
 
 ### Stripe Settings
 

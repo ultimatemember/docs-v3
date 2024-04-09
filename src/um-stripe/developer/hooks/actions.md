@@ -25,7 +25,7 @@ Triggers when the subscriptions has been cancelled.
 Triggers when the status has changed
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)<Badge text="Since 1.0.0" vertical="middle" />
 
-Triggers when the charge has incomplete.
+Triggers when the subscription is `incomplete`
 ## [umm_stripe_status_incomplete_expired](./actions/umm_stripe_status_incomplete_expired)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the charge has expired

@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_return_url__{$provider}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_return_url__{$provider}', 'um_03222024_social_login_return_url____provider_', 10, 0 );
-function um_03222024_social_login_return_url____provider_(  ){
+add_filter( 'um_social_login_return_url__{$provider}', 'um_0492024_social_login_return_url____provider_', 10, 0 );
+function um_0492024_social_login_return_url____provider_(  ){
   return ;
 }
 ```

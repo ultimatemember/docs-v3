@@ -431,6 +431,31 @@
             "args": 1
         },
         {
+            "name": "umm_stripe_billing_portal_session_configuration",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter billing portal session configuration before creating the Stripe billing portal.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.8"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe billing portal session's configurations.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$args"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
             "name": "umm_stripe_checkout_details_date_format",
             "file": "includes/common/class-stripe.php",
             "type": "filter",

@@ -8,7 +8,7 @@ Overview
 
  By default, irrespective of their subscription status (active, inactive, or canceled), users who have subscribed to a plan or pricing tier can view restricted pages through Stripe. However, the newly added "Active Subscription Only" option allows you to enforce restrictions exclusively for users with an active subscription, ensuring more precise control over access to your content.
 
- We recommend reading the  [Stripe Content Restriction article](https://ultimatemember.github.io/docs-v3/um-stripe/article/1805-stripe-content-restriction.html)  first to understand this document better.
+ We recommend reading the  [Stripe Content Restriction article](https://secure.helpscout.net/docs/561c9e86c697916fa4a83eb9/article/64412a37bbab942d2df22b76/)  first to understand this document better.
 
  To enable the <strong>Active Subscription Only</strong> feature, go to the content you want to restrict and allow access to only users who have active subscriptions.
 

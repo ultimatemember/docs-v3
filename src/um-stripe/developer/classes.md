@@ -204,6 +204,8 @@ public static function instance(  ) : \Init
 
 - [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_price_data_by_post_id">get_price_data_by_post_id()</a>   
 
+- [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_price_data_by_price_id">get_price_data_by_price_id()</a>   
+
 - [um_ext\um_stripe\\<span style="font-weight: bold;">Functions</span>](classes.html#um_ext-um_stripe-functions)::<a href="classes.html#um_ext-um_stripe-Functions::get_subscription_mode_title">get_subscription_mode_title()</a>   
 
 ### <span style="display: none;">\UM_Stripe_API</span> Properties
@@ -4161,6 +4163,28 @@ public $checkout_session = null;
 :::
 
   
+:::tip <a id="um_ext-um_stripe-common-Request_Handler::$payload_object" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $payload_object   
+-----
+
+Checkout Session
+
+
+```php:no-line-numbers
+public $payload_object = null;
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.2`<br />|
+
+
+:::
+
+  
 :::tip <a id="um_ext-um_stripe-common-Request_Handler::$customer_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $customer_id   
 -----
 
@@ -7538,12 +7562,13 @@ Formatted Billing Plan Title.
 Get Stripe Plans
 
 ```php:no-line-numbers
-public function get_plans( boolean $include_id_in_labels = false ) : array
+public function get_plans( boolean $include_id_in_labels = false, string $mode = 'all' ) : array
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
 | `$include_id_in_labels` <Badge text="optional" type="warn"/>| **`boolean`** | Whether to include ID in the labels. |
+| `$mode` <Badge text="optional" type="warn"/>| **`string`** | Filter plans by subscription/price mode. |
 
 
 | | |
@@ -7605,6 +7630,34 @@ public function get_price_data_by_post_id( integer $post_id ) : mixed
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
+
+
+
+***Returns:***
+
+Price data array, false when nothing found in the cache.
+
+
+:::
+
+  
+:::tip <a id="um_ext-um_stripe-Functions::get_price_data_by_price_id" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> get_price_data_by_price_id ( )   
+-----
+
+Get Price Data from Cache by Price ID
+
+```php:no-line-numbers
+public function get_price_data_by_price_id( integer $price_id ) : mixed
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$price_id` | **`integer`** | The Stripe Price ID. |
+
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v1.0.8`<br />|
 
 
 
@@ -7973,7 +8026,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-03-22, 5:19 AM</span>
+        <span class="time">2024-04-09, 11:25 AM</span>
     </div>
 </div>
 

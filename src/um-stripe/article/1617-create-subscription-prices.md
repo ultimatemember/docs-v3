@@ -7,6 +7,8 @@
 
  If you have existing subscription prices, you can simply  [import them from the stripe settings](/docs-v3/um-stripe/article/1846-import-existing-subscription-prices-from-your-stripe-account)  but if you have not created any prices yet, do the following steps below:
 
+<strong>Note:</strong> If you are seeking information about the pricing models supported by the Stripe extension, please consult our Stripe FAQ article titled  ["What Pricing Models are supported in the Stripe extension?"](https://secure.helpscout.net/docs/561c9e86c697916fa4a83eb9/article/6523e5cf17267470d391679b/)  This article provides details on the various pricing models that can be utilized with the Stripe extension.
+
 1. To create a new subscription/product price, go to  [https://dashboard.stripe.com/](https://dashboard.stripe.com/)  and on the side menu, click on the '<strong>+More'</strong> tab and click on <strong>Product Catalog</strong> under Manage your products ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65ba4e817507a5314cbc0c0e/file-egnNmwOvIM.png)
 2. On the Product Catalog page, Click the " + <strong>Add product</strong>" button to display the form.  ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65ba4fea7507a5314cbc0c11/file-bP7KCBfysm.png)
 3. Add the <strong>"Name</strong>", "<strong>Description(optional)</strong>" and "<strong>Image(optional)</strong> of your product<strong>.</strong> ![](https://s3.amazonaws.com/helpscout.net/docs/assets/561c96629033600a7a36d662/images/65ba7606ed989b06acd56691/file-WCfjzlMhac.png)
