@@ -2,11 +2,11 @@
 tags: 
   - umm_stripe_status_trialing
   - actions
-  - Triggers when the subscriptions has been trialing
+  - Triggers when the subscription is `trialing`
   - hooks
 ---
 # umm\_stripe\_status\_trialing
-Triggers when the subscriptions has been trialing
+Triggers when the subscription is `trialing`
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_trialing', $um_user_id, $role_trialing )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_trialing', 'um_0492024_stripe_status_trialing', 10, 2 );
-function um_0492024_stripe_status_trialing( $um_user_id, $role_trialing ){
+add_action( 'umm_stripe_status_trialing', 'um_04172024_stripe_status_trialing', 10, 2 );
+function um_04172024_stripe_status_trialing( $um_user_id, $role_trialing ){
  // do something
 }
 ```

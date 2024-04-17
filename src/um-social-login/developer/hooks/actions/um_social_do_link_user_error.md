@@ -21,8 +21,8 @@ do_action( 'um_social_do_link_user_error',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_link_user_error', 'um_0492024_social_do_link_user_error', 10, 0 );
-function um_0492024_social_do_link_user_error(  ){
+add_action( 'um_social_do_link_user_error', 'um_04172024_social_do_link_user_error', 10, 0 );
+function um_04172024_social_do_link_user_error(  ){
  // do something
 }
 ```

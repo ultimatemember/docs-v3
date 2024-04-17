@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_canceled', $um_user_id, $role_cancelled )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_canceled', 'um_0492024_stripe_status_canceled', 10, 2 );
-function um_0492024_stripe_status_canceled( $um_user_id, $role_cancelled ){
+add_action( 'umm_stripe_status_canceled', 'um_04172024_stripe_status_canceled', 10, 2 );
+function um_04172024_stripe_status_canceled( $um_user_id, $role_cancelled ){
  // do something
 }
 ```

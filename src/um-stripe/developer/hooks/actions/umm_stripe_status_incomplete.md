@@ -2,11 +2,11 @@
 tags: 
   - umm_stripe_status_incomplete
   - actions
-  - Triggers when the subscription is `incomplete`
+  - Triggers when the charge has incomplete.
   - hooks
 ---
 # umm\_stripe\_status\_incomplete
-Triggers when the subscription is `incomplete`
+Triggers when the charge has incomplete.
 <Badge text="Since 1.0.0" vertical="middle" />
 ``` php:no-line-numbers
 do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_status_incomplete', $um_user_id, $role_incomplete )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_status_incomplete', 'um_0492024_stripe_status_incomplete', 10, 2 );
-function um_0492024_stripe_status_incomplete( $um_user_id, $role_incomplete ){
+add_action( 'umm_stripe_status_incomplete', 'um_04172024_stripe_status_incomplete', 10, 2 );
+function um_04172024_stripe_status_incomplete( $um_user_id, $role_incomplete ){
  // do something
 }
 ```

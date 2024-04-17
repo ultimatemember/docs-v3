@@ -25,7 +25,7 @@ Triggers when the subscriptions has been cancelled.
 Triggers when the status has changed
 ## [umm_stripe_status_incomplete](./actions/umm_stripe_status_incomplete)<Badge text="Since 1.0.0" vertical="middle" />
 
-Triggers when the subscription is `incomplete`
+Triggers when the charge has incomplete.
 ## [umm_stripe_status_incomplete_expired](./actions/umm_stripe_status_incomplete_expired)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the charge has expired
@@ -43,10 +43,13 @@ Triggers when the subscriptions has been pause
 Fires once a subscription & account status has been revoked from a WP account.
 ## [umm_stripe_status_trialing](./actions/umm_stripe_status_trialing)<Badge text="Since 1.0.0" vertical="middle" />
 
-Triggers when the subscriptions has been trialing
+Triggers when the subscription is `trialing`
 ## [umm_stripe_status_unpaid](./actions/umm_stripe_status_unpaid)<Badge text="Since 1.0.0" vertical="middle" />
 
 Triggers when the subscription is `unpaid`
 ## [umm_stripe_status_{$status}](./actions/umm_stripe_status___status_)<Badge text="Since 1.0.0" vertical="middle" />
 
 Assign Role based on the role set in the Stripe Plan settings.
+## [umm_stripe_user_plan_changed](./actions/umm_stripe_user_plan_changed)<Badge text="Since 1.0.8" vertical="middle" />
+
+Triggers when the status has changed via Plan Switch

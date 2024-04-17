@@ -39,7 +39,9 @@
 - [Subscription Limit: One Subscription Per Email Address](/docs-v3/um-stripe/article/1898-subscription-limit-one-subscription-per-email-address)
 - [Enable Payment Method](/docs-v3/um-stripe/article/1901-enable-payment-method)
 - [How to Create Stripe Pages Manually?](/docs-v3/um-stripe/article/1900-how-to-create-stripe-pages-manually)
-- [Enable Users to Switch Stripe Plan or Prices](/docs-v3/um-stripe/article/1929-enabling-customers-to-switch-plans-via-stripe-portal)
+- <a>Enable Users to Switch Stripe Plan or Prices
+    
+    </a>
 
 ### <strong>Frequently Asked Questions:</strong>
 

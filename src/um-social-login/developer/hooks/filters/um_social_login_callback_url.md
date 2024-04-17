@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_callback_url',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_callback_url', 'um_0492024_social_login_callback_url', 10, 0 );
-function um_0492024_social_login_callback_url(  ){
+add_filter( 'um_social_login_callback_url', 'um_04172024_social_login_callback_url', 10, 0 );
+function um_04172024_social_login_callback_url(  ){
   return ;
 }
 ```
