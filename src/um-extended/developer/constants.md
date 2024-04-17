@@ -230,7 +230,7 @@ UM_WPCLI_PLUGIN_DIR = UM_EXTENDED_PLUGIN_DIR . 'src/um-wpcli/src/';
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-04-17, 7:13 AM</span>
+        <span class="time">2024-04-17, 7:46 AM</span>
     </div>
 </div>
 

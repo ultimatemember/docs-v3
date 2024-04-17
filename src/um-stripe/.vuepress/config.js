@@ -39,7 +39,7 @@ export default defineUserConfig({
     title: 'UM + Stripe Docs',
   
     // Description of your project
-    description: 'Integrates the popular payment processing platform Stripe with Ultimate Member',
+    description: 'Integrate Stripe\'s powerful subscription & billing features into your website to easily create a paid membership website',
   
     head: [
       ['link', { rel: 'icon', href: 'https://ultimatemember.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png' }], // Custom favicon
@@ -54,12 +54,12 @@ export default defineUserConfig({
           { text: 'Home', link: '/' }, 
           { text: 'Main Site', link: 'https://ultimatemember.com' }, 
           {
-            text: 'v1.0.6-Beta.7',
+            text: 'v1.1.0',
             children: [
-              { text: 'v1.0.6-Beta.7', link: 'https://ultimatemember.com/downloads/' },
+              { text: 'v1.1.0', link: 'https://ultimatemember.com/downloads/' },
             ]
             },
-            { link: '/developer/roadmap', text: 'Roadmap' },
+            { link: 'https://product.ultimatemember.com/roadmap', text: 'Roadmap' },
           
           { text: 'Support', link: 'https://ultimatemember.com/support/ticket' }, 
 

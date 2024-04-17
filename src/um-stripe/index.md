@@ -13,8 +13,8 @@ actions:
 ---
 
 <div style="text-align:center;text-indent: 20px;padding-top:10px">
-<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-cccccc?style=social&logo=wordpress"/>&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-cccccc?style=social&logo=github"/>
+<img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.8.3%2B-cccccc?style=social&logo=wordpress"/>&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v13.16.0-cccccc?style=social&logo=github"/>
 
 </div>
 <div class="features">

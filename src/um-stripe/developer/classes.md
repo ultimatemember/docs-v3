@@ -2471,7 +2471,7 @@ public function bulk_updated_messages( array $bulk_messages ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 
@@ -2626,7 +2626,7 @@ public function post_updated_messages( array $messages ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 
@@ -2674,7 +2674,7 @@ public function save_post( integer $post_id ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 
@@ -4987,7 +4987,7 @@ public function show_plan_title_for_admin_review_registration( string $v, string
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 
@@ -5016,7 +5016,7 @@ private $has_active_subscription;
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 :::
@@ -5839,7 +5839,7 @@ public function show_content( array $args, mixed $content = '' ) : void
 
 | | |
 |:--------:| ----------- |
-| ***Since*** |`v1.0.7`<br />|
+| ***Since*** |`v1.1.0`<br />|
 
 
 
@@ -7800,7 +7800,7 @@ public $settings_defaults;
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-04-17, 7:13 AM</span>
+        <span class="time">2024-04-17, 7:46 AM</span>
     </div>
 </div>
 
