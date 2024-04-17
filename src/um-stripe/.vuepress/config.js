@@ -72,8 +72,7 @@ export default defineUserConfig({
               collapsable: false,
               sidebarDepth: 0,    // optional, defaults to 1
               children: [
-                { link: '/article/1606-introduction-to-ultimate-members-stripe-extension', text: 'Introduction' },
-                { link: '/article/1876-stripe-beta-test', text: 'For Beta Testers' },
+                { link: 'https://docs.ultimatemember.com/article/1606-introduction-to-ultimate-members-stripe-extension', text: 'Introduction' },
               ],
             },
             {

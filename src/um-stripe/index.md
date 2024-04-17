@@ -5,7 +5,7 @@ heroImage: /stripe.png
 heroHeight: 150
 actions:
   - text: Get Started  →
-    link: article/1606-introduction-to-ultimate-members-stripe-extension
+    link: https://docs.ultimatemember.com/article/1606-introduction-to-ultimate-members-stripe-extension
     type: primary
   - text: Developer Docs
     link: /developer/hooks/actions
@@ -16,9 +16,6 @@ actions:
 <img src="https://img.shields.io/badge/requires-Ultimate_Member_v2.6.12%2B-cccccc?style=social&logo=wordpress"/>&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/uses-%40stripe%2Fstripe--php_v10.5.10-cccccc?style=social&logo=github"/>
 
-<div  style="text-align:center;padding-top:20px">
-*currently open to <a href="./article/1876-stripe-beta-test">beta testers</a>
-</div>
 </div>
 <div class="features">
   <div class="feature">
