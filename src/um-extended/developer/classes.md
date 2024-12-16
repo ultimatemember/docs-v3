@@ -629,7 +629,7 @@ Domain
 
 
 ```php:no-line-numbers
-private $domain = '127.0.0.1';
+private $domain = 'um.x';
 ```
 
 ***Types:***
@@ -672,6 +672,27 @@ Port
 
 ```php:no-line-numbers
 private $assets = array('settings');
+```
+
+***Types:***
+- `mixed`
+
+
+| | |
+|:--------:| ----------- |
+
+
+:::
+
+  
+:::danger <a id="UM_Extended_API::$dev_runtime_loaded" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> $dev_runtime_loaded   
+-----
+
+Dev Runtime is loaded?
+
+
+```php:no-line-numbers
+private $dev_runtime_loaded = false;
 ```
 
 ***Types:***
@@ -979,29 +1000,6 @@ public function plugin_activation(  ) : void
 | | |
 |:--------:| ----------- |
 | ***Since*** |`v1.0.0`<br />|
-
-
-
-
-:::
-
-  
-:::tip <a id="UM_Extended_Block_Emails-Core::settings" style="display: block; position: relative; top: -5rem; visibility: hidden;"></a> settings ( )   
------
-
-Add settings for Disposable Email Domains
-
-```php:no-line-numbers
-public function settings( array $fields ) : void
-```
-
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$fields` | **`array`** | Fields Settings. |
-
-
-| | |
-|:--------:| ----------- |
 
 
 
@@ -3945,7 +3943,7 @@ public function __construct(  ) : void
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-04-17, 7:46 AM</span>
+        <span class="time">2024-12-16, 2:55 PM</span>
     </div>
 </div>
 

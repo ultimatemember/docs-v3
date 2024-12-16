@@ -1640,7 +1640,7 @@ public function __construct(  ) : void
 Check user status
 
 ```php:no-line-numbers
-public function check_user_status( integer $user_id ) : integer
+public function check_user_status( integer $user_id ) : array
 ```
 
 | Parameter | Type(s) | Description |
@@ -2937,7 +2937,7 @@ public function log_error( string $logs ) : void
 A shortcut for the session object.
 
 ```php:no-line-numbers
-public function session(  ) : void
+public function session(  ) : object
 ```
 
 
@@ -3729,7 +3729,7 @@ public $data = array();
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-04-17, 7:46 AM</span>
+        <span class="time">2024-12-16, 2:55 PM</span>
     </div>
 </div>
 

@@ -147,18 +147,6 @@
         },
         {
             "name": "um_social_login_networks",
-            "file": "includes/core/um-social-login-init.php",
-            "type": "filter",
-            "doc": {
-                "description": "",
-                "long_description": "",
-                "tags": [],
-                "long_description_html": ""
-            },
-            "args": 1
-        },
-        {
-            "name": "um_social_login_networks",
             "file": "includes/core/class-social-login-hybridauth.php",
             "type": "filter",
             "doc": {
@@ -184,6 +172,18 @@
         {
             "name": "um_social_login_networks",
             "file": "includes/core/class-social-login-setup.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_social_login_networks",
+            "file": "includes/core/um-social-login-init.php",
             "type": "filter",
             "doc": {
                 "description": "",

@@ -14,18 +14,6 @@
             "args": 1
         },
         {
-            "name": "um_post_registration_approved_hook",
-            "file": "includes/core/actions/um-social-login-connect.php",
-            "type": "action",
-            "doc": {
-                "description": "",
-                "long_description": "",
-                "tags": [],
-                "long_description_html": ""
-            },
-            "args": 2
-        },
-        {
             "name": "um_social_do_authenticated_process",
             "file": "includes/core/class-social-login-connect.php",
             "type": "action",

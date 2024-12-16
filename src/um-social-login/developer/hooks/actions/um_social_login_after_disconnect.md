@@ -21,8 +21,8 @@ do_action( 'um_social_login_after_disconnect',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_login_after_disconnect', 'um_04172024_social_login_after_disconnect', 10, 0 );
-function um_04172024_social_login_after_disconnect(  ){
+add_action( 'um_social_login_after_disconnect', 'um_12162024_social_login_after_disconnect', 10, 0 );
+function um_12162024_social_login_after_disconnect(  ){
  // do something
 }
 ```

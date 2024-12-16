@@ -9,7 +9,9 @@
     "docs:dev-extended": "vuepress dev src/um-extended",
     "docs:build-extended": "vuepress build src/um-extended",
     "docs:dev-social-login": "vuepress dev src/um-social-login",
-    "docs:build-social-login": "vuepress build src/um-social-login"
+    "docs:build-social-login": "vuepress build src/um-social-login",
+    "docs:dev-zapier": "vuepress dev src/um-zapier",
+    "docs:build-zapier": "vuepress build src/um-zapier"
   },
   "repository": {
     "type": "git",
@@ -40,10 +42,10 @@
     "@vuepress/plugin-prismjs": "2.0.0-beta.67",
     "@vuepress/plugin-register-components": "2.0.0-beta.67",
     "@vuepress/plugin-search": "2.0.0-beta.67",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "vue": "^3.3.7",
+    "sass": "^1.83.0",
+    "sass-loader": "^13.3.3",
+    "vue": "^3.5.13",
     "vuepress": "2.0.0-beta.67",
-    "webpack": "^5.89.0"
+    "webpack": "^5.97.1"
   }
 }

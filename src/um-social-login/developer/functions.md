@@ -121,7 +121,7 @@ function um_remove_user_role( string $role ) : string
         
 ##  `um_social_do_login()`    
 
-Do login process
+Do log in process
 
 ```php:no-line-numbers
 function um_social_do_login( string $provider, integer $user_id, object $user_profile, object $connect, string $return_url ) : void
@@ -696,6 +696,29 @@ Twitter has no last name
 
 
         
+##  `um_social_login_google__config()`    
+
+Modify Google Config
+
+```php:no-line-numbers
+function um_social_login_google__config( array $configs ) : void
+```
+
+| Parameter | Type(s) | Description |
+|-----------|------|-------------|
+| `$configs` | **`array`** | Configurations. |
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v2.6.5`<br />|
+
+
+        
 ##  `um_social_login_license_settings()`    
 
 Extend license settings.
@@ -1109,6 +1132,26 @@ function um_social_register_hidden_fields( array $args ) : void
 
 
         
+##  `um_social_register_login()`    
+
+Maybe dynamic page redirection after approve user on registration.
+
+```php:no-line-numbers
+function um_social_register_login(  ) : void
+```
+
+
+
+### Description
+
+> No description.
+
+| | |
+|:--------:| ----------- |
+| ***Since*** |`v2.5.4`<br />|
+
+
+        
 ##  `um_social_set_redirect_to_page()`    
 
 Set cookie for the redirection URL
@@ -1243,13 +1286,13 @@ function um_sso_github_settings( array $networks ) : void
 Make register fields hidden for One-step process
 
 ```php:no-line-numbers
-function um_sso_make_fields_hidden( array $fields = array(), integer $base_form_id = null ) : void
+function um_sso_make_fields_hidden( array $fields, integer $base_form_id ) : void
 ```
 
 | Parameter | Type(s) | Description |
 |-----------|------|-------------|
-| `$fields` <Badge text="optional" type="warn"/>| **`array`** | Fields data. |
-| `$base_form_id` <Badge text="optional" type="warn"/>| **`integer`** | Form ID. |
+| `$fields` | **`array`** | Fields data. |
+| `$base_form_id` | **`integer`** | Form ID. |
 
 
 ### Description
@@ -1258,30 +1301,6 @@ function um_sso_make_fields_hidden( array $fields = array(), integer $base_form_
 
 | | |
 |:--------:| ----------- |
-
-
-        
-##  `um_sso_register_auto_approved()`    
-
-Auto approves users after registration complete.
-
-```php:no-line-numbers
-function um_sso_register_auto_approved( integer $user_id, array $args ) : void
-```
-
-| Parameter | Type(s) | Description |
-|-----------|------|-------------|
-| `$user_id` | **`integer`** | User ID. |
-| `$args` | **`array`** | Field settings. |
-
-
-### Description
-
-Overrides the Registration Options set in User Roles settings
-
-| | |
-|:--------:| ----------- |
-| ***Since*** |`v2.2`<br />|
 
 
         
@@ -1317,7 +1336,7 @@ function um_sso_returned_raw_data( string $key, string $sso_sync_value, array $f
 <div class="page-edit">
     <div class="last-updated">
         <span class="prefix">Auto-generated at: </span>
-        <span class="time">2024-04-17, 7:46 AM</span>
+        <span class="time">2024-12-16, 2:55 PM</span>
     </div>
 </div>
 

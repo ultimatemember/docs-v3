@@ -21,8 +21,8 @@ apply_filters( 'um_social_login_assigned_form_id',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_social_login_assigned_form_id', 'um_04172024_social_login_assigned_form_id', 10, 0 );
-function um_04172024_social_login_assigned_form_id(  ){
+add_filter( 'um_social_login_assigned_form_id', 'um_12162024_social_login_assigned_form_id', 10, 0 );
+function um_12162024_social_login_assigned_form_id(  ){
   return ;
 }
 ```

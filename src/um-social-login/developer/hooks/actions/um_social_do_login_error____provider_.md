@@ -21,8 +21,8 @@ do_action( 'um_social_do_login_error__{$provider}',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'um_social_do_login_error__{$provider}', 'um_04172024_social_do_login_error____provider_', 10, 0 );
-function um_04172024_social_do_login_error____provider_(  ){
+add_action( 'um_social_do_login_error__{$provider}', 'um_12162024_social_do_login_error____provider_', 10, 0 );
+function um_12162024_social_do_login_error____provider_(  ){
  // do something
 }
 ```
