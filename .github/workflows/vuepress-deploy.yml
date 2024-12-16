@@ -14,12 +14,15 @@ jobs:
         yarn vuepress build src/um-stripe
         yarn vuepress build src/um-extended
         yarn vuepress build src/um-social-login
+         yarn vuepress build src/um-zapier
     - name: Commit files
       run: |
         mkdir deploy/um-stripe/
         mkdir deploy/extended/
+        mkdir deploy/um-zapier/
         mkdir deploy/social-login/
         mv um-stripe/dist/* deploy/um-stripe/
+        mv um-zapier/dist/* deploy/um-zapier/
         mv extended/dist/* deploy/extended/
         mv social-login/dist/* deploy/social-login/
         sed -i '1d' .gitignore
