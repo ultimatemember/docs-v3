@@ -30,10 +30,10 @@ function getSideBar(folder, title) {
 }
 export default defineUserConfig({
     // Directory where will be generated the HTML files by VuePress
-    dest: 'um-Zapier/dist/',     
+    dest: 'um-zapier/dist/',     
     
     // Base URL. Useful for GitHub pages.     
-    base: '/docs-v3/um-Zapier/',
+    base: '/docs-v3/um-zapier/',
   
     // Title of your project
     title: 'UM + Zapier Docs',
@@ -105,7 +105,7 @@ export default defineUserConfig({
         searchPlaceholder: 'Search Documentation',
 
         // Repository configurations
-        docsDir: 'src/um-Zapier',
+        docsDir: 'src/um-zapier',
         editLinks: true,
         repo: 'http://github.com/ultimatemember/docs-v3/',
     }),
