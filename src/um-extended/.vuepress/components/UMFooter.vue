@@ -16,7 +16,7 @@
         </div>
     </div>
     <div style="padding: 30px;color: rgb(132, 116, 134)">
-        © 2023 Ultimate Member Group Ltd.
+        © 2024 Ultimate Member Group Ltd.
     </div>
 </div>
 </template>
