@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-891033a8","path":"/article/1889-installation.html","title":"Installation","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1734699917000,"contributors":[{"name":"Champ Camba","email":"champsupertramp@users.noreply.github.com","commits":1}]},"filePathRelative":"article/1889-installation.md"}');export{t as data};

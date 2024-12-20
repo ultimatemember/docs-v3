@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4f6bbbe0","path":"/how-to-contribute.html","title":"Contribute","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1734699917000,"contributors":[{"name":"Champ Camba","email":"champsupertramp@users.noreply.github.com","commits":1}]},"filePathRelative":"how-to-contribute.md"}');export{t as data};

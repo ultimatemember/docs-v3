@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-51b3387c","path":"/article/1910-utm-parameters.html","title":"UTM Parameters","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1734699917000,"contributors":[{"name":"Champ Camba","email":"champsupertramp@users.noreply.github.com","commits":1}]},"filePathRelative":"article/1910-utm-parameters.md"}');export{e as data};

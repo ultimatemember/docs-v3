@@ -1,0 +1,1 @@
+import{_ as r,o as t,c as a,a as s,b as o}from"./app-81765434.js";const n={};function c(i,e){return t(),a("div",null,e[0]||(e[0]=[s("h1",{id:"report-issues",tabindex:"-1"},[s("a",{class:"header-anchor",href:"#report-issues","aria-hidden":"true"},"#"),o(" Report Issues")],-1)]))}const u=r(n,[["render",c],["__file","report-issues.html.vue"]]);export{u as default};

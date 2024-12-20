@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-514b93d9","path":"/developer/hooks/actions.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1734699917000,"contributors":[{"name":"Champ Camba","email":"champsupertramp@users.noreply.github.com","commits":1}]},"filePathRelative":"developer/hooks/actions.md"}');export{e as data};
