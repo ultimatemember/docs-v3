@@ -238,6 +238,31 @@
             "args": 6
         },
         {
+            "name": "um_stripe_customer_portal_subscription_cancel__enabled",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter to Enable Subscription Cancellation feature in Customer Portal",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "",
+                        "types": [
+                            "bool"
+                        ],
+                        "variable": ""
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.2.5"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
             "name": "um_stripe_enable_unique_billing_email",
             "file": "includes/common/class-registration.php",
             "type": "filter",
@@ -289,6 +314,31 @@
         },
         {
             "name": "um_stripe_webhook_name",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Modify Stripe Webhook name",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Webhook Name for the Stripe Webhook URL.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$webhook_name"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_stripe_webhook_name",
             "file": "class-functions.php",
             "type": "filter",
             "doc": {
@@ -306,6 +356,46 @@
                     {
                         "name": "since",
                         "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "um_user_register_submitted__email",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filters change user default email if it's empty on registration.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.3.x"
+                    },
+                    {
+                        "name": "hook",
+                        "content": "um_user_register_submitted__email"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Default email.",
+                        "types": [
+                            "\\um_ext\\um_stripe\\common\\{string}"
+                        ],
+                        "variable": "$user_email"
+                    },
+                    {
+                        "name": "return",
+                        "content": "Default customized email.",
+                        "types": [
+                            "\\um_ext\\um_stripe\\common\\{string}"
+                        ]
+                    },
+                    {
+                        "name": "example",
+                        "content": "user default email if it's empty on registration.</caption>\nfunction my_user_register_submitted<strong>email( $user_email ) { // your code here return $user_email;\n}\nadd_filter( 'um_user_register_submitted</strong>email', 'my_user_register_submitted__email' );"
                     }
                 ],
                 "long_description_html": ""
@@ -371,6 +461,56 @@
                             "string"
                         ],
                         "variable": "$subscribed_text"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "umm_stripe_billing_configuration",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter billing configuration before creating the Stripe billing portal.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe billing configurations.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$args"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 1
+        },
+        {
+            "name": "umm_stripe_billing_portal_session_configuration",
+            "file": "includes/common/class-request-handler.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filter billing portal session configuration before creating the Stripe billing portal.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.8"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Stripe billing portal session's configurations.",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$args"
                     }
                 ],
                 "long_description_html": ""

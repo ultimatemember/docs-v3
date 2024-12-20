@@ -2,6 +2,43 @@
     "$schema": "https://raw.githubusercontent.com/wp-hooks/generator/0.9.0/schema.json",
     "hooks": [
         {
+            "name": "um_registration_complete",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Registration Complete",
+                "long_description": "",
+                "tags": [],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "um_stripe_webhook_payload_event_init",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Catch Stripe's Webhook Payload Events",
+                "long_description": "When Stripe sends a Webhook payload to the site, this hook is fired.",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Payload objects",
+                        "types": [
+                            "object"
+                        ],
+                        "variable": "$event"
+                    }
+                ],
+                "long_description_html": "<p>When Stripe sends a Webhook payload to the site, this hook is fired.</p>"
+            },
+            "args": 1
+        },
+        {
             "name": "um_submit_form_register",
             "file": "includes/common/class-registration.php",
             "type": "action",
@@ -14,11 +51,77 @@
             "args": 2
         },
         {
-            "name": "umm_stripe_status_active",
-            "file": "includes/common/class-registration.php",
+            "name": "umm_stripe_event_checkout_session_expired",
+            "file": "includes/common/class-request-handler.php",
             "type": "action",
             "doc": {
-                "description": "Triggers when the payments have been succesfully made.",
+                "description": "Triggers when the checkout session has expired.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Checkout Session Object",
+                        "types": [
+                            "object"
+                        ],
+                        "variable": "$checkout_session"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Payment Mode.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$payment_mode"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.4.1"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_session_completed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the checkout session is completed.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "Checkout Session Object",
+                        "types": [
+                            "object"
+                        ],
+                        "variable": "$checkout_session"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Payment Mode.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$payment_mode"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_active",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the charge has active.",
                 "long_description": "",
                 "tags": [
                     {
@@ -35,7 +138,73 @@
                         "types": [
                             "string"
                         ],
-                        "variable": "$role"
+                        "variable": "$role_active"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_active",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscriptions has been active.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_active",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the charge has active",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
                     },
                     {
                         "name": "since",
@@ -78,6 +247,679 @@
                 "long_description_html": ""
             },
             "args": 2
+        },
+        {
+            "name": "umm_stripe_status_active",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscriptions has been active.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_active",
+            "file": "includes/common/class-registration.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the payments have been succesfully made.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_canceled",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscriptions has been cancelled.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_cancelled"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_pause"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-registration.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_trialing"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_unpaid"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_past_due"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_trialing"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_expired"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_incomplete"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.8"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_past_due"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_cancelled"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
         },
         {
             "name": "umm_stripe_status_changed",
@@ -122,7 +964,7 @@
         },
         {
             "name": "umm_stripe_status_changed",
-            "file": "includes/common/class-registration.php",
+            "file": "includes/common/class-request-handler.php",
             "type": "action",
             "doc": {
                 "description": "Triggers when the status has changed",
@@ -154,7 +996,7 @@
                         "types": [
                             "string"
                         ],
-                        "variable": "$role"
+                        "variable": "$role_trialing"
                     }
                 ],
                 "long_description_html": ""
@@ -204,6 +1046,47 @@
         },
         {
             "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_incomplete"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
             "file": "includes/common/class-registration.php",
             "type": "action",
             "doc": {
@@ -242,6 +1125,319 @@
                 "long_description_html": ""
             },
             "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_changed",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the status has changed",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.2"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 3
+        },
+        {
+            "name": "umm_stripe_status_incomplete",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `incomplete`",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_incomplete"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_incomplete",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the charge has incomplete.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_incomplete"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_incomplete_expired",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the charge has expired",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_expired"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_onetime_refunded",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the charge is refunded.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_active"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_past_due",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `pass due`",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_past_due"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_past_due",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `pass due`",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_past_due"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_pause",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscriptions has been pause",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_pause"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
         },
         {
             "name": "umm_stripe_status_revoked",
@@ -270,6 +1466,171 @@
                             "string"
                         ],
                         "variable": "$role_inactive"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_trialing",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscriptions has been trialing",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_trialing"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_trialing",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `trialing`",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_trialing"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_trialing",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `trialing`.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_trialing"
+                    },
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_unpaid",
+            "file": "includes/common/class-request-handler.php",
+            "type": "action",
+            "doc": {
+                "description": "Triggers when the subscription is `unpaid`",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$um_user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role_unpaid"
+                    }
+                ],
+                "long_description_html": ""
+            },
+            "args": 2
+        },
+        {
+            "name": "umm_stripe_status_{$status}",
+            "file": "includes/common/class-registration.php",
+            "type": "action",
+            "doc": {
+                "description": "Assign Role based on the role set in the Stripe Plan settings.",
+                "long_description": "",
+                "tags": [
+                    {
+                        "name": "since",
+                        "content": "1.0.0"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$user_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the user Role.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$role"
                     }
                 ],
                 "long_description_html": ""
@@ -310,16 +1671,24 @@
             "args": 2
         },
         {
-            "name": "umm_stripe_status_{$status}",
-            "file": "includes/common/class-registration.php",
+            "name": "umm_stripe_user_plan_changed",
+            "file": "includes/common/class-request-handler.php",
             "type": "action",
             "doc": {
-                "description": "Assign Role based on the role set in the Stripe Plan settings.",
+                "description": "Triggers when the status has changed via Plan Switch",
                 "long_description": "",
                 "tags": [
                     {
                         "name": "since",
-                        "content": "1.0.0"
+                        "content": "1.0.8"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Status name.",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$status"
                     },
                     {
                         "name": "param",
@@ -327,7 +1696,7 @@
                         "types": [
                             "integer"
                         ],
-                        "variable": "$user_id"
+                        "variable": "$um_user_id"
                     },
                     {
                         "name": "param",
@@ -335,12 +1704,36 @@
                         "types": [
                             "string"
                         ],
-                        "variable": "$role"
+                        "variable": "$role_active"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the new plan ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$has_switched_plan_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "the previous plan ID.",
+                        "types": [
+                            "integer"
+                        ],
+                        "variable": "$previous_plan_id"
+                    },
+                    {
+                        "name": "param",
+                        "content": "Billing Configurations from Stripe API.",
+                        "types": [
+                            "mixed"
+                        ],
+                        "variable": "$billing_portal_configs"
                     }
                 ],
                 "long_description_html": ""
             },
-            "args": 2
+            "args": 6
         }
     ]
 }

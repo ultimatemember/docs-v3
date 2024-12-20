@@ -5,7 +5,7 @@ heroImage: /zapier.png
 heroHeight: 150
 actions:
   - text: Get Started  →
-    link: https://docs.ultimatemember.com/article/1733-adding-a-new-zap
+    link: https://docs.ultimatemember.com/article/1606-introduction-to-ultimate-members-stripe-extension
     type: primary
   - text: Developer Docs
     link: /developer/hooks/actions

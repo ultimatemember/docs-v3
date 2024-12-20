@@ -21,8 +21,8 @@ apply_filters( 'um_stripe_api_version',  )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_stripe_api_version', 'um_12162024_stripe_api_version', 10, 0 );
-function um_12162024_stripe_api_version(  ){
+add_filter( 'um_stripe_api_version', 'um_12202024_stripe_api_version', 10, 0 );
+function um_12202024_stripe_api_version(  ){
   return ;
 }
 ```

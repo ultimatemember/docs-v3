@@ -9,7 +9,7 @@ tags:
 Triggers when the status has changed via Plan Switch
 <Badge text="Since 1.0.8" vertical="middle" />
 ``` php:no-line-numbers
-do_action( 'umm_stripe_user_plan_changed', $status, $um_user_id, $role_active, $has_switched_plan_id, $previous_plan_id )
+do_action( 'umm_stripe_user_plan_changed', $status, $um_user_id, $role_active, $has_switched_plan_id, $previous_plan_id, $billing_portal_configs )
 ```
 <div class='hook-sep'></div>
 
@@ -35,6 +35,10 @@ do_action( 'umm_stripe_user_plan_changed', $status, $um_user_id, $role_active, $
 <strong>$previous_plan_id</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >integer</span>
 <div style="margin-left:10px;padding: 10px 5px">the previous plan ID.</div>
 </div>
+<div style='padding: 10px 0px 10px;'>
+<strong>$billing_portal_configs</strong> <span style='color:red;font-size:12px;padding: 0px 5px 0px 5px' >mixed</span>
+<div style="margin-left:10px;padding: 10px 5px">Billing Configurations from Stripe API.</div>
+</div>
 <div class='hook-sep'></div>
 
 
@@ -42,8 +46,8 @@ do_action( 'umm_stripe_user_plan_changed', $status, $um_user_id, $role_active, $
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_user_plan_changed', 'um_04172024_stripe_user_plan_changed', 10, 5 );
-function um_04172024_stripe_user_plan_changed( $status, $um_user_id, $role_active, $has_switched_plan_id, $previous_plan_id ){
+add_action( 'umm_stripe_user_plan_changed', 'um_12202024_stripe_user_plan_changed', 10, 6 );
+function um_12202024_stripe_user_plan_changed( $status, $um_user_id, $role_active, $has_switched_plan_id, $previous_plan_id, $billing_portal_configs ){
  // do something
 }
 ```

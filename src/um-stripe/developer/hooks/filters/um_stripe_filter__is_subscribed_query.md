@@ -26,8 +26,8 @@ apply_filters( 'um_stripe_filter__is_subscribed_query', $args )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_filter( 'um_stripe_filter__is_subscribed_query', 'um_12162024_stripe_filter__is_subscribed_query', 10, 1 );
-function um_12162024_stripe_filter__is_subscribed_query( $args ){
+add_filter( 'um_stripe_filter__is_subscribed_query', 'um_12202024_stripe_filter__is_subscribed_query', 10, 1 );
+function um_12202024_stripe_filter__is_subscribed_query( $args ){
   return $args;
 }
 ```

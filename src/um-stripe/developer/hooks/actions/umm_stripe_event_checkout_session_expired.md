@@ -1,15 +1,15 @@
 ---
 tags: 
-  - umm_stripe_session_completed
+  - umm_stripe_event_checkout_session_expired
   - actions
-  - Triggers when the checkout session is completed.
+  - Triggers when the checkout session has expired.
   - hooks
 ---
-# umm\_stripe\_session\_completed
-Triggers when the checkout session is completed.
-<Badge text="Since 1.0.0" vertical="middle" />
+# umm\_stripe\_event\_checkout\_session\_expired
+Triggers when the checkout session has expired.
+<Badge text="Since 1.4.1" vertical="middle" />
 ``` php:no-line-numbers
-do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
+do_action( 'umm_stripe_event_checkout_session_expired', $checkout_session, $payment_mode )
 ```
 <div class='hook-sep'></div>
 
@@ -30,8 +30,8 @@ do_action( 'umm_stripe_session_completed', $checkout_session, $payment_mode )
 ### Sample Usage
 
 ``` php:no-line-numbers
-add_action( 'umm_stripe_session_completed', 'um_12202024_stripe_session_completed', 10, 2 );
-function um_12202024_stripe_session_completed( $checkout_session, $payment_mode ){
+add_action( 'umm_stripe_event_checkout_session_expired', 'um_12202024_stripe_event_checkout_session_expired', 10, 2 );
+function um_12202024_stripe_event_checkout_session_expired( $checkout_session, $payment_mode ){
  // do something
 }
 ```
